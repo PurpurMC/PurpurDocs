@@ -4,7 +4,17 @@ nav:
     - Configuration: Configuration.md
     - Permissions: Permissions.md
     - Biomes: Biomes.md
+extra_css:
+  - stylesheets/extra.css
 theme:
   name: material
   favicon: images/purpur-small.png
   logo: images/purpur-small.png
+  palette:
+    - scheme: slate
+      primary: light blue
+      accent: blue
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
