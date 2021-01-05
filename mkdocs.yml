@@ -4,6 +4,8 @@ nav:
     - Configuration: Configuration.md
     - Permissions: Permissions.md
     - Biomes: Biomes.md
+repo_url: https://github.com/granny/purpur.wiki.temp
+repo_name: granny/purpur.wiki.temp
 extra_css:
   - stylesheets/extra.css
 theme:
