@@ -1,0 +1,10 @@
+site_name: Purpur Wiki
+nav:
+    - Home: index.md
+    - Configuration: Configuration.md
+    - Permissions: Permissions.md
+    - Biomes: Biomes.md
+theme:
+  name: material
+  favicon: images/purpur-small.png
+  logo: images/purpur-small.png
