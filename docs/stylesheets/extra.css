@@ -1,3 +1,13 @@
+:root {
+    --header-color: rgb(75, 41, 107);
+}
+
 .md-header {
-    background-color: rgb(75, 41, 107);
+    background-color: var(--header-color);
+}
+
+@media screen and (max-width: 76.1875em) {
+    .md-nav--primary .md-nav__title[for=__drawer] {
+        background-color: var(--header-color);
+    }
 }
