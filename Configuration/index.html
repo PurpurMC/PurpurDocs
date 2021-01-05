@@ -1,0 +1,4135 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../images/purpur-small.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Configuration - Purpur Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#global-settings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Purpur Wiki" class="md-header-nav__button md-logo" aria-label="Purpur Wiki">
+      
+  <img src="../images/purpur-small.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Purpur Wiki
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Configuration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Purpur Wiki" class="md-nav__button md-logo" aria-label="Purpur Wiki">
+      
+  <img src="../images/purpur-small.png" alt="logo">
+
+    </a>
+    Purpur Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Configuration
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Configuration
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verbose" class="md-nav__link">
+    verbose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-version" class="md-nav__link">
+    config-version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allow-water-placement-in-the-end" class="md-nav__link">
+    allow-water-placement-in-the-end
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-send-useless-entity-packets" class="md-nav__link">
+    dont-send-useless-entity-packets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-alternate-keepalive" class="md-nav__link">
+    use-alternate-keepalive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tps-catchup" class="md-nav__link">
+    tps-catchup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-mod-name" class="md-nav__link">
+    server-mod-name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lagging-threshold" class="md-nav__link">
+    lagging-threshold
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-give-dropping" class="md-nav__link">
+    disable-give-dropping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    messages
+  </a>
+  
+    <nav class="md-nav" aria-label="messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#afk-broadcast-away" class="md-nav__link">
+    afk-broadcast-away
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afk-broadcast-back" class="md-nav__link">
+    afk-broadcast-back
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afk-tab-list-prefix" class="md-nav__link">
+    afk-tab-list-prefix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afk-tab-list-suffix" class="md-nav__link">
+    afk-tab-list-suffix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ping-command-output" class="md-nav__link">
+    ping-command-output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cannot-ride-mob" class="md-nav__link">
+    cannot-ride-mob
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-command-output" class="md-nav__link">
+    demo-command-output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocks" class="md-nav__link">
+    blocks
+  </a>
+  
+    <nav class="md-nav" aria-label="blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#barrel" class="md-nav__link">
+    barrel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ender_chest" class="md-nav__link">
+    ender_chest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-mushroom-updates" class="md-nav__link">
+    disable-mushroom-updates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crying_obsidian" class="md-nav__link">
+    crying_obsidian
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timings" class="md-nav__link">
+    timings
+  </a>
+  
+    <nav class="md-nav" aria-label="timings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logger" class="md-nav__link">
+    logger
+  </a>
+  
+    <nav class="md-nav" aria-label="logger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suppress-init-legacy-material-errors" class="md-nav__link">
+    suppress-init-legacy-material-errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hex-color-support-in-console" class="md-nav__link">
+    hex-color-support-in-console
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suppress-ignored-advancement-warnings" class="md-nav__link">
+    suppress-ignored-advancement-warnings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seed" class="md-nav__link">
+    seed
+  </a>
+  
+    <nav class="md-nav" aria-label="seed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#end-spike" class="md-nav__link">
+    end-spike
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dungeon" class="md-nav__link">
+    dungeon
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity" class="md-nav__link">
+    entity
+  </a>
+  
+    <nav class="md-nav" aria-label="entity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enderman" class="md-nav__link">
+    enderman
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enchantment" class="md-nav__link">
+    enchantment
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../Permissions/" class="md-nav__link">
+      Permissions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../Biomes/" class="md-nav__link">
+      Biomes
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verbose" class="md-nav__link">
+    verbose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-version" class="md-nav__link">
+    config-version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allow-water-placement-in-the-end" class="md-nav__link">
+    allow-water-placement-in-the-end
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-send-useless-entity-packets" class="md-nav__link">
+    dont-send-useless-entity-packets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-alternate-keepalive" class="md-nav__link">
+    use-alternate-keepalive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tps-catchup" class="md-nav__link">
+    tps-catchup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-mod-name" class="md-nav__link">
+    server-mod-name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lagging-threshold" class="md-nav__link">
+    lagging-threshold
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-give-dropping" class="md-nav__link">
+    disable-give-dropping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    messages
+  </a>
+  
+    <nav class="md-nav" aria-label="messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#afk-broadcast-away" class="md-nav__link">
+    afk-broadcast-away
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afk-broadcast-back" class="md-nav__link">
+    afk-broadcast-back
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afk-tab-list-prefix" class="md-nav__link">
+    afk-tab-list-prefix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afk-tab-list-suffix" class="md-nav__link">
+    afk-tab-list-suffix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ping-command-output" class="md-nav__link">
+    ping-command-output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cannot-ride-mob" class="md-nav__link">
+    cannot-ride-mob
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-command-output" class="md-nav__link">
+    demo-command-output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocks" class="md-nav__link">
+    blocks
+  </a>
+  
+    <nav class="md-nav" aria-label="blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#barrel" class="md-nav__link">
+    barrel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ender_chest" class="md-nav__link">
+    ender_chest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-mushroom-updates" class="md-nav__link">
+    disable-mushroom-updates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crying_obsidian" class="md-nav__link">
+    crying_obsidian
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timings" class="md-nav__link">
+    timings
+  </a>
+  
+    <nav class="md-nav" aria-label="timings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logger" class="md-nav__link">
+    logger
+  </a>
+  
+    <nav class="md-nav" aria-label="logger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suppress-init-legacy-material-errors" class="md-nav__link">
+    suppress-init-legacy-material-errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hex-color-support-in-console" class="md-nav__link">
+    hex-color-support-in-console
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suppress-ignored-advancement-warnings" class="md-nav__link">
+    suppress-ignored-advancement-warnings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seed" class="md-nav__link">
+    seed
+  </a>
+  
+    <nav class="md-nav" aria-label="seed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#end-spike" class="md-nav__link">
+    end-spike
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dungeon" class="md-nav__link">
+    dungeon
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity" class="md-nav__link">
+    entity
+  </a>
+  
+    <nav class="md-nav" aria-label="entity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enderman" class="md-nav__link">
+    enderman
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enchantment" class="md-nav__link">
+    enchantment
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p>This page details the various configuration settings exposed by Purpur in the purpur.yml file.</p>
+<p>If you are looking for details on biome specific settings, check out <a href="biomes">biomes.yml</a>.</p>
+<p>If you want information on settings in paper.yml, spigot.yml, and bukkit.yml you should see their respective documentation pages.</p>
+<ul>
+<li>
+<p><a href="https://bukkit.gamepedia.com/Bukkit.yml">Bukkit Configuration (bukkit.yml)</a></p>
+</li>
+<li>
+<p><a href="https://www.spigotmc.org/wiki/">Spigot Configuration (spigot.yml)</a></p>
+</li>
+<li>
+<p><a href="https://paper.readthedocs.io/en/latest/server/configuration.html">Paper Configuration (paper.yml)</a></p>
+</li>
+</ul>
+<h1 id="global-settings">Global Settings</h1>
+<p>Global settings affect all worlds on the server as well as the core server functionality itself.</p>
+<h2 id="verbose">verbose</h2>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Sets whether the server should dump all configuration values to the server log on startup</li>
+</ul>
+<h2 id="config-version">config-version</h2>
+<ul>
+<li><strong>Do not change this for any reason!</strong> This is used internally to help automatically update your config</li>
+</ul>
+<h2 id="allow-water-placement-in-the-end">allow-water-placement-in-the-end</h2>
+<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Allows the placement of water in the end.</li>
+</ul>
+<h2 id="dont-send-useless-entity-packets">dont-send-useless-entity-packets</h2>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Skips sending relative move packets for entities that didn't really move</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>⚠️<strong>Warning</strong>⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <code>dont-send-useless-entity-packets</code> option is highly experimental! Only enable this if you are feeling brave.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="use-alternate-keepalive">use-alternate-keepalive</h2>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Uses a different approach to keepalive ping timeouts. Enabling this sends a keepalive packet once per second to a player, and only kicks for timeout if none of them were responded to in 30 seconds. Responding to any of them in any order will keep the player connected. AKA, it won't kick your players because 1 packet gets dropped somewhere along the lines</li>
+</ul>
+<h2 id="tps-catchup">tps-catchup</h2>
+<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Control tps catch-up</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>📝<strong>Note</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TPS catchup makes your server tick faster than 20 TPS after any period of time that below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects</td>
+</tr>
+</tbody>
+</table>
+<h2 id="server-mod-name">server-mod-name</h2>
+<ul>
+<li><strong>default</strong>: Purpur</li>
+<li><strong>description</strong>: This modified the server name that shows up when a client is outdated or when someone opens the debug screen [F3]</li>
+</ul>
+<h2 id="lagging-threshold">lagging-threshold</h2>
+<ul>
+<li><strong>default</strong>: 19.0</li>
+<li><strong>description</strong>: Purpur keeps track of when it is lagging in order to have the ability to change behaviors accordingly. This value is that threshold when you want to consider the server to be lagging. Right now this is only used for mob.villager.brain-ticks setting</li>
+</ul>
+<h2 id="disable-give-dropping">disable-give-dropping</h2>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true to disable the /give command from dropping items on the floor when a player's inventory is full</li>
+</ul>
+<h2 id="messages">messages</h2>
+<h3 id="afk-broadcast-away">afk-broadcast-away</h3>
+<ul>
+<li><strong>default</strong>: §e§o%s is now AFK</li>
+<li><strong>description</strong>: This is the message that gets broadcasted when a user goes AFK (must have <code>player-idle-timeout</code> set greater than 0 &amp; <a href="#kick-if-idle">kick-if-idle</a> set as false)</li>
+</ul>
+<h3 id="afk-broadcast-back">afk-broadcast-back</h3>
+<ul>
+<li><strong>default</strong>: §e§o%s is no longer AFK</li>
+<li><strong>description</strong>: This is the message that gets broadcasted when a user is no longer AFK (must have <code>player-idle-timeout</code> set greater than 0 &amp; <a href="#kick-if-idle">kick-if-idle</a> set as false)</li>
+</ul>
+<h3 id="afk-tab-list-prefix">afk-tab-list-prefix</h3>
+<ul>
+<li><strong>default</strong>: "[AFK] "</li>
+<li><strong>description</strong>: The prefix that shows up on the playerlist behind someone's name when they're AFK</li>
+</ul>
+<h3 id="afk-tab-list-suffix">afk-tab-list-suffix</h3>
+<ul>
+<li><strong>default</strong>: ""</li>
+<li><strong>description</strong>: The suffix that shows up on the playerlist behind someone's name when they're AFK</li>
+</ul>
+<h3 id="ping-command-output">ping-command-output</h3>
+<ul>
+<li><strong>default</strong>: §a%s's ping is %sms</li>
+<li><strong>description</strong>: Output when <code>/ping &lt;user&gt;</code> is run.</li>
+</ul>
+<h3 id="cannot-ride-mob">cannot-ride-mob</h3>
+<ul>
+<li><strong>default</strong>: §cYou cannot mount that mob</li>
+<li><strong>description</strong>: Message that shows when someone tries to mount a mob they're not allowed to.</li>
+</ul>
+<h3 id="demo-command-output">demo-command-output</h3>
+<p>Requires the <code>bukkit.command.demo</code> permission (<a href="Permissions">Permissions</a>)
+* <strong>default</strong>: §a%s has been shown the demo screen
+* <strong>description</strong>: Message that shows when the demo screen is enabled for a user using the <code>/demo</code> command.</p>
+<h2 id="blocks">blocks</h2>
+<h3 id="barrel">barrel</h3>
+<ul>
+<li>six-rows<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Barrels should have 6 rows of inventory space</li>
+</ul>
+</li>
+</ul>
+<h3 id="ender_chest">ender_chest</h3>
+<ul>
+<li>six-rows<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Ender chests should have 6 rows of inventory space</li>
+</ul>
+</li>
+<li>use-permissions-for-rows<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Use permission nodes to determine the number of rows. <code>six-rows</code> MUST be enabled for this to work.</li>
+</ul>
+</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <th>📝Note</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Enderchest row permissions: 
+                <ul>
+                    <li style="list-style-type: none"><code> purpur.enderchest.rows.six </code></li>
+                    <li style="list-style-type: none"><code> purpur.enderchest.rows.five </code></li>
+                    <li style="list-style-type: none"><code> purpur.enderchest.rows.four </code></li>
+                    <li style="list-style-type: none"><code> purpur.enderchest.rows.three </code></li>
+                    <li style="list-style-type: none"><code> purpur.enderchest.rows.two </code></li>
+                    <li style="list-style-type: none"><code> purpur.enderchest.rows.one </code></li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h3 id="disable-mushroom-updates">disable-mushroom-updates</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Stops the mushroom block from updating it's block state server side</li>
+</ul>
+<h3 id="crying_obsidian">crying_obsidian</h3>
+<ul>
+<li>valid-for-portal-frame<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true to make it so you can create portals out of crying obsidian</li>
+</ul>
+</li>
+</ul>
+<h2 id="timings">timings</h2>
+<h3 id="url">url</h3>
+<ul>
+<li><strong>default</strong>: "https://timings.pl3x.net"</li>
+<li><strong>description</strong>: The server where timing reports are posted to. To use Aikar's timings server use "http://timings.aikar.co"</li>
+</ul>
+<h2 id="logger">logger</h2>
+<h3 id="suppress-init-legacy-material-errors">suppress-init-legacy-material-errors</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Suppress warnings about plugins initializing the legacy material api</li>
+</ul>
+<h3 id="hex-color-support-in-console">hex-color-support-in-console</h3>
+<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Adds hex color code support for console logging</li>
+</ul>
+<h3 id="suppress-ignored-advancement-warnings">suppress-ignored-advancement-warnings</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Suppress warnings about unknown attributes in console and logs</li>
+</ul>
+<h2 id="seed">seed</h2>
+<h3 id="end-spike">end-spike</h3>
+<ul>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The default value is <code>-1</code> for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)</li>
+</ul>
+<h3 id="dungeon">dungeon</h3>
+<ul>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The default value is <code>-1</code> for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)</li>
+</ul>
+<h2 id="entity">entity</h2>
+<h3 id="enderman">enderman</h3>
+<ul>
+<li>short-height<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: allows endermen to fit into 2 block tall spaces if enabled. Since client hitbox remains the same, you can still hit them in the head</li>
+</ul>
+</li>
+</ul>
+<h2 id="enchantment">enchantment</h2>
+<ul>
+<li>allow-infinity-and-mending-together<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: allows the mending and infinity enchantment to be on the same weapon/tool</li>
+</ul>
+</li>
+</ul>
+<h1 id="world-settings">World Settings</h1>
+<p>World settings are on a per-world basis. The child-node <code>default</code> is used for all worlds that do not have their own specific settings</p>
+<h2 id="blocks_1">blocks</h2>
+<h3 id="turtle_egg">turtle_egg</h3>
+<ul>
+<li>break-from-exp-orbs<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Allow exp orbs to damage/break turtle eggs</li>
+</ul>
+</li>
+<li>break-from-items<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Allow dropped items to damage/break turtle eggs</li>
+</ul>
+</li>
+<li>break-from-minecarts<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Allow minecarts to damage/break turtle eggs</li>
+</ul>
+</li>
+</ul>
+<h3 id="dispenser">dispenser</h3>
+<ul>
+<li>apply-cursed-to-armor-slots<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Should dispensers apply armor to armor slots if enchanted with curse of binding</li>
+</ul>
+</li>
+</ul>
+<h3 id="respawn_anchor">respawn_anchor</h3>
+<ul>
+<li>explode<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Whether respawn anchors explode. Setting this to false just makes the respawn anchors blip out of existence</li>
+</ul>
+</li>
+<li>explosion-power<ul>
+<li><strong>default</strong>: 5.0</li>
+<li><strong>description</strong>: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)</li>
+</ul>
+</li>
+<li>explosion-fire<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Whether the explosion can cause fire or not</li>
+</ul>
+</li>
+<li>explosion-effect<ul>
+<li><strong>default</strong>: DESTROY</li>
+<li><strong>description</strong>: What to do with the blocks that are effected by the explosion. <code>DESTROY</code> will destroy the blocks (no item drops). <code>BREAK</code> will naturally break the blocks (items will drop). <code>NONE</code> will not break any blocks</li>
+</ul>
+</li>
+</ul>
+<h3 id="sign">sign</h3>
+<ul>
+<li>allow-colors<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allow players to use color codes on signs</li>
+</ul>
+</li>
+<li>right-click-edit<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Ability to edit signs by right clicking them with another sign in hand</li>
+</ul>
+</li>
+</ul>
+<h3 id="lava">lava</h3>
+<ul>
+<li>infinite-source<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allow lava to take on infinite supply properties similar to water (&lt;infinite-required-sources&gt; source blocks flowing together creates a new source block)</li>
+</ul>
+</li>
+<li>infinite-required-sources<ul>
+<li><strong>default</strong>: 2</li>
+<li><strong>description</strong>: The amount of sources required to have infinite lava</li>
+</ul>
+</li>
+<li>
+<p>speed</p>
+<ul>
+<li>
+<p>nether</p>
+<ul>
+<li><strong>default</strong>: 10</li>
+<li><strong>description</strong>: Delay in ticks between physics/flowing (lower is faster)</li>
+</ul>
+</li>
+<li>
+<p>not-nether</p>
+<ul>
+<li><strong>default</strong>: 30</li>
+<li><strong>description</strong>: Delay in ticks between physics/flowing (lower is faster)</li>
+</ul>
+</li>
+</ul>
+<h3 id="bed">bed</h3>
+<ul>
+<li>explode</li>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Whether beds explode. Setting this to false just makes the bed blip out of existence</li>
+<li>explosion-power</li>
+<li><strong>default</strong>: 5.0</li>
+<li><strong>description</strong>: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)</li>
+<li>explosion-fire</li>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Whether the explosion can cause fire or not</li>
+<li>explosion-effect</li>
+<li><strong>default</strong>: DESTROY</li>
+<li><strong>description</strong>: What to do with the blocks that are effected by the explosion. <code>DESTROY</code> will destroy the blocks (no item drops). <code>BREAK</code> will naturally break the blocks (items will drop). <code>NONE</code> will not break any blocks</li>
+</ul>
+<h3 id="farmland">farmland</h3>
+<ul>
+<li>get-moist-from-below</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allow soil to moisten from water directly below it</li>
+<li>use-alpha-farmland</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Stops the farmland from getting trampled if a fence or a cobble wall is placed directly underneath it</li>
+</ul>
+<h3 id="spawner">spawner</h3>
+<ul>
+<li>deactivate-by-redstone</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allow spawners to be deactivated by redstone</li>
+</ul>
+<h3 id="dispenser_1">dispenser</h3>
+<ul>
+<li>place-anvils</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allows anvils to be placed by dispensers</li>
+</ul>
+<h3 id="anvil">anvil</h3>
+<ul>
+<li>allow-colors</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allows players to use color codes in anvils</li>
+</ul>
+<h3 id="stonecutter">stonecutter</h3>
+<ul>
+<li>damage</li>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: If a value is set, Mobs will also avoid walking over the stonecutter. </li>
+</ul>
+<h3 id="no-tick">no-tick</h3>
+<ul>
+<li><strong>default</strong>: []</li>
+<li><strong>description</strong>: List of blocks that will not tick</li>
+</ul>
+<h3 id="furnace">furnace</h3>
+<ul>
+<li>infinite-fuel</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allows the furnace to be infinitely powered by lava placed underneath it</li>
+</ul>
+<h3 id="chest">chest</h3>
+<ul>
+<li>open-with-solid-block-on-top</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allows for chests to open even with a solid block on top</li>
+</ul>
+<h3 id="twisting_vines">twisting_vines</h3>
+<ul>
+<li>growth-modifier</li>
+<li><strong>default</strong>: 0.10</li>
+<li><strong>description</strong>: Changes the rate of growth of the vine</li>
+<li>max-growth-age</li>
+<li><strong>default</strong>: 25</li>
+<li><strong>description</strong>: The max growth age that the plant can grow</li>
+</ul>
+<h3 id="weeping_vines">weeping_vines</h3>
+<ul>
+<li>growth-modifier</li>
+<li><strong>default</strong>: 0.10</li>
+<li><strong>description</strong>: Changes the rate of growth of the vine</li>
+<li>max-growth-age</li>
+<li><strong>default</strong>: 25</li>
+<li><strong>description</strong>: The max growth age that the plant can grow</li>
+</ul>
+<h3 id="kelp">kelp</h3>
+<ul>
+<li>max-growth-age</li>
+<li><strong>default</strong>: 25</li>
+<li><strong>description</strong>: The max growth age that the plant can grow</li>
+</ul>
+</li>
+</ul>
+<h2 id="mobs">mobs</h2>
+<h3 id="ender_dragon">ender_dragon</h3>
+<ul>
+<li>always-drop-egg-block<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: When true all valid ender dragon deaths will place an ender egg block on top of the portal</li>
+</ul>
+</li>
+<li>always-drop-full-exp<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 200.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cave_spider">cave_spider</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 12.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="endermite">endermite</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 8.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="mooshroom">mooshroom</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="polar_bear">polar_bear</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breedable-item<ul>
+<li><strong>default</strong>: ""</li>
+<li><strong>description</strong>: Item to tempt/feed polar bears and make them breed</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="vindicator">vindicator</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>johnny<ul>
+<li>spawn-chance<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) a vindicator named "Johnny" will spawn instead of a vindicator</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 24.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="zombie_horse">zombie_horse</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>spawn-chance<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) a zombie horse will spawn instead of a skeleton horse (natural spawns during thunderstorms)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li>min<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Min health attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>jump_strength<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.4</li>
+<li><strong>description</strong>: Min jump_strength attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 1.0</li>
+<li><strong>description</strong>: Max jump_strength attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>movement_speed<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.2</li>
+<li><strong>description</strong>: Min movement_speed attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.2</li>
+<li><strong>description</strong>: Max movement_speed attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="wither">wither</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>ridable-max-y<ul>
+<li><strong>default</strong>: 256</li>
+<li><strong>description</strong>: Maximum height this mob can fly to while being ridden</li>
+</ul>
+</li>
+<li>health-regen-amount<ul>
+<li><strong>default</strong>: 1.0</li>
+<li><strong>description</strong>: The regen amount of the wither</li>
+</ul>
+</li>
+<li>health-regen-delay<ul>
+<li><strong>default</strong>: 20</li>
+<li><strong>description</strong>: How long to delay the health regen</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 300.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="wither_skeleton">wither_skeleton</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>takes-wither-damage<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allows wither skeletons to receive the wither effect (from wither roses, etc)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="zombie_villager">zombie_villager</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>jockey<ul>
+<li>only-babies<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Only babies can ride chickens</li>
+</ul>
+</li>
+<li>chance<ul>
+<li><strong>default</strong>: 0.05</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) of riding a chicken when spawned</li>
+</ul>
+</li>
+<li>try-existing-chickens<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Scan for existing chickens to spawn on</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+<li>spawn_reinforcements<ul>
+<li><strong>default</strong>: 0.1</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) this mob will spawn reinforcements</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="wandering_trader">wandering_trader</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>can-be-leashed<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allow players to use leads on villagers (trader not included)</li>
+</ul>
+</li>
+<li>follow-emerald-blocks<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Villagers will be tempted by emerald blocks and follow players holding them</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="silverfish">silverfish</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 8.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="zombified_piglin">zombified_piglin</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>count-as-player-kill-when-angry<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to false to stop zombified piglins from dropping XP if they were angered (but not killed) by a player</li>
+</ul>
+</li>
+<li>jockey<ul>
+<li>only-babies<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Only babies can ride chickens</li>
+</ul>
+</li>
+<li>chance<ul>
+<li><strong>default</strong>: 0.05</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) of riding a chicken when spawned</li>
+</ul>
+</li>
+<li>try-existing-chickens<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Scan for existing chickens to spawn on</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+<li>spawn_reinforcements<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) this mob will spawn reinforcements</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="snow_golem">snow_golem</h3>
+<p>The formula used to determine the amount of ticks between shots is:
+    <code>((sqrt(distanceToTarget) / attack-distance) / snow-ball-modifier) * (max-shoot-interval-ticks - min-shoot-interval-ticks) + min-shoot-interval-ticks</code></p>
+<p>If <code>min-shoot-interval-ticks</code> and <code>max-shoot-interval-ticks</code> are both set to
+0, snow golems won't shoot any snowballs.
+* ridable
+    - <strong>default</strong>: false
+    - <strong>description</strong>: Makes this mob WASD controllable
+* ridable-in-water
+    - <strong>default</strong>: false
+    - <strong>description</strong>: Makes this mob ridable in water (it wont eject you)
+* leave-trail-when-ridden
+    - <strong>default</strong>: false
+    - <strong>description</strong>: Leaves a trail where a snowman walks when being ridden
+* drops-pumpkin-when-sheared
+    - <strong>default</strong>: false
+    - <strong>description</strong>: Control if shearing a snowman makes the pumpkin drop to the ground
+* pumpkin-can-be-added-back
+    - <strong>default</strong>: false
+    - <strong>description</strong>: Control if pumpkins can be placed back onto snowmen
+* min-shoot-interval-ticks
+    - <strong>default</strong>: 20
+    - <strong>description</strong>: Min amount of interval ticks that get shot
+* max-shoot-interval-ticks
+    - <strong>default</strong>: 20
+    - <strong>description</strong>: Max amount of interval ticks that get shot
+* snow-ball-modifier
+    - <strong>default</strong>: 10.0
+    - <strong>description</strong>: The modifier value of snow-ball projectiles
+* attack-distance
+    - <strong>default</strong>: 1.25
+    - <strong>description</strong>: Control if pumpkins can be placed back onto snowmen
+* attributes
+    * max_health
+        - <strong>default</strong>: 4.0
+        - <strong>description</strong>: Max health attribute</p>
+<h3 id="skeleton_horse">skeleton_horse</h3>
+<ul>
+<li>can-swim<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Can skeleton horses swim in water. False makes them sink to the bottom (vanilla default)</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li>min<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Min health attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>jump_strength<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.4</li>
+<li><strong>description</strong>: Min jump_strength attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 1.0</li>
+<li><strong>description</strong>: Max jump_strength attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>movement_speed<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.2</li>
+<li><strong>description</strong>: Min movement_speed attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.2</li>
+<li><strong>description</strong>: Max movement_speed attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="phantom">phantom</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attacked-by-crystal-range<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Radius crystals scan for phantoms to attack. Value of 0 disables feature</li>
+</ul>
+</li>
+<li>attacked-by-crystal-damage<ul>
+<li><strong>default</strong>: 1.0</li>
+<li><strong>description</strong>: Amount of damage per second crystals deal to phantoms. Value of 1.0 is half a heart</li>
+</ul>
+</li>
+<li>orbit-crystal-radius<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Radius which phantoms scan for crystals to orbit. Value of 0 disables feature</li>
+</ul>
+</li>
+<li>burn-in-light<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: What light level the phantoms will burn at</li>
+</ul>
+</li>
+<li>burn-in-daylight<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Whether phantoms burn in daylight or not</li>
+</ul>
+</li>
+<li>flames-on-swoop<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true for phantoms to shoot flames on swoop</li>
+</ul>
+</li>
+<li>ignore-players-with-torch<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Whether phantoms avoid players with a torch in their hand</li>
+</ul>
+</li>
+<li>spawn<ul>
+<li>min-sky-darkness<ul>
+<li><strong>default</strong>: 5</li>
+<li><strong>description</strong>: The amount of darkness in the sky (5 is dark enough for thunderstorms, but not regular rain)</li>
+</ul>
+</li>
+<li>only-above-sea-level<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Only spawn on players above sea level</li>
+</ul>
+</li>
+<li>only-with-visible-sky<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Only spawn on players that have visible sky above them</li>
+</ul>
+</li>
+<li>local-difficulty-chance<ul>
+<li><strong>default</strong>: 3.0</li>
+<li><strong>description</strong>: Local difficulty must be greater than a random value chosen between 0.0 and this value</li>
+</ul>
+</li>
+<li>min-time-since-slept<ul>
+<li><strong>default</strong>: 72000</li>
+<li><strong>description</strong>: Minimum number of ticks since the player has last slept before spawning</li>
+</ul>
+</li>
+<li>delay<ul>
+<li>min<ul>
+<li><strong>default</strong>: 1200</li>
+<li><strong>description</strong>: Minimum time (in ticks) between spawn attempts (globally)</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 2400</li>
+<li><strong>description</strong>: Maximum time (in ticks) between spawn attempts (globally)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>overhead<ul>
+<li>min<ul>
+<li><strong>default</strong>: 20</li>
+<li><strong>description</strong>: Minimum number of blocks to spawn at above players head</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 35</li>
+<li><strong>description</strong>: Maximum number of blocks to spawn at above players head</li>
+</ul>
+</li>
+<li>radius<ul>
+<li><strong>default</strong>: 10</li>
+<li><strong>description</strong>: Radius of blocks to spawn at above players head</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>per-attempt<ul>
+<li>min<ul>
+<li><strong>default</strong>: 1</li>
+<li><strong>description</strong>: Minimum number of phantoms to spawn per attempt</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: Maximum number of phantoms to spawn per attempt (Use -1 to base this off of world difficulty)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="chicken">chicken</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>retaliate<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: If a chicken is hit, it will attack back</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 4.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="creeper">creeper</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>allow-griefing<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Makes this mob able to grief</li>
+</ul>
+</li>
+<li>naturally-charged-chance<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="donkey">donkey</h3>
+<ul>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li>min<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Min health attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>jump_strength<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Min jump strength attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Max jump strength attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>movement_speed<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.175</li>
+<li><strong>description</strong>: Min movement speed attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.175</li>
+<li><strong>description</strong>: Max movement speed attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cow">cow</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>feed-mushrooms-for-mooshroom<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: Number of mushrooms to feed a cow to make it transform into a mooshroom. Value of 0 disables feature</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="enderman_1">enderman</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>allow-griefing<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Makes this mob able to grief</li>
+</ul>
+</li>
+<li>can-despawn-with-held-block<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes the enderman despawn even if it's holding a block</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 40.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="evoker">evoker</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 24.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="drowned">drowned</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>jockey<ul>
+<li>only-babies<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Only babies can ride chickens</li>
+</ul>
+</li>
+<li>chance<ul>
+<li><strong>default</strong>: 0.05</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) of riding a chicken when spawned</li>
+</ul>
+</li>
+<li>try-existing-chickens<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Scan for existing chickens to spawn on</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+<li>spawn_reinforcements<ul>
+<li><strong>default</strong>: 0.1</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) this mob will spawn reinforcements</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pillager">pillager</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 24.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="fox">fox</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>tulips-change-type<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Feeding a white/orange tulip changes type snow/regular</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="giant">giant</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>step-height<ul>
+<li><strong>default</strong>: 2.0</li>
+<li><strong>description</strong>: How many blocks giants can walk up without having to jump</li>
+</ul>
+</li>
+<li>jump-height<ul>
+<li><strong>default</strong>: 1.0</li>
+<li><strong>description</strong>: Jump height modifier. Default value of 1.0 makes giants jump about as high as their waist</li>
+</ul>
+</li>
+<li>movement-speed<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Movement speed attribute</li>
+</ul>
+</li>
+<li>attack-damage<ul>
+<li><strong>default</strong>: 50.0</li>
+<li><strong>description</strong>: Attack damage (in half hearts)</li>
+</ul>
+</li>
+<li>have-ai<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Control if giant zombies have AI instead of just standing there</li>
+</ul>
+</li>
+<li>have-hostile-ai<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Control if giant zombies have hostile AI also</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 100.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="hoglin">hoglin</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 40.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="squid">squid</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>immune-to-EAR<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Makes this mob immune to EAR (Entity Activation Range)</li>
+</ul>
+</li>
+<li>water-offset-check<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Stops squids from floating on top of water</li>
+</ul>
+</li>
+<li>can-fly<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes it so squids can fly, Oh my!</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="villager">villager</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>brain-ticks<ul>
+<li><strong>default</strong>: 1</li>
+<li><strong>description</strong>: How often (in ticks) should villager's tick their brain logic. Vanilla value is to tick every tick (1). Higher amounts makes them tick less often to reduce lag, but setting it too high could result is unresponsive villagers</li>
+</ul>
+</li>
+<li>use-brain-ticks-only-when-lagging<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Only use the brain ticks setting when the server is lagging (see lagging-threshold above). If set to false, the brain ticks setting is always used</li>
+</ul>
+</li>
+<li>bypass-mob-griefing<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Ignores the <code>mobGriefing</code> gamerule and allows the villagers to drop items, allowing them to breed</li>
+</ul>
+</li>
+<li>can-be-leashed<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allow players to use leads on villagers (trader not included)</li>
+</ul>
+</li>
+<li>follow-emerald-blocks<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Villagers will be tempted by emerald blocks and follow players holding them</li>
+</ul>
+</li>
+<li>can-breed<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Whether villagers can breed or not</li>
+</ul>
+</li>
+<li>clerics-farm-warts<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true for clerics to farm nether wart</li>
+</ul>
+</li>
+<li>cleric-wart-farmers-throw-warts-at-villagers<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to false for clerics to not throw nether wart at other villagers</li>
+</ul>
+</li>
+<li>lobotomize<ul>
+<li>enabled<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Lobotomizes the villager if it cannot move (Does not disable trading)</li>
+</ul>
+</li>
+<li>check-interval<ul>
+<li><strong>default</strong>: 60</li>
+<li><strong>description</strong>: The interval in ticks to check if a villager is lobotomized </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>spawn-iron-golem<ul>
+<li>radius<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: Radius villagers search for existing iron golems before spawning more. Value of 0 disables features</li>
+</ul>
+</li>
+<li>limit<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: Maximum amount of iron golems villagers can spawn in configured radius</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="mule">mule</h3>
+<ul>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li>min<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Min health attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>jump_strength<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Min jump strength attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Max jump strength attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>movement_speed<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.175</li>
+<li><strong>description</strong>: Min movement speed attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.175</li>
+<li><strong>description</strong>: Max movement speed attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="wolf">wolf</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>milk-cures-rabid-wolves<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to false for rabid wolves to not be cured by milk</li>
+</ul>
+</li>
+<li>spawn-rabid-chance<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) that a wolf will spawn as rabid</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 8.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="zoglin">zoglin</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 40.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ocelot">ocelot</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="shulker">shulker</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="horse">horse</h3>
+<ul>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li>min<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Min health attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>jump_strength<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.4</li>
+<li><strong>description</strong>: Min jump strength attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 1.0</li>
+<li><strong>description</strong>: Max jump strength attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>movement_speed<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.1125</li>
+<li><strong>description</strong>: Min movement speed attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.3375</li>
+<li><strong>description</strong>: Max movement speed attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="piglin">piglin</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 16.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="piglin_brute">piglin_brute</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 50.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="skeleton">skeleton</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 8.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="stray">stray</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="panda">panda</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="strider">strider</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>give-saddle-back<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Shift and right-click a pig with a saddle on it's back to remove it with this option enabled</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="rabbit">rabbit</h3>
+<ul>
+<li>spawn-killer-rabbit-chance<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Percent chance (0.0-1.0) the killer rabbit naturally spawns</li>
+</ul>
+</li>
+<li>spawn-toast-chance<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Percent chance (0.0-1.0) to naturally spawn a rabbit named Toast</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 3.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="husk">husk</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>jockey<ul>
+<li>only-babies<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Only babies can ride chickens</li>
+</ul>
+</li>
+<li>chance<ul>
+<li><strong>default</strong>: 0.05</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) of riding a chicken when spawned</li>
+</ul>
+</li>
+<li>try-existing-chickens<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Scan for existing chickens to spawn on</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+<li>spawn_reinforcements<ul>
+<li><strong>default</strong>: 0.1</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) this mob will spawn reinforcements</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="spider">spider</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 16.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sheep">sheep</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 8.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ravager">ravager</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 100.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pig">pig</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>give-saddle-back<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Shift and right-click a pig with a saddle on it's back to remove it with this option enabled</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="witch">witch</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 26.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="zombie">zombie</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>jockey<ul>
+<li>only-babies<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Only babies can ride chickens</li>
+</ul>
+</li>
+<li>chance<ul>
+<li><strong>default</strong>: 0.05</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) of riding a chicken when spawned</li>
+</ul>
+</li>
+<li>try-existing-chickens<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Scan for existing chickens to spawn on</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>aggressive-towards-villager-when-lagging<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: disable to stop zombie aggressiveness towards villagers when lagging</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+<li>spawn_reinforcements<ul>
+<li><strong>default</strong>: 0.1</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) this mob will spawn reinforcements</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="dolphin">dolphin</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>disable-treasure-searching<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Stops the dolphin from treasure hunting</li>
+</ul>
+</li>
+<li>spit<ul>
+<li>cooldown<ul>
+<li><strong>default</strong>: 20</li>
+<li><strong>description</strong>: The cooldown of the dolphin spit</li>
+</ul>
+</li>
+<li>speed<ul>
+<li><strong>default</strong>: 1.0</li>
+<li><strong>description</strong>: The speed of the dolphin spit</li>
+</ul>
+</li>
+<li>damage<ul>
+<li><strong>default</strong>: 2.0</li>
+<li><strong>description</strong>: The damage of the dolphin spit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="bat">bat</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>ridable-max-y<ul>
+<li><strong>default</strong>: 256</li>
+<li><strong>description</strong>: Maximum height this mob can fly to while being ridden</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 6.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="bee">bee</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>ridable-max-y<ul>
+<li><strong>default</strong>: 256</li>
+<li><strong>description</strong>: Maximum height this mob can fly to while being ridden</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="blaze">blaze</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>ridable-max-y<ul>
+<li><strong>default</strong>: 256</li>
+<li><strong>description</strong>: Maximum height this mob can fly to while being ridden</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 20.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cat">cat</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>spawn-delay<ul>
+<li><strong>default</strong>: 1200</li>
+<li><strong>description</strong>: Number of ticks between attempting to naturally spawn a cat</li>
+</ul>
+</li>
+<li>scan-range-for-other-cats<ul>
+<li>swamp-hut<ul>
+<li><strong>default</strong>: 16</li>
+<li><strong>description</strong>: Do not spawn a cat if another cat is found within this range. Set to 0 to disable</li>
+</ul>
+</li>
+<li>village<ul>
+<li><strong>default</strong>: 48</li>
+<li><strong>description</strong>: Do not spawn a cat if another cat is found within this range. Set to 0 to disable</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cod">cod</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 3.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="elder_guardian">elder_guardian</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 80.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ghast">ghast</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>ridable-max-y<ul>
+<li><strong>default</strong>: 256</li>
+<li><strong>description</strong>: Maximum height this mob can fly to while being ridden</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 10.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="guardian">guardian</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="illusioner">illusioner</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>naturally-spawn<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Control if illusioners naturally spawn in the game</li>
+</ul>
+</li>
+<li>movement-speed<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Movement speed attribute</li>
+</ul>
+</li>
+<li>follow-range<ul>
+<li><strong>default</strong>: 18.0</li>
+<li><strong>description</strong>: Follow range attribute</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 32.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="iron_golem">iron_golem</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>can-spawn-in-air<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set whether iron golems can spawn in the air, like in 1.12 and below</li>
+</ul>
+</li>
+<li>can-swim<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set whether iron golems can swim or not</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 100.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="llama">llama</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable. Llama's must be tamed and saddled (with carpet) to be WASD controllable.</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li>min<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Min health attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>jump_strength<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Min jump strength attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Max jump strength attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>movement_speed<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.175</li>
+<li><strong>description</strong>: Min movement speed attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.175</li>
+<li><strong>description</strong>: Max movement speed attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="trader_llama">trader_llama</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob mountable and WASD controllable. Trader llama's must be tamed to be WASD controllable. Being saddled (carpet) is not a requirement since it technically always has a carpet.</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li>min<ul>
+<li><strong>default</strong>: 15.0</li>
+<li><strong>description</strong>: Min health attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>jump_strength<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Min jump strength attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Max jump strength attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>movement_speed<ul>
+<li>min<ul>
+<li><strong>default</strong>: 0.175</li>
+<li><strong>description</strong>: Min movement speed attribute</li>
+</ul>
+</li>
+<li>max<ul>
+<li><strong>default</strong>: 0.175</li>
+<li><strong>description</strong>: Max movement speed attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="magma_cube">magma_cube</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: "size * size"</li>
+<li><strong>description</strong>: The Max health equation used to calculate the max health</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="parrot">parrot</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>ridable-max-y<ul>
+<li><strong>default</strong>: 256</li>
+<li><strong>description</strong>: Maximum height this mob can fly to while being ridden</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 6.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pufferfish">pufferfish</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 3.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="salmon">salmon</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 3.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="slime">slime</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: "size * size"</li>
+<li><strong>description</strong>: The Max health equation used to calculate the max health</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="tropical_fish">tropical_fish</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 3.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="turtle">turtle</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>breeding-delay-ticks<ul>
+<li><strong>default</strong>: 6000</li>
+<li><strong>description</strong>: The amount of ticks to wait before being able to breed again</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 30.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="vex">vex</h3>
+<ul>
+<li>ridable<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob WASD controllable</li>
+</ul>
+</li>
+<li>ridable-in-water<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes this mob ridable in water (it wont eject you)</li>
+</ul>
+</li>
+<li>ridable-max-y<ul>
+<li><strong>default</strong>: 256</li>
+<li><strong>description</strong>: Maximum height this mob can fly to while being ridden</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>max_health<ul>
+<li><strong>default</strong>: 14.0</li>
+<li><strong>description</strong>: Max health attribute</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="gameplay-mechanics">gameplay-mechanics</h2>
+<h3 id="use-better-mending">use-better-mending</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true for mending enchantment to always repair the most damaged equipment first</li>
+</ul>
+<h3 id="disable-drops-on-cramming-death">disable-drops-on-cramming-death</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Stops entities from dropping loot on death, if killed by cramming gamerule</li>
+</ul>
+<h3 id="totem-of-undying-works-in-inventory">totem-of-undying-works-in-inventory</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Allows the totem of undying to work in your inventory, not just your offhand</li>
+</ul>
+<h3 id="entities-pick-up-loot-bypass-mob-griefing">entities-pick-up-loot-bypass-mob-griefing</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Mobs that can pick up loot will continue to pick up loot even if the <code>mobGriefing</code> gamerule is disabled</li>
+</ul>
+<h3 id="fix-climbing-bypassing-cramming-rule">fix-climbing-bypassing-cramming-rule</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Stops entities from bypassing the cramming gamerule by climbing</li>
+</ul>
+<h3 id="milk-cures-bad-omen">milk-cures-bad-omen</h3>
+<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Allow players to drink milk to cure bad omen status effect</li>
+</ul>
+<h3 id="trident-loyalty-void-return-height">trident-loyalty-void-return-height</h3>
+<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.</li>
+</ul>
+<h3 id="void-damage-height">void-damage-height</h3>
+<ul>
+<li><strong>default</strong>: -64.0</li>
+<li><strong>description</strong>: Lower limit where void damage starts to happen</li>
+</ul>
+<h3 id="entity-lifespan">entity-lifespan</h3>
+<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer</li>
+</ul>
+<h3 id="silk-touch">silk-touch</h3>
+<p>Requires perms <code>purpur.drop.spawner</code> &amp; <code>purpur.place.spawner</code> (<a href="Permissions">Permissions</a>)</p>
+<ul>
+<li>enabled<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes it so you can silk touch spawners </li>
+</ul>
+</li>
+<li>tools<ul>
+<li><strong>default</strong>: <table><tr><td>- minecraft:iron_pickaxe <br>- minecraft:golden_pickaxe <br>- minecraft:diamond_pickaxe <br>- minecraft:netherite_pickaxe <br></td></tr></table></li>
+<li><strong>description</strong>: Whitelist of tools that can silk touch spawners</li>
+</ul>
+</li>
+<li>spawner-name<ul>
+<li><strong>default</strong>: Spawner</li>
+<li><strong>description</strong>: The name of the spawner</li>
+</ul>
+</li>
+<li>spawner-lore<ul>
+<li><strong>default</strong>: <table><tr><td>- Spawns a {mob} <br></td></tr></table></li>
+<li><strong>description</strong>: The lore of the spawner</li>
+</ul>
+</li>
+</ul>
+<h3 id="boat">boat</h3>
+<ul>
+<li>eject-players-on-land<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Boats should eject players when on land</li>
+</ul>
+</li>
+<li>do-fall-damage<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to false for boats to not do fall damage to players</li>
+</ul>
+</li>
+</ul>
+<h3 id="armorstand">armorstand</h3>
+<ul>
+<li>step-height<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Set the default step height of armorstands. Useful for plugins that utilize armorstands as vehicles to be able to drive over blocks without jumping, etc</li>
+</ul>
+</li>
+<li>set-name-visible-when-placing-with-custom-name<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes the name visible when placing with a custom name</li>
+</ul>
+</li>
+<li>fix-nametags<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Makes the name visible when using a Name Tag on an Armor Stand</li>
+</ul>
+</li>
+</ul>
+<h3 id="player">player</h3>
+<ul>
+<li>spawn-invulnerable-ticks<ul>
+<li><strong>default</strong>: 60</li>
+<li><strong>description</strong>: Gives you the ability to control how long a player is invulnerable when they first spawn in.</li>
+</ul>
+</li>
+<li>invulnerable-while-accepting-resource-pack<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Sets the player as invulnerable while they download the resource pack.</li>
+</ul>
+</li>
+<li>idle-timeout<ul>
+<li>kick-if-idle<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Kick players if they become idle (see server.properties for player-idle-timeout time)</li>
+</ul>
+</li>
+<li>tick-nearby-entities<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Should entities tick normally when nearby players are afk. False will require at least 1 non-afk player in order to tick</li>
+</ul>
+</li>
+<li>count-as-sleeping<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Should AFK players count as sleeping? (allows active players to skip night by sleeping, even if AFK players are not in bed)</li>
+</ul>
+</li>
+<li>update-tab-list<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Should AFK players have their name updated in the tab list (puts <code>[AFK]</code> in front of their name)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>exp-dropped-on-death<ul>
+<li>equation<ul>
+<li><strong>default</strong>: expLevel * 7</li>
+<li><strong>description</strong>: How much exp to drop on death. Available NMS variables are <code>expLevel</code>, <code>expTotal</code>, and <code>exp</code></li>
+</ul>
+</li>
+<li>maximum<ul>
+<li><strong>default</strong>: 100</li>
+<li><strong>description</strong>: Maximum amount of exp value to drop on death</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>teleport-if-outside-border<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Teleports you to spawn if you somehow get outside the world border</li>
+</ul>
+</li>
+<li>netherite-fire-resistance<ul>
+<li>duration<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: Set how long the fire resistance lasts. Set to 0 to disable</li>
+</ul>
+</li>
+<li>amplifier<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: Set the amplifier for the fire resistance effect</li>
+</ul>
+</li>
+<li>ambient<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true for the particle effects to be less intrusive on the screen</li>
+</ul>
+</li>
+<li>show-particles<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true for the fire resistance potion effect to show particles</li>
+</ul>
+</li>
+<li>show-icon<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to false for the fire resistance effect to not display it's icon</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="controllable-minecarts">controllable-minecarts</h3>
+<ul>
+<li>
+<p>enabled</p>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Whether minecarts can be controlled with WASD when not on rails</li>
+</ul>
+</li>
+<li>
+<p>place-anywhere</p>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Whether minecarts can be placed anywhere, not just on rails</li>
+</ul>
+</li>
+<li>
+<p>step-height</p>
+<ul>
+<li><strong>default</strong>: 1.0</li>
+<li><strong>description</strong>: The step height in which a minecarts can go up to the next block without jumping</li>
+</ul>
+</li>
+<li>
+<p>hop-boost</p>
+<ul>
+<li><strong>default</strong>: 0.5</li>
+<li><strong>description</strong>: Jump power when pressing spacebar on a controllable minecart</li>
+</ul>
+</li>
+<li>
+<p>base-speed</p>
+<ul>
+<li><strong>default</strong>: 0.1</li>
+<li><strong>description</strong>: Base speed of minecart when controlled with WASD</li>
+</ul>
+</li>
+<li>
+<p>block-speed</p>
+<ul>
+<li><strong>default</strong>:
+    <table>
+        <tr>
+            <td>
+                grass-block: 0.3 <br>
+                stone: 0.5 <br>
+            </td>
+        </tr>
+    </table></li>
+<li><strong>description</strong>: List of speed overrides per block type</li>
+</ul>
+</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <th>📝Note</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Example of block-speed overrides:</b>
+                <ul>
+                    <li><b>block-speed:</b></li>
+                    <ul>
+                        <li>minecraft:sand: 0.1</li>
+                        <li>minecraft:stone: 0.6</li>
+                        <li>minecraft:black_concrete: 1.0</li>
+                    </ul>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<ul>
+<li>fall-damage<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to true to give fall damage to the player while in a minecart</li>
+</ul>
+</li>
+</ul>
+<h3 id="item">item</h3>
+<ul>
+<li>
+<p>immune</p>
+<ul>
+<li>
+<p>explosion</p>
+<ul>
+<li><strong>default</strong>: []</li>
+<li><strong>description</strong>: List of items that are immune to explosions</li>
+</ul>
+</li>
+<li>
+<p>fire</p>
+<ul>
+<li><strong>default</strong>: []</li>
+<li><strong>description</strong>: List of items that are immune to fire</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <th>📝Note</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Example of item immune list:</b>
+                <ul>
+                    <li><b>explosions:</b></li>
+                    <ul>
+                        <li>minecraft:diamond</li>
+                        <li>minecraft:diamond_block</li>
+                        <li>minecraft:diamond_sword</li>
+                    </ul>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>⚠️<strong>Warning</strong>⚠️</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing I can do about that from the server side, but I have patched this in my client mod, <a href="https://ci.pl3x.net/job/PurpurClient/">PurpurClient</a>, starting with build #12.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="elytra">elytra</h3>
+<ul>
+<li>
+<p>damage-per-second</p>
+<ul>
+<li><strong>default</strong>: 1</li>
+<li><strong>description</strong>: How much damage an elytra takes during flight each second</li>
+</ul>
+</li>
+<li>
+<p>damage-multiplied-by-speed</p>
+<ul>
+<li><strong>default</strong>: 0.0</li>
+<li><strong>description</strong>: Damage is multiplied by speed if flight is faster than set speed. Value of 0 disables this multiplier</li>
+</ul>
+</li>
+<li>
+<p>ignore-unbreaking</p>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Should elytras ignore the unbreaking enchantment</li>
+</ul>
+</li>
+<li>
+<p>damage-per-boost</p>
+<ul>
+<li>
+<p>firework</p>
+<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: How much damage to deal to the elytra when firework boost activates</li>
+</ul>
+</li>
+<li>
+<p>trident</p>
+<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: How much damage to deal to the elytra when trident riptide boost activates</li>
+</ul>
+</li>
+</ul>
+<h3 id="mob-spawning">mob-spawning</h3>
+<ul>
+<li>village-cats</li>
+<li><strong>default</strong>: default</li>
+<li><strong>description</strong>: Set to true to spawn in the world that this option is a part of</li>
+<li>raid-patrols</li>
+<li><strong>default</strong>: default</li>
+<li><strong>description</strong>: Set to true to spawn in the world that this option is a part of</li>
+<li>phantoms</li>
+<li><strong>default</strong>: default</li>
+<li><strong>description</strong>: Set to true to spawn in the world that this option is a part of</li>
+<li>wandering-traders</li>
+<li><strong>default</strong>: default</li>
+<li><strong>description</strong>: Set to true to spawn in the world that this option is a part of</li>
+<li>village-sieges</li>
+<li><strong>default</strong>: default</li>
+<li><strong>description</strong>: Set to true to spawn in the world that this option is a part of</li>
+</ul>
+<h3 id="raid-cooldown-seconds">raid-cooldown-seconds</h3>
+<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: How long you should wait before another raid can be initiated</li>
+</ul>
+<h3 id="projectile-despawn-rates">projectile-despawn-rates</h3>
+<ul>
+<li>dragon_fireball</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>egg</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>ender_pearl</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>experience_bottle</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>firework_rocket</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>fishing_bobber</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>fireball</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>llama_spit</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>potion</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>shulker_bullet</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>small_fireball</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>snowball</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+<li>wither_skull</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: The rate at which the projectile despawns. -1 means disabled</li>
+</ul>
+<h3 id="entities-can-use-portals">entities-can-use-portals</h3>
+<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to false to stop entities from being able to use portals</li>
+</ul>
+<h3 id="persistent-tileentity-display-names-and-lore">persistent-tileentity-display-names-and-lore</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true to make TE's display names and lores persist after breaking (ex. named custom player heads retain their name)</li>
+</ul>
+<h3 id="persistent-droppable-entity-display-names">persistent-droppable-entity-display-names</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)</li>
+</ul>
+<h3 id="infinity-bow">infinity-bow</h3>
+<ul>
+<li>normal-arrows</li>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to true to make the Infinity enchantment work on this arrow type</li>
+<li>spectral-arrows</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true to make the Infinity enchantment work on this arrow type</li>
+<li>tipped-arrows</li>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true to make the Infinity enchantment work on this arrow type</li>
+</ul>
+<h3 id="daylight-cycle-ticks">daylight-cycle-ticks</h3>
+<ul>
+<li>daytime</li>
+<li><strong>default</strong>: 12000</li>
+<li><strong>description</strong>: Set how long the daylight cycle is ticked</li>
+<li>nighttime</li>
+<li><strong>default</strong>: 12000</li>
+<li><strong>description</strong>: Set how long the nighttime cycle is ticked</li>
+</ul>
+<h3 id="animal-breeding-cooldown-seconds">animal-breeding-cooldown-seconds</h3>
+<ul>
+<li><strong>default</strong>: 0</li>
+<li><strong>description</strong>: Adds a cooldown to breeding animals per animal type</li>
+</ul>
+<h3 id="projectile-damage">projectile-damage</h3>
+<ul>
+<li>snowball</li>
+<li><strong>default</strong>: -1</li>
+<li><strong>description</strong>: Set how much damage a snowball does (-1 will make damage be 3 for blazes &amp; 0 for all other entities which is default)</li>
+</ul>
+<h3 id="entity-left-handed-chance">entity-left-handed-chance</h3>
+<ul>
+<li><strong>default</strong>: 0.05</li>
+<li><strong>description</strong>: Percent chance (0.0 - 1.0) an entity will spawn left-handed</li>
+</ul>
+</li>
+</ul>
+<h2 id="ridable-settings">ridable-settings</h2>
+<h3 id="babies-are-ridable">babies-are-ridable</h3>
+<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to false to stop babies from being ridable</li>
+</ul>
+<h3 id="untamed-tamables-are-ridable">untamed-tamables-are-ridable</h3>
+<ul>
+<li><strong>default</strong>: true</li>
+<li><strong>description</strong>: Set to false to stop untamed tamables from being ridable</li>
+</ul>
+<h3 id="use-night-vision">use-night-vision</h3>
+<ul>
+<li><strong>default</strong>: false</li>
+<li><strong>description</strong>: Set to true to give night vision to riders while on a ridable</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Permissions/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Permissions
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

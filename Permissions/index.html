@@ -9,19 +9,19 @@
       
       
       
-      <link rel="shortcut icon" href="images/purpur-small.png">
+      <link rel="shortcut icon" href="../images/purpur-small.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
-        <title>Purpur Wiki</title>
+        <title>Permissions - Purpur Wiki</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.3b61ea93.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
         
       
     
@@ -36,7 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     
       
@@ -70,9 +70,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="." title="Purpur Wiki" class="md-header-nav__button md-logo" aria-label="Purpur Wiki">
+    <a href=".." title="Purpur Wiki" class="md-header-nav__button md-logo" aria-label="Purpur Wiki">
       
-  <img src="images/purpur-small.png" alt="logo">
+  <img src="../images/purpur-small.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -88,7 +88,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Home
+              Permissions
             
           </span>
         </div>
@@ -149,15 +149,41 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Purpur Wiki" class="md-nav__button md-logo" aria-label="Purpur Wiki">
+    <a href=".." title="Purpur Wiki" class="md-nav__button md-logo" aria-label="Purpur Wiki">
       
-  <img src="images/purpur-small.png" alt="logo">
+  <img src="../images/purpur-small.png" alt="logo">
 
     </a>
     Purpur Wiki
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../Configuration/" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
     
       
       
@@ -172,36 +198,10 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="." class="md-nav__link md-nav__link--active">
-      Home
-    </a>
-    
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="Configuration/" class="md-nav__link">
-      Configuration
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="Permissions/" class="md-nav__link">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Permissions
     </a>
+    
   </li>
 
     
@@ -212,7 +212,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Biomes/" class="md-nav__link">
+    <a href="../Biomes/" class="md-nav__link">
       Biomes
     </a>
   </li>
@@ -231,15 +231,138 @@
               
                 
                 
-                  <h1>Home</h1>
+                  <h1>Permissions</h1>
                 
-                <p><img src="images/purpur.png" alt="Purpur header" width="1000"></p>
-<hr />
-<p><strong>Note: This documentation is a work in progress. Some things are still missing.</strong></p>
-<hr />
-<p>Welcome to the official documentation source for the <a href="../">Purpur</a> project.</p>
-<p>Purpur is a fork of Paper used by the Pl3xCraft server. It contains many gameplay changes to suit our server that are deemed too wild to be included directly upstream into Paper.</p>
-<p>This wiki was last updated to Build <a href="https://ci.pl3x.net/job/Purpur/840/">#936</a> (<a href="../commit/c7b279fe1bc55120c2902609d124f2940f74b231"><code>c7b279</code></a>)</p>
+                <p>Purpur adds a few new permission nodes for some of it’s added features.</p>
+<p>By default <strong>all</strong> of these permissions are for OP users only. Any other users will need to be granted the permissions you want them to have using a permissions plugin.</p>
+<ul>
+<li>
+<p><strong>allow.ride.<mob_id></strong></p>
+<ul>
+<li>
+<p>This permission gives the ability to ride a certain mob by shift
+right clicking it. Once mounted you can use WASD to move around, and spacebar to jump or fly. Just replace "<mob_id>" with the mob's Entity ID.</p>
+</li>
+<li>
+<p><strong>examples</strong>:</p>
+<ul>
+<li><code>allow.ride.cow</code></li>
+<li><code>allow.ride.zombie_pigman</code></li>
+<li><code>allow.ride.snow_golem</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>allow.special.<mob_id></strong></p>
+<ul>
+<li>
+<p>This permission gives the ability to activate a ridable mob's
+special ability. Not all mobs have a special ability. Just replace "<mob_id>" with
+the mob's Entity ID.</p>
+</li>
+<li>
+<p><strong>Currently Available Specials</strong></p>
+<ul>
+<li><code>allow.special.creeper</code><ul>
+<li>Ignites when spacebar is pressed</li>
+</ul>
+</li>
+<li><code>allow.special.dolphin</code><ul>
+<li>Spits when spacebar is pressed</li>
+</ul>
+</li>
+<li><code>allow.special.phantom</code><ul>
+<li>Shoots flames when spacebar is pressed</li>
+</ul>
+</li>
+<li><code>allow.special.wither</code><ul>
+<li>Shoots a wither head on mouse click</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>allow.powered.creeper</strong></p>
+<ul>
+<li>This permission gives the ability to toggle a creeper's powered state.
+Hold spacebar while not moving to charge the toggle. Instead of blowing up the powered
+state will toggle on or off.</li>
+</ul>
+</li>
+<li>
+<p><strong>bukkit.command.demo</strong></p>
+<ul>
+<li>Allows the use of the /demo command.</li>
+</ul>
+</li>
+<li>
+<p><strong>purpur.debug.f3n</strong></p>
+<ul>
+<li>Allows the use of the F3+N debug hotkey to swap gamemodes.
+Player must have this perm <em>and</em> the gamemode perm for it to work.</li>
+</ul>
+</li>
+<li>
+<p><strong>purpur.drop.spawners</strong></p>
+<ul>
+<li>Players with this permission can use a diamond pickaxe with silk
+touch enchantment to mine up any spawner cage instead of disappearing.</li>
+</ul>
+</li>
+<li>
+<p><strong>purpur.place.spawners</strong></p>
+<ul>
+<li>Players with this permission can place down a spawner cage and
+have the mob type restored to what it was when it was mined using silk touch.</li>
+</ul>
+</li>
+<li>
+<p><strong>purpur.sign.edit</strong></p>
+<ul>
+<li>Allows players to open the sign editor when right clicking a sign
+while holding a sign.</li>
+</ul>
+</li>
+<li>
+<p><strong>purpur.sign.color</strong></p>
+<ul>
+<li>Allows players to use color codes on signs</li>
+</ul>
+</li>
+<li>
+<p><strong>purpur.sign.style</strong></p>
+<ul>
+<li>Allows players to use style codes on signs (except the magic/obfuscated code)</li>
+</ul>
+</li>
+<li>
+<p><strong>purpur.sign.magic</strong></p>
+<ul>
+<li>Allows players to use the magic/obfuscated style code on signs</li>
+</ul>
+</li>
+<li>
+<p><strong>purpur.anvil.color</strong></p>
+<ul>
+<li>Allows players to use color codes in anvils</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>📝Note</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enderchest row permissions require <a href="https://github.com/pl3xgaming/Purpur/wiki/Configuration#ender_chest"><code>settings.blocks.ender_chest.six-rows</code></a> to be enabled!</td>
+</tr>
+</tbody>
+</table>
                 
               
               
@@ -258,14 +381,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../Configuration/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Configuration
+              </div>
+            </div>
+          </a>
         
-          <a href="Configuration/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../Biomes/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Configuration
+                Biomes
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -292,15 +429,15 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
