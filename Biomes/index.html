@@ -131,6 +131,19 @@
 </div>
     
     
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/granny/purpur.wiki.temp/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    granny/purpur.wiki.temp
+  </div>
+</a>
+      </div>
+    
   </nav>
 </header>
     
@@ -161,6 +174,19 @@
     </a>
     Purpur Wiki
   </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/granny/purpur.wiki.temp/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    granny/purpur.wiki.temp
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -291,6 +317,10 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/granny/purpur.wiki.temp/edit/master/docs/Biomes.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
                 
                   <h1>Biomes</h1>
                 
@@ -298,16 +328,16 @@
 <table>
 <thead>
 <tr>
-<th><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong>Warning</strong></th>
+<th align="center"><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong>Warning</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>This information is for historical archive. Mojang's data driven 1.16.2 replaces biomes.yml</td>
+<td align="center">This information is for historical archive. Mojang's data driven 1.16.2 replaces biomes.yml</td>
 </tr>
 </tbody>
 </table>
-<h3 id="spawn-data">spawn-data</h3>
+<h3 id="spawn-data">spawn-data<a class="headerlink" href="#spawn-data" title="Permanent link">🔗</a></h3>
 <p>Spawn data is a map of key-&gt;value pairs for each entity and it’s natural spawn settings per biome. The value consists of 3 integers representing the weight, minimum group, and maximum group.</p>
 <p>Weight represents the chance the entity has to spawn. It’s not really a percent chance, it’s the number of chances this entity gets in the rng roll. Take the ocean biome, for example. If you add up all the weights for all the entities you get a total of 540. Enderman has a weight of 10 here, so it gets 10/540 chance of winning the rng roll.</p>
 <p>There are still other rules to be met before a mob is spawned. Each entity has their own set of rules, which can be learned by researching the official minecraft wiki or google. But, for example, lets say a water location was chosen to spawn a mob at random and enderman won the rng roll. The enderman will <em>not</em> spawn because it’s in water. This tick the spawn chance gets skipped and nothing spawns. The rng roll happens every tick until the mob cap has been reached, so keep all this in mind when creating your weights.</p>
@@ -315,12 +345,12 @@
 <table>
 <thead>
 <tr>
-<th>📝<strong>Note</strong></th>
+<th align="center">📝<strong>Note</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>The default <code>biomes.yml</code> file matches perfectly with the vanilla gameplay. If you find something not right, please let me know on Discord.</td>
+<td align="center">The default <code>biomes.yml</code> file matches perfectly with the vanilla gameplay. If you find something not right, please let me know on Discord.</td>
 </tr>
 </tbody>
 </table>
