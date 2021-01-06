@@ -34,7 +34,7 @@ Global settings affect all worlds on the server as well as the core server funct
 * **description**: Skips sending relative move packets for entities that didn't really move
 
 | ⚠️**Warning**⚠️ |
-| ----------- |
+| :----------: |
 | The `dont-send-useless-entity-packets` option is highly experimental! Only enable this if you are feeling brave. |
 	
 ## use-alternate-keepalive
@@ -48,7 +48,7 @@ Global settings affect all worlds on the server as well as the core server funct
 * **description**: Control tps catch-up
 
 | 📝**Note** |
-| ----------- |
+| :----------: |
 | TPS catchup makes your server tick faster than 20 TPS after any period of time that below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects |
 	
 ## server-mod-name
@@ -105,7 +105,7 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 <table>
     <thead>
         <tr>
-            <th>📝Note</th>
+            <th style="text-align: center">📝Note</th>
         </tr>
     </thead>
     <tbody>
@@ -1704,7 +1704,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 <table>
     <thead>
         <tr>
-            <th>📝Note</th>
+            <th style="text-align: center">📝Note</th>
         </tr>
     </thead>
     <tbody>
@@ -1740,7 +1740,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 <table>
     <thead>
         <tr>
-            <th>📝Note</th>
+            <th style="text-align: center">📝Note</th>
         </tr>
     </thead>
     <tbody>
@@ -1760,7 +1760,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 </table>
 
 | ⚠️**Warning**⚠️ |
-| ----------- |
+| :----------: |
 | These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing I can do about that from the server side, but I have patched this in my client mod, [PurpurClient](https://ci.pl3x.net/job/PurpurClient/), starting with build #12. |
 
 ### elytra

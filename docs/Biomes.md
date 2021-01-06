@@ -1,7 +1,7 @@
 This page details the biome specific options found in biomes.yml
 
 | :bangbang: **Warning** |
-| ----------- |
+| :----------: |
 | This information is for historical archive. Mojang's data driven 1.16.2 replaces biomes.yml |
 
 ### spawn-data
@@ -14,5 +14,5 @@ There are still other rules to be met before a mob is spawned. Each entity has t
 The minimum and maximum group values are exactly as they sound. It is the number of mobs of this type that will spawn from this attempt.
 
 | 📝**Note** |
-| ----------- |
+| :----------: |
 | The default `biomes.yml` file matches perfectly with the vanilla gameplay. If you find something not right, please let me know on Discord. |
