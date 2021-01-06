@@ -10,25 +10,25 @@ If you want information on settings in paper.yml, spigot.yml, and bukkit.yml you
 
 * [Paper Configuration (paper.yml)](https://paper.readthedocs.io/en/latest/server/configuration.html)
 
-# Global Settings
+## Global Settings
 
 Global settings affect all worlds on the server as well as the core server functionality itself.
 
-## verbose
+### verbose
 
 * **default**: false
 * **description**: Sets whether the server should dump all configuration values to the server log on startup
 	
-## config-version
+### config-version
 
 * **Do not change this for any reason!** This is used internally to help automatically update your config
 	
-## allow-water-placement-in-the-end
+### allow-water-placement-in-the-end
 
 * **default**: true
 * **description**: Allows the placement of water in the end.
 	
-## dont-send-useless-entity-packets
+### dont-send-useless-entity-packets
 
 * **default**: false
 * **description**: Skips sending relative move packets for entities that didn't really move
@@ -37,12 +37,12 @@ Global settings affect all worlds on the server as well as the core server funct
 | :----------: |
 | The `dont-send-useless-entity-packets` option is highly experimental! Only enable this if you are feeling brave. |
 	
-## use-alternate-keepalive
+### use-alternate-keepalive
 
 * **default**: false
 * **description**: Uses a different approach to keepalive ping timeouts. Enabling this sends a keepalive packet once per second to a player, and only kicks for timeout if none of them were responded to in 30 seconds. Responding to any of them in any order will keep the player connected. AKA, it won't kick your players because 1 packet gets dropped somewhere along the lines
 	
-## tps-catchup
+### tps-catchup
 
 * **default**: true
 * **description**: Control tps catch-up
@@ -51,50 +51,50 @@ Global settings affect all worlds on the server as well as the core server funct
 | :----------: |
 | TPS catchup makes your server tick faster than 20 TPS after any period of time that below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects |
 	
-## server-mod-name
+### server-mod-name
 * **default**: Purpur
 * **description**: This modified the server name that shows up when a client is outdated or when someone opens the debug screen [F3]
 	
-## lagging-threshold
+### lagging-threshold
 * **default**: 19.0
 * **description**: Purpur keeps track of when it is lagging in order to have the ability to change behaviors accordingly. This value is that threshold when you want to consider the server to be lagging. Right now this is only used for mob.villager.brain-ticks setting
 	
-## disable-give-dropping
+### disable-give-dropping
 * **default**: false
 * **description**: Set to true to disable the /give command from dropping items on the floor when a player's inventory is full
 	
-## messages
+### messages
 
-### afk-broadcast-away
+#### afk-broadcast-away
 * **default**: §e§o%s is now AFK
 * **description**: This is the message that gets broadcasted when a user goes AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
-### afk-broadcast-back
+#### afk-broadcast-back
 * **default**: §e§o%s is no longer AFK
 * **description**: This is the message that gets broadcasted when a user is no longer AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
-### afk-tab-list-prefix
+#### afk-tab-list-prefix
 * **default**: "[AFK] "
 * **description**: The prefix that shows up on the playerlist behind someone's name when they're AFK
-### afk-tab-list-suffix
+#### afk-tab-list-suffix
 * **default**: ""
 * **description**: The suffix that shows up on the playerlist behind someone's name when they're AFK
-### ping-command-output
+#### ping-command-output
 * **default**: §a%s's ping is %sms
 * **description**: Output when `/ping <user>` is run.
-### cannot-ride-mob
+#### cannot-ride-mob
 * **default**: §cYou cannot mount that mob
 * **description**: Message that shows when someone tries to mount a mob they're not allowed to.
-### demo-command-output
+#### demo-command-output
 Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 * **default**: §a%s has been shown the demo screen
 * **description**: Message that shows when the demo screen is enabled for a user using the `/demo` command.
 	
-## blocks
+### blocks
 
-###  barrel
+####  barrel
 * six-rows
     - **default**: false
     - **description**: Barrels should have 6 rows of inventory space
-###  ender_chest
+####  ender_chest
 * six-rows
     - **default**: false
     - **description**: Ender chests should have 6 rows of inventory space
@@ -123,63 +123,63 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
         </tr>
     </tbody>
 </table>
-### disable-mushroom-updates  
+#### disable-mushroom-updates  
 - **default**: false
 - **description**: Stops the mushroom block from updating it's block state server side
-###  crying_obsidian
+####  crying_obsidian
 * valid-for-portal-frame
     - **default**: false
     - **description**: Set to true to make it so you can create portals out of crying obsidian
 	
-## timings
+### timings
 
-### url
+#### url
 - **default**: "https://timings.pl3x.net"
 - **description**: The server where timing reports are posted to. To use Aikar's timings server use "http://timings.aikar.co"
 	
-## logger
+### logger
 
-### suppress-init-legacy-material-errors
+#### suppress-init-legacy-material-errors
 - **default**: false
 - **description**: Suppress warnings about plugins initializing the legacy material api
-### hex-color-support-in-console
+#### hex-color-support-in-console
 - **default**: true
 - **description**: Adds hex color code support for console logging
-### suppress-ignored-advancement-warnings
+#### suppress-ignored-advancement-warnings
 - **default**: false
 - **description**: Suppress warnings about unknown attributes in console and logs
 	
-## seed
+### seed
 
-### end-spike
+#### end-spike
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-### dungeon
+#### dungeon
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
 	
-## entity
+### entity
 
-### enderman
+#### enderman
 * short-height
     - **default**: false
     - **description**: allows endermen to fit into 2 block tall spaces if enabled. Since client hitbox remains the same, you can still hit them in the head
 	
-## enchantment
+### enchantment
 
 * allow-infinity-and-mending-together
     - **default**: false
     - **description**: allows the mending and infinity enchantment to be on the same weapon/tool
 	
 
-# World Settings
+## World Settings
 
 World settings are on a per-world basis. The child-node <code>default</code> is used for all worlds that do not have their own specific settings
 
-## blocks
+### blocks
 
 
-### turtle_egg
+#### turtle_egg
 * break-from-exp-orbs
     - **default**: true
     - **description**: Allow exp orbs to damage/break turtle eggs
@@ -189,11 +189,11 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * break-from-minecarts
     - **default**: true
     - **description**: Allow minecarts to damage/break turtle eggs
-### dispenser
+#### dispenser
 * apply-cursed-to-armor-slots
     - **default**: true
     - **description**: Should dispensers apply armor to armor slots if enchanted with curse of binding
-### respawn_anchor
+#### respawn_anchor
 * explode
     - **default**: true
     - **description**: Whether respawn anchors explode. Setting this to false just makes the respawn anchors blip out of existence
@@ -206,14 +206,14 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * explosion-effect
     - **default**: DESTROY
     - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
-### sign
+#### sign
 * allow-colors
     - **default**: false
     - **description**: Allow players to use color codes on signs
 * right-click-edit
     - **default**: false
     - **description**: Ability to edit signs by right clicking them with another sign in hand
-### lava
+#### lava
 * infinite-source
     - **default**: false
     - **description**: Allow lava to take on infinite supply properties similar to water (&lt;infinite-required-sources&gt; source blocks flowing together creates a new source block)
@@ -228,7 +228,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * not-nether
         - **default**: 30
         - **description**: Delay in ticks between physics/flowing (lower is faster)
-### bed
+#### bed
 * explode
     - **default**: true
     - **description**: Whether beds explode. Setting this to false just makes the bed blip out of existence
@@ -241,62 +241,62 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * explosion-effect
     - **default**: DESTROY
     - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
-### farmland
+#### farmland
 * get-moist-from-below
     - **default**: false
     - **description**: Allow soil to moisten from water directly below it
 * use-alpha-farmland
     - **default**: false
     - **description**: Stops the farmland from getting trampled if a fence or a cobble wall is placed directly underneath it
-### spawner
+#### spawner
 * deactivate-by-redstone
     - **default**: false
     - **description**: Allow spawners to be deactivated by redstone
-### dispenser
+#### dispenser
 * place-anvils
     - **default**: false
     - **description**: Allows anvils to be placed by dispensers
-### anvil
+#### anvil
 * allow-colors
     - **default**: false
     - **description**: Allows players to use color codes in anvils
-### stonecutter
+#### stonecutter
 * damage
     - **default**: 0.0
     - **description**: If a value is set, Mobs will also avoid walking over the stonecutter. 
-### no-tick
+#### no-tick
 * **default**: []
 * **description**: List of blocks that will not tick
-### furnace
+#### furnace
 * infinite-fuel
     - **default**: false
     - **description**: Allows the furnace to be infinitely powered by lava placed underneath it
-### chest
+#### chest
 * open-with-solid-block-on-top
     - **default**: false
     - **description**: Allows for chests to open even with a solid block on top
-### twisting_vines
+#### twisting_vines
 * growth-modifier
     - **default**: 0.10
     - **description**: Changes the rate of growth of the vine
 * max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
-### weeping_vines
+#### weeping_vines
 * growth-modifier
     - **default**: 0.10
     - **description**: Changes the rate of growth of the vine
 * max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
-### kelp
+#### kelp
 * max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
 	
-## mobs
+### mobs
 
-### ender_dragon
+#### ender_dragon
 * always-drop-egg-block
     - **default**: false
     - **description**: When true all valid ender dragon deaths will place an ender egg block on top of the portal
@@ -307,7 +307,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 200.0
         - **description**: Max health attribute
-### cave_spider
+#### cave_spider
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -318,7 +318,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 12.0
         - **description**: Max health attribute
-### endermite
+#### endermite
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -329,7 +329,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 8.0
         - **description**: Max health attribute
-### mooshroom
+#### mooshroom
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -343,7 +343,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### polar_bear
+#### polar_bear
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -360,7 +360,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 30.0
         - **description**: Max health attribute
-### vindicator
+#### vindicator
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -375,7 +375,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 24.0
         - **description**: Max health attribute
-### zombie_horse
+#### zombie_horse
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -407,7 +407,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
         * max
             - **default**: 0.2
             - **description**: Max movement_speed attribute
-### wither
+#### wither
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -427,7 +427,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 300.0
         - **description**: Max health attribute
-### wither_skeleton
+#### wither_skeleton
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -441,7 +441,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 20.0
         - **description**: Max health attribute
-### zombie_villager
+#### zombie_villager
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -465,7 +465,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-### wandering_trader
+#### wandering_trader
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -482,7 +482,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 20.0
         - **description**: Max health attribute
-### silverfish
+#### silverfish
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -493,7 +493,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * max_health
         - **default**: 8.0
         - **description**: Max health attribute
-### zombified_piglin
+#### zombified_piglin
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -520,7 +520,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * spawn_reinforcements
         - **default**: 0.0
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-### snow_golem
+#### snow_golem
 The formula used to determine the amount of ticks between shots is:
     `((sqrt(distanceToTarget) / attack-distance) / snow-ball-modifier) * (max-shoot-interval-ticks - min-shoot-interval-ticks) + min-shoot-interval-ticks`
 
@@ -557,7 +557,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 4.0
         - **description**: Max health attribute
-### skeleton_horse
+#### skeleton_horse
 * can-swim
     - **default**: false
     - **description**: Can skeleton horses swim in water. False makes them sink to the bottom (vanilla default)
@@ -586,7 +586,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
         * max
             - **default**: 0.2
             - **description**: Max movement_speed attribute
-### phantom
+#### phantom
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -658,7 +658,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 20.0
         - **description**: Max health attribute
-### chicken
+#### chicken
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -675,7 +675,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 4.0
         - **description**: Max health attribute
-### creeper
+#### creeper
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -692,7 +692,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### donkey
+#### donkey
 * ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -721,7 +721,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
-### cow
+#### cow
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -738,7 +738,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### enderman
+#### enderman
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -755,7 +755,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 40.0
         - **description**: Max health attribute
-### evoker
+#### evoker
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -766,7 +766,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 24.0
         - **description**: Max health attribute
-### drowned
+#### drowned
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -790,7 +790,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-### pillager
+#### pillager
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -801,7 +801,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 24.0
         - **description**: Max health attribute
-### fox
+#### fox
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -818,7 +818,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### giant
+#### giant
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -847,7 +847,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 100.0
         - **description**: Max health attribute
-### hoglin
+#### hoglin
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -861,7 +861,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 40.0
         - **description**: Max health attribute
-### squid
+#### squid
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -878,7 +878,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### villager
+#### villager
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -927,7 +927,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 20.0
         - **description**: Max health attribute
-### mule
+#### mule
 * ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -956,7 +956,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
-### wolf
+#### wolf
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -976,7 +976,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 8.0
         - **description**: Max health attribute
-### zoglin
+#### zoglin
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -987,7 +987,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 40.0
         - **description**: Max health attribute
-### ocelot
+#### ocelot
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1001,7 +1001,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### shulker
+#### shulker
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1012,7 +1012,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 30.0
         - **description**: Max health attribute
-### horse
+#### horse
 * ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1041,7 +1041,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
         * max
             - **default**: 0.3375
             - **description**: Max movement speed attribute
-### piglin
+#### piglin
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1052,7 +1052,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 16.0
         - **description**: Max health attribute
-### piglin_brute
+#### piglin_brute
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1063,7 +1063,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 50.0
         - **description**: Max health attribute
-### skeleton
+#### skeleton
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1074,7 +1074,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 8.0
         - **description**: Max health attribute
-### stray
+#### stray
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1085,7 +1085,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 20.0
         - **description**: Max health attribute
-### panda
+#### panda
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1099,7 +1099,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 20.0
         - **description**: Max health attribute
-### strider
+#### strider
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1116,7 +1116,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 20.0
         - **description**: Max health attribute
-### rabbit
+#### rabbit
 * spawn-killer-rabbit-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0-1.0) the killer rabbit naturally spawns
@@ -1130,7 +1130,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 3.0
         - **description**: Max health attribute
-### husk
+#### husk
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1154,7 +1154,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-### spider
+#### spider
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1165,7 +1165,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 16.0
         - **description**: Max health attribute
-### sheep
+#### sheep
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1179,7 +1179,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 8.0
         - **description**: Max health attribute
-### ravager
+#### ravager
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1190,7 +1190,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 100.0
         - **description**: Max health attribute
-### pig
+#### pig
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1207,7 +1207,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### witch
+#### witch
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1218,7 +1218,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 26.0
         - **description**: Max health attribute
-### zombie
+#### zombie
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1245,7 +1245,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-### dolphin
+#### dolphin
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1266,7 +1266,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### bat
+#### bat
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1280,7 +1280,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 6.0
         - **description**: Max health attribute
-### bee
+#### bee
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1297,7 +1297,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### blaze
+#### blaze
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1311,7 +1311,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 20.0
         - **description**: Max health attribute
-### cat
+#### cat
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1335,7 +1335,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### cod
+#### cod
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1343,7 +1343,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 3.0
         - **description**: Max health attribute
-### elder_guardian
+#### elder_guardian
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1351,7 +1351,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 80.0
         - **description**: Max health attribute
-### ghast
+#### ghast
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1365,7 +1365,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 10.0
         - **description**: Max health attribute
-### guardian
+#### guardian
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1373,7 +1373,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 30.0
         - **description**: Max health attribute
-### illusioner
+#### illusioner
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1393,7 +1393,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 32.0
         - **description**: Max health attribute
-### iron_golem
+#### iron_golem
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1410,7 +1410,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 100.0
         - **description**: Max health attribute
-### llama
+#### llama
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable. Llama's must be tamed and saddled (with carpet) to be WASD controllable.
@@ -1442,7 +1442,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
-### trader_llama
+#### trader_llama
 * ridable
     - **default**: false
     - **description**: Makes this mob mountable and WASD controllable. Trader llama's must be tamed to be WASD controllable. Being saddled (carpet) is not a requirement since it technically always has a carpet.
@@ -1471,7 +1471,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
-### magma_cube
+#### magma_cube
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1482,7 +1482,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: "size * size"
         - **description**: The Max health equation used to calculate the max health
-### parrot
+#### parrot
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1496,7 +1496,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 6.0
         - **description**: Max health attribute
-### pufferfish
+#### pufferfish
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1504,7 +1504,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 3.0
         - **description**: Max health attribute
-### salmon
+#### salmon
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1512,7 +1512,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 3.0
         - **description**: Max health attribute
-### slime
+#### slime
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1523,7 +1523,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: "size * size"
         - **description**: The Max health equation used to calculate the max health
-### tropical_fish
+#### tropical_fish
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1531,7 +1531,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 3.0
         - **description**: Max health attribute
-### turtle
+#### turtle
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1545,7 +1545,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     * max_health
         - **default**: 30.0
         - **description**: Max health attribute
-### vex
+#### vex
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
@@ -1560,36 +1560,36 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
         - **default**: 14.0
         - **description**: Max health attribute
 	
-## gameplay-mechanics
+### gameplay-mechanics
 
-### use-better-mending
+#### use-better-mending
 - **default**: false
 - **description**: Set to true for mending enchantment to always repair the most damaged equipment first
-### disable-drops-on-cramming-death
+#### disable-drops-on-cramming-death
 - **default**: false
 - **description**: Stops entities from dropping loot on death, if killed by cramming gamerule
-### totem-of-undying-works-in-inventory
+#### totem-of-undying-works-in-inventory
 - **default**: false
 - **description**: Allows the totem of undying to work in your inventory, not just your offhand
-### entities-pick-up-loot-bypass-mob-griefing
+#### entities-pick-up-loot-bypass-mob-griefing
 - **default**: false
 - **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
-### fix-climbing-bypassing-cramming-rule
+#### fix-climbing-bypassing-cramming-rule
 - **default**: false
 - **description**: Stops entities from bypassing the cramming gamerule by climbing
-### milk-cures-bad-omen
+#### milk-cures-bad-omen
 - **default**: true
 - **description**: Allow players to drink milk to cure bad omen status effect
-### trident-loyalty-void-return-height
+#### trident-loyalty-void-return-height
 - **default**: 0.0
 - **description**: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.
-### void-damage-height
+#### void-damage-height
 - **default**: -64.0
 - **description**: Lower limit where void damage starts to happen
-### entity-lifespan
+#### entity-lifespan
 - **default**: 0
 - **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
-### silk-touch
+#### silk-touch
 
 Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Permissions))
 
@@ -1605,14 +1605,14 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * spawner-lore
     * **default**: <table><tr><td>- Spawns a {mob} <br></td></tr></table>
     * **description**: The lore of the spawner
-### boat
+#### boat
 * eject-players-on-land
     - **default**: false
     - **description**: Boats should eject players when on land
 * do-fall-damage
     - **default**: true
     - **description**: Set to false for boats to not do fall damage to players
-### armorstand
+#### armorstand
 * step-height
     - **default**: 0.0
     - **description**: Set the default step height of armorstands. Useful for plugins that utilize armorstands as vehicles to be able to drive over blocks without jumping, etc
@@ -1622,7 +1622,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * fix-nametags
     - **default**: false
     - **description**: Makes the name visible when using a Name Tag on an Armor Stand
-### player
+#### player
 * spawn-invulnerable-ticks
     * **default**: 60
     * **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
@@ -1668,7 +1668,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * show-icon
         - **default**: true
         - **description**: Set to false for the fire resistance effect to not display it's icon
-### controllable-minecarts
+#### controllable-minecarts
 * enabled
     - **default**: false
     - **description**: Whether minecarts can be controlled with WASD when not on rails
@@ -1726,7 +1726,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * fall-damage
     - **default**: true
     - **description**: Set to true to give fall damage to the player while in a minecart
-### item
+#### item
 
 * immune
     * explosion
@@ -1763,7 +1763,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 | :----------: |
 | These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing I can do about that from the server side, but I have patched this in my client mod, [PurpurClient](https://ci.pl3x.net/job/PurpurClient/), starting with build #12. |
 
-### elytra
+#### elytra
 * damage-per-second
     - **default**: 1
     - **description**: How much damage an elytra takes during flight each second
@@ -1784,7 +1784,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * trident
         - **default**: 0
         - **description**: How much damage to deal to the elytra when trident riptide boost activates
-### mob-spawning
+#### mob-spawning
 * village-cats
     - **default**: default
     - **description**: Set to true to spawn in the world that this option is a part of
@@ -1800,10 +1800,10 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * village-sieges
     - **default**: default
     - **description**: Set to true to spawn in the world that this option is a part of
-### raid-cooldown-seconds
+#### raid-cooldown-seconds
 - **default**: 0
 - **description**: How long you should wait before another raid can be initiated
-### projectile-despawn-rates
+#### projectile-despawn-rates
 * dragon_fireball
     - **default**: -1
     - **description**: The rate at which the projectile despawns. -1 means disabled
@@ -1843,16 +1843,16 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * wither_skull
     - **default**: -1
     - **description**: The rate at which the projectile despawns. -1 means disabled
-### entities-can-use-portals
+#### entities-can-use-portals
 - **default**: true
 - **description**: Set to false to stop entities from being able to use portals
-### persistent-tileentity-display-names-and-lore
+#### persistent-tileentity-display-names-and-lore
 - **default**: false
 - **description**: Set to true to make TE's display names and lores persist after breaking (ex. named custom player heads retain their name)
-### persistent-droppable-entity-display-names
+#### persistent-droppable-entity-display-names
 - **default**: false
 - **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
-### infinity-bow
+#### infinity-bow
 * normal-arrows
     - **default**: true
     - **description**: Set to true to make the Infinity enchantment work on this arrow type
@@ -1862,33 +1862,33 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * tipped-arrows
     - **default**: false
     - **description**: Set to true to make the Infinity enchantment work on this arrow type
-### daylight-cycle-ticks
+#### daylight-cycle-ticks
 * daytime
     - **default**: 12000
     - **description**: Set how long the daylight cycle is ticked
 * nighttime
     - **default**: 12000
     - **description**: Set how long the nighttime cycle is ticked
-### animal-breeding-cooldown-seconds
+#### animal-breeding-cooldown-seconds
 - **default**: 0
 - **description**: Adds a cooldown to breeding animals per animal type
-### projectile-damage
+#### projectile-damage
 * snowball
     - **default**: -1
     - **description**: Set how much damage a snowball does (-1 will make damage be 3 for blazes & 0 for all other entities which is default)
-### entity-left-handed-chance
+#### entity-left-handed-chance
 - **default**: 0.05
 - **description**: Percent chance (0.0 - 1.0) an entity will spawn left-handed
 	
-## ridable-settings
+### ridable-settings
 
-### babies-are-ridable
+#### babies-are-ridable
 - **default**: true
 - **description**: Set to false to stop babies from being ridable
-### untamed-tamables-are-ridable
+#### untamed-tamables-are-ridable
 - **default**: true
 - **description**: Set to false to stop untamed tamables from being ridable
-### use-night-vision
+#### use-night-vision
 - **default**: false
 - **description**: Set to true to give night vision to riders while on a ridable
 	
