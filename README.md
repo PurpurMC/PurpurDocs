@@ -1,6 +1,6 @@
-# purpur.wiki.temp
+# PurpurDocs
 
-This is a demo of the purpur documentation using [Mkdocs](https://github.com/mkdocs/mkdocs) to generate a static site hosted on https://granny.github.io/purpur.wiki.temp/
+This is the documentation for Purpur that uses [Mkdocs](https://github.com/mkdocs/mkdocs) to generate a static site hosted on https://purpur.pl3x.net/docs
 
 ## Building and setting up
 
@@ -25,7 +25,7 @@ $ pip install mkdocs-material-extensions
 
 If you'd like to preview your changes to the wiki then go into the `docs` directory and run `mkdocs serve`. This will start a dev-server that will preview the documentation and auto reload as you make changes to the documentation. More info is shown here: https://www.mkdocs.org/#getting-started
 ```
-$ git clone https://github.com/granny/purpur.wiki.temp.git
-$ cd docs
+$ git clone https://github.com/pl3xgaming/PurpurDocs.git
+$ cd PurpurDocs
 $ mkdocs serve
 ```
