@@ -1826,6 +1826,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * trident
         - **default**: 0
         - **description**: How much damage to deal to the elytra when trident riptide boost activates
+
 #### mob-spawning
 * village-cats
     - **default**: default
@@ -1842,9 +1843,11 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * village-sieges
     - **default**: default
     - **description**: Set to true to spawn in the world that this option is a part of
+
 #### raid-cooldown-seconds
 - **default**: 0
 - **description**: How long you should wait before another raid can be initiated
+
 #### projectile-despawn-rates
 * dragon_fireball
     - **default**: -1
@@ -1885,15 +1888,19 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * wither_skull
     - **default**: -1
     - **description**: The rate at which the projectile despawns. -1 means disabled
+
 #### entities-can-use-portals
 - **default**: true
 - **description**: Set to false to stop entities from being able to use portals
+
 #### persistent-tileentity-display-names-and-lore
 - **default**: false
 - **description**: Set to true to make TE's display names and lores persist after breaking (ex. named custom player heads retain their name)
+
 #### persistent-droppable-entity-display-names
 - **default**: false
 - **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
+
 #### infinity-bow
 * normal-arrows
     - **default**: true
@@ -1904,6 +1911,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * tipped-arrows
     - **default**: false
     - **description**: Set to true to make the Infinity enchantment work on this arrow type
+
 #### daylight-cycle-ticks
 * daytime
     - **default**: 12000
@@ -1911,19 +1919,24 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * nighttime
     - **default**: 12000
     - **description**: Set how long the nighttime cycle is ticked
+
 #### animal-breeding-cooldown-seconds
 - **default**: 0
 - **description**: Adds a cooldown to breeding animals per animal type
+
 #### projectile-damage
 * snowball
     - **default**: -1
     - **description**: Set how much damage a snowball does (-1 will make damage be 3 for blazes & 0 for all other entities which is default)
+
 #### entity-left-handed-chance
 - **default**: 0.05
 - **description**: Percent chance (0.0 - 1.0) an entity will spawn left-handed
+
 #### fireballs-bypass-mob-griefing
 - **default**: false
 - **description**: Set to true for fireballs to bypass the mob griefing gamerule
+
 #### note-block-ignore-above
 - **default**: false
 - **description**: Set to true for note blocks to continue making sound even if there is a block above it
