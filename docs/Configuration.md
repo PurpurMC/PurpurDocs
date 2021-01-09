@@ -1,7 +1,5 @@
 This page details the various configuration settings exposed by Purpur in the purpur.yml file.
 
-If you are looking for details on biome specific settings, check out [biomes.yml](biomes).
-
 If you want information on settings in paper.yml, spigot.yml, and bukkit.yml you should see their respective documentation pages.
 
 * [Bukkit Configuration (bukkit.yml)](https://bukkit.gamepedia.com/Bukkit.yml)
