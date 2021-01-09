@@ -1,4 +1,4 @@
-<img src="images/purpur.png" alt="Purpur header" width="1000">
+<a href="https://purpur.pl3x.net"><img src="images/purpur.png" alt="Purpur header" width="1000"></a>
 
 ***
 **Note: This documentation is a work in progress. Some information could still be missing or outdated.**
