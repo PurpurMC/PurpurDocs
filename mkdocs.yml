@@ -23,3 +23,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: http://purpur.pl3x.net/discord
+      name: Purpur Discord Server
