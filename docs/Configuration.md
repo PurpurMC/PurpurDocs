@@ -189,6 +189,9 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * break-from-minecarts
     - **default**: true
     - **description**: Allow minecarts to damage/break turtle eggs
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for turtle eggs to bypass the mob griefing gamerule
 #### dispenser
 * apply-cursed-to-armor-slots
     - **default**: true
@@ -248,6 +251,9 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * use-alpha-farmland
     - **default**: false
     - **description**: Stops the farmland from getting trampled if a fence or a cobble wall is placed directly underneath it
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for farmland to bypass the mob griefing gamerule
 #### spawner
 * deactivate-by-redstone
     - **default**: false
@@ -303,6 +309,9 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * always-drop-full-exp
     - **default**: false
     - **description**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for the ender dragon to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 200.0
@@ -423,6 +432,9 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * health-regen-delay
     - **default**: 20
     - **description**: How long to delay the health regen
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for withers to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 300.0
@@ -489,6 +501,9 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for silverfish to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 8.0
@@ -553,6 +568,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * attack-distance
     - **default**: 1.25
     - **description**: Control if pumpkins can be placed back onto snowmen
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for snow golems to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 4.0
@@ -751,6 +769,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * can-despawn-with-held-block
     - **default**: false
     - **description**: Makes the enderman despawn even if it's holding a block
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for enderman to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 40.0
@@ -762,6 +783,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for evokers to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 24.0
@@ -797,6 +821,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for pillagers to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 24.0
@@ -814,6 +841,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for foxes to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 10.0
@@ -1126,6 +1156,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for rabbits to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 3.0
@@ -1175,6 +1208,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for sheep to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 8.0
@@ -1186,6 +1222,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for ravagers to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 100.0
@@ -1238,6 +1277,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * aggressive-towards-villager-when-lagging
     - **default**: true
     - **description**: disable to stop zombie aggressiveness towards villagers when lagging
+* bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for zombies to bypass the mob griefing gamerule
 * attributes
     * max_health
         - **default**: 20.0
@@ -1879,6 +1921,12 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 #### entity-left-handed-chance
 - **default**: 0.05
 - **description**: Percent chance (0.0 - 1.0) an entity will spawn left-handed
+#### fireballs-bypass-mob-griefing
+- **default**: false
+- **description**: Set to true for fireballs to bypass the mob griefing gamerule
+#### note-block-ignore-above
+- **default**: false
+- **description**: Set to true for note blocks to continue making sound even if there is a block above it
 	
 ### ridable-settings
 
