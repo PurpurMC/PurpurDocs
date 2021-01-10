@@ -1,13 +1,6 @@
 site_name: Purpur Wiki
-# Project information
-site_name: Purpur Wiki
-site_url: https://pl3xgaming.github.io/PurpurDocs/
-site_author: granny
-site_description: >-
-  The official documentation for Purpur.
-  Purpur is a fork of Paper and Tuinity with the goal of providing new and interesting configuration options, which allow for creating a unique gameplay experience not seen anywhere else.
-
-  This wiki was last updated to Build [#945](https://ci.pl3x.net/job/Purpur/945/) ([dd65bd1](https://github.com/pl3xgaming/Purpur/commit/dd65bd110910340703368db9ea3fea5887a2309a))
+plugins:
+  - macros
 nav:
     - Home: index.md
     - Configuration: Configuration.md
