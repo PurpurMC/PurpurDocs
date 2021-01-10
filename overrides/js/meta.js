@@ -6,31 +6,31 @@ const metaTags = [
     [{attribute: 'property', value: 'og:image'}, {attribute: 'content', value: 'https://pl3xgaming.github.io/PurpurDocs/images/purpur-small.png'}],
 ];
 
-function loadMeta() {
-    if (location.pathname.includes('Configuration') && location.hash) {
-        const configName = location.hash.slice(1);
-        const descElement = document.getElementById(configName);
+document.onreadystatechange = function(){
+    if (document.readyState == 'complete'){
+        if (location.pathname.includes('Configuration') && location.hash) {
+            const configName = location.hash.slice(1);
+            const descElement = document.getElementById(configName);
 
-        if (descElement && descElement.nextElementSibling) {
-            // meta[title][content].value
-            metaTags[1][1].value = configName;
-            
-            // meta[description][content].value
-            metaTags[2][1].value = descElement.nextElementSibling.innerText;
+            if (descElement && descElement.nextElementSibling) {
+                // meta[title][content].value
+                metaTags[1][1].value = configName;
+                
+                // meta[description][content].value
+                metaTags[2][1].value = descElement.nextElementSibling.innerText;
+            }
         }
-    }
-    
-    const metaElements = [];
-    
-    metaTags.forEach(tag => {
-        const element = document.createElement('meta');
-        tag.forEach(val => {
-            element.setAttribute(val.attribute, val.value);
+        
+        const metaElements = [];
+        
+        metaTags.forEach(tag => {
+            const element = document.createElement('meta');
+            tag.forEach(val => {
+                element.setAttribute(val.attribute, val.value);
+            });
+            return metaElements.push(element);
         });
-        return metaElements.push(element);
-    });
-
-    document.head.append(...metaElements);
-}
-
-window.onload = loadMeta;
+        
+        document.head.append(...metaElements);
+    }
+};
