@@ -7,7 +7,7 @@ const metaTags = [
 ];
 
 document.onreadystatechange = function(){
-    if (document.readyState == 'complete'){
+    if (document.readyState == 'interactive'){
         if (location.pathname.includes('Configuration') && location.hash) {
             const configName = location.hash.slice(1);
             const descElement = document.getElementById(configName);
