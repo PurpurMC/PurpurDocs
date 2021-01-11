@@ -256,6 +256,12 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for farmland to bypass the mob griefing gamerule
+* only-players-trample
+    - **default**: false
+    - **description**: Set to true if only players may trample farmland.
+* feather-fall-distance-affects-trampling
+    - **default**: false
+    - **description**: Set to true if entities can stop trampling if they fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
 #### spawner
 * deactivate-by-redstone
     - **default**: false
@@ -1666,6 +1672,15 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * fix-nametags
     - **default**: false
     - **description**: Makes the name visible when using a Name Tag on an Armor Stand
+* can-movement-tick
+    - **default**: true
+    - **description**: Set to false to disallow armorstands from moving
+* can-move-in-water
+    - **default**: true
+    - **description**: Set to false to disallow armorstands from moving in water
+* can-move-in-water-over-fence
+    - **default**: true
+    - **description**: Set to false to disallow armorstands from moving in water over a fence
 #### player
 * spawn-invulnerable-ticks
     * **default**: 60
@@ -1942,6 +1957,10 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 #### note-block-ignore-above
 - **default**: false
 - **description**: Set to true for note blocks to continue making sound even if there is a block above it
+
+#### impose-teleport-restrictions-on-gateways
+- **default**: false
+- **description**: Set to true to impose teleport restrictions on gateways. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
 	
 ### ridable-settings
 
