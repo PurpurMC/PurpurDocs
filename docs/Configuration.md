@@ -9,7 +9,7 @@ If you want information on settings in paper.yml, spigot.yml, and bukkit.yml you
 * [Paper Configuration (paper.yml)](https://paper.readthedocs.io/en/latest/server/configuration.html)
 
 | ⚠️**Warning**⚠️ |
-| ----------- |
+| :----------: |
 | Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpur.pl3x.net/discord/) server. |
 
 ## Global Settings
