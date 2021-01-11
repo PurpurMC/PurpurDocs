@@ -37,7 +37,7 @@ Global settings affect all worlds on the server as well as the core server funct
 
 | ⚠️**Warning**⚠️ |
 | :----------: |
-| The `dont-send-useless-entity-packets` option is highly experimental! Only enable this if you are feeling brave. |
+| The `dont-send-useless-entity-packets` option is known to cause issues with certain plugins installed, notably `Tab` and `Companions`. |
 	
 ### use-alternate-keepalive
 
