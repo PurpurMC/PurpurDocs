@@ -1688,6 +1688,9 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * invulnerable-while-accepting-resource-pack
     * **default**: false
     * **description**: Sets the player as invulnerable while they download the resource pack.
+* fix-stuck-in-portal
+    * **default**: false
+    * **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
 * idle-timeout
     * kick-if-idle
         - **default**: true
@@ -1791,10 +1794,12 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * explosion
         - **default**: []
         - **description**: List of items that are immune to explosions
-
     * fire
         - **default**: []
         - **description**: List of items that are immune to fire
+    * cactus
+        - **default**: []
+        - **description**: List of items that are immune to cactus
 
 <table>
     <thead>
