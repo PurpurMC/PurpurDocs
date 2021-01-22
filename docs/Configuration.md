@@ -545,10 +545,12 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 #### snow_golem
 The formula used to determine the amount of ticks between shots is:
-    `((sqrt(distanceToTarget) / attack-distance) / snow-ball-modifier) * (max-shoot-interval-ticks - min-shoot-interval-ticks) + min-shoot-interval-ticks`
-
+```
+((sqrt(distanceToTarget) / attack-distance) / snow-ball-modifier) * (max-shoot-interval-ticks - min-shoot-interval-ticks) + min-shoot-interval-ticks
+```
 If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 0, snow golems won't shoot any snowballs.
+
 * ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
