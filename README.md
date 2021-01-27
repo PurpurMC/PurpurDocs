@@ -1,31 +1,121 @@
 # PurpurDocs
 
-This is the documentation for Purpur that uses [Mkdocs](https://github.com/mkdocs/mkdocs) to generate a static site hosted on https://purpur.pl3x.net/docs
+This is the documentation for Purpur that uses [Mkdocs](https://github.com/mkdocs/mkdocs) to generate a static site hosted on https://purpur.pl3x.net/docs. Included is a python script that compares the diff of two commit hashes and outputs the config/permission additions/removals into a YAML file.
 
-## Setup
+## Building
 
-#### Requirements
-
-1. You must have `mkdocs` version 1.1.2 or greater installed on your system. Follow the installation guide here: https://www.mkdocs.org/#installation. I personally recommend installing it through python's package manager `pip`. 
+[Create and activate a Python 3 virtual environment](https://docs.python.org/3/tutorial/venv.html)
 ```sh
-$ pip install mkdocs
+$ pip install --user virtualenv
+$ virtualenv env
+$ source env/bin/activate
 ```
 
-2. You must have `mkdocs-material` version 6.2.3 or greater installed on your system. Follow the installation guide here: https://squidfunk.github.io/mkdocs-material/getting-started/#installation. `pip` is required to install the mkdocs theme.
+Install the required packages
 ```sh
-$ pip install mkdocs-material
-```
-
-3. You must have `mkdocs-material-extensions` version 1.0.1 or greater installed on your system. Follow the installation guide here: https://squidfunk.github.io/mkdocs-material/getting-started/#installation. `pip` is required to install the mkdocs theme extension.
-```sh
-$ pip install mkdocs-material-extensions
+pip install -r requirements.txt
 ```
 
 #### Preview changes
 
-To preview your changes to the documentation, run `mkdocs serve`. This will start a dev-server that will preview the documentation and auto reload as you make changes. More info is shown here: https://www.mkdocs.org/#getting-started
+To preview your changes to the documentation, run `mkdocs serve`. This will start a web server that will preview the documentation and recompile it as you make changes. More info is shown here: https://www.mkdocs.org/#getting-started
 ```sh
-$ git clone https://github.com/pl3xgaming/PurpurDocs.git
-$ cd PurpurDocs
 $ mkdocs serve
+```
+
+### Compare commits for config/permission additions/removals
+
+Run the `compare-commits.sh` script to compare between Purpur commits and generate a file of config option/permission additions/removals. 
+
+You can also add two commit hashes as command line arguments and it will skip the interactive aspect of the script.
+
+```sh
+$ ./compare-commits.sh 885092 22b876
+```
+
+```yml
+# logs/885092..22b876.yml
+
+config:
+  additions:
+  - gameplay-mechanics.item.immune.cactus
+  - gameplay-mechanics.player.fix-stuck-in-portal
+  removals:
+  - projectile-load-save-per-chunk-limit
+permission:
+  additions: []
+  removals: []
+```
+
+
+Including only one hash will compare it to the latest commit of the branch specified (which is `ver/1.16.5` at the time of writing).
+
+```sh
+$ ./compare-commits.sh 885092
+```
+
+```yml
+# logs/885092..ver|1.16.5.yml
+
+config:
+  additions:
+  - gameplay-mechanics.item.immune.cactus
+  - gameplay-mechanics.player.fix-stuck-in-portal
+  removals:
+  - projectile-load-save-per-chunk-limit
+permission:
+  additions: []
+  removals: []
+```
+
+Running the script with the option `--no-commits` or `-nc` will create a `last_commit` file that includes the most recent commit at runtime. Running it again will make it use the hash located in `last_commit` as the first commit hash, replacing it with the most recent commit after generating the file.
+
+```sh
+# First time running it
+$ ./compare-commits.sh -nc
+```
+
+```yml
+# logs/885092..ver|1.16.5.yml
+
+config:
+  additions:
+  - gameplay-mechanics.item.immune.cactus
+  - gameplay-mechanics.player.fix-stuck-in-portal
+  removals:
+  - projectile-load-save-per-chunk-limit
+permission:
+  additions: []
+  removals: []
+```
+
+```yml
+# Creates a last_commit file
+885092
+```
+
+
+
+```sh
+# Running it again after new commits are pushed to Purpur
+$ ./compare-commits.sh -nc
+```
+
+```yml
+# logs/885092..22b876.yml
+
+config:
+  additions:
+  - gameplay-mechanics.item.immune.cactus
+  - gameplay-mechanics.player.fix-stuck-in-portal
+  removals:
+  - projectile-load-save-per-chunk-limit
+permission:
+  additions: []
+  removals: []
+```
+
+```yml
+# Modifies the last_commit file
+22b876
 ```

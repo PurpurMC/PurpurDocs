@@ -1,1 +1,5 @@
 site/
+last_commit
+logs/
+env/
+.vscode/
