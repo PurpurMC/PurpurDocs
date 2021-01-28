@@ -38,10 +38,10 @@ $ ./compare-commits.sh 885092 22b876
 
 config:
   additions:
-  - gameplay-mechanics.item.immune.cactus
-  - gameplay-mechanics.player.fix-stuck-in-portal
+  - gameplay-mechanics.item.immune.cactus: new ArrayList<>()
+  - gameplay-mechanics.player.fix-stuck-in-portal: 'false'
   removals:
-  - projectile-load-save-per-chunk-limit
+  - projectile-load-save-per-chunk-limit: '-1'
 permission:
   additions: []
   removals: []
@@ -59,10 +59,10 @@ $ ./compare-commits.sh 885092
 
 config:
   additions:
-  - gameplay-mechanics.item.immune.cactus
-  - gameplay-mechanics.player.fix-stuck-in-portal
+  - gameplay-mechanics.item.immune.cactus: new ArrayList<>()
+  - gameplay-mechanics.player.fix-stuck-in-portal: 'false'
   removals:
-  - projectile-load-save-per-chunk-limit
+  - projectile-load-save-per-chunk-limit: '-1'
 permission:
   additions: []
   removals: []
@@ -80,10 +80,10 @@ $ ./compare-commits.sh -nc
 
 config:
   additions:
-  - gameplay-mechanics.item.immune.cactus
-  - gameplay-mechanics.player.fix-stuck-in-portal
+  - gameplay-mechanics.item.immune.cactus: new ArrayList<>()
+  - gameplay-mechanics.player.fix-stuck-in-portal: 'false'
   removals:
-  - projectile-load-save-per-chunk-limit
+  - projectile-load-save-per-chunk-limit: '-1'
 permission:
   additions: []
   removals: []
@@ -106,10 +106,10 @@ $ ./compare-commits.sh -nc
 
 config:
   additions:
-  - gameplay-mechanics.item.immune.cactus
-  - gameplay-mechanics.player.fix-stuck-in-portal
+  - gameplay-mechanics.item.immune.cactus: new ArrayList<>()
+  - gameplay-mechanics.player.fix-stuck-in-portal: 'false'
   removals:
-  - projectile-load-save-per-chunk-limit
+  - projectile-load-save-per-chunk-limit: '-1'
 permission:
   additions: []
   removals: []

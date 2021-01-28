@@ -5,7 +5,7 @@ import asyncio
 import re
 import sys
 
-CONFIG_REGEX = re.compile(r' get[A-z]+\("(.+)"')
+CONFIG_REGEX = re.compile(r'[^.]get(Boolean|Int|Double|String|List)\("(.+)",\s*(.+)\)')
 PERM_REGEX   = re.compile(r'hasPermission\("(.+?)"\)')
 LOG_DIR = './logs/'
 PROJECT = {
@@ -14,6 +14,26 @@ PROJECT = {
     'branch': 'ver/1.16.5'
 }
 
+async def findDefaultValue(config_result, patch):
+    if config_result[0] == 'Boolean':
+        if config_result[2] == 'true' or config_result[2] == 'false':
+            return {config_result[1]: config_result[2]}
+    if config_result[0] == 'Int':
+        if config_result[2].isnumeric():
+            return {config_result[1]: config_result[2]}
+    if config_result[0] == 'Double':
+        if config_result[2].endswith('F') or config_result[2].endswith('D'):
+            return {config_result[1]: config_result[2][:-1]}
+    if config_result[0] == 'String':
+        if '"' in config_result[2]:
+            return {config_result[1]: config_result[2][1:-1]}
+    if config_result[0] == 'List':
+        return {config_result[1]: config_result[2]}
+
+    search_config = re.search(config_result[2] + r'\s*=\s*(.+);', patch)
+    if len(search_config.groups()):
+        return {config_result[1]: search_config.group(1)}
+    return config_result[1]
 
 async def compileDiff(compare_commits = [], PROJECT = {}):
     if len(compare_commits) != 2:
@@ -24,18 +44,18 @@ async def compileDiff(compare_commits = [], PROJECT = {}):
     diff = { 'config': { 'additions': [], 'removals': [] },
          'permission': { 'additions': [], 'removals': [] } }
 
-    patch_file = requests.get(f"https://github.com/{PROJECT['owner']}/{PROJECT['repo']}/compare/{compare_commits[0]}..{compare_commits[1]}.diff").text.split('\n')
+    patch_file = requests.get(f"https://github.com/{PROJECT['owner']}/{PROJECT['repo']}/compare/{compare_commits[0]}..{compare_commits[1]}.diff").text
 
-    for line in patch_file:
+    for line in patch_file.split('\n'):
         if line.startswith('++'):
             regex_config_result = CONFIG_REGEX.search(line)
             regex_perm_result = PERM_REGEX.search(line)
 
             # if not in removals list then include in additions list
             if regex_config_result:
-                config_result = regex_config_result.group(1)
+                config_result = regex_config_result.groups()
                 if not config_result in diff['config']['removals'] and not config_result in diff['config']['additions']:
-                    diff['config']['additions'].append(config_result)
+                    diff['config']['additions'].append(await findDefaultValue(config_result, patch_file))
             if regex_perm_result:
                 perm_result = regex_perm_result.group(1)
                 if not perm_result in diff['permission']['removals'] and not perm_result in diff['permission']['additions']:
@@ -46,9 +66,9 @@ async def compileDiff(compare_commits = [], PROJECT = {}):
 
             # if not in additions list then include in removals list
             if regex_config_result:
-                config_result = regex_config_result.group(1)
+                config_result = regex_config_result.groups()
                 if not config_result in diff['config']['additions'] and not config_result in diff['config']['removals']:
-                    diff['config']['removals'].append(config_result)
+                    diff['config']['removals'].append(await findDefaultValue(config_result, patch_file))
             if regex_perm_result:
                 perm_result = regex_perm_result.group(1)
                 if not perm_result in diff['permission']['additions'] and not perm_result in diff['permission']['removals']:
