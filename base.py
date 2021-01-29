@@ -14,7 +14,8 @@ PROJECT = {
     'branch': 'ver/1.16.5'
 }
 
-async def findDefaultValue(config_result, patch):
+
+async def find_default_value(config_result, patch):
     if config_result[0] == 'Boolean':
         if config_result[2] == 'true' or config_result[2] == 'false':
             return {config_result[1]: config_result[2]}
@@ -35,16 +36,18 @@ async def findDefaultValue(config_result, patch):
         return {config_result[1]: search_config.group(1)}
     return config_result[1]
 
-async def compileDiff(compare_commits = [], PROJECT = {}):
-    if len(compare_commits) != 2:
+
+async def compile_diff(compare_commits, project):
+    if compare_commits is None and len(compare_commits) != 2:
         raise ValueError('Can only compare between two commits')
-    if len(PROJECT) == 0:
+    if project is None:
         raise ValueError('Could not find a project to use.')
 
-    diff = { 'config': { 'additions': [], 'removals': [] },
-         'permission': { 'additions': [], 'removals': [] } }
+    diff = {'config': {'additions': [], 'removals': []},
+        'permission': {'additions': [], 'removals': []}}
 
-    patch_file = requests.get(f"https://github.com/{PROJECT['owner']}/{PROJECT['repo']}/compare/{compare_commits[0]}..{compare_commits[1]}.diff").text
+    repo_link = f"https://github.com/{PROJECT['owner']}/{PROJECT['repo']}/compare/{compare_commits[0]}..{compare_commits[1]}.diff"
+    patch_file = requests.get(repo_link).text
 
     for line in patch_file.split('\n'):
         if line.startswith('++'):
@@ -54,12 +57,14 @@ async def compileDiff(compare_commits = [], PROJECT = {}):
             # if not in removals list then include in additions list
             if regex_config_result:
                 config_result = regex_config_result.groups()
-                if not config_result in diff['config']['removals'] and not config_result in diff['config']['additions']:
-                    diff['config']['additions'].append(await findDefaultValue(config_result, patch_file))
+                if config_result in diff['config']['removals'] or config_result in diff['config']['additions']:
+                    continue
+                diff['config']['additions'].append(await find_default_value(config_result, patch_file))
             if regex_perm_result:
                 perm_result = regex_perm_result.group(1)
-                if not perm_result in diff['permission']['removals'] and not perm_result in diff['permission']['additions']:
-                    diff['permission']['additions'].append(perm_result)
+                if perm_result in diff['permission']['removals'] or perm_result in diff['permission']['additions']:
+                    continue
+                diff['permission']['additions'].append(perm_result)
         elif line.startswith('--') or line.startswith('-+'):
             regex_config_result = CONFIG_REGEX.search(line)
             regex_perm_result = PERM_REGEX.search(line)
@@ -67,13 +72,16 @@ async def compileDiff(compare_commits = [], PROJECT = {}):
             # if not in additions list then include in removals list
             if regex_config_result:
                 config_result = regex_config_result.groups()
-                if not config_result in diff['config']['additions'] and not config_result in diff['config']['removals']:
-                    diff['config']['removals'].append(await findDefaultValue(config_result, patch_file))
+                if config_result in diff['config']['additions'] or config_result in diff['config']['removals']:
+                    continue
+                diff['config']['removals'].append(await find_default_value(config_result, patch_file))
             if regex_perm_result:
                 perm_result = regex_perm_result.group(1)
-                if not perm_result in diff['permission']['additions'] and not perm_result in diff['permission']['removals']:
-                    diff['permission']['removals'].append(perm_result)
+                if perm_result in diff['permission']['additions'] or perm_result in diff['permission']['removals']:
+                    continue
+                diff['permission']['removals'].append(perm_result)
     return diff
+
 
 async def main():
     compare_commits = []
@@ -89,25 +97,25 @@ async def main():
         if path.exists('last_commit'):
             with open('last_commit', 'r') as stream:
                 last_commit = stream.read()
-        
-        branchSHA = ''
-        branchSHA_JSON = requests.get(f"https://api.github.com/repos/{PROJECT['owner']}/{PROJECT['repo']}/branches").json()
-        for branch in branchSHA_JSON:
+
+        branch_sha = ''
+        branch_sha_json = requests.get(f"https://api.github.com/repos/{PROJECT['owner']}/{PROJECT['repo']}/branches").json()
+        for branch in branch_sha_json:
             if branch['name'] == PROJECT['branch']:
-                branchSHA = branch['commit']['sha'][:6]
+                branch_sha = branch['commit']['sha'][:6]
                 break
-        if not branchSHA:
+        if not branch_sha:
             raise ValueError(f"Could not locate branch {PROJECT['branch']} in project {PROJECT['owner']}/{PROJECT['repo']}")
 
         with open('last_commit', 'w') as stream:
-            stream.write(branchSHA)
+            stream.write(branch_sha)
 
         if last_commit:
-            compare_commits += [last_commit, branchSHA]
+            compare_commits += [last_commit, branch_sha]
         else:
-            compare_commits += [branchSHA, PROJECT['branch']]
+            compare_commits += [branch_sha, PROJECT['branch']]
 
-    diff = await compileDiff(compare_commits, PROJECT)
+    diff = await compile_diff(compare_commits, PROJECT)
 
     filename = f"{LOG_DIR}{'..'.join(compare_commits).replace('/', '|')}.yml"
     makedirs(path.dirname(filename), exist_ok=True)
