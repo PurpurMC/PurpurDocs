@@ -166,6 +166,9 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 * short-height
     - **default**: false
     - **description**: allows endermen to fit into 2 block tall spaces if enabled. Since client hitbox remains the same, you can still hit them in the head
+* takes-damage-from-water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
 	
 ### enchantment
 
@@ -311,9 +314,6 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 ### mobs
 
 #### ender_dragon
-* always-drop-egg-block
-    - **default**: false
-    - **description**: When true all valid ender dragon deaths will place an ender egg block on top of the portal
 * always-drop-full-exp
     - **default**: false
     - **description**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
@@ -581,6 +581,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for snow golems to bypass the mob griefing gamerule
+* takes-damage-from-water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
 * attributes
     * max_health
         - **default**: 4.0
@@ -1152,6 +1155,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* takes-damage-from-water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
 * attributes
     * max_health
         - **default**: 20.0
@@ -1359,6 +1365,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
+* takes-damage-from-water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
 * attributes
     * max_health
         - **default**: 20.0
@@ -1935,6 +1944,9 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * tipped-arrows
     - **default**: false
     - **description**: Set to true to make the Infinity enchantment work on this arrow type
+* works-without-arrows
+    - **default**: false
+    - **description**: Set to true for the infinity bow to work without arrows
 
 #### daylight-cycle-ticks
 * daytime
