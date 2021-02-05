@@ -25,8 +25,10 @@ $ mkdocs serve
 
 ### Compare commits for config/permission additions/removals
 
-Run the `compare-commits.sh` script to compare between Purpur commits and generate a file of config option/permission additions/removals. 
+Run the `compare-commits.sh` script to run an interactive script that compares between Purpur commits and generates a file of config option/permission additions/removals. 
 
+<details>
+<summary><code>./compare-commits.sh &lt;prev_hash> &lt;curr_hash> </code></summary>
 You can also add two commit hashes as command line arguments and it will skip the interactive aspect of the script.
 
 ```sh
@@ -46,8 +48,10 @@ permission:
   additions: []
   removals: []
 ```
+</details>
 
-
+<details>
+<summary><code>./compare-commits.sh &lt;prev_hash> </code></summary>
 Including only one hash will compare it to the latest commit of the branch specified (which is `ver/1.16.5` at the time of writing).
 
 ```sh
@@ -67,7 +71,10 @@ permission:
   additions: []
   removals: []
 ```
+</details>
 
+<details>
+<summary><code>./compare-commits.sh --no-commits </code></summary>
 Running the script with the option `--no-commits` or `-nc` will create a `last_commit` file that includes the most recent commit at runtime. Running it again will make it use the hash located in `last_commit` as the first commit hash, replacing it with the most recent commit after generating the file.
 
 ```sh
@@ -119,3 +126,4 @@ permission:
 # Modifies the last_commit file
 22b876
 ```
+</details>
