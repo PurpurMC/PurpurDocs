@@ -4,6 +4,7 @@ import yaml
 import asyncio
 import re
 import sys
+import readline
 
 CONFIG_REGEX = re.compile(r'[^.]get(Boolean|Int|Double|String|List)\("(.+)",\s*(\w+)')
 PERM_REGEX   = re.compile(r'hasPermission\("(.+?)"\)')
@@ -14,26 +15,33 @@ PROJECT = {
     'branch': 'ver/1.16.5'
 }
 
+# https://stackoverflow.com/a/2533142
+def rlinput(prompt, prefill=''):
+   readline.set_startup_hook(lambda: readline.insert_text(prefill))
+   try:
+      return input(prompt)  # or raw_input in Python 2
+   finally:
+      readline.set_startup_hook()
 
 async def find_default_value(config_result, patch):
     if config_result[0] == 'Boolean':
         if config_result[2] == 'true' or config_result[2] == 'false':
-            return {config_result[1]: config_result[2]}
+            return {config_result[1]: {"default": config_result[2]}}
     if config_result[0] == 'Int':
         if config_result[2].isnumeric():
-            return {config_result[1]: config_result[2]}
+            return {config_result[1]: {"default": config_result[2]}}
     if config_result[0] == 'Double':
         if config_result[2].endswith('F') or config_result[2].endswith('D'):
-            return {config_result[1]: config_result[2][:-1]}
+            return {config_result[1]: {"default": config_result[2][:-1]}}
     if config_result[0] == 'String':
         if '"' in config_result[2]:
-            return {config_result[1]: config_result[2][1:-1]}
+            return {config_result[1]: {"default": config_result[2][1:-1]}}
     if config_result[0] == 'List':
-        return {config_result[1]: config_result[2]}
+        return {config_result[1]: {"default": config_result[2]}}
 
     search_config = re.search(config_result[2] + r'\s*=\s*(.+);', patch)
     if len(search_config.groups()):
-        return {config_result[1]: search_config.group(1)}
+        return {config_result[1]: {"default": search_config.group(1)}}
     return config_result[1]
 
 
@@ -116,6 +124,32 @@ async def main():
             compare_commits += [branch_sha, PROJECT['branch']]
 
     diff = await compile_diff(compare_commits, PROJECT)
+
+    description_cache = {}
+    for option in diff['config']['additions']:
+        for name in option:
+            sub_option = name.split('.')[-1]
+            use_known_desc = False
+            if sub_option in description_cache:
+                print(f'Found description for {name} (default: {option[name]["default"]})')
+                print(description_cache[sub_option])
+                selection = ' '
+                while(not selection in ['', 'y', 'n']):
+                    selection = input(f'Use the description above (Y/n)? ').lower()
+                if selection in ['', 'y']:
+                    use_known_desc = True
+
+            description = ''
+            if use_known_desc:
+                description = rlinput(f'Description for {name} (default: {option[name]["default"]}): ', description_cache[sub_option])
+            else:
+                description = input(f'Description for {name} (default: {option[name]["default"]}): ')
+
+            if len(description) > 0:
+                option[name]['description'] = description
+                description_cache[sub_option] = description
+            else:
+                print(f'Not adding a description for {name}.')
 
     filename = f"{LOG_DIR}{'..'.join(compare_commits).replace('/', '|')}.yml"
     makedirs(path.dirname(filename), exist_ok=True)
