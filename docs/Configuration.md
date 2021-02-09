@@ -561,7 +561,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     - **default**: false
     - **description**: Leaves a trail where a snowman walks when being ridden
 * drops-pumpkin-when-sheared
-    - **default**: false
+    - **default**: true
     - **description**: Control if shearing a snowman makes the pumpkin drop to the ground
 * pumpkin-can-be-added-back
     - **default**: false
