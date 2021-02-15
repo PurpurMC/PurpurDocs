@@ -745,7 +745,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     - **description**: Makes this mob ridable in water (it wont eject you)
 * allow-griefing
     - **default**: true
-    - **description**: Makes this mob able to grief
+    - **description**: Set to false to stop the creeper from griefing.
 * naturally-charged-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning
@@ -808,7 +808,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     - **description**: Makes this mob ridable in water (it wont eject you)
 * allow-griefing
     - **default**: true
-    - **description**: Makes this mob able to grief
+    - **description**: Set to false to stop the enderman from griefing
 * can-despawn-with-held-block
     - **default**: false
     - **description**: Makes the enderman despawn even if it's holding a block
