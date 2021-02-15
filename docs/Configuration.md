@@ -310,6 +310,33 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
+#### end-crystal
+* baseless
+    * explode
+        - **default**: true
+        - **description**: Set to false to stop the crystal from exploding
+    * explosion-power
+        - **default**: 6.0
+        - **description**: The power of the end crystal's explosion
+    * explosion-fire
+        - **default**: false
+        - **description**: Set to true to place fire when the end-crystal explodes
+    * explosion-effect
+        - **default**: DESTROY
+        - **description**: The type of explosion effect. Available values are `NONE`, `BREAK`, and `DESTROY`.
+* baseless
+    * explode
+        - **default**: true
+        - **description**: Set to false to stop the crystal from exploding
+    * explosion-power
+        - **default**: 6.0
+        - **description**: The power of the end crystal's explosion
+    * explosion-fire
+        - **default**: false
+        - **description**: Set to true to place fire when the end-crystal explodes
+    * explosion-effect
+        - **default**: DESTROY
+        - **description**: The type of explosion effect. Available values are `NONE`, `BREAK`, and `DESTROY`.
 	
 ### mobs
 
@@ -645,6 +672,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * ignore-players-with-torch
     - **default**: false
     - **description**: Whether phantoms avoid players with a torch in their hand
+* allow-griefing
+    - **default**: false
+    - **description**: Whether a phantom's flames can burn items
 * spawn
     * min-sky-darkness
         - **default**: 5
@@ -1422,6 +1452,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
+* allow-griefing
+    - **default**: true
+    - **description**: Set to false to stop the ghast from griefing
 * attributes
     * max_health
         - **default**: 10.0
@@ -1980,6 +2013,10 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 #### impose-teleport-restrictions-on-gateways
 - **default**: false
 - **description**: Set to true to impose teleport restrictions on gateways. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+
+#### always-tame-in-creative
+- **default**: false
+- **description**: Set to true to have 100% chance of taming a mob
 	
 ### ridable-settings
 
