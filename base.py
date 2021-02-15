@@ -5,7 +5,7 @@ import asyncio
 import re
 import sys
 
-CONFIG_REGEX = re.compile(r'[^.]get(Boolean|Int|Double|String|List)\("(.+)",\s*(.+)\)')
+CONFIG_REGEX = re.compile(r'[^.]get(Boolean|Int|Double|String|List)\("(.+)",\s*(\w+)')
 PERM_REGEX   = re.compile(r'hasPermission\("(.+?)"\)')
 LOG_DIR = './logs/'
 PROJECT = {
