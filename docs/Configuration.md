@@ -166,9 +166,6 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 * short-height
     - **default**: false
     - **description**: allows endermen to fit into 2 block tall spaces if enabled. Since client hitbox remains the same, you can still hit them in the head
-* takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
 	
 ### enchantment
 
@@ -815,6 +812,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for enderman to bypass the mob griefing gamerule
+* takes-damage-from-water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
 * attributes
     * max_health
         - **default**: 40.0
