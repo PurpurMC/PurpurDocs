@@ -102,7 +102,7 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
     - **description**: Ender chests should have 6 rows of inventory space
 * use-permissions-for-rows
     - **default**: false
-    - **description**: Use permission nodes to determine the number of rows. `six-rows` MUST be enabled for this to work.
+    - **description**: Use permission nodes to determine the number of rows. Default row number is six. Apply lower permission to limit them. `six-rows` MUST be enabled for this to work.
 
 <table>
     <thead>
