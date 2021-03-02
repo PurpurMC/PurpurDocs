@@ -601,7 +601,7 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
     - **description**: The modifier value of snow-ball projectiles
 * attack-distance
     - **default**: 1.25
-    - **description**: Control if pumpkins can be placed back onto snowmen
+    - **description**: The distance at which the snow golem will attack
 * bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for snow golems to bypass the mob griefing gamerule
