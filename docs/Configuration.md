@@ -112,7 +112,7 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
     </thead>
     <tbody>
         <tr>
-            <td>**Enderchest row permissions (default is six):
+            <td>Enderchest row permissions (default is six):
                 <ul>
                     <li style="list-style-type: none"><code> purpur.enderchest.rows.six </code></li>
                     <li style="list-style-type: none"><code> purpur.enderchest.rows.five </code></li>
