@@ -34,6 +34,12 @@ By default **all** of these permissions are for OP users only. Any other users w
 * **bukkit.command.demo**
     - Allows the use of the /demo command.
 
+* **bukkit.command.ping**
+    - Allows the use of the /ping command.
+
+* **bukkit.command.tpsbar**
+    - Allows the use of the /tpsbar command.
+
 * **purpur.debug.f3n**
     - Allows the use of the F3+N debug hotkey to swap gamemodes.
     Player must have this perm _and_ the gamemode perm for it to work.
