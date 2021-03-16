@@ -68,6 +68,9 @@ By default **all** of these permissions are for OP users only. Any other users w
 * **purpur.anvil.color**
     - Allows players to use color codes in anvils
 
+* **purpur.anvil.remove_italics**
+    - Allows players to remove the italics from items renamed in the anvil by starting the text with '&r'
+
 | **📝Note** |
 | :----------: |
 | Enderchest row permissions require [`settings.blocks.ender_chest.six-rows`](https://pl3xgaming.github.io/PurpurDocs/Configuration#ender_chest) to be enabled! |

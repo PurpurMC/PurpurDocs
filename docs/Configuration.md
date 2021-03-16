@@ -144,9 +144,6 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 #### suppress-init-legacy-material-errors
 - **default**: false
 - **description**: Suppress warnings about plugins initializing the legacy material api
-#### hex-color-support-in-console
-- **default**: true
-- **description**: Adds hex color code support for console logging
 #### suppress-ignored-advancement-warnings
 - **default**: false
 - **description**: Suppress warnings about unknown attributes in console and logs
@@ -259,6 +256,9 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * only-players-trample
     - **default**: false
     - **description**: Set to true if only players may trample farmland.
+* disable-trampling
+    - **default**: false
+    - **description**: Set to true to disable trampling completely.
 * feather-fall-distance-affects-trampling
     - **default**: false
     - **description**: Set to true if entities can stop trampling if they fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
@@ -285,6 +285,10 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * infinite-fuel
     - **default**: false
     - **description**: Allows the furnace to be infinitely powered by lava placed underneath it
+#### blue_ice
+* allow-snow-formation
+    - **default**: true
+    - **description**: Set to false to disallow snow formation on blue ice
 #### chest
 * open-with-solid-block-on-top
     - **default**: false
@@ -334,6 +338,7 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
     * explosion-effect
         - **default**: DESTROY
         - **description**: The type of explosion effect. Available values are `NONE`, `BREAK`, and `DESTROY`.
+
 	
 ### mobs
 
@@ -344,6 +349,9 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for the ender dragon to bypass the mob griefing gamerule
+* can-ride-vehicles
+    - **default**: false
+    - **description**: Set to true for the ender dragon to gain the ability to ride vehicles
 * attributes
     * max_health
         - **default**: 200.0
@@ -458,6 +466,9 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
 * ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
+* can-ride-vehicles
+    - **default**: false
+    - **description**: Set to true for the wither to gain the ability to ride vehicles
 * health-regen-amount
     - **default**: 1.0
     - **description**: The regen amount of the wither
@@ -815,6 +826,15 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * takes-damage-from-water
     - **default**: true
     - **description**: Set to false for this mob to stop taking damage from water
+* aggressive-towards-spawned-endermites
+    - **default**: false
+    - **description**: Set to true to make enderman aggro towards spawned endermites
+* ignore-players-wearing-dragon-head
+    - **default**: false
+    - **description**: Set to true to make enderman ignore players that wear the dragon head
+* disable-player-stare-aggression
+    - **default**: false
+    - **description**: Set to true to stop an enderman from going aggro by a player looking into the enderman's eyes
 * attributes
     * max_health
         - **default**: 40.0
@@ -976,6 +996,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * can-breed
     - **default**: true
     - **description**: Whether villagers can breed or not
+* breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
 * clerics-farm-warts
     - **default**: false
     - **description**: Set to true for clerics to farm nether wart
@@ -1659,6 +1682,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 #### use-better-mending
 - **default**: false
 - **description**: Set to true for mending enchantment to always repair the most damaged equipment first
+#### tick-fluids
+- **default**: true
+- **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](https://media.discordapp.net/attachments/595431462510002206/821169659382333440/unknown.png). Attachment: [FreezeFluids-1.0.jar](https://cdn.discordapp.com/attachments/720375089123688488/820951359519326218/FreezeFluids-1.0.jar)
 #### disable-drops-on-cramming-death
 - **default**: false
 - **description**: Stops entities from dropping loot on death, if killed by cramming gamerule
@@ -1735,6 +1761,12 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * fix-stuck-in-portal
     * **default**: false
     * **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
+* one-punch-in-creative
+    * **default**: false
+    * **description**: If the player is in creative and hits an entity with an empty hand, the entity instantly dies
+* sleep-ignore-nearby-mobs
+    * **default**: false
+    * **description**: Set to true to allow sleep even if there are mobs nearby
 * idle-timeout
     * kick-if-idle
         - **default**: true
@@ -1833,6 +1865,27 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     - **default**: true
     - **description**: Set to true to give fall damage to the player while in a minecart
 #### item
+
+* shears
+    * damage-if-sprinting
+        - **default**: false
+        - **description**: Holding shears while sprinting will randomly damage the player (Don't run with scissors!)
+    * sprinting-damage
+        - **default**: 1
+        - **description**: The amount of damage to give if `damage-if-sprinting` is enabled
+* ender-pearl
+    * damage
+        - **default**: 5
+        - **description**: The amount of damage to take after teleporting using an ender pearl
+    * cooldown
+        - **default**: 20
+        - **description**: The cooldown after using an ender pearl (in ticks)
+    * creative-cooldown
+        - **default**: 20
+        - **description**: The cooldown after using an ender pearl while in creative (in ticks)
+    * endermite-spawn-chance
+        - **default**: 0.05
+        - **description**: Percent chance (0.0 - 1.0) an endermite will spawn after teleporting using an ender pearl
 
 * immune
     * explosion
