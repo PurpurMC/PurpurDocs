@@ -741,6 +741,8 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * explode-when-killed
     - **default**: false
     - **description**: Makes the creeper explode when killed
+    ??? "📷 GIF of option in action"
+        ![Creeper explodes when killed](assets/creeper/explode-when-killed.gif){ loading=lazy }
 * attributes
     * max_health
         - **default**: 10.0
@@ -813,12 +815,19 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * aggressive-towards-spawned-endermites
     - **default**: false
     - **description**: Set to true to make enderman aggro towards spawned endermites
+    ??? "📷 GIF of option in action"
+        ![Enderman aggros towards spawned endermites](assets/enderman/aggressive-towards-spawned-endermites.gif){ loading=lazy }
 * ignore-players-wearing-dragon-head
     - **default**: false
     - **description**: Set to true to make enderman ignore players that wear the dragon head
+    ??? "📷 GIF of option in action"
+        ![Enderman ignores the player that wears the dragon head](assets/enderman/ignore-players-wearing-dragon-head.gif){ loading=lazy }
+
 * disable-player-stare-aggression
     - **default**: false
     - **description**: Set to true to stop an enderman from going aggro by a player looking into the enderman's eyes
+    ??? "📷 GIF of option in action"
+        ![Enderman doesn't aggro towards player](assets/enderman/disable-player-stare-aggression.gif){ loading=lazy }
 * attributes
     * max_health
         - **default**: 40.0
@@ -1052,6 +1061,8 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * default-collar-color
     - **default**: RED
     - **description**: Set the default collar color when a wolf is tamed. [Available Colors](https://purpur.pl3x.net/javadoc/org/bukkit/Color.html)
+    ??? "📷 GIF of option in action"
+        ![Wolf's default collar is blue when tamed](assets/wolf/default-collar-color.gif){ loading=lazy }
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
