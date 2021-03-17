@@ -8,9 +8,8 @@ If you want information on settings in paper.yml, spigot.yml, and bukkit.yml you
 
 * [Paper Configuration (paper.yml)](https://paper.readthedocs.io/en/latest/server/configuration.html)
 
-| ⚠️**Warning**⚠️ |
-| :----------: |
-| Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpur.pl3x.net/discord/) server. |
+???+ warning "Warning"
+    Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpur.pl3x.net/discord/) server.
 
 ## Global Settings
 
@@ -35,9 +34,8 @@ Global settings affect all worlds on the server as well as the core server funct
 * **default**: false
 * **description**: Skips sending relative move packets for entities that didn't really move
 
-| ⚠️**Warning**⚠️ |
-| :----------: |
-| The `dont-send-useless-entity-packets` option is known to cause issues with certain plugins installed, notably `Tab` and `Companions`. |
+???+ warning "Warning"
+    The `dont-send-useless-entity-packets` option is known to cause issues with certain plugins installed, notably `Tab` and `Companions`.
 	
 ### use-alternate-keepalive
 
@@ -49,9 +47,8 @@ Global settings affect all worlds on the server as well as the core server funct
 * **default**: true
 * **description**: Control tps catch-up
 
-| 📝**Note** |
-| :----------: |
-| TPS catchup makes your server tick faster than 20 TPS after any period of time that below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects |
+???+ note "Note"
+    TPS catchup makes your server tick faster than 20 TPS after any period of time that below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects
 	
 ### server-mod-name
 * **default**: Purpur
@@ -103,28 +100,13 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 * use-permissions-for-rows
     - **default**: false
     - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have six rows unless otherwise specified using permissions.
-
-<table>
-    <thead>
-        <tr>
-            <th style="text-align: center">📝Note</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Enderchest row permissions: 
-                <ul>
-                    <li style="list-style-type: none"><code> purpur.enderchest.rows.six </code></li>
-                    <li style="list-style-type: none"><code> purpur.enderchest.rows.five </code></li>
-                    <li style="list-style-type: none"><code> purpur.enderchest.rows.four </code></li>
-                    <li style="list-style-type: none"><code> purpur.enderchest.rows.three </code></li>
-                    <li style="list-style-type: none"><code> purpur.enderchest.rows.two </code></li>
-                    <li style="list-style-type: none"><code> purpur.enderchest.rows.one </code></li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    ???+ note "Enderchest row permissions"
+        `purpur.enderchest.rows.six`  
+        `purpur.enderchest.rows.five`  
+        `purpur.enderchest.rows.four`  
+        `purpur.enderchest.rows.three`  
+        `purpur.enderchest.rows.two`  
+        `purpur.enderchest.rows.one`
 #### disable-mushroom-updates  
 - **default**: false
 - **description**: Stops the mushroom block from updating it's block state server side
@@ -173,7 +155,7 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 
 ## World Settings
 
-World settings are on a per-world basis. The child-node <code>default</code> is used for all worlds that do not have their own specific settings
+World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings
 
 ### blocks
 
@@ -579,12 +561,11 @@ World settings are on a per-world basis. The child-node <code>default</code> is 
         - **default**: 0.0
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 #### snow_golem
-The formula used to determine the amount of ticks between shots is:
-```
-((sqrt(distanceToTarget) / attack-distance) / snow-ball-modifier) * (max-shoot-interval-ticks - min-shoot-interval-ticks) + min-shoot-interval-ticks
-```
-If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
-0, snow golems won't shoot any snowballs.
+???+ info "The formula used to determine the amount of ticks between shots"
+    ``` sh
+    ((sqrt(distanceToTarget) / attack-distance) / snow-ball-modifier) * (max-shoot-interval-ticks - min-shoot-interval-ticks) + min-shoot-interval-ticks
+    ```
+    If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to 0, snow golems won't shoot any snowballs.
 
 * ridable
     - **default**: false
@@ -1741,13 +1722,22 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * **default**: false
     * **description**: Makes it so you can silk touch spawners 
 * tools
-    * **default**: <table><tr><td>- minecraft:iron_pickaxe <br>- minecraft:golden_pickaxe <br>- minecraft:diamond_pickaxe <br>- minecraft:netherite_pickaxe <br></td></tr></table>
+    * **default**:
+    ``` yaml
+    - minecraft:iron_pickaxe
+    - minecraft:golden_pickaxe
+    - minecraft:diamond_pickaxe
+    - minecraft:netherite_pickaxe
+    ```
     * **description**: Whitelist of tools that can silk touch spawners
 * spawner-name
     * **default**: Spawner
     * **description**: The name of the spawner
 * spawner-lore
-    * **default**: <table><tr><td>- Spawns a {mob} <br></td></tr></table>
+    * **default**:
+        ``` yaml
+        - Spawns a {mob}
+        ```
     * **description**: The lore of the spawner
 #### boat
 * eject-players-on-land
@@ -1853,37 +1843,18 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 
 * block-speed
     - **default**:
-        <table>
-            <tr>
-                <td>
-                    grass-block: 0.3 <br>
-                    stone: 0.5 <br>
-                </td>
-            </tr>
-        </table>
+        ``` yaml
+        grass-block: 0.3
+        stone: 0.5
+        ```
     - **description**: List of speed overrides per block type
-
-<table>
-    <thead>
-        <tr>
-            <th style="text-align: center">📝Note</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><b>Example of block-speed overrides:</b>
-                <ul>
-                    <li><b>block-speed:</b></li>
-                    <ul>
-                        <li>minecraft:sand: 0.1</li>
-                        <li>minecraft:stone: 0.6</li>
-                        <li>minecraft:black_concrete: 1.0</li>
-                    </ul>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    ???+ note "Note"
+        **Example of block-speed overrides:**
+        ``` yaml
+        sand: 0.1
+        stone: 0.6
+        black_concrete: 1.0
+        ```
 
 * fall-damage
     - **default**: true
@@ -1921,32 +1892,16 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * cactus
         - **default**: []
         - **description**: List of items that are immune to cactus
+    ???+ note "Example of item immune list:"
+        ``` yaml
+        explosion:
+          - minecraft:diamond
+          - minecraft:diamond_block
+          - minecraft:diamond_sword
+        ```
 
-<table>
-    <thead>
-        <tr>
-            <th style="text-align: center">📝Note</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><b>Example of item immune list:</b>
-                <ul>
-                    <li><b>explosions:</b></li>
-                    <ul>
-                        <li>minecraft:diamond</li>
-                        <li>minecraft:diamond_block</li>
-                        <li>minecraft:diamond_sword</li>
-                    </ul>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-| ⚠️**Warning**⚠️ |
-| :----------: |
-| These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing I can do about that from the server side, but I have patched this in my client mod, [PurpurClient](https://ci.pl3x.net/job/PurpurClient/), starting with build #12. |
+???+ warning "Warning"
+    These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing I can do about that from the server side, but I have patched this in my client mod, [PurpurClient](https://ci.pl3x.net/job/PurpurClient/), starting with build #12.
 
 #### elytra
 * damage-per-second

@@ -1,19 +1,19 @@
 Purpur adds a few new permission nodes for some of it’s added features.
 
-By default **all** of these permissions are for OP users only. Any other users will need to be granted the permissions you want them to have using a permissions plugin.
+By default **all** of these permissions are for OP users only. Any other users will need to be granted the permissions using a permissions plugin.
 
-* **allow.ride.<mob_id>**
+* **allow.ride.<mob_id&gt;**
     - This permission gives the ability to ride a certain mob by shift
-    right clicking it. Once mounted you can use WASD to move around, and spacebar to jump or fly. Just replace "<mob_id>" with the mob's Entity ID.
+    right clicking it. Once mounted you can use WASD to move around, and spacebar to jump or fly. Just replace "<mob_id&gt;" with the mob's Entity ID.
 
     - **examples**:
         - `allow.ride.cow`
         - `allow.ride.zombie_pigman`
         - `allow.ride.snow_golem`
 
-* **allow.special.<mob_id>**
+* **allow.special.<mob_id&gt;**
     - This permission gives the ability to activate a ridable mob's
-    special ability. Not all mobs have a special ability. Just replace "<mob_id>" with
+    special ability. Not all mobs have a special ability. Just replace "<mob_id&gt;" with
     the mob's Entity ID.
 
     - **Currently Available Specials**
@@ -71,6 +71,5 @@ By default **all** of these permissions are for OP users only. Any other users w
 * **purpur.anvil.remove_italics**
     - Allows players to remove the italics from items renamed in the anvil by starting the text with '&r'
 
-| **📝Note** |
-| :----------: |
-| Enderchest row permissions require [`settings.blocks.ender_chest.six-rows`](https://pl3xgaming.github.io/PurpurDocs/Configuration#ender_chest) to be enabled! |
+???+ note "Note"
+    Enderchest row permissions require [`settings.blocks.ender_chest.six-rows`](https://pl3xgaming.github.io/PurpurDocs/Configuration#ender_chest) to be enabled!

@@ -9,7 +9,6 @@ nav:
     - Home: index.md
     - Configuration: Configuration.md
     - Permissions: Permissions.md
-    - Biomes: Biomes.md
 repo_url: https://github.com/pl3xgaming/PurpurDocs
 repo_name: PurpurDocs
 edit_uri: edit/main/docs/
@@ -25,6 +24,10 @@ theme:
       primary: light blue
       accent: blue
 markdown_extensions:
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
   - toc:
       permalink: 🔗
   - pymdownx.emoji:
