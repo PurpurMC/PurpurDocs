@@ -741,6 +741,8 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * explode-when-killed
     - **default**: false
     - **description**: Makes the creeper explode when killed
+    ??? "📷 GIF of option in action"
+        ![Creeper explodes when killed](assets/creeper/explode-when-killed.gif){ loading=lazy }
 * attributes
     * max_health
         - **default**: 10.0
