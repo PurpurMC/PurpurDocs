@@ -757,6 +757,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * naturally-charged-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning
+* explode-when-killed
+    - **default**: false
+    - **description**: Makes the creeper explode when killed
 * attributes
     * max_health
         - **default**: 10.0
@@ -1297,6 +1300,21 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for ravagers to bypass the mob griefing gamerule
+* griefable-blocks
+    - **default**:
+        ``` yaml
+        - minecraft:oak_leaves
+        - minecraft:spruce_leaves
+        - minecraft:birch_leaves
+        - minecraft:jungle_leaves
+        - minecraft:acacia_leaves
+        - minecraft:dark_oak_leaves
+        - minecraft:beetroots
+        - minecraft:carrots
+        - minecraft:potatoes
+        - minecraft:wheat
+        ```
+    - **description**: Whitelist of blocks that can be broken by the ravager
 * attributes
     * max_health
         - **default**: 100.0
@@ -1540,6 +1558,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* join-caravans
+    - **default**: true
+    - **description**: Set to false to disable the [llama caravan feature](https://minecraft.gamepedia.com/Llama#Leading)
 * attributes
     * max_health
         * min
