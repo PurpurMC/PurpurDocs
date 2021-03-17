@@ -1065,6 +1065,9 @@ If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to
 * spawn-rabid-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0 - 1.0) that a wolf will spawn as rabid
+* default-collar-color
+    - **default**: RED
+    - **description**: Set the default collar color when a wolf is tamed. [Available Colors](https://purpur.pl3x.net/javadoc/org/bukkit/Color.html)
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
