@@ -110,6 +110,9 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 #### disable-mushroom-updates  
 - **default**: false
 - **description**: Stops the mushroom block from updating it's block state server side
+#### disable-note-block-updates  
+- **default**: false
+- **description**: Stops the note block from updating it's block state server side
 ####  crying_obsidian
 * valid-for-portal-frame
     - **default**: false
@@ -151,6 +154,12 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 * allow-infinity-and-mending-together
     - **default**: false
     - **description**: allows the mending and infinity enchantment to be on the same weapon/tool
+* allow-infinity-on-crossbow
+    - **default**: false
+    - **description**: allows the infinity enchantment on a crossbow
+* allow-unsafe-enchants
+    - **default**: false
+    - **description**: allows the ability to increase enchantments passed their max level
 	
 
 ## World Settings
@@ -173,6 +182,34 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for turtle eggs to bypass the mob griefing gamerule
+#### powered-rail
+* activation-range
+    - **default**: 8
+    - **description**: The amount of powered rails that get activated by a single redstone source
+#### sponge
+* absorption
+    * area
+        - **default**: 64
+        - **description**: Area of blocks that a sponge absorbs water
+    * radius
+        - **default**: 6
+        - **description**: The radius of blocks that a sponge absorbs water
+#### composter
+* sneak-to-bulk-process
+    - **default**: false
+    - **description**: Set to true to allow bulk processing of food/plant items by sneak right-clicking with the item in hand
+#### slab
+* break-individual-slabs-when-sneaking
+    - **default**: false
+    - **description**: Set to true to allow breaking individual slabs in a double slab block while sneaking
+#### packed_ice
+* allow-mob-spawns
+    - **default**: true
+    - **description**: Set to false to disallow mob spawning on packed ice
+#### blue_ice
+* allow-mob-spawns
+    - **default**: true
+    - **description**: Set to false to disallow mob spawning on blue ice
 #### dispenser
 * apply-cursed-to-armor-slots
     - **default**: true
@@ -260,9 +297,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * damage
     - **default**: 0.0
     - **description**: If a value is set, Mobs will also avoid walking over the stonecutter. 
-#### no-tick
+#### no-random-tick
 * **default**: []
-* **description**: List of blocks that will not tick
+* **description**: List of blocks that will not randomly tick (Only applies to the [blocks affected by random tick](https://minecraft.fandom.com/wiki/Tick#Random_tick))
 #### furnace
 * infinite-fuel
     - **default**: false
@@ -275,6 +312,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * open-with-solid-block-on-top
     - **default**: false
     - **description**: Allows for chests to open even with a solid block on top
+#### door
+* requires-redstone
+    - **default**: []
+    - **description**: Allows you to set the doors that require redstone to be operated
 #### twisting_vines
 * growth-modifier
     - **default**: 0.10
@@ -512,6 +553,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * can-be-leashed
     - **default**: false
     - **description**: Allow players to use leads on villagers (trader not included)
+* allow-trading
+    - **default**: true
+    - **description**: Set to false to disable trading with wandering traders
 * follow-emerald-blocks
     - **default**: false
     - **description**: Villagers will be tempted by emerald blocks and follow players holding them
@@ -977,6 +1021,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * follow-emerald-blocks
     - **default**: false
     - **description**: Villagers will be tempted by emerald blocks and follow players holding them
+* allow-trading
+    - **default**: true
+    - **description**: Set to false to disable trading with villagers
 * can-breed
     - **default**: true
     - **description**: Whether villagers can breed or not
@@ -1191,7 +1238,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: Makes this mob ridable in water (it wont eject you)
 * give-saddle-back
     - **default**: false
-    - **description**: Shift and right-click a pig with a saddle on it's back to remove it with this option enabled
+    - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1309,7 +1356,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: Makes this mob ridable in water (it wont eject you)
 * give-saddle-back
     - **default**: false
-    - **description**: Shift and right-click a pig with a saddle on it's back to remove it with this option enabled
+    - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
 * breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1687,6 +1734,38 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### use-better-mending
 - **default**: false
 - **description**: Set to true for mending enchantment to always repair the most damaged equipment first
+#### projectile-offset
+* bow
+    * **default**: 1.0
+    * **description**: The projectile offset of a bow
+* crossbow
+    * **default**: 1.0
+    * **description**: The projectile offset of a crossbow
+* egg
+    * **default**: 1.0
+    * **description**: The projectile offset of a egg
+* ender-pearl
+    * **default**: 1.0
+    * **description**: The projectile offset of a ender-pearl
+* throwable-potion
+    * **default**: 1.0
+    * **description**: The projectile offset of a throwable-potion
+* trident
+    * **default**: 1.0
+    * **description**: The projectile offset of a trident
+* snowball
+    * **default**: 1.0
+    * **description**: The projectile offset of a snowball
+#### drowning
+* air-ticks
+    * **default**: 300
+    * **description**: How long you can breathe underwater before you start drowning
+* ticks-per-damage
+    * **default**: 20
+    * **description**: Amount of ticks between the drowning damage
+* damage-from-drowning
+    * **default**: 2.0
+    * **description**: Amount of damage done while drowning
 #### tick-fluids
 - **default**: true
 - **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](https://media.discordapp.net/attachments/595431462510002206/821169659382333440/unknown.png). Attachment: [FreezeFluids-1.0.jar](https://cdn.discordapp.com/attachments/720375089123688488/820951359519326218/FreezeFluids-1.0.jar)
@@ -1756,6 +1835,9 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * fix-nametags
     - **default**: false
     - **description**: Makes the name visible when using a Name Tag on an Armor Stand
+* place-with-arms-visible
+    - **default**: false
+    - **description**: Makes the arms visible when placed
 * can-movement-tick
     - **default**: true
     - **description**: Set to false to disallow armorstands from moving
@@ -1766,6 +1848,9 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     - **default**: true
     - **description**: Set to false to disallow armorstands from moving in water over a fence
 #### player
+* can-skip-night
+    * **default**: true
+    * **description**: Set to false to disable the players' ability to skip the night by sleeping
 * spawn-invulnerable-ticks
     * **default**: 60
     * **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.

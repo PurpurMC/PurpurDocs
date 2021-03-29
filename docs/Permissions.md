@@ -53,8 +53,7 @@ By default **all** of these permissions are for OP users only. Any other users w
     have the mob type restored to what it was when it was mined using silk touch.
 
 * **purpur.sign.edit**
-    - Allows players to open the sign editor when right clicking a sign
-    while holding a sign.
+    - Allows players to open the sign editor when right clicking a sign while holding a sign.
 
 * **purpur.sign.color**
     - Allows players to use color codes on signs
