@@ -12,7 +12,7 @@ nav:
     - Permissions: Permissions.md
 repo_url: https://github.com/pl3xgaming/PurpurDocs
 repo_name: PurpurDocs
-edit_uri: edit/main/docs/
+edit_uri: edit/main/mkdocs/
 extra_css:
   - stylesheets/extra.css
 theme:
