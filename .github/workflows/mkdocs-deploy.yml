@@ -33,5 +33,6 @@ jobs:
           source_file: 'site'
           destination_repo: 'pl3xgaming/PurpurWebsite'
           destination_folder: 'public/docs'
+          destination_branch: master
           user_email: 'pkrok01@outlook.com'
           user_name: 'granny'
