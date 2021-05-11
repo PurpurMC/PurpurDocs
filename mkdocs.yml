@@ -5,6 +5,7 @@ site_author: granny
 site_description: >-
   The official documentation for Purpur.
   Purpur is a fork of Paper and Tuinity with the goal of providing new and interesting configuration options, which allow for creating a unique gameplay experience not seen anywhere else.
+docs_dir: mkdocs
 nav:
     - Home: index.md
     - Configuration: Configuration.md

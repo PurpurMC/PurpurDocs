@@ -20,7 +20,7 @@ jobs:
       - name: Build docs and copy .htaccess
         run: |
           pip install -r requirements.txt
-          mkdocs build
+          mkdocs build -d docs
 
           echo Copying .htaccess to \'site\' directory
           cp .htaccess site/
@@ -32,7 +32,7 @@ jobs:
         with:
           source_file: 'site'
           destination_repo: 'pl3xgaming/PurpurWebsite'
-          destination_folder: 'public/docs'
+          destination_folder: 'public'
           destination_branch: master
           user_email: 'pkrok01@outlook.com'
           user_name: 'granny'
