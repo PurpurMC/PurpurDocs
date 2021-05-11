@@ -1,4 +1,4 @@
-name: Publish docs via GitHub Pages
+name: Push docs to PurpurWebsite
 on:
   push:
     branches:
@@ -6,14 +6,32 @@ on:
 
 jobs:
   build:
-    name: Deploy docs
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci-skip]')"
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Build docs and copy .htaccess
+        run: |
+          pip install -r requirements.txt
+          mkdocs build
+
+          echo Copying .htaccess to \'site\' directory
+          cp .htaccess site/
+      
+      - name: Push to PurpurWebsite repo
+        uses: dmnemec/copy_file_to_another_repo_action@main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'site'
+          destination_repo: 'pl3xgaming/PurpurWebsite'
+          destination_folder: 'public/docs'
+          user_email: 'pkrok01@outlook.com'
+          user_name: 'granny'
