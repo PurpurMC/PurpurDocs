@@ -24,6 +24,16 @@ Global settings affect all worlds on the server as well as the core server funct
 
 * **Do not change this for any reason!** This is used internally to help automatically update your config
 	
+### command
+
+* gamemode
+    * requires-specific-permission
+        - **default**: false
+        - **description**: Set to true for each gamemode to require it's own permission
+* hide-hidden-players-from-entity-selector
+    - **default**: false
+    - **description**: Set to true to hide players from the entity selector if they're hidden
+
 ### allow-water-placement-in-the-end
 
 * **default**: true
@@ -86,6 +96,10 @@ Global settings affect all worlds on the server as well as the core server funct
 Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 * **default**: §a%s has been shown the demo screen
 * **description**: Message that shows when the demo screen is enabled for a user using the `/demo` command.
+#### credits-command-output
+Requires the `bukkit.command.credits` permission ([Permissions](Permissions))
+* **default**: §a%s has been shown the end credits
+* **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
 	
 ### blocks
 
@@ -93,6 +107,10 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 * six-rows
     - **default**: false
     - **description**: Barrels should have 6 rows of inventory space
+####  beehive
+* max-bees-inside
+    - **default**: 3
+    - **description**: The maximum amount of bees allowed inside of a beehive/bee_nest
 ####  ender_chest
 * six-rows
     - **default**: false
@@ -123,6 +141,12 @@ Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
 #### url
 - **default**: "https://timings.pl3x.net"
 - **description**: The server where timing reports are posted to. To use Aikar's timings server use "http://timings.aikar.co"
+
+### advancement
+
+#### only-broadcast-to-affected-player
+- **default**: false
+- **description**: Broadcasts the advancment messages in chat only to the affected player
 	
 ### logger
 
@@ -234,6 +258,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * right-click-edit
     - **default**: false
     - **description**: Ability to edit signs by right clicking them with another sign in hand
+#### magma-block
+* damage-when-sneaking
+    - **default**: false
+    - **description**: Set to true to enable damage when sneaking
+* damage-with-frost-walker
+    - **default**: false
+    - **description**: Set to true to enable damage when walking with boots enchanted with frost-walker
 #### lava
 * infinite-source
     - **default**: false
@@ -245,10 +276,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * nether
         - **default**: 10
         - **description**: Delay in ticks between physics/flowing (lower is faster)
-
     * not-nether
         - **default**: 30
         - **description**: Delay in ticks between physics/flowing (lower is faster)
+#### piston
+* block-push-limit
+    - **default**: 12
+    - **description**: The amount of blocks a piston can push
 #### bed
 * explode
     - **default**: true
@@ -348,7 +382,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * explosion-effect
         - **default**: DESTROY
         - **description**: The type of explosion effect. Available values are `NONE`, `BREAK`, and `DESTROY`.
-* baseless
+* base
     * explode
         - **default**: true
         - **description**: Set to false to stop the crystal from exploding
@@ -492,6 +526,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * can-ride-vehicles
     - **default**: false
     - **description**: Set to true for the wither to gain the ability to ride vehicles
+* explosion-radius
+    - **default**: 1.0
+    - **description**: The explosion radius of a wither's projectile attack
 * health-regen-amount
     - **default**: 1.0
     - **description**: The regen amount of the wither
@@ -785,6 +822,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * explode-when-killed
     - **default**: false
     - **description**: Makes the creeper explode when killed
+* health-impacts-explosion
+    - **default**: false
+    - **description**: Makes the creeper's explosion be proportionate to the amount of health it has (lower health, weaker explosion)
 * attributes
     * max_health
         - **default**: 10.0
@@ -1178,6 +1218,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* portal-spawn-modifier
+    - **default**: 2000
+    - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
+based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Purpur/blob/ver/1.16.5/patches/server/0198-Piglin-portal-spawn-modifier.patch)
 * attributes
     * max_health
         - **default**: 16.0
@@ -1775,6 +1819,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### totem-of-undying-works-in-inventory
 - **default**: false
 - **description**: Allows the totem of undying to work in your inventory, not just your offhand
+#### entity-blindness-multiplier
+- **default**: 1
+- **description**: How blind a mob is when affected with the blindness potion effect
 #### entities-pick-up-loot-bypass-mob-griefing
 - **default**: false
 - **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
@@ -1787,9 +1834,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### trident-loyalty-void-return-height
 - **default**: 0.0
 - **description**: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.
+#### void-damage-dealt
+- **default**: 4.0
+- **description**: The amount of void damage dealt
 #### void-damage-height
 - **default**: -64.0
-- **description**: Lower limit where void damage starts to happen
+- **description**: The height at which void damage begins
 #### entity-lifespan
 - **default**: 0
 - **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
@@ -1905,11 +1955,10 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * show-icon
         - **default**: true
         - **description**: Set to false for the fire resistance effect to not display it's icon
-#### controllable-minecarts
+#### minecart
 * enabled
     - **default**: false
-    - **description**: Whether minecarts can be controlled with WASD when not on rails
-
+    - **description**: Whether minecarts can be controlled when not on rails
 * place-anywhere
     - **default**: false
     - **description**: Whether minecarts can be placed anywhere, not just on rails
@@ -1917,19 +1966,19 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * step-height
     - **default**: 1.0
     - **description**: The step height in which a minecarts can go up to the next block without jumping
-
 * hop-boost
     - **default**: 0.5
     - **description**: Jump power when pressing spacebar on a controllable minecart
-
 * base-speed
     - **default**: 0.1
-    - **description**: Base speed of minecart when controlled with WASD
-
+    - **description**: Base speed of minecart when controlled
+* max-speed
+    - **default**: 0.4
+    - **description**: Max speed of a minecart when controlled
 * block-speed
     - **default**:
         ``` yaml
-        grass-block: 0.3
+        grass_block: 0.3
         stone: 0.5
         ```
     - **description**: List of speed overrides per block type
@@ -1945,7 +1994,6 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     - **default**: true
     - **description**: Set to true to give fall damage to the player while in a minecart
 #### item
-
 * shears
     * damage-if-sprinting
         - **default**: false
@@ -1966,7 +2014,6 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * endermite-spawn-chance
         - **default**: 0.05
         - **description**: Percent chance (0.0 - 1.0) an endermite will spawn after teleporting using an ender pearl
-
 * immune
     * explosion
         - **default**: []
@@ -1974,6 +2021,9 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     * fire
         - **default**: []
         - **description**: List of items that are immune to fire
+    * lightning
+        - **default**: []
+        - **description**: List of items that are immune to lightning
     * cactus
         - **default**: []
         - **description**: List of items that are immune to cactus
@@ -1992,24 +2042,19 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * damage-per-second
     - **default**: 1
     - **description**: How much damage an elytra takes during flight each second
-
 * damage-multiplied-by-speed
     - **default**: 0.0
     - **description**: Damage is multiplied by speed if flight is faster than set speed. Value of 0 disables this multiplier
-
 * ignore-unbreaking
     - **default**: false
     - **description**: Should elytras ignore the unbreaking enchantment
-
 * damage-per-boost
     * firework
         - **default**: 0
         - **description**: How much damage to deal to the elytra when firework boost activates
-
     * trident
         - **default**: 0
         - **description**: How much damage to deal to the elytra when trident riptide boost activates
-
 #### mob-spawning
 * village-cats
     - **default**: default
@@ -2026,11 +2071,9 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * village-sieges
     - **default**: default
     - **description**: Set to true to spawn in the world that this option is a part of
-
 #### raid-cooldown-seconds
 - **default**: 0
 - **description**: How long you should wait before another raid can be initiated
-
 #### projectile-despawn-rates
 * dragon_fireball
     - **default**: -1
@@ -2071,19 +2114,15 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * wither_skull
     - **default**: -1
     - **description**: The rate at which the projectile despawns. -1 means disabled
-
 #### entities-can-use-portals
 - **default**: true
 - **description**: Set to false to stop entities from being able to use portals
-
 #### persistent-tileentity-display-names-and-lore
 - **default**: false
 - **description**: Set to true to make TE's display names and lores persist after breaking (ex. named custom player heads retain their name)
-
 #### persistent-droppable-entity-display-names
 - **default**: false
 - **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
-
 #### infinity-bow
 * normal-arrows
     - **default**: true
@@ -2097,7 +2136,6 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * works-without-arrows
     - **default**: false
     - **description**: Set to true for the infinity bow to work without arrows
-
 #### daylight-cycle-ticks
 * daytime
     - **default**: 12000
@@ -2105,35 +2143,34 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
 * nighttime
     - **default**: 12000
     - **description**: Set how long the nighttime cycle is ticked
-
 #### animal-breeding-cooldown-seconds
 - **default**: 0
 - **description**: Adds a cooldown to breeding animals per animal type
-
 #### projectile-damage
 * snowball
     - **default**: -1
     - **description**: Set how much damage a snowball does (-1 will make damage be 3 for blazes & 0 for all other entities which is default)
-
 #### entity-left-handed-chance
 - **default**: 0.05
 - **description**: Percent chance (0.0 - 1.0) an entity will spawn left-handed
-
 #### fireballs-bypass-mob-griefing
 - **default**: false
 - **description**: Set to true for fireballs to bypass the mob griefing gamerule
-
 #### note-block-ignore-above
 - **default**: false
 - **description**: Set to true for note blocks to continue making sound even if there is a block above it
-
 #### impose-teleport-restrictions-on-gateways
 - **default**: false
 - **description**: Set to true to impose teleport restrictions on gateways. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
-
 #### always-tame-in-creative
 - **default**: false
 - **description**: Set to true to have 100% chance of taming a mob
+#### shovel-turns-block-to-grass-path
+- **default**:
+    ``` yaml
+    - minecraft:grass_block
+    ```
+- **description**: List of blocks that can be turned into a grass path when right-clicked with a shovel
 	
 ### ridable-settings
 

@@ -34,11 +34,25 @@ By default **all** of these permissions are for OP users only. Any other users w
 * **bukkit.command.demo**
     - Allows the use of the /demo command.
 
+* **bukkit.command.credits**
+    - Allows the use of the /credits command.
+
 * **bukkit.command.ping**
     - Allows the use of the /ping command.
 
 * **bukkit.command.tpsbar**
     - Allows the use of the /tpsbar command.
+
+* **bukkit.gamemode**
+    - Allows the user to change the gamemode of another player
+
+* **bukkit.gamemode.<gamemode&gt;**
+    - Allows the user to set their gamemode to <gamemode&gt;
+    - Available gamemodes
+        - adventure
+        - creative
+        - spectator
+        - survival
 
 * **purpur.debug.f3n**
     - Allows the use of the F3+N debug hotkey to swap gamemodes.
