@@ -36,4 +36,4 @@ jobs:
           destination_branch: master
           user_email: 'pkrok01@outlook.com'
           user_name: 'granny'
-          commit_message: 'Update from ${GITHUB_REPOSITORY}@${GITHUB_SHA:0:7}'
+          commit_message: 'Update from \\${GITHUB_REPOSITORY}@\\${GITHUB_SHA:0:7}'
