@@ -1616,6 +1616,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * can-swim
     - **default**: false
     - **description**: Set whether iron golems can swim or not
+* poppy-calms-anger
+    - **default**: false
+    - **description**: Giving the iron golem a poppy calms it down when it's angry
 * attributes
     * max_health
         - **default**: 100.0
