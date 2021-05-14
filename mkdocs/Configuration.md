@@ -1708,6 +1708,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
+* can-breed
+    - **default**: false
+    - **description**: Gives parrots the ability to breed using any type of seeds (baby parrots don't exist D:, so "adult" parrots pop out)
 * attributes
     * max_health
         - **default**: 6.0

@@ -8,4 +8,4 @@ Welcome to the official documentation source for the [Purpur](https://github.com
 
 Purpur is a fork of Paper and Tuinity with the goal of providing new and interesting configuration options, which allow for creating a unique gameplay experience not seen anywhere else.
 
-This wiki was last updated to Build [#1106](https://ci.pl3x.net/job/Purpur/1106/) ([`552d783`](https://github.com/pl3xgaming/Purpur/commit/552d783c644528db64c6e19a78bef3a729580d8a))
+This wiki was last updated to Build [#1109](https://ci.pl3x.net/job/Purpur/1109/) ([`44e72f7`](https://github.com/pl3xgaming/Purpur/commit/44e72f78745767f217e485f4643022452fbb0e6f))
