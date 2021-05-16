@@ -82,7 +82,7 @@ Global settings affect all worlds on the server as well as the core server funct
 * **description**: This is the message that gets broadcasted when a user is no longer AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
 #### afk-tab-list-prefix
 * **default**: "[AFK] "
-* **description**: The prefix that shows up on the playerlist behind someone's name when they're AFK
+* **description**: The prefix that shows up on the playerlist before someone's name when they're AFK
 #### afk-tab-list-suffix
 * **default**: ""
 * **description**: The suffix that shows up on the playerlist behind someone's name when they're AFK
