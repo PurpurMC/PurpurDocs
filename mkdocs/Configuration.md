@@ -12,7 +12,7 @@ If you want information on settings in airplane.air, tuinity.yml, paper.yml, spi
 
 * [Tuinity Configuration (tuinity.yml)](https://github.com/Spottedleaf/Tuinity/wiki/Config)
 
-* [Airplane Configuration (airplane.air)](https://blog.airplane.gg) _(NOTE: Airplane does not provide real documentation yet)_
+* [Airplane Configuration (airplane.air)](https://github.com/TECHNOVE/Airplane/wiki)
 
 ???+ warning "Warning"
     Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpur.pl3x.net/discord/) server.
