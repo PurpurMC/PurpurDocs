@@ -1,6 +1,6 @@
 This page details the various configuration settings exposed by Purpur in the purpur.yml file.
 
-If you want information on settings in tuinity.yml, paper.yml, spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
+If you want information on settings in airplane.air, tuinity.yml, paper.yml, spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
 
 * [Server Configuration (server.properties)](https://minecraft.gamepedia.com/Server.properties)
 
