@@ -48,4 +48,4 @@ Purpur adds a few new commands to the game.
     - **permission**:
         - `bukkit.command.credits`
 
-  ![Purpur header](images/credits.png){ width="496" }
+    ![Purpur header](images/credits.png){ width="496" }
