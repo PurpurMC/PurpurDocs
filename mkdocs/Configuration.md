@@ -2048,7 +2048,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
         ```
 
 ???+ warning "Warning"
-    These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing I can do about that from the server side, but I have patched this in my client mod, [PurpurClient](https://ci.pl3x.net/job/PurpurClient/), starting with build #12.
+    These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing that can be done about that from the server-side code.
 
 #### elytra
 * damage-per-second
