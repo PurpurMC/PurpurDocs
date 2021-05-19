@@ -3,3 +3,5 @@ last_commit
 logs/
 env/
 .vscode/
+.idea/
+

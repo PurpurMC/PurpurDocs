@@ -9,6 +9,7 @@ docs_dir: mkdocs
 nav:
     - Home: index.md
     - Configuration: Configuration.md
+    - Commands: Commands.md
     - Permissions: Permissions.md
 repo_url: https://github.com/pl3xgaming/PurpurDocs
 repo_name: PurpurDocs
