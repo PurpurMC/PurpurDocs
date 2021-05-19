@@ -36,7 +36,7 @@ Purpur adds a few new commands to the game.
 
     ![Purpur header](images/demo.png){ width="496" }
 
-* `/demo`
+* `/credits`
     - This command shows the credits screen to players. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show the credits screen to yourself.
 
     - **examples**
