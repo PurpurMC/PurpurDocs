@@ -34,7 +34,7 @@ Global settings affect all worlds on the server as well as the core server funct
 
 * gamemode
     * requires-specific-permission
-        - Requires [`minecraft.command.gamemode.<gamemode&gt;`](../Permissions#minecraftcommandgamemodegamemode) permission
+        - Requires [`minecraft.command.gamemode.<gamemode>`](../Permissions#minecraftcommandgamemodegamemode) permission
         - **default**: false
         - **description**: Set to true for each gamemode to require it's own permission
 * hide-hidden-players-from-entity-selector
@@ -83,34 +83,49 @@ Global settings affect all worlds on the server as well as the core server funct
 
 #### afk-broadcast-away
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+
 * **default**: §e§o%s is now AFK
 * **description**: This is the message that gets broadcasted when a user goes AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
+
 #### afk-broadcast-back
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+
 * **default**: §e§o%s is no longer AFK
 * **description**: This is the message that gets broadcasted when a user is no longer AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
+
 #### afk-tab-list-prefix
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+
 * **default**: "[AFK] "
 * **description**: The prefix that shows up on the playerlist behind someone's name when they're AFK
+
 #### afk-tab-list-suffix
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+
 * **default**: ""
 * **description**: The suffix that shows up on the playerlist behind someone's name when they're AFK
+
 #### ping-command-output
 Requires the [`bukkit.command.ping`](../Permissions#bukkitcommandping) permission
+
 * **default**: §a%s's ping is %sms
 * **description**: Output when `/ping <user>` is run.
+
 #### cannot-ride-mob
-Requires the [`allow.ride.<mob_id&gt;`](../Permissions#allowridemob_id) permission
+Requires the [`allow.ride.<mob_id>`](../Permissions#allowridemob_id) permission
+
 * **default**: §cYou cannot mount that mob
 * **description**: Message that shows when someone tries to mount a mob they're not allowed to.
+
 #### demo-command-output
 Requires the [`bukkit.command.demo`](../Permissions#bukkitcommanddemo) permission
+
 * **default**: §a%s has been shown the demo screen
 * **description**: Message that shows when the demo screen is enabled for a user using the `/demo` command.
+
 #### credits-command-output
 Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) permission
+
 * **default**: §a%s has been shown the end credits
 * **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
 	
@@ -130,7 +145,7 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
     - **description**: Ender chests should have six rows of inventory space
 * use-permissions-for-rows
     - Requires [`ender_chest.six-rows`](#six-rows) to be true
-    - Requires [`purpur.enderchest.rows.<number&gt;`](../Permissions#purpurenderchestrowsnumber) permission
+    - Requires [`purpur.enderchest.rows.<number>`](../Permissions#purpurenderchestrowsnumber) permission
     - **default**: false
     - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have `six` rows unless otherwise specified using permissions.
 
