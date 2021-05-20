@@ -56,7 +56,7 @@ Requires [`gamemode.requires-specific-permission`](../Configuration#command) to 
 - Available gamemodes
     - adventure, creative, spectator, survival
 
-## minecraft.command.gamemode.<gamemode&gt.other;
+## minecraft.command.gamemode.<gamemode&gt;.other;
 Requires [`gamemode.requires-specific-permission`](../Configuration#command) to be enabled in purpur.yml
 
 - Allows the user to set their own and other players' gamemode to <gamemode&gt;
