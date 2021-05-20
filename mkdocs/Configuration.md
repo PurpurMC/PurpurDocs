@@ -34,6 +34,7 @@ Global settings affect all worlds on the server as well as the core server funct
 
 * gamemode
     * requires-specific-permission
+        - Requires [`minecraft.command.gamemode.<gamemode&gt;`](../Permissions#minecraftcommandgamemodegamemode) permission
         - **default**: false
         - **description**: Set to true for each gamemode to require it's own permission
 * hide-hidden-players-from-entity-selector
@@ -81,29 +82,35 @@ Global settings affect all worlds on the server as well as the core server funct
 ### messages
 
 #### afk-broadcast-away
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 * **default**: §e§o%s is now AFK
 * **description**: This is the message that gets broadcasted when a user goes AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
 #### afk-broadcast-back
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 * **default**: §e§o%s is no longer AFK
 * **description**: This is the message that gets broadcasted when a user is no longer AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
 #### afk-tab-list-prefix
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 * **default**: "[AFK] "
 * **description**: The prefix that shows up on the playerlist behind someone's name when they're AFK
 #### afk-tab-list-suffix
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 * **default**: ""
 * **description**: The suffix that shows up on the playerlist behind someone's name when they're AFK
 #### ping-command-output
+Requires the [`bukkit.command.ping`](../Permissions#bukkitcommandping) permission
 * **default**: §a%s's ping is %sms
 * **description**: Output when `/ping <user>` is run.
 #### cannot-ride-mob
+Requires the [`allow.ride.<mob_id&gt;`](../Permissions#allowridemob_id) permission
 * **default**: §cYou cannot mount that mob
 * **description**: Message that shows when someone tries to mount a mob they're not allowed to.
 #### demo-command-output
-Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
+Requires the [`bukkit.command.demo`](../Permissions#bukkitcommanddemo) permission
 * **default**: §a%s has been shown the demo screen
 * **description**: Message that shows when the demo screen is enabled for a user using the `/demo` command.
 #### credits-command-output
-Requires the `bukkit.command.credits` permission ([Permissions](Permissions))
+Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) permission
 * **default**: §a%s has been shown the end credits
 * **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
 	
@@ -120,17 +127,13 @@ Requires the `bukkit.command.credits` permission ([Permissions](Permissions))
 ####  ender_chest
 * six-rows
     - **default**: false
-    - **description**: Ender chests should have 6 rows of inventory space
+    - **description**: Ender chests should have six rows of inventory space
 * use-permissions-for-rows
+    - Requires [`ender_chest.six-rows`](#six-rows) to be true
+    - Requires [`purpur.enderchest.rows.<number&gt;`](../Permissions#purpurenderchestrowsnumber) permission
     - **default**: false
-    - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have six rows unless otherwise specified using permissions.
-    ???+ note "Enderchest row permissions"
-        `purpur.enderchest.rows.six`  
-        `purpur.enderchest.rows.five`  
-        `purpur.enderchest.rows.four`  
-        `purpur.enderchest.rows.three`  
-        `purpur.enderchest.rows.two`  
-        `purpur.enderchest.rows.one`
+    - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have `six` rows unless otherwise specified using permissions.
+
 #### disable-mushroom-updates  
 - **default**: false
 - **description**: Stops the mushroom block from updating it's block state server side
@@ -259,9 +262,11 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
 #### sign
 * allow-colors
+    - Requires [`purpur.sign.color`](../Permissions#purpursigncolor), [`purpur.sign.style`](../Permissions#purpursignstyle), and/or [`purpur.sign.magic`](../Permissions#purpursignmagic) permission
     - **default**: false
     - **description**: Allow players to use color codes on signs
 * right-click-edit
+    - Requires [`purpur.sign.edit`](../Permissions#purpursignedit) permission
     - **default**: false
     - **description**: Ability to edit signs by right clicking them with another sign in hand
 #### magma-block
@@ -331,6 +336,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: Allows anvils to be placed by dispensers
 #### anvil
 * allow-colors
+    - Requires [`purpur.anvil.color`](../Permissions#purpuranvilcolor) permission
     - **default**: false
     - **description**: Allows players to use color codes in anvils
 #### stonecutter
@@ -1856,8 +1862,7 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 - **default**: 0
 - **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
 #### silk-touch
-
-Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Permissions))
+Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`purpur.place.spawners`](../Permissions#purpurplacespawners) permissions
 
 * enabled
     * **default**: false
