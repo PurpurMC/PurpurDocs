@@ -50,3 +50,17 @@ Purpur adds a few new commands to the game.
 
 - **permission**:
     - `bukkit.command.credits`
+
+## /tpsbar
+??? info "Image of the tpsbar in action 📷"
+    ![TPSBar in action](images/tpsbar.png)
+- This command shows a bossbar showcasing your current TPS/MSPT to players. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show the tpsbar to yourself.
+
+- **examples**
+    - `/tpsbar` shows you the tpsbar
+    - `/tpsbar BillyGalbreath` shows BillyGalbreath the tpsbar
+    - `/tpsbar @a` shows the tpsbar to all players
+    - `/tpsbar @r` shows the tpsbar to a random player
+
+- **permission**:
+    - `bukkit.command.tpsbar`
