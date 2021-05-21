@@ -1988,43 +1988,35 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
         - **default**: true
         - **description**: Set to false for the fire resistance effect to not display it's icon
 #### minecart
-* enabled
-    - **default**: false
-    - **description**: Whether minecarts can be controlled when not on rails
-* place-anywhere
-    - **default**: false
-    - **description**: Whether minecarts can be placed anywhere, not just on rails
-
-* step-height
-    - **default**: 1.0
-    - **description**: The step height in which a minecarts can go up to the next block without jumping
-* hop-boost
-    - **default**: 0.5
-    - **description**: Jump power when pressing spacebar on a controllable minecart
-* base-speed
-    - **default**: 0.1
-    - **description**: Base speed of minecart when controlled
 * max-speed
     - **default**: 0.4
     - **description**: Max speed of a minecart when controlled
-* block-speed
-    - **default**:
-        ``` yaml
-        grass_block: 0.3
-        stone: 0.5
-        ```
-    - **description**: List of speed overrides per block type
-    ???+ note "Note"
-        **Example of block-speed overrides:**
-        ``` yaml
-        sand: 0.1
-        stone: 0.6
-        black_concrete: 1.0
-        ```
-
-* fall-damage
-    - **default**: true
-    - **description**: Set to true to give fall damage to the player while in a minecart
+* place-anywhere
+    - **default**: false
+    - **description**: Whether minecarts can be placed anywhere, not just on rails
+* controllable
+    * enabled
+        - **default**: false
+        - **description**: Whether minecarts can be controlled when not on rails
+    * fall-damage
+        - **default**: true
+        - **description**: Set to true to give fall damage to the player while in a minecart
+    * step-height
+        - **default**: 1.0
+        - **description**: The step height in which a minecarts can go up to the next block without jumping
+    * hop-boost
+        - **default**: 0.5
+        - **description**: Jump power when pressing spacebar on a controllable minecart
+    * base-speed
+        - **default**: 0.1
+        - **description**: Base speed of minecart when controlled
+    * block-speed
+        - **default**:
+            ``` yaml
+            grass_block: 0.3
+            stone: 0.5
+            ```
+        - **description**: List of speed overrides per block type
 #### item
 * shears
     * damage-if-sprinting
