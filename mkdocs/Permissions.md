@@ -70,7 +70,7 @@ Player must have this perm _and_ the gamemode perm for it to work.
 ## purpur.drop.spawners
 Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch) to be enabled in purpur.yml
 
-- Players with this permission can use a diamond pickaxe with silk
+- Players with this permission can use a configured tool with silk
 touch enchantment to mine up any spawner cage instead of disappearing.
 
 ## purpur.place.spawners

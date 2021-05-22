@@ -1881,7 +1881,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 
 * enabled
     * **default**: false
-    * **description**: Makes it so you can silk touch spawners 
+    * **description**: Makes it so you can mine spawners using a tool with silk touch 
 * tools
     * **default**:
     ``` yaml
@@ -1890,7 +1890,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - minecraft:diamond_pickaxe
     - minecraft:netherite_pickaxe
     ```
-    * **description**: Whitelist of tools that can silk touch spawners
+    * **description**: Whitelist of tools that can mine spawners with silk touch
 * spawner-name
     * **default**: Spawner
     * **description**: The name of the spawner
