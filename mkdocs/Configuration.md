@@ -1,12 +1,18 @@
 This page details the various configuration settings exposed by Purpur in the purpur.yml file.
 
-If you want information on settings in paper.yml, spigot.yml, and bukkit.yml you should see their respective documentation pages.
+If you want information on settings in airplane.air, tuinity.yml, paper.yml, spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
+
+* [Server Configuration (server.properties)](https://minecraft.gamepedia.com/Server.properties)
 
 * [Bukkit Configuration (bukkit.yml)](https://bukkit.gamepedia.com/Bukkit.yml)
 
 * [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/)
 
 * [Paper Configuration (paper.yml)](https://paper.readthedocs.io/en/latest/server/configuration.html)
+
+* [Tuinity Configuration (tuinity.yml)](https://github.com/Spottedleaf/Tuinity/wiki/Config)
+
+* [Airplane Configuration (airplane.air)](https://github.com/TECHNOVE/Airplane/wiki)
 
 ???+ warning "Warning"
     Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpur.pl3x.net/discord/) server.
@@ -28,6 +34,7 @@ Global settings affect all worlds on the server as well as the core server funct
 
 * gamemode
     * requires-specific-permission
+        - Requires [`minecraft.command.gamemode.<gamemode>`](../Permissions#minecraftcommandgamemodegamemode) permission
         - **default**: false
         - **description**: Set to true for each gamemode to require it's own permission
 * hide-hidden-players-from-entity-selector
@@ -75,29 +82,50 @@ Global settings affect all worlds on the server as well as the core server funct
 ### messages
 
 #### afk-broadcast-away
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+
 * **default**: §e§o%s is now AFK
 * **description**: This is the message that gets broadcasted when a user goes AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
+
 #### afk-broadcast-back
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+
 * **default**: §e§o%s is no longer AFK
 * **description**: This is the message that gets broadcasted when a user is no longer AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
+
 #### afk-tab-list-prefix
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+
 * **default**: "[AFK] "
 * **description**: The prefix that shows up on the playerlist before someone's name when they're AFK
+
 #### afk-tab-list-suffix
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+
 * **default**: ""
-* **description**: The suffix that shows up on the playerlist behind someone's name when they're AFK
+* **description**: The suffix that shows up on the playerlist after someone's name when they're AFK
+
 #### ping-command-output
+Requires the [`bukkit.command.ping`](../Permissions#bukkitcommandping) permission
+
 * **default**: §a%s's ping is %sms
 * **description**: Output when `/ping <user>` is run.
+
 #### cannot-ride-mob
+Requires the [`allow.ride.<mob_id>`](../Permissions#allowridemob_id) permission
+
 * **default**: §cYou cannot mount that mob
 * **description**: Message that shows when someone tries to mount a mob they're not allowed to.
+
 #### demo-command-output
-Requires the `bukkit.command.demo` permission ([Permissions](Permissions))
+Requires the [`bukkit.command.demo`](../Permissions#bukkitcommanddemo) permission
+
 * **default**: §a%s has been shown the demo screen
 * **description**: Message that shows when the demo screen is enabled for a user using the `/demo` command.
+
 #### credits-command-output
-Requires the `bukkit.command.credits` permission ([Permissions](Permissions))
+Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) permission
+
 * **default**: §a%s has been shown the end credits
 * **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
 	
@@ -114,17 +142,13 @@ Requires the `bukkit.command.credits` permission ([Permissions](Permissions))
 ####  ender_chest
 * six-rows
     - **default**: false
-    - **description**: Ender chests should have 6 rows of inventory space
+    - **description**: Ender chests should have six rows of inventory space
 * use-permissions-for-rows
+    - Requires [`ender_chest.six-rows`](#six-rows) to be true
+    - Requires [`purpur.enderchest.rows.<number>`](../Permissions#purpurenderchestrowsnumber) permission
     - **default**: false
-    - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have six rows unless otherwise specified using permissions.
-    ???+ note "Enderchest row permissions"
-        `purpur.enderchest.rows.six`  
-        `purpur.enderchest.rows.five`  
-        `purpur.enderchest.rows.four`  
-        `purpur.enderchest.rows.three`  
-        `purpur.enderchest.rows.two`  
-        `purpur.enderchest.rows.one`
+    - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have `six` rows unless otherwise specified using permissions.
+
 #### disable-mushroom-updates  
 - **default**: false
 - **description**: Stops the mushroom block from updating it's block state server side
@@ -253,9 +277,11 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
 #### sign
 * allow-colors
+    - Requires [`purpur.sign.color`](../Permissions#purpursigncolor), [`purpur.sign.style`](../Permissions#purpursignstyle), and/or [`purpur.sign.magic`](../Permissions#purpursignmagic) permission
     - **default**: false
     - **description**: Allow players to use color codes on signs
 * right-click-edit
+    - Requires [`purpur.sign.edit`](../Permissions#purpursignedit) permission
     - **default**: false
     - **description**: Ability to edit signs by right clicking them with another sign in hand
 #### magma-block
@@ -325,6 +351,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: Allows anvils to be placed by dispensers
 #### anvil
 * allow-colors
+    - Requires [`purpur.anvil.color`](../Permissions#purpuranvilcolor) permission
     - **default**: false
     - **description**: Allows players to use color codes in anvils
 #### stonecutter
@@ -1850,12 +1877,11 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 - **default**: 0
 - **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
 #### silk-touch
-
-Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Permissions))
+Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`purpur.place.spawners`](../Permissions#purpurplacespawners) permissions
 
 * enabled
     * **default**: false
-    * **description**: Makes it so you can silk touch spawners 
+    * **description**: Makes it so you can mine spawners using a tool with silk touch 
 * tools
     * **default**:
     ``` yaml
@@ -1864,7 +1890,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
     - minecraft:diamond_pickaxe
     - minecraft:netherite_pickaxe
     ```
-    * **description**: Whitelist of tools that can silk touch spawners
+    * **description**: Whitelist of tools that can mine spawners with silk touch
 * spawner-name
     * **default**: Spawner
     * **description**: The name of the spawner
@@ -1962,43 +1988,35 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
         - **default**: true
         - **description**: Set to false for the fire resistance effect to not display it's icon
 #### minecart
-* enabled
-    - **default**: false
-    - **description**: Whether minecarts can be controlled when not on rails
-* place-anywhere
-    - **default**: false
-    - **description**: Whether minecarts can be placed anywhere, not just on rails
-
-* step-height
-    - **default**: 1.0
-    - **description**: The step height in which a minecarts can go up to the next block without jumping
-* hop-boost
-    - **default**: 0.5
-    - **description**: Jump power when pressing spacebar on a controllable minecart
-* base-speed
-    - **default**: 0.1
-    - **description**: Base speed of minecart when controlled
 * max-speed
     - **default**: 0.4
     - **description**: Max speed of a minecart when controlled
-* block-speed
-    - **default**:
-        ``` yaml
-        grass_block: 0.3
-        stone: 0.5
-        ```
-    - **description**: List of speed overrides per block type
-    ???+ note "Note"
-        **Example of block-speed overrides:**
-        ``` yaml
-        sand: 0.1
-        stone: 0.6
-        black_concrete: 1.0
-        ```
-
-* fall-damage
-    - **default**: true
-    - **description**: Set to true to give fall damage to the player while in a minecart
+* place-anywhere
+    - **default**: false
+    - **description**: Whether minecarts can be placed anywhere, not just on rails
+* controllable
+    * enabled
+        - **default**: false
+        - **description**: Whether minecarts can be controlled when not on rails
+    * fall-damage
+        - **default**: true
+        - **description**: Set to true to give fall damage to the player while in a minecart
+    * step-height
+        - **default**: 1.0
+        - **description**: The step height in which a minecarts can go up to the next block without jumping
+    * hop-boost
+        - **default**: 0.5
+        - **description**: Jump power when pressing spacebar on a controllable minecart
+    * base-speed
+        - **default**: 0.1
+        - **description**: Base speed of minecart when controlled
+    * block-speed
+        - **default**:
+            ``` yaml
+            grass_block: 0.3
+            stone: 0.5
+            ```
+        - **description**: List of speed overrides per block type
 #### item
 * shears
     * damage-if-sprinting
@@ -2042,7 +2060,7 @@ Requires perms `purpur.drop.spawner` & `purpur.place.spawner` ([Permissions](Per
         ```
 
 ???+ warning "Warning"
-    These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing I can do about that from the server side, but I have patched this in my client mod, [PurpurClient](https://ci.pl3x.net/job/PurpurClient/), starting with build #12.
+    These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing that can be done about that from the server-side code.
 
 #### elytra
 * damage-per-second
