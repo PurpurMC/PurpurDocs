@@ -31,6 +31,8 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed
+  - pymdownx.magiclink
+  - markdown.extensions.md_in_html
   - toc:
       permalink: 🔗
   - pymdownx.emoji:
