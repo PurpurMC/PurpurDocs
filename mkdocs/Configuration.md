@@ -97,13 +97,13 @@ Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 
 * **default**: "[AFK] "
-* **description**: The prefix that shows up on the playerlist behind someone's name when they're AFK
+* **description**: The prefix that shows up on the playerlist before someone's name when they're AFK
 
 #### afk-tab-list-suffix
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 
 * **default**: ""
-* **description**: The suffix that shows up on the playerlist behind someone's name when they're AFK
+* **description**: The suffix that shows up on the playerlist after someone's name when they're AFK
 
 #### ping-command-output
 Requires the [`bukkit.command.ping`](../Permissions#bukkitcommandping) permission
