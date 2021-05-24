@@ -8,6 +8,15 @@
     align-items: center;
 }
 
+.md-typeset h5, .md-typeset h6 {
+    text-transform: none;
+    color: var(--md-typeset-color);
+    margin: 1em 0;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
 .md-header {
     background-color: var(--header-color);
 }
