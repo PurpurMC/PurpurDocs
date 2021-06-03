@@ -2,10 +2,16 @@
     --header-color: rgb(75, 41, 107);
 }
 
-#center p {
+div#center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#center p {
+    margin: 0.5em 0;
+    text-align: center;
 }
 
 .md-typeset h5, .md-typeset h6 {
