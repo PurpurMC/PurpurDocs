@@ -115,7 +115,7 @@ To create one, just add a commit to either repo and run `./gradlew rebuildPatche
 patch will be placed in the patches folder. Modifying commits will also modify its 
 corresponding patch file.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for more detailed information.
+See [CONTRIBUTING.md](https://github.com/pl3xgaming/Purpur/blob/ver/1.16.5/CONTRIBUTING.md) for more detailed information.
 
 
 #### Compiling
