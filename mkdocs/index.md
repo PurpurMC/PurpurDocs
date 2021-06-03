@@ -16,10 +16,9 @@ Welcome to the official documentation source for the&nbsp;[Purpur](https://githu
 
 This wiki was last updated to Build&nbsp;[#1109](https://ci.pl3x.net/job/Purpur/1109/)&nbsp;([`44e72f7`](https://github.com/pl3xgaming/Purpur/commit/44e72f78745767f217e485f4643022452fbb0e6f))
 
+Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers designed for configurability, new fun and exciting gameplay features, and high performance built on top of [Tuinity](https://github.com/Spottedleaf/Tuinity).
+
 </div>
-
-
-Purpur is a fork of [Paper](https://github.com/PaperMC/Paper), [Tuinity](https://github.com/Spottedleaf/Tuinity), & [Airplane](https://github.com/TECHNOVE/Airplane) with the goal of providing new and interesting configuration options that create a unique gameplay experience not seen anywhere else
 
 ## Contact [![Discord shield.io](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/mtAAnkk)
 
@@ -57,7 +56,7 @@ Downloads API endpoints:
 
 All patches are licensed under the MIT license, unless otherwise noted in the patch headers.
 
-See [PaperMC/Paper](https://github.com/PaperMC/Paper), [Spottedleaf/Tuinity](https://github.com/Spottedleaf/Tuinity), [TECHNOVE/Airplane](https://github.com/TECHNOVE/Airplane), and [jpenilla/Toothpick](https://github.com/jpenilla/Toothpick) for the license of material used by this project.
+See [PaperMC/Paper](https://github.com/PaperMC/Paper), [Spottedleaf/Tuinity](https://github.com/Spottedleaf/Tuinity), and [jpenilla/Toothpick](https://github.com/jpenilla/Toothpick) for the license of material used by this project.
 
 ## bStats
 
