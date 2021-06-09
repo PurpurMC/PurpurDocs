@@ -126,6 +126,10 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 
 - **default**: §a%s has been shown the end credits
 - **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
+
+#### unverified-username
+- **default**: default
+- **description**: Message that shows when a player is kicked for having an unverified username (user is in offline-mode). Setting as "default" displays the default message "Failed to verify username!"
 	
 ### blocks
 
@@ -150,6 +154,9 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 #### disable-mushroom-updates  
 - **default**: false
 - **description**: Stops the mushroom block from updating it's block state server side
+#### disable-chorus-plant-updates  
+- **default**: false
+- **description**: Stops the chorus plant from updating it's block state server side
 #### disable-note-block-updates  
 - **default**: false
 - **description**: Stops the note block from updating it's block state server side
@@ -164,11 +171,19 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 - **default**: "https://timings.pl3x.net"
 - **description**: The server where timing reports are posted to. To use Aikar's timings server use "http://timings.aikar.co"
 
-### advancement
+### broadcasts
 
-#### only-broadcast-to-affected-player
+#### advancement
+
+##### only-broadcast-to-affected-player
 - **default**: false
 - **description**: Broadcasts the advancment messages in chat only to the affected player
+
+#### death
+
+##### only-broadcast-to-affected-player
+- **default**: false
+- **description**: Broadcasts the death messages in chat only to the affected player
 	
 ### logger
 
@@ -215,6 +230,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 ### blocks
 
 
+#### dragon_egg
+* ##### teleport
+    - **default**: true
+    - **description**: Control whether the dragon egg will teleport when hit
 #### turtle_egg
 * ##### break-from-exp-orbs
     - **default**: true
@@ -232,6 +251,20 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### activation-range
     - **default**: 8
     - **description**: The amount of powered rails that get activated by a single redstone source
+#### beacon
+* ##### effect-range
+    * ###### level-1
+        - **default**: 20
+        - **description**: Amount of blocks the effect range reaches for this level
+    * ###### level-2
+        - **default**: 30
+        - **description**: Amount of blocks the effect range reaches for this level
+    * ###### level-3
+        - **default**: 40
+        - **description**: Amount of blocks the effect range reaches for this level
+    * ###### level-4
+        - **default**: 50
+        - **description**: Amount of blocks the effect range reaches for this level
 #### sponge
 * ##### absorption
     * ###### area
@@ -256,6 +289,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### allow-mob-spawns
     - **default**: true
     - **description**: Set to false to disallow mob spawning on blue ice
+#### sand
+* ##### fix-duping
+    - **default**: true
+    - **description**: Set to false to re-enable the ability to sand dupe
 #### dispenser
 * ##### apply-cursed-to-armor-slots
     - **default**: true
@@ -352,6 +389,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - Requires [`purpur.anvil.color`](../Permissions#purpuranvilcolor) permission
     - **default**: false
     - **description**: Allows players to use color codes in anvils
+* ##### cumulative-cost
+    - **default**: true
+    - **description**: If the cumulative cost should apply when an item is used in an anvil
 #### stonecutter
 * ##### damage
     - **default**: 0.0
@@ -371,6 +411,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### open-with-solid-block-on-top
     - **default**: false
     - **description**: Allows for chests to open even with a solid block on top
+#### shulker_box
+* ##### allow-oversized-stacks
+    - **default**: false
+    - **description**: Controls whether overstacked items are allowed in shulker boxes (default fixes chunk ban issue PaperMC/Paper#4748)
 #### door
 * ##### requires-redstone
     - **default**: []
@@ -1522,6 +1566,12 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* ##### can-work-at-night
+    - **default**: false
+    - **description**: Controls whether bees can work during the night
+* ##### can-work-in-rain
+    - **default**: false
+    - **description**: Controls whether bees can work during rainy weather
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -1809,6 +1859,25 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 #### use-better-mending
 - **default**: false
 - **description**: Set to true for mending enchantment to always repair the most damaged equipment first
+#### mob-effects
+* ##### health-regen-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+* ##### minimal-health-poison-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+* ##### poison-degeneration-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+* ##### wither-degeneration-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+* ##### hunger-exhaustion-amount
+    - **default**: 0.005
+    - **description**: The amount at which this effect affects entities
+* ##### saturation-regen-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
 #### projectile-offset
 * ##### bow
     - **default**: 1.0
@@ -1931,6 +2000,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### can-skip-night
     - **default**: true
     - **description**: Set to false to disable the players' ability to skip the night by sleeping
+* ##### critical-damage-multiplier
+    - **default**: 1.5
+    - **description**: The percentage of damage a critical attack adds to the base damage
 * ##### spawn-invulnerable-ticks
     - **default**: 60
     - **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
@@ -1992,6 +2064,10 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### place-anywhere
     - **default**: false
     - **description**: Whether minecarts can be placed anywhere, not just on rails
+* ##### powered-rail
+    * ###### boost-modifier
+        - **default**: 0.06
+        - **description**: the speed boost that minecarts gain from hitting a powered rail (Doesn't affect furnace minecarts)
 * ##### controllable
     * ###### enabled
         - **default**: false
