@@ -469,6 +469,15 @@ World settings are on a per-world basis. The child-node `default` is used for al
 ### mobs
 
 #### ender_dragon
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### ridable-max-y
+    - **default**: 256
+    - **description**: Maximum height this mob can fly to while being ridden
 * ##### always-drop-full-exp
     - **default**: false
     - **description**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
