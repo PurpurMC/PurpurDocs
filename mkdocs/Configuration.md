@@ -199,7 +199,7 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 #### end-spike
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### dungeon
+#### monster_room
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
 	
