@@ -73,6 +73,9 @@ Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch) to be en
 - Players with this permission can use a configured tool with silk
 touch enchantment to mine up any spawner cage instead of disappearing.
 
+## purpur.joinfullserver
+- Allows players to join when server is full
+  
 ## purpur.place.spawners
 Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch) to be enabled in purpur.yml
 
