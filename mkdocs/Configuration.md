@@ -195,165 +195,171 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 - **description**: Suppress warnings about unknown attributes in console and logs
 	
 ### seed
+
+#### random-populator-seed
+- **default**: false
+- **description**: Set to true to randomize the populator seeds
+
+#### feature
 Check out https://minecraft.fandom.com/wiki/Configured_feature for more information on the options below
 
-#### bamboo
+##### bamboo
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### basalt_columns
+##### basalt_columns
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### basalt_pillar
+##### basalt_pillar
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### block_pile
+##### block_pile
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### blue_ice
+##### blue_ice
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### bonus_chest
+##### bonus_chest
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### chorus_plant
+##### chorus_plant
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### coral_claw
+##### coral_claw
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### coral_mushroom
+##### coral_mushroom
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### coral_tree
+##### coral_tree
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### decorated
+##### decorated
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### delta_feature
+##### delta_feature
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### disk
+##### disk
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### dripstone_cluster
+##### dripstone_cluster
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### end_island
+##### end_island
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### end_spike
+##### end_spike
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### flower
+##### flower
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### forest_rock
+##### forest_rock
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### fossil
+##### fossil
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### geode
+##### geode
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### glow_lichen
+##### glow_lichen
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### glowstone_blob
+##### glowstone_blob
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### growing_plant
+##### growing_plant
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### huge_brown_mushroom
+##### huge_brown_mushroom
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### huge_fungus
+##### huge_fungus
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### huge_red_mushroom
+##### huge_red_mushroom
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### ice_patch
+##### ice_patch
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### ice_spike
+##### ice_spike
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### iceberg
+##### iceberg
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### kelp
+##### kelp
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### lake
+##### lake
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### large_dripstone
+##### large_dripstone
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### monster_room
+##### monster_room
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### nether_forest_vegetation
+##### nether_forest_vegetation
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### netherrack_replace_blobs
+##### netherrack_replace_blobs
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### ore
+##### ore
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### random_boolean_selector
+##### random_boolean_selector
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### random_patch
+##### random_patch
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### random_selector
+##### random_selector
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### replace_single_block
+##### replace_single_block
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### root_system
+##### root_system
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### scattered_ore
+##### scattered_ore
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### sea_pickle
+##### sea_pickle
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### seagrass
+##### seagrass
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### simple_block
+##### simple_block
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### simple_random_selector
+##### simple_random_selector
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### small_dripstone
+##### small_dripstone
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### tree
+##### tree
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### twisting_vines
+##### twisting_vines
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### underwater_magma
+##### underwater_magma
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### vegetation_patch
+##### vegetation_patch
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### waterlogged_vegetation_patch
+##### waterlogged_vegetation_patch
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-#### weeping_vines
+##### weeping_vines
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
 	
@@ -595,6 +601,17 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
+#### cave_vines
+* ##### growth-modifier
+    - **default**: 0.10
+    - **description**: Changes the rate of growth of the vine
+* ##### max-growth-age
+    - **default**: 25
+    - **description**: The max growth age that the plant can grow
+#### powder_snow
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for powdered snow to bypass the mob griefing gamerule
 #### kelp
 * ##### max-growth-age
     - **default**: 25
@@ -1056,6 +1073,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### allow-griefing
     - **default**: true
     - **description**: Set to false to stop the creeper from griefing.
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for creepers to bypass the mob griefing gamerule
 * ##### naturally-charged-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning
@@ -1262,6 +1282,17 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 40.0
         - **description**: Max health attribute
+#### glow_squid
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob WASD controllable
+* ##### can-fly
+    - **default**: false
+    - **description**: Makes it so squids can fly, Oh my!
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
 #### squid
 * ##### ridable
     - **default**: false
@@ -1458,6 +1489,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for piglins to bypass the mob griefing gamerule
 * ##### portal-spawn-modifier
     - **default**: 2000
     - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
@@ -1498,6 +1532,20 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### attributes
     * ###### max_health
         - **default**: 20.0
+        - **description**: Max health attribute
+#### goat
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
         - **description**: Max health attribute
 #### panda
 * ##### ridable
@@ -1710,6 +1758,17 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+#### axolotl
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob WASD controllable
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 14.0
+        - **description**: Max health attribute
 #### bat
 * ##### ridable
     - **default**: false
@@ -1911,6 +1970,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         * min
@@ -2049,6 +2111,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### saturation-regen-amount
     - **default**: 1.0
     - **description**: The amount at which this effect affects entities
+#### projectiles-bypass-mob-griefing
+* **default**: false
+* **description**: Set to true for projectiles to bypass the mob griefing gamerule
 #### projectile-offset
 * ##### bow
     - **default**: 1.0
@@ -2174,7 +2239,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### teleport-if-outside-border
   - **default**: false
   - **description**: Teleports you to spawn if you somehow get outside the world border
-* #### totem-of-undying-works-in-inventory
+* ##### totem-of-undying-works-in-inventory
   - **default**: false
   - **description**: Allows the totem of undying to work in your inventory, not just your offhand 
 * ##### fix-stuck-in-portal
