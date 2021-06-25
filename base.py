@@ -117,6 +117,15 @@ async def main():
 
     diff = await compile_diff(compare_commits, PROJECT)
 
+    # remove duplicates between additions/removals
+    for type in diff:
+        # diff["config"]["additions"]
+        additions = diff[type]["additions"]
+        removals = diff[type]["removals"]
+        diff[type]["additions"] = [ x for x in additions if x not in removals ]
+        diff[type]["removals"] = [ x for x in removals if x not in additions ]
+
+
     filename = f"{LOG_DIR}{'..'.join(compare_commits).replace('/', '|')}.yml"
     makedirs(path.dirname(filename), exist_ok=True)
     with open(filename, 'w') as stream:
