@@ -447,6 +447,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### fix-duping
     - **default**: true
     - **description**: Set to false to re-enable the ability to sand dupe
+#### end_portal
+* ##### safe-teleporting
+    - **default**: true
+    - **description**: Toggles protection against unsafe code in the handling of end portal teleportation. Disabling this may be necessary for some exploits
 #### dispenser
 * ##### apply-cursed-to-armor-slots
     - **default**: true
@@ -546,6 +550,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### cumulative-cost
     - **default**: true
     - **description**: If the cumulative cost should apply when an item is used in an anvil
+#### lightning_rod
+* ##### range
+    - **default**: 128
+    - **description**: Change the range in which the lightning rod redirect lightning
 #### stonecutter
 * ##### damage
     - **default**: 0.0
@@ -2079,9 +2087,6 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 #### disable-drops-on-cramming-death
 - **default**: false
 - **description**: Stops entities from dropping loot on death, if killed by cramming gamerule
-#### totem-of-undying-works-in-inventory
-- **default**: false
-- **description**: Allows the totem of undying to work in your inventory, not just your offhand
 #### entity-blindness-multiplier
 - **default**: 1
 - **description**: How blind a mob is when affected with the blindness potion effect
@@ -2160,27 +2165,36 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - **default**: true
     - **description**: Set to false to disallow armorstands from moving in water over a fence
 #### player
+* ##### spawn-invulnerable-ticks
+  - **default**: 60
+  - **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
+* ##### invulnerable-while-accepting-resource-pack
+  - **default**: false
+  - **description**: Sets the player as invulnerable while they download the resource pack.
+* ##### teleport-if-outside-border
+  - **default**: false
+  - **description**: Teleports you to spawn if you somehow get outside the world border
+* #### totem-of-undying-works-in-inventory
+  - **default**: false
+  - **description**: Allows the totem of undying to work in your inventory, not just your offhand 
+* ##### fix-stuck-in-portal
+  - **default**: false
+  - **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
+* ##### one-punch-in-creative
+  - **default**: false
+  - **description**: If the player is in creative and hits an entity with an empty hand, the entity instantly dies
+* ##### sleep-ignore-nearby-mobs
+  - **default**: false
+  - **description**: Set to true to allow sleep even if there are mobs nearby
 * ##### can-skip-night
     - **default**: true
     - **description**: Set to false to disable the players' ability to skip the night by sleeping
 * ##### critical-damage-multiplier
     - **default**: 1.5
     - **description**: The percentage of damage a critical attack adds to the base damage
-* ##### spawn-invulnerable-ticks
-    - **default**: 60
-    - **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
-* ##### invulnerable-while-accepting-resource-pack
-    - **default**: false
-    - **description**: Sets the player as invulnerable while they download the resource pack.
-* ##### fix-stuck-in-portal
-    - **default**: false
-    - **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
-* ##### one-punch-in-creative
-    - **default**: false
-    - **description**: If the player is in creative and hits an entity with an empty hand, the entity instantly dies
-* ##### sleep-ignore-nearby-mobs
-    - **default**: false
-    - **description**: Set to true to allow sleep even if there are mobs nearby
+* ##### burp-when-full
+  - **default**: false
+  - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
 * ##### idle-timeout
     * ###### kick-if-idle
         - **default**: true
@@ -2201,9 +2215,6 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     * ###### maximum
         - **default**: 100
         - **description**: Maximum amount of exp value to drop on death
-* ##### teleport-if-outside-border
-    - **default**: false
-    - **description**: Teleports you to spawn if you somehow get outside the world border
 * ##### netherite-fire-resistance
     * ###### duration
         - **default**: 0
