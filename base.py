@@ -11,7 +11,7 @@ LOG_DIR = './logs/'
 PROJECT = {
     'owner': 'pl3xgaming',
     'repo': 'Purpur',
-    'branch': 'ver/1.16.5'
+    'branch': 'ver/1.17'
 }
 
 
