@@ -195,6 +195,7 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 - **description**: Suppress warnings about unknown attributes in console and logs
 	
 ### seed
+Check out https://minecraft.fandom.com/wiki/Configured_feature for more information on the options below
 
 #### bamboo
 - **default**: -1
