@@ -198,7 +198,7 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 
 #### random-populator-seed
 - **default**: false
-- **description**: Set to true to randomize the populator seeds
+- **description**: Set to true to randomize the base populator seed. Everytime it goes to use it, it will randomize a new seed for the random, instead of using the seed from the world.
 
 #### feature
 Check out https://minecraft.fandom.com/wiki/Configured_feature for more information on the options below
