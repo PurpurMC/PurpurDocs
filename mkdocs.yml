@@ -17,6 +17,16 @@ repo_name: PurpurDocs
 edit_uri: edit/main/mkdocs/
 extra_css:
   - stylesheets/extra.css
+plugins:
+  - redirects:
+      redirect_maps:
+          'commands.md': 'Commands.md'
+          'cmds.md': 'Commands.md'
+          'configuration.md': 'Configuration.md'
+          'config.md': 'Configuration.md'
+          'permissions.md': 'Permissions.md'
+          'perms.md': 'Permissions.md'
+          'faq.md': 'FAQ.md'
 theme:
   name: material
   custom_dir: overrides
