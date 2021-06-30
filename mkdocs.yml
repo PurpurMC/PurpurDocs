@@ -18,6 +18,7 @@ edit_uri: edit/main/mkdocs/
 extra_css:
   - stylesheets/extra.css
 plugins:
+  - search
   - redirects:
       redirect_maps:
           'commands.md': 'Commands.md'
