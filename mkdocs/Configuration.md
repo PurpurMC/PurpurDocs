@@ -30,6 +30,34 @@ Global settings affect all worlds on the server as well as the core server funct
 	
 ### command
 
+* #### uptime
+    * ##### format
+        - **default**: "&lt;days>&lt;hours>&lt;minutes>&lt;seconds>"
+        - **description**: The format used in the `<uptime>` placeholder for [`uptime-command-output`](#uptime-command-output)
+    * ##### day
+        - **default**: "%02d day, "
+        - **description**: Output of `<day>` placeholder in [command.uptime.format](#format) option
+    * ##### days
+        - **default**: "%02d days, "
+        - **description**: Output of `<days>` placeholder in [command.uptime.format](#format) option
+    * ##### hour
+        - **default**: "%02d hour, "
+        - **description**: Output of `<hour>` placeholder in [command.uptime.format](#format) option
+    * ##### hours
+        - **default**: "%02d hours, "
+        - **description**: Output of `<hours>` placeholder in [command.uptime.format](#format) option
+    * ##### minute
+        - **default**: "%02d minute, and "
+        - **description**: Output of `<minute>` placeholder in [command.uptime.format](#format) option
+    * ##### minutes
+        - **default**: "%02d minutes, and "
+        - **description**: Output of `<minutes>` placeholder in [command.uptime.format](#format) option
+    * ##### second
+        - **default**: "%02d second"
+        - **description**: Output of `<second>` placeholder in [command.uptime.format](#format) option
+    * ##### seconds
+        - **default**: "%02d seconds"
+        - **description**: Output of `<seconds>` placeholder in [command.uptime.format](#format) option
 * #### gamemode
     * ##### requires-specific-permission
         - Requires [`minecraft.command.gamemode.<gamemode>`](../Permissions#minecraftcommandgamemodegamemode) permission
@@ -115,6 +143,18 @@ Requires the [`allow.ride.<mob_id>`](../Permissions#allowridemob_id) permission
 - **default**: §cYou cannot mount that mob
 - **description**: Message that shows when someone tries to mount a mob they're not allowed to.
 
+#### uptime-command-output
+`<uptime>` - The format from [`<global>.command.uptime.format`](#format)
+
+- **default**: &lt;red>&lt;italic>Don't run with scissors!
+- **description**: Actionbar message that shows when someone attempts to run with scissors
+
+#### dont-run-with-scissors
+Requires the [`damage-if-sprinting`](#damage-if-sprinting) option to be enabled
+
+- **default**: &lt;red>&lt;italic>Don't run with scissors!
+- **description**: Actionbar message that shows when someone attempts to run with scissors
+
 #### demo-command-output
 Requires the [`bukkit.command.demo`](../Permissions#bukkitcommanddemo) permission
 
@@ -130,6 +170,14 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 #### unverified-username
 - **default**: default
 - **description**: Message that shows when a player is kicked for having an unverified username (user is in offline-mode). Setting as "default" displays the default message "Failed to verify username!"
+	
+#### sleep-skipping-night
+- **default**: default
+- **description**: The actionbar message that appears when the night has been skipped. Set to "default" to let the client's use their own translatable components. Set to an empty string to disable it.
+
+#### sleeping-players-percent
+- **default**: default
+- **description**: The actionbar message that appears when a player is asleep. Set to "default" to let the clients use their own translatable components. Set to an empty string to disable it. Available placeholders: `<count>` - the current amount of players sleeping, `<total>` - the total amount of players needed to sleep
 	
 ### blocks
 
@@ -196,9 +244,18 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 	
 ### seed
 
-#### random-populator-seed
-- **default**: false
-- **description**: Set to true to randomize the base populator seed. Everytime it goes to use it, it will randomize a new seed for the random, instead of using the seed from the world.
+#### structure
+Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_defaults for more information on the options below
+
+##### buried_treasure
+- **default**: -1
+- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
+##### mineshaft
+- **default**: -1
+- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
+##### stronghold
+- **default**: -1
+- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
 
 #### feature
 Check out https://minecraft.fandom.com/wiki/Configured_feature for more information on the options below
@@ -387,8 +444,19 @@ Check out https://minecraft.fandom.com/wiki/Configured_feature for more informat
 
 World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings
 
-### blocks
+### seed
 
+#### random-populator-seed
+- **default**: false
+- **description**: Set to true to randomize the base populator seed. Everytime it goes to use it, it will randomize a new seed for the random, instead of using the seed from the world.
+
+### hunger
+
+#### starvation-damage
+- **default**: 1.0
+- **description**: The amount of damage starvation will do
+
+### blocks
 
 #### dragon_egg
 * ##### teleport
@@ -521,6 +589,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### explosion-effect
     - **default**: DESTROY
     - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
+* ##### fix-spigot-5988
+    - **default**: false
+    - **description**: Fixes [SPIGOT-5988](https://hub.spigotmc.org/jira/browse/SPIGOT-5988) bug
 #### farmland
 * ##### get-moist-from-below
     - **default**: false
@@ -568,7 +639,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 - **default**: []
 - **description**: List of blocks that will not randomly tick (Only applies to the [blocks affected by random tick](https://minecraft.fandom.com/wiki/Tick#Random_tick))
 #### furnace
-* ##### infinite-fuel
+* ##### use-lava-from-underneath
     - **default**: false
     - **description**: Allows the furnace to be infinitely powered by lava placed underneath it
 #### blue_ice
@@ -1154,9 +1225,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### takes-damage-from-water
     - **default**: true
     - **description**: Set to false for this mob to stop taking damage from water
-* ##### aggressive-towards-spawned-endermites
+* ##### aggressive-towards-endermites
+    - **default**: true
+    - **description**: Set to false to stop enderman from being aggro towards *all* types of spawned endermites 
+* ##### aggressive-towards-endermites-only-spawned-by-player-thrown-ender-pearls
     - **default**: false
-    - **description**: Set to true to make enderman aggro towards spawned endermites
+    - **description**: Set to true to make enderman aggro towards endermites *only* if they've been spawned by a player thrown ender pearl. This option does nothing if `aggressive-towards-endermites` is false
 * ##### ignore-players-wearing-dragon-head
     - **default**: false
     - **description**: Set to true to make enderman ignore players that wear the dragon head
@@ -1188,6 +1262,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### can-break-doors
+    - **default**: false
+    - **description**: Set to true to allow drowned to break doors
 * ##### jockey
     * ###### only-babies
         - **default**: true
@@ -1449,6 +1526,22 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### spawn-from-bullet:
+    * ###### base-chance
+        - **default**: 1.0
+        - **description**: Base chance
+    * ###### require-open-lid
+        - **default**: true
+        - **description**: Require shulkers to have their lid open to spawn from bullet
+    * ###### nearby-range
+        - **default**: 8.0
+        - **description**: The nearby range to check for shulkers
+    * ###### nearby-equation
+        - **default**: `(nearby - 1) / 5.0`
+        - **description**: The equation to use for calculating a shulker spawning from a bullet (`nearby` is the amount of shulker entities nearby) Make this blank to always spawn if there's a shulker nearby
+    * ###### random-color
+        - **default**: false
+        - **description**: Set the shulker to a random color when spawned from a bullet
 * ##### attributes
     * ###### max_health
         - **default**: 30.0
@@ -2181,7 +2274,10 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 
 * ##### enabled
     - **default**: false
-    - **description**: Makes it so you can mine spawners using a tool with silk touch 
+    - **description**: Makes it so you can mine spawners using a tool with silk touch
+* ##### minimal-level
+    - **default**: 1
+    - **description**: The minimal level of the Silktouch enchantment required to pick up mined spawners
 * ##### tools
     - **default**:
     ``` yaml
@@ -2242,6 +2338,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### totem-of-undying-works-in-inventory
     - **default**: false
     - **description**: Allows the totem of undying to work in your inventory, not just your offhand
+* ##### should-cram-to-death
+    - **default**: false
+    - **description**: Stops players from being able to cram to death
 * ##### fix-stuck-in-portal
     - **default**: false
     - **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
@@ -2260,6 +2359,13 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### burp-when-full
     - **default**: false
     - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
+* ##### armor-click-equip
+    * ###### allow-hot-swapping
+        - **default**: false
+        - **description**: Allows players to swap the armor in their armor slots with the one in hand by right clicking
+    * ###### creative-makes-copy
+        - **default**: true
+        - **description**: Set to false to stop duplicating the armor in hand when right clicking to place it in the player's armor slot
 * ##### idle-timeout
     * ###### kick-if-idle
         - **default**: true
@@ -2338,6 +2444,14 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     * ###### sprinting-damage
         - **default**: 1
         - **description**: The amount of damage to give if `damage-if-sprinting` is enabled
+* ##### shulker_box
+    * ###### drop-contents-when-destroyed
+        - **default**: true
+        - **description**: Whether the shulker box should drop it's contents when it's been destroyed
+* ##### glow_berries
+    * ###### eat-glow-duration
+        - **default**: 0
+        - **description**: Amount of seconds the player will glow after eating a glow berry. Set to 0 to disable.
 * ##### ender-pearl
     * ###### damage
         - **default**: 5

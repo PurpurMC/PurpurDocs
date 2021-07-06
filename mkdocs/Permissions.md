@@ -75,6 +75,9 @@ touch enchantment to mine up any spawner cage instead of disappearing.
 
 ## purpur.joinfullserver
 - Allows players to join when server is full
+
+## purpur.portal.instant
+- Allows players to instantly teleport through portals when stepping through them
   
 ## purpur.place.spawners
 Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch) to be enabled in purpur.yml
