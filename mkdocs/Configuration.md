@@ -2231,26 +2231,26 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - **description**: Set to false to disallow armorstands from moving in water over a fence
 #### player
 * ##### spawn-invulnerable-ticks
-  - **default**: 60
-  - **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
+    - **default**: 60
+    - **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
 * ##### invulnerable-while-accepting-resource-pack
-  - **default**: false
-  - **description**: Sets the player as invulnerable while they download the resource pack.
+    - **default**: false
+    - **description**: Sets the player as invulnerable while they download the resource pack.
 * ##### teleport-if-outside-border
-  - **default**: false
-  - **description**: Teleports you to spawn if you somehow get outside the world border
+    - **default**: false
+    - **description**: Teleports you to spawn if you somehow get outside the world border
 * ##### totem-of-undying-works-in-inventory
-  - **default**: false
-  - **description**: Allows the totem of undying to work in your inventory, not just your offhand 
+    - **default**: false
+    - **description**: Allows the totem of undying to work in your inventory, not just your offhand
 * ##### fix-stuck-in-portal
-  - **default**: false
-  - **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
+    - **default**: false
+    - **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
 * ##### one-punch-in-creative
-  - **default**: false
-  - **description**: If the player is in creative and hits an entity with an empty hand, the entity instantly dies
+    - **default**: false
+    - **description**: If the player is in creative and hits an entity with an empty hand, the entity instantly dies
 * ##### sleep-ignore-nearby-mobs
-  - **default**: false
-  - **description**: Set to true to allow sleep even if there are mobs nearby
+    - **default**: false
+    - **description**: Set to true to allow sleep even if there are mobs nearby
 * ##### can-skip-night
     - **default**: true
     - **description**: Set to false to disable the players' ability to skip the night by sleeping
@@ -2258,8 +2258,8 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - **default**: 1.5
     - **description**: The percentage of damage a critical attack adds to the base damage
 * ##### burp-when-full
-  - **default**: false
-  - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
+    - **default**: false
+    - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
 * ##### idle-timeout
     * ###### kick-if-idle
         - **default**: true
