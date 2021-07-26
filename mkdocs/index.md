@@ -14,7 +14,7 @@
 
 Welcome to the official documentation source for the&nbsp;[Purpur](https://github.com/pl3xgaming/Purpur/)&nbsp;project.
 
-This wiki was last updated to Build&nbsp;[#1255](https://ci.pl3x.net/job/Purpur/1255/)&nbsp;([`89c9c9`](https://github.com/pl3xgaming/Purpur/commit/89c9c902b1ee4fdf916c9b45123cf06531260524))
+This wiki was last updated to Build&nbsp;[#1296](https://ci.pl3x.net/job/Purpur/1296/)&nbsp;([`f482d1`](https://github.com/pl3xgaming/Purpur/commit/f482d19d56636b0119bf992e1e12a67f0bb65d04))
 
 Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers designed for configurability, new fun and exciting gameplay features, and high performance built on top of [Tuinity](https://github.com/Spottedleaf/Tuinity).
 

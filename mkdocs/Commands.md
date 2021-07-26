@@ -59,7 +59,7 @@ Purpur adds a few new commands to the game.
 
 ## /tpsbar
 ??? info "Image of the tpsbar in action 📷"
-    ![TPSBar in action](images/tpsbar.png)
+    ![TPSBar in action](images/bossbar.gif)
 - This command shows a bossbar showcasing your current TPS/MSPT to players. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show the tpsbar to yourself.
 
 - **examples**
@@ -70,3 +70,17 @@ Purpur adds a few new commands to the game.
 
 - **permission**:
     - `bukkit.command.tpsbar`
+
+## /compass
+??? info "Image of the compass in action 📷"
+    ![Compass in action](images/bossbar.gif)
+- This command shows a bossbar showcasing the current direction faced to players. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show the compass to yourself.
+
+- **examples**
+    - `/compass` shows you the compass
+    - `/compass BillyGalbreath` shows BillyGalbreath the compass
+    - `/compass @a` shows the compass to all players
+    - `/compass @r` shows the compass to a random player
+
+- **permission**:
+    - `bukkit.command.compass`

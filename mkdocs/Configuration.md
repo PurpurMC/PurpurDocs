@@ -63,6 +63,74 @@ Global settings affect all worlds on the server as well as the core server funct
         - Requires [`minecraft.command.gamemode.<gamemode>`](../Permissions#minecraftcommandgamemodegamemode) permission
         - **default**: false
         - **description**: Set to true for each gamemode to require it's own permission
+* #### tpsbar
+    * ##### title
+        `<tps>` - The current TPS
+
+        `<mspt>` - The current MSPT
+
+        `<ping>` - The current ping
+
+        - **default**: &lt;gray>TPS&lt;yellow>:&lt;/yellow> &lt;tps> MSPT&lt;yellow>:&lt;/yellow>
+      &lt;mspt> Ping&lt;yellow>:&lt;/yellow> &lt;ping>ms
+        - **description**: The format of the bossbar when the `/tpsbar` command is ran
+
+    * ##### overlay
+        - **default**: NOTCHED_20
+        - **description**:
+            Sets the overlay type of the Bossbar  
+            Available options: `PROGRESS`, `NOTCHED_6`, `NOTCHED_10`, `NOTCHED_12`, `NOTCHED_20`
+    * ##### fill-mode
+        - **default**: MSPT
+        - **description**:
+            What the BossBar bar should show
+            Available options: `TPS`, `MSPT`, `PING` 
+    * ##### progress-color
+        Available options: `PINK`, `BLUE`, `RED`, `GREEN`, `YELLOW`, `PURPLE`, `WHITE`
+        * ###### good
+            - **default**: GREEN
+            - **description**: What color should show when `fill-mode` is "good"
+        * ###### medium
+            - **default**: YELLOW
+            - **description**: What color should show when `fill-mode` is "medium"
+        * ###### low
+            - **default**: RED
+            - **description**: What color should show when `fill-mode` is "low"
+    * ##### text-color
+        `<text>` - The format from [`settings.command.tpsbar.title`](#title)
+        * ###### good
+            - **default**: &lt;gradient:#55ff55:#00aa00>&lt;text>&lt;/gradient>
+            - **description**: The gradient of `<text>` when `fill-mode` is "good"
+        * ###### medium
+            - **default**: &lt;gradient:#ffff55:#ffaa00>&lt;text>&lt;/gradient>
+            - **description**: The gradient of `<text>` when `fill-mode` is "medium"
+        * ###### low
+            - **default**: &lt;gradient:#ff5555:#aa0000>&lt;text>&lt;/gradient>
+            - **description**: The gradient of `<text>` when `fill-mode` is "low"
+    * ##### tick-interval
+        - **default**: 20
+        - **description**: How often the bossbar should update
+* #### compass
+    * ##### title
+        - **default**: "S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  
+S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  "
+        - **description**: The format of the bossbar when the [`/compass`](../Commands#compass) command is ran
+
+    * ##### overlay
+        - **default**: PROGRESS
+        - **description**:
+            Sets the overlay type of the Bossbar  
+            Available options: `PROGRESS`, `NOTCHED_6`, `NOTCHED_10`, `NOTCHED_12`, `NOTCHED_20`
+    * ##### progress-color
+        Available options: `PINK`, `BLUE`, `RED`, `GREEN`, `YELLOW`, `PURPLE`, `WHITE`
+        - **default**: GREEN
+        - **description**: The color of the bossbar
+    * ##### percent
+        - **default**: 1.0
+        - **description**: How filled the bossbar is rangin from 0.0 to 1.0
+    * ##### tick-interval
+        - **default**: 5
+        - **description**: How often the bossbar should update
 * #### hide-hidden-players-from-entity-selector
     - **default**: false
     - **description**: Set to true to hide players from the entity selector if they're hidden
@@ -463,6 +531,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### teleport
     - **default**: true
     - **description**: Control whether the dragon egg will teleport when hit
+#### amethyst
+* ##### silk-touch
+    - **default**: false
+    - **description**: Whether amethyst can be picked up by breaking it with an item enchanted with silk touch
 #### turtle_egg
 * ##### break-from-exp-orbs
     - **default**: true
@@ -878,9 +950,6 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
-* ##### takes-wither-damage
-    - **default**: false
-    - **description**: Allows wither skeletons to receive the wither effect (from wither roses, etc)
 * ##### attributes
     * ###### max_health
         - **default**: 20.0
@@ -1220,6 +1289,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### can-despawn-with-held-block
     - **default**: false
     - **description**: Makes the enderman despawn even if it's holding a block
+* ##### ignore-projectiles
+    - **default**: false
+    - **description**: Stops the enderman from being immune to projectiles
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for enderman to bypass the mob griefing gamerule
@@ -2339,9 +2411,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### totem-of-undying-works-in-inventory
     - **default**: false
     - **description**: Allows the totem of undying to work in your inventory, not just your offhand
-* ##### should-cram-to-death
+* ##### ridable-in-water
     - **default**: false
-    - **description**: Stops players from being able to cram to death
+    - **description**: Lets mobs/players ride on players if the player is in the water
 * ##### fix-stuck-in-portal
     - **default**: false
     - **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
@@ -2449,6 +2521,10 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     * ###### drop-contents-when-destroyed
         - **default**: true
         - **description**: Whether the shulker box should drop it's contents when it's been destroyed
+* ##### compass
+    * ###### holding-shows-bossbar
+        - **default**: false
+        - **description**: If the bossbar from the [`/compass`](../Commands#compass) command should show when holding a compass
 * ##### glow_berries
     * ###### eat-glow-duration
         - **default**: 0

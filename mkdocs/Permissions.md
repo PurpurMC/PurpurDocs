@@ -52,6 +52,9 @@ state will toggle on or off.
 ## bukkit.command.tpsbar
 - Allows the use of the [`/tpsbar`](../Commands#tpsbar) command.
 
+## bukkit.command.compass
+- Allows the use of the [`/compass`](../Commands#compass) command.
+
 ## minecraft.command.gamemode.<gamemode&gt;
 Requires [`gamemode.requires-specific-permission`](../Configuration#command) to be enabled in purpur.yml
 
