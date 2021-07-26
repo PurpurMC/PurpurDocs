@@ -22,6 +22,12 @@ Purpur adds a few new commands to the game.
 - **permission**:
     - `bukkit.command.ping`
 
+## /uptime
+- This command allows viewing the uptime of the server.
+
+- **permission**:
+    - `bukkit.command.uptime`
+
 ## /demo
 ??? info "Image of the Demo Screen 📷"
     ![Demo Screen](images/demo.png)

@@ -37,6 +37,9 @@ Requires [`creeper.ridable`](../Configuration#creeper) to be enabled in purpur.y
 Hold spacebar while not moving to charge the toggle. Instead of blowing up the powered
 state will toggle on or off.
 
+## bukkit.command.uptime
+- Allows the use of the [`/uptime`](../Commands#uptime) command.
+
 ## bukkit.command.demo
 - Allows the use of the [`/demo`](../Commands#demo) command.
 

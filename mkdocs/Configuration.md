@@ -144,9 +144,10 @@ Requires the [`allow.ride.<mob_id>`](../Permissions#allowridemob_id) permission
 - **description**: Message that shows when someone tries to mount a mob they're not allowed to.
 
 #### uptime-command-output
+Requires the [`bukkit.command.uptime`](../Permissions#bukkitcommanduptime) permission
 `<uptime>` - The format from [`<global>.command.uptime.format`](#format)
 
-- **default**: &lt;red>&lt;italic>Don't run with scissors!
+- **default**: &lt;green>Server uptime is &lt;uptime>
 - **description**: Actionbar message that shows when someone attempts to run with scissors
 
 #### dont-run-with-scissors
