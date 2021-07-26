@@ -30,27 +30,29 @@ Downloads can be obtained from the [downloads page](https://purpur.pl3x.net/down
 
 Latest build shortcut links:
 
-* [1.16.5](https://purpur.pl3x.net/api/v1/purpur/1.16.5/latest/download) builds 957+
-* [1.16.4](https://purpur.pl3x.net/api/v1/purpur/1.16.4/latest/download) builds 809-956
-* [1.16.3](https://purpur.pl3x.net/api/v1/purpur/1.16.3/latest/download) builds 751-808
-* [1.16.2](https://purpur.pl3x.net/api/v1/purpur/1.16.2/latest/download) builds 711-750
-* [1.16.1](https://purpur.pl3x.net/api/v1/purpur/1.16.1/latest/download) builds 608-710
-* [1.15.2](https://purpur.pl3x.net/api/v1/purpur/1.15.2/latest/download) builds 398-606
-* [1.15.1](https://purpur.pl3x.net/api/v1/purpur/1.15.1/latest/download) builds 348-397
-* [1.15](https://purpur.pl3x.net/api/v1/purpur/1.15/latest/download) builds 339-346
-* [1.14.x](https://purpur.pl3x.net/api/v1/purpur/1.14.4/latest/download) builds 337 and below
+* [1.17.1](https://api.pl3x.net/v2/purpur/1.17.1/latest/download) builds 1256+
+* [1.17](https://api.pl3x.net/v2/purpur/1.17/latest/download) builds 1172-1255
+* [1.16.5](https://api.pl3x.net/v2/purpur/1.16.5/latest/download) builds 957-1171
+* [1.16.4](https://api.pl3x.net/v2/purpur/1.16.4/latest/download) builds 809-956
+* [1.16.3](https://api.pl3x.net/v2/purpur/1.16.3/latest/download) builds 751-808
+* [1.16.2](https://api.pl3x.net/v2/purpur/1.16.2/latest/download) builds 711-750
+* [1.16.1](https://api.pl3x.net/v2/purpur/1.16.1/latest/download) builds 608-710
+* [1.15.2](https://api.pl3x.net/v2/purpur/1.15.2/latest/download) builds 398-606
+* [1.15.1](https://api.pl3x.net/v2/purpur/1.15.1/latest/download) builds 348-397
+* [1.15](https://api.pl3x.net/v2/purpur/1.15/latest/download) builds 339-346
+* [1.14.x](https://api.pl3x.net/v2/purpur/1.14.4/latest/download) builds 337 and below
 
 
 Downloads API endpoints:
 
  * List versions of Minecraft with builds available:  
- `https://purpur.pl3x.net/api/v1/purpur`
+ `https://api.pl3x.net/v2/purpur/`
  * List builds for a version of Minecraft:  
- `https://purpur.pl3x.net/api/v1/purpur/<version>`
+ `https://api.pl3x.net/v2/purpur/<version>`
  * Download a specific build of a specific version:  
- `https://purpur.pl3x.net/api/v1/purpur/<version>/<build>/download`
+ `https://api.pl3x.net/v2/purpur/<version>/<build>/download`
  * Download the latest build for a version of Minecraft:  
- `https://purpur.pl3x.net/api/v1/purpur/<version>/latest/download`
+ `https://api.pl3x.net/v2/purpur/<version>/latest/download`
 
 ## License [![MIT License](https://img.shields.io/github/license/pl3xgaming/Purpur?&logo=github)](./#license)
 
