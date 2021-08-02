@@ -498,13 +498,13 @@ Check out https://minecraft.fandom.com/wiki/Configured_feature for more informat
 	
 #### enchantment
 
-* #### allow-infinity-and-mending-together
+* ##### allow-infinity-and-mending-together
     - **default**: false
     - **description**: allows the mending and infinity enchantment to be on the same weapon/tool
-* #### allow-infinity-on-crossbow
+* ##### allow-infinity-on-crossbow
     - **default**: false
     - **description**: allows the infinity enchantment on a crossbow
-* #### allow-unsafe-enchants
+* ##### allow-unsafe-enchants
     - **default**: false
     - **description**: allows the ability to increase enchantments passed their max level
 	
