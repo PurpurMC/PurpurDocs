@@ -2528,7 +2528,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### glow_berries
     * ###### eat-glow-duration
         - **default**: 0
-        - **description**: Amount of seconds the player will glow after eating a glow berry. Set to 0 to disable.
+        - **description**: Amount of ticks the player will glow after eating a glow berry. Set to 0 to disable
 * ##### ender-pearl
     * ###### damage
         - **default**: 5
