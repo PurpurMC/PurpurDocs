@@ -16,7 +16,7 @@ right-clicking it. Once mounted you can use WASD to move around, and spacebar to
 ## allow.special.<mob_id&gt;
 Requires [`<mob_id>.ridable`](../Configuration#mobs) to be enabled in purpur.yml
 
-- This permission gives the ability to activate a ridable mob's
+- This permission gives the ability to activate a rideable mob's
 special ability. Not all mobs have a special ability. Just replace "<mob_id&gt;" with
 the mob's Entity ID.
 
@@ -34,7 +34,7 @@ the mob's Entity ID.
 Requires [`creeper.ridable`](../Configuration#creeper) to be enabled in purpur.yml
 
 - This permission gives the ability to toggle a creeper's powered state while riding.
-Hold spacebar while not moving to charge the toggle. Instead of blowing up the powered
+Hold the spacebar while not moving to charge the toggle. Instead of blowing up the powered
 state will toggle on or off.
 
 ## bukkit.command.uptime
