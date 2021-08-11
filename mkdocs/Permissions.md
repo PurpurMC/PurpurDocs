@@ -16,7 +16,7 @@ right-clicking it. Once mounted you can use WASD to move around, and spacebar to
 ## allow.special.<mob_id&gt;
 Requires [`<mob_id>.ridable`](../Configuration#mobs) to be enabled in purpur.yml
 
-- This permission gives the ability to activate a rideable mob's
+- This permission gives the ability to activate a ridable mob's
 special ability. Not all mobs have a special ability. Just replace "<mob_id&gt;" with
 the mob's Entity ID.
 
