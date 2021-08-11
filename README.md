@@ -1,6 +1,6 @@
 # PurpurDocs
 
-This is the documentation for [Purpur](https://purpur.pl3x.net/) that uses [Mkdocs](https://github.com/mkdocs/mkdocs) to generate a static site hosted on https://purpur.pl3x.net/docs. Included is a python script that compares the diff of two commit hashes and outputs the config/permission additions/removals into a YAML file.
+This is the documentation for [Purpur](https://purpur.pl3x.net/) that uses [Mkdocs](https://github.com/mkdocs/mkdocs) to generate a static site hosted on https://purpur.pl3x.net/docs. Included is a Python script that compares the diff of two commit hashes and outputs the config/permission additions/removals into a YAML file.
 
 ## Building
 
