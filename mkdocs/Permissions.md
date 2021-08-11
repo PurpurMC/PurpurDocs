@@ -1,4 +1,4 @@
-Purpur adds a few new permission nodes for some of it’s added features.
+Purpur adds a few new permission nodes for some of its added features.
 
 By default **all** of these permissions are for OP users only. Any other users will need to be granted the permissions using a permissions plugin.
 
