@@ -1,7 +1,7 @@
 Purpur adds a few new commands to the game.
 
 ## /purpur
-- This command allows reloading the purpur.yml config and viewing the purpur version.
+- This command allows reloading the purpur.yml config and viewing the Purpur version.
 
 - **examples**:
     - `/purpur reload` reloads purpur.yml without a restart
