@@ -2696,7 +2696,12 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 #### shovel-turns-block-to-grass-path
 - **default**:
     ``` yaml
+    - minecraft:coarse_dirt
+    - minecraft:dirt
     - minecraft:grass_block
+    - minecraft:mycelium
+    - minecraft:podzol
+    - minecraft:rooted_dirt
     ```
 - **description**: List of blocks that can be turned into a grass path when right-clicked with a shovel
 	
