@@ -1,8 +1,8 @@
 ## Where to download??!1?
 
-We have a downloads page on our website that's almost as majestic as my beard ![Billy's Majestic Beard](https://cdn.discordapp.com/emojis/768978823655063602.png?size=16). It is our user friendly front-end for our downloads api: https://purpur.pl3x.net/downloads/
+We have a downloads page on our website that's almost as majestic as my beard ![Billy's Majestic Beard](https://cdn.discordapp.com/emojis/768978823655063602.png?size=16). It is our user friendly front-end for our downloads API: https://purpur.pl3x.net/downloads/
 
-If you'd rather use the downloads api directly (for automation, scripts, or whatever) you can find the api endpoints listed on [the home page](https://purpur.pl3x.net/docs/#Downloads).
+If you'd rather use the downloads API directly (for automation, scripts, or whatever) you can find the API endpoints listed on [the home page](https://purpur.pl3x.net/docs/#Downloads).
 
 ## Can I make a feature request or report a bug?
 
@@ -36,13 +36,13 @@ https://purpur.pl3x.net/docs/Configuration
 
 ## Does Purpur have a Discord?
 
-Yes! It's where the purpur community resides. Don't be afraid to poke your head in and take a peek! https://purpur.pl3x.net/discord
+Yes! It's where the Purpur community resides. Don't be afraid to poke your head in and take a peek! https://purpur.pl3x.net/discord
 
 ## What does Purpur add/change from upstream?
 
-Quite a lot, actually. But none of it goes into effect unless **you** enable it in `purpur.yml`. Everything we change is set to the default behaviors. If you don't edit anything in `purpur.yml`, running this jar is no different than running Tuinity.
+Quite a lot, actually. But none of it goes into effect unless **you** enable it in `purpur.yml`. Everything we change is set to the default behaviors. If you don't edit anything in `purpur.yml`, running this JAR is no different than running Tuinity.
 
-For the curious, you can view all the code changes on github here: https://github.com/pl3xgaming/Purpur/tree/master/patches
+For the curious, you can view all the code changes on GitHub here: https://github.com/pl3xgaming/Purpur/tree/master/patches
 
 Don't worry if you can't read code. Most people can't. We have this nice wiki that covers every single option in `purpur.yml` and all the new permission nodes added for some new features/commands.
 
@@ -56,7 +56,7 @@ We have it all ^_^
 
 ## Do CraftBukkit/Spigot/Paper plugins work on Purpur?
 
-Yes. The only time there's incompatibilities is due to authors hard-coding support for craftbukkit/spigot, ignoring the existence of Paper and it's forks. If you run into any bugs that you know are because of Purpur, [create a ticket](https://github.com/pl3xgaming/Purpur/issues/new) and/or [join our discord server](https://purpur.pl3x.net/discord) so we can take a look.
+Yes. The only time there's incompatibility is due to authors hard-coding support for CraftBukkit/Spigot, ignoring the existence of Paper and its forks. If you run into any bugs that you know are because of Purpur, [create a ticket](https://github.com/pl3xgaming/Purpur/issues/new) and/or [join our Discord server](https://purpur.pl3x.net/discord) so we can take a look.
 
 ## Why isn't Purpur a direct fork of Tuinity? Why are all of Tuinity's patches squashed into 1 patch?
 

@@ -1,4 +1,4 @@
-Purpur adds a few new permission nodes for some of it’s added features.
+Purpur adds a few new permission nodes for some of its added features.
 
 By default **all** of these permissions are for OP users only. Any other users will need to be granted the permissions using a permissions plugin.
 
@@ -34,7 +34,7 @@ the mob's Entity ID.
 Requires [`creeper.ridable`](../Configuration#creeper) to be enabled in purpur.yml
 
 - This permission gives the ability to toggle a creeper's powered state while riding.
-Hold spacebar while not moving to charge the toggle. Instead of blowing up the powered
+Hold the spacebar while not moving to charge the toggle. Instead of blowing up the powered
 state will toggle on or off.
 
 ## bukkit.command.uptime
