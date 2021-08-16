@@ -163,7 +163,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 	
 ### server-mod-name
 - **default**: Purpur
-- **description**: This modified the server name that shows up when a client is outdated or when someone opens the debug screen [F3]
+- **description**: This modifies the server name that shows up when a client is outdated or when someone opens the debug screen [F3]
 	
 ### lagging-threshold
 - **default**: 19.0
