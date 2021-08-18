@@ -2605,43 +2605,43 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 #### projectile-despawn-rates
 * ##### dragon_fireball
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### egg
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### ender_pearl
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### experience_bottle
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### firework_rocket
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### fishing_bobber
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### fireball
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### llama_spit
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### potion
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### shulker_bullet
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### small_fireball
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### snowball
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 * ##### wither_skull
     - **default**: -1
-    - **description**: The rate at which the projectile despawns. -1 means disabled
+    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 #### entities-can-use-portals
 - **default**: true
 - **description**: Set to false to stop entities from being able to use portals
