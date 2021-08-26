@@ -283,12 +283,6 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 * ##### valid-for-portal-frame
     - **default**: false
     - **description**: Set to true to make it so you can create portals out of crying obsidian
-	
-### timings
-
-#### url
-- **default**: "https://timings.pl3x.net"
-- **description**: The server where timing reports are posted to. To use Aikar's timings server use "http://timings.aikar.co"
 
 ### broadcasts
 
@@ -537,6 +531,30 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### silk-touch
     - **default**: false
     - **description**: Whether amethyst can be picked up by breaking it with an item enchanted with silk touch
+#### observer
+* ##### disable-clock
+    - **default**: false
+    - **description**: disable observer clocks
+#### azalea
+* ##### growth-chance
+    - **default**: 0.0
+    - **description**: Chance for azalea to grow into trees naturally
+#### flowering_azalea
+* ##### growth-chance
+    - **default**: 0.0
+    - **description**: Chance for flowering azalea to grow into trees naturally
+#### cactus
+* ##### breaks-from-solid-neighbors
+    - **default**: true
+    - **description**: Whether a cactus will break from a solid block next to it
+#### cauldron
+* ##### fill-chances
+    * ###### rain
+        - **default**: 0.05
+        - **description**: The speed in which a cauldron fills with rain (depends on random tick)
+    * ###### powder-snow
+        - **default**: 0.1
+        - **description**: The speed in which a cauldron fills with powdered snow (depends on random tick)
 #### turtle_egg
 * ##### break-from-exp-orbs
     - **default**: true
@@ -554,6 +572,27 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### activation-range
     - **default**: 8
     - **description**: The amount of powered rails that get activated by a single redstone source
+#### conduit
+* ##### valid-ring-blocks
+    - **default**:
+        ``` yaml
+        - minecraft:prismarine
+        - minecraft:prismarine_bricks
+        - minecraft:sea_lantern
+        - minecraft:dark_prismarine
+        ```
+    - **default**:
+    - **description**: Blocks that can be used to build a conduit
+* ##### effect-distance
+    - **default**: 16
+    - **description**: The effective radius of the conduit for every seven blocks in the frame
+* ##### mob-damage
+    * ###### distance
+        - **default**: 8
+        - **description**: The distance (in blocks) to damage hostile mobs
+    * ###### damage-amount
+        - **default**: 4
+        - **description**: The amount of damage to apply to hostile mobs every 2 seconds if they are in contact with water/rain
 #### beacon
 * ##### effect-range
     * ###### level-1
@@ -569,6 +608,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 50
         - **description**: Amount of blocks the effect range reaches for this level
 #### sponge
+* ##### absorbs-lava
+    - **default**: false
+    - **description**: Set to true to allow sponges to absorb lava
 * ##### absorption
     * ###### area
         - **default**: 64
@@ -929,6 +971,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### can-ride-vehicles
     - **default**: false
     - **description**: Set to true for the wither to gain the ability to ride vehicles
+* ##### play-spawn-sound
+    - **default**: true
+    - **description**: Play the wither's spawn sound globally when it is spawned
 * ##### explosion-radius
     - **default**: 1.0
     - **description**: The explosion radius of a wither's projectile attack
@@ -963,6 +1008,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### curing_time
+    * ###### min
+        - **default**: 3600
+        - **description**: The minimum amount of ticks to randomly choose from when curing
+    * ###### max
+        - **default**: 6000
+        - **description**: The maximum amount of ticks to randomly choose from when curing
 * ##### jockey
     * ###### only-babies
         - **default**: true
@@ -1601,6 +1653,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### change-color-with-dye
+    - **default**: false
+    - **description**: Lets you change the color of the shulker by right-clicking it with a dye
 * ##### spawn-from-bullet:
     * ###### base-chance
         - **default**: 1.0
@@ -1625,6 +1680,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### stand-with-rider
+    - **default**: true
+    - **description**: Should a horse (with a rider) stand when it's ambient noise is played
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2260,6 +2318,15 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 #### use-better-mending
 - **default**: false
 - **description**: Set to true for mending enchantment to always repair the most damaged equipment first
+#### mobs-ignore-rails
+- **default**: false
+- **description**: Set to true to allow mobs to walk over rails
+#### rain-stops-after-sleep
+- **default**: true
+- **description**: Set to false to make rain continue even after a player sleeps
+#### thunder-stops-after-sleep
+- **default**: true
+- **description**: Set to false to make thunder continue even after a player sleeps
 #### mob-effects
 * ##### health-regen-amount
     - **default**: 1.0
@@ -2401,6 +2468,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - **default**: true
     - **description**: Set to false to disallow armorstands from moving in water over a fence
 #### player
+* ##### shift-right-click-repairs-mending-points
+    - **default**: 0
+    - **description**: The amount of experience points to use from the player's bar for repairing items enchanted with mending in the player's inventory
 * ##### spawn-invulnerable-ticks
     - **default**: 60
     - **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
@@ -2434,6 +2504,10 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### burp-when-full
     - **default**: false
     - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
+* ##### curse-of-binding
+    * ###### remove-with-weakness
+        - **default**: false
+        - **description**: Allows the player to remove curse of binding armor when they have a weakness effect applied to them
 * ##### armor-click-equip
     * ###### allow-hot-swapping
         - **default**: false
@@ -2447,7 +2521,10 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
         - **description**: Kick players if they become idle (see server.properties for player-idle-timeout time)
     * ###### tick-nearby-entities
         - **default**: true
-        - **description**: Should entities tick normally when nearby players are afk. False will require at least 1 non-afk player in order to tick
+        - **description**: Should entities tick normally when nearby players are AFK. False will require at least 1 non-AFK player in order to tick
+    * ###### mobs-target
+        - **default**: true
+        - **description**: Should mobs target nearby AFK players
     * ###### count-as-sleeping
         - **default**: false
         - **description**: Should AFK players count as sleeping? (allows active players to skip night by sleeping, even if AFK players are not in bed)
@@ -2575,6 +2652,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### damage-multiplied-by-speed
     - **default**: 0.0
     - **description**: Damage is multiplied by speed if flight is faster than set speed. Value of 0 disables this multiplier
+* ##### kinetic-damage
+    - **default**: true
+    - **description**: Should players take damage when flying into a wall
 * ##### ignore-unbreaking
     - **default**: false
     - **description**: Should elytras ignore the unbreaking enchantment
