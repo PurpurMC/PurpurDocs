@@ -10,8 +10,6 @@ If you want information on settings in tuinity.yml, paper.yml, spigot.yml, bukki
 
 * [Paper Configuration (paper.yml)](https://paper.readthedocs.io/en/latest/server/configuration.html)
 
-* [Tuinity Configuration (tuinity.yml)](https://github.com/Spottedleaf/Tuinity/wiki/Config)
-
 * [Airplane Configuration (airplane.yml)](https://github.com/TECHNOVE/Airplane/wiki)
 
 ???+ warning "Warning"
