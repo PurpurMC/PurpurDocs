@@ -16,7 +16,7 @@ Welcome to the official documentation source for the&nbsp;[Purpur](https://githu
 
 This wiki was last updated to Build&nbsp;[#1345](https://ci.pl3x.net/job/Purpur/1345/)&nbsp;([`4e03b8f`](https://github.com/pl3xgaming/Purpur/commit/4e03b8f7b0604cf97fd09dd528b1b000d41d8145))
 
-Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers designed for configurability, new fun and exciting gameplay features, and high performance built on top of [Tuinity](https://github.com/Spottedleaf/Tuinity).
+Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers designed for configurability, new fun and exciting gameplay features, and performance built on top of [Airplane](https://github.com/TECHNOVE/Airplane/).
 
 </div>
 
@@ -58,7 +58,7 @@ Downloads API endpoints:
 
 All patches are licensed under the MIT license, unless otherwise noted in the patch headers.
 
-See [PaperMC/Paper](https://github.com/PaperMC/Paper), [Spottedleaf/Tuinity](https://github.com/Spottedleaf/Tuinity), and [jpenilla/Toothpick](https://github.com/jpenilla/Toothpick) for the license of material used by this project.
+See [PaperMC/Paper](https://github.com/PaperMC/Paper), [TECHNOVE/Airplane/](https://github.com/TECHNOVE/Airplane/), and [jpenilla/Toothpick](https://github.com/jpenilla/Toothpick) for the license of material used by this project.
 
 ## bStats
 
