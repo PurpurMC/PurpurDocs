@@ -8,6 +8,7 @@ site_description: >-
 docs_dir: mkdocs
 nav:
     - Home: index.md
+    - Installation: Installation.md
     - Configuration: Configuration.md
     - Commands: Commands.md
     - Permissions: Permissions.md
