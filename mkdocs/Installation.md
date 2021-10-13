@@ -1,0 +1,1 @@
+Since Purpur is a drop-in replacement for Paper (with no changes required), you can follow their [Getting Started](https://paper.readthedocs.io/en/latest/server/getting-started.html) guide to install Purpur.
