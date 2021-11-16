@@ -14,7 +14,7 @@
 
 Welcome to the official documentation source for the&nbsp;[Purpur](https://github.com/pl3xgaming/Purpur/)&nbsp;project.
 
-This wiki was last updated to Build&nbsp;[#1345](https://ci.pl3x.net/job/Purpur/1345/)&nbsp;([`4e03b8f`](https://github.com/pl3xgaming/Purpur/commit/4e03b8f7b0604cf97fd09dd528b1b000d41d8145))
+This wiki was last updated to Build&nbsp;[#1427](https://api.pl3x.net/v2/purpur/1.17.1/1345/download)&nbsp;([`8bb5a9`](https://github.com/pl3xgaming/Purpur/commit/8bb5a93918fd4de33f0a1c9ad93a0c48a59a8ecb))
 
 Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers designed for configurability, new fun and exciting gameplay features, and performance built on top of [Airplane](https://github.com/TECHNOVE/Airplane/).
 

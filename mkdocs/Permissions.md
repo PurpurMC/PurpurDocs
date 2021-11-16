@@ -82,6 +82,9 @@ touch enchantment to mine up any spawner cage instead of disappearing.
 ## purpur.joinfullserver
 - Allows players to join when server is full
 
+## purpur.bypassIdleKick
+- Allows players to bypass being kicked while idle
+
 ## purpur.portal.instant
 - Allows players to instantly teleport through portals when stepping through them
   

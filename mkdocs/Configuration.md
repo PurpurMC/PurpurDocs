@@ -248,16 +248,25 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 - **default**: default
 - **description**: The actionbar message that appears when a player is asleep. Set to "default" to let the clients use their own translatable components. Set to an empty string to disable it. Available placeholders: `<count>` - the current amount of players sleeping, `<total>` - the total amount of players needed to sleep
 	
+### network
+####  upnp-port-forwarding
+- **default**: false
+- **description**: Attempt to automatically port forward using UPnP when the server starts up
+	
 ### blocks
 
 ####  barrel
-* ##### six-rows
-    - **default**: false
-    - **description**: Barrels should have 6 rows of inventory space
+* ##### rows
+    - **default**: 3
+    - **description**: The amount of rows a barrel should have. Min: 1, Max: 6
 ####  beehive
 * ##### max-bees-inside
     - **default**: 3
     - **description**: The maximum amount of bees allowed inside of a beehive/bee_nest
+####  grindstone
+* ##### ignore-curses
+    - **default**: true
+    - **description**: Set to false to allow the grindstone to remove the curse enchantment from items
 ####  ender_chest
 * ##### six-rows
     - **default**: false
@@ -304,6 +313,9 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 #### suppress-ignored-advancement-warnings
 - **default**: false
 - **description**: Suppress warnings about unknown attributes in console and logs
+#### suppress-unrecognized-recipe-errors
+- **default**: false
+- **description**: Suppress warnings about attempts to load an unrecognized recipe
 	
 ### seed
 
@@ -317,169 +329,6 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
 ##### stronghold
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-
-#### feature
-Check out https://minecraft.fandom.com/wiki/Configured_feature for more information on the options below
-
-##### bamboo
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### basalt_columns
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### basalt_pillar
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### block_pile
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### blue_ice
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### bonus_chest
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### chorus_plant
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### coral_claw
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### coral_mushroom
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### coral_tree
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### decorated
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### delta_feature
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### disk
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### dripstone_cluster
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### end_island
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### end_spike
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### flower
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### forest_rock
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### fossil
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### geode
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### glow_lichen
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### glowstone_blob
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### growing_plant
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### huge_brown_mushroom
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### huge_fungus
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### huge_red_mushroom
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### ice_patch
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### ice_spike
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### iceberg
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### kelp
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### lake
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### large_dripstone
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### monster_room
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### nether_forest_vegetation
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### netherrack_replace_blobs
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### ore
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### random_boolean_selector
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### random_patch
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### random_selector
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### replace_single_block
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### root_system
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### scattered_ore
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### sea_pickle
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### seagrass
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### simple_block
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### simple_random_selector
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### small_dripstone
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### tree
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### twisting_vines
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### underwater_magma
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### vegetation_patch
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### waterlogged_vegetation_patch
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### weeping_vines
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
 	
@@ -506,12 +355,6 @@ Check out https://minecraft.fandom.com/wiki/Configured_feature for more informat
 ## World Settings
 
 World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings
-
-### seed
-
-#### random-populator-seed
-- **default**: false
-- **description**: Set to true to randomize the base populator seed. Everytime it goes to use it, it will randomize a new seed for the random, instead of using the seed from the world.
 
 ### hunger
 
@@ -541,6 +384,10 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### growth-chance
     - **default**: 0.0
     - **description**: Chance for flowering azalea to grow into trees naturally
+#### campfire
+* ##### lit-when-placed
+    - **default**: true
+    - **description**: Set to false to stop the campfire from being lit when placed
 #### cactus
 * ##### breaks-from-solid-neighbors
     - **default**: true
@@ -676,7 +523,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### lava
 * ##### infinite-source
     - **default**: false
-    - **description**: Allow lava to take on infinite supply properties similar to water (&lt;infinite-required-sources&gt; source blocks flowing together creates a new source block)
+    - **description**: Allow lava to take on infinite supply properties similar to water (&lt;infinite-required-sources> source blocks flowing together creates a new source block)
 * ##### infinite-required-sources
     - **default**: 2
     - **description**: The amount of sources required to have infinite lava
@@ -687,6 +534,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### not-nether
         - **default**: 30
         - **description**: Delay in ticks between physics/flowing (lower is faster)
+#### water
+* ##### infinite-source
+    - **default**: true
+    - **description**: Set if water should have infinite properties (&lt;infinite-required-sources> source blocks flowing together creates a new source block)
+* ##### infinite-required-sources
+    - **default**: 2
+    - **description**: The amount of sources required to have infinite water
 #### piston
 * ##### block-push-limit
     - **default**: 12
@@ -695,6 +549,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### explode
     - **default**: true
     - **description**: Whether beds explode. Setting this to false just makes the bed blip out of existence
+* ##### explode-on-villager-sleep
+    - **default**: false
+    - **description**: Whether beds explode when a villager sleeps in one.
 * ##### explosion-power
     - **default**: 5.0
     - **description**: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)
@@ -704,9 +561,6 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### explosion-effect
     - **default**: DESTROY
     - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
-* ##### fix-spigot-5988
-    - **default**: false
-    - **description**: Fixes [SPIGOT-5988](https://hub.spigotmc.org/jira/browse/SPIGOT-5988) bug
 #### farmland
 * ##### get-moist-from-below
     - **default**: false
@@ -843,6 +697,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### always-drop-full-exp
     - **default**: false
     - **description**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
@@ -863,6 +720,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 12.0
@@ -874,6 +734,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 8.0
@@ -885,6 +748,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -899,6 +765,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breedable-item
     - **default**: ""
     - **description**: Item to tempt/feed polar bears and make them breed
@@ -916,6 +785,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### johnny
     * ###### spawn-chance
         - **default**: 0.0
@@ -931,6 +803,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### spawn-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0 - 1.0) a zombie horse will spawn instead of a skeleton horse (natural spawns during thunderstorms)
@@ -966,6 +841,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### can-ride-vehicles
     - **default**: false
     - **description**: Set to true for the wither to gain the ability to ride vehicles
@@ -995,6 +873,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 20.0
@@ -1006,6 +887,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### cure
+    * ###### enabled
+        - **default**: true
+        - **description**: Set to false to stop zombie villagers from being curable 
 * ##### curing_time
     * ###### min
         - **default**: 3600
@@ -1037,6 +925,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### can-be-leashed
     - **default**: false
     - **description**: Allow players to use leads on villagers (trader not included)
@@ -1057,6 +948,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for silverfish to bypass the mob griefing gamerule
@@ -1071,6 +965,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### count-as-player-kill-when-angry
     - **default**: true
     - **description**: Set to false to stop zombified piglins from dropping XP if they were angered (but not killed) by a player
@@ -1142,6 +1039,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         * min
@@ -1171,6 +1071,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attacked-by-crystal-range
     - **default**: 0.0
     - **description**: Radius crystals scan for phantoms to attack. Value of 0 disables feature
@@ -1246,6 +1149,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### retaliate
     - **default**: false
     - **description**: If a chicken is hit, it will attack back
@@ -1263,6 +1169,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### allow-griefing
     - **default**: true
     - **description**: Set to false to stop the creeper from griefing.
@@ -1286,6 +1195,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1318,12 +1230,22 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### feed-mushrooms-for-mooshroom
     - **default**: 0
     - **description**: Number of mushrooms to feed a cow to make it transform into a mooshroom. Value of 0 disables feature
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* ##### naturally-aggressive-to-players
+    * ###### chance
+        - **default**: 0.0
+        - **description**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
+    * ###### damage
+        - **default**: 2.0
+        - **description**: The amount of damage it will do to players
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -1373,6 +1295,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for evokers to bypass the mob griefing gamerule
@@ -1387,6 +1312,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### can-break-doors
     - **default**: false
     - **description**: Set to true to allow drowned to break doors
@@ -1414,6 +1342,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for pillagers to bypass the mob griefing gamerule
@@ -1428,6 +1359,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### tulips-change-type
     - **default**: false
     - **description**: Feeding a white/orange tulip changes type snow/regular
@@ -1448,6 +1382,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### step-height
     - **default**: 2.0
     - **description**: How many blocks giants can walk up without having to jump
@@ -1477,6 +1414,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1491,6 +1431,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### can-fly
     - **default**: false
     - **description**: Makes it so squids can fly, Oh my!
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -1499,6 +1442,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### immune-to-EAR
     - **default**: true
     - **description**: Makes this mob immune to EAR (Entity Activation Range)
@@ -1519,6 +1465,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### brain-ticks
     - **default**: 1
     - **description**: How often (in ticks) should villager's tick their brain logic. Vanilla value is to tick every tick (1). Higher amounts makes them tick less often to reduce lag, but setting it too high could result is unresponsive villagers
@@ -1571,6 +1520,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1603,6 +1555,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### milk-cures-rabid-wolves
     - **default**: true
     - **description**: Set to false for rabid wolves to not be cured by milk
@@ -1626,6 +1581,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 40.0
@@ -1637,6 +1595,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1651,6 +1612,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### change-color-with-dye
     - **default**: false
     - **description**: Lets you change the color of the shulker by right-clicking it with a dye
@@ -1678,6 +1642,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### tempted-by-gold
+    - **default**: false
+    - **description**: Set to true for this mob to follow the player when holding a golden carrot, golden apple, or enchanted golden apple
 * ##### stand-with-rider
     - **default**: true
     - **description**: Should a horse (with a rider) stand when it's ambient noise is played
@@ -1713,6 +1683,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for piglins to bypass the mob griefing gamerule
@@ -1731,6 +1704,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 50.0
@@ -1742,6 +1718,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 8.0
@@ -1753,6 +1732,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 20.0
@@ -1764,6 +1746,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1778,6 +1763,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1806,6 +1794,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
         - **default**: 20.0
         - **description**: Max health attribute
 #### rabbit
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### spawn-killer-rabbit-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0-1.0) the killer rabbit naturally spawns
@@ -1829,6 +1820,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### jockey
     * ###### only-babies
         - **default**: true
@@ -1853,6 +1847,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 16.0
@@ -1864,6 +1861,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1881,6 +1881,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for ravagers to bypass the mob griefing gamerule
@@ -1910,6 +1913,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### give-saddle-back
     - **default**: false
     - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
@@ -1927,6 +1933,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 26.0
@@ -1938,6 +1947,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### jockey
     * ###### only-babies
         - **default**: true
@@ -1965,6 +1977,12 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### naturally-aggressive-to-players-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
 * ##### disable-treasure-searching
     - **default**: false
     - **description**: Stops the dolphin from treasure hunting
@@ -1986,6 +2004,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2000,6 +2021,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
@@ -2014,6 +2038,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
@@ -2054,6 +2081,12 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### default-collar-color
+    - **default**: RED
+    - **description**: Set the default collar color when a cat is tamed. [Available Colors](https://purpur.pl3x.net/javadoc/org/bukkit/Color.html)
 * ##### spawn-delay
     - **default**: 1200
     - **description**: Number of ticks between attempting to naturally spawn a cat
@@ -2075,6 +2108,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 3.0
@@ -2083,6 +2119,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 80.0
@@ -2094,6 +2133,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
@@ -2108,6 +2150,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 30.0
@@ -2119,6 +2164,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### naturally-spawn
     - **default**: false
     - **description**: Control if illusioners naturally spawn in the game
@@ -2139,6 +2187,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### can-spawn-in-air
     - **default**: false
     - **description**: Set whether iron golems can spawn in the air, like in 1.12 and below
@@ -2159,6 +2210,12 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### tempted-by-hay
+    - **default**: false
+    - **description**: Set to true for this mob to follow the player when holding a hay block
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2194,6 +2251,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2226,6 +2286,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: "size * size"
@@ -2237,6 +2300,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
@@ -2251,6 +2317,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 3.0
@@ -2259,6 +2328,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 3.0
@@ -2267,6 +2339,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2278,6 +2353,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### attributes
     * ###### max_health
         - **default**: 3.0
@@ -2289,6 +2367,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2303,6 +2384,9 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
@@ -2325,6 +2409,13 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
 #### thunder-stops-after-sleep
 - **default**: true
 - **description**: Set to false to make thunder continue even after a player sleeps
+#### halloween
+* ##### force
+    - **default**: false
+    - **description**: Set to true to force the world into halloween
+* ##### head-chance
+    - **default**: 0.25
+    - **description**: Percent chance (0.0 - 1.0) a zombie or skeleton will spawn with a jack o' lantern/carved pumpkin on it's head
 #### mob-effects
 * ##### health-regen-amount
     - **default**: 1.0
@@ -2428,12 +2519,12 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     ```
     - **description**: Whitelist of tools that can mine spawners with silk touch
 * ##### spawner-name
-    - **default**: Spawner
+    - **default**: "&lt;reset>&lt;white>Spawner"
     - **description**: The name of the spawner
 * ##### spawner-lore
     - **default**:
         ``` yaml
-        - Spawns a {mob}
+        - Spawns a <mob>
         ```
     - **description**: The lore of the spawner
 #### boat
@@ -2594,6 +2685,17 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     * ###### sprinting-damage
         - **default**: 1
         - **description**: The amount of damage to give if `damage-if-sprinting` is enabled
+* ##### snowball
+    * ###### extinguish
+        * ###### fire
+            - **default**: false
+            - **description**: Whether snowballs, when thrown, should extinguish fires
+        * ###### candles
+            - **default**: false
+            - **description**: Whether snowballs, when thrown, should extinguish candles
+        * ###### campfires
+            - **default**: false
+            - **description**: Whether snowballs, when thrown, should extinguish campfires
 * ##### shulker_box
     * ###### drop-contents-when-destroyed
         - **default**: true
