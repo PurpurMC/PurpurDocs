@@ -1,5 +1,14 @@
 Purpur adds a few new commands to the game.
 
+???+ note "Note"
+    When Essentials is installed, a few of the commands below will be overriden by Essentials. To use Purpur's commands instead, add this to the `disabled_commands` section of the Essentials config.
+    ``` yaml
+    disabled-commands:
+      - ping
+      - uptime
+      - compass
+    ```
+
 ## /purpur
 - This command allows reloading the purpur.yml config and viewing the Purpur version.
 
