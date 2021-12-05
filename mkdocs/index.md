@@ -76,7 +76,7 @@ https://purpurmc.org/javadoc
     ``` xml linenums="1"
     <repository>
         <id>purpur</id>
-        <url>https://repo.purpurmc.org/</url>
+        <url>https://repo.purpurmc.org/snapshots</url>
     </repository>
     ```
     ``` xml linenums="1"
@@ -91,7 +91,7 @@ https://purpurmc.org/javadoc
 === "Gradle"
     ``` kotlin linenums="1"
     repositories {
-        maven("https://repo.purpurmc.org/")
+        maven("https://repo.purpurmc.org/snapshots")
     }
     ```
     ``` kotlin linenums="1"
