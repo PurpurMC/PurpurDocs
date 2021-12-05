@@ -20,13 +20,10 @@ jobs:
         with:
           python-version: '3.9.7'
 
-      - name: Build docs and copy .htaccess
+      - name: Build docs
         run: |
           pip install -r requirements.txt
           mkdocs build -d docs
-
-          echo Copying .htaccess to \'docs\' directory
-          cp .htaccess docs/
 
       - name: Push to PurpurWebsite repo
         uses: granny/copy_file_to_another_repo_action@main
