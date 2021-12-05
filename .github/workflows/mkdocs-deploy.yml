@@ -1,5 +1,6 @@
 name: Push docs to PurpurWebsite
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
