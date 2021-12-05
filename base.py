@@ -9,9 +9,9 @@ CONFIG_REGEX = re.compile(r'[^.]get(Boolean|Int|Double|String|List)\("(.+)",\s*(
 PERM_REGEX   = re.compile(r'hasPermission\("(.+?)"\)')
 LOG_DIR = './logs/'
 PROJECT = {
-    'owner': 'pl3xgaming',
+    'owner': 'PurpurMC',
     'repo': 'Purpur',
-    'branch': 'ver/1.17.1'
+    'branch': 'ver/1.18'
 }
 
 

@@ -27,14 +27,14 @@ jobs:
 
           echo Copying .htaccess to \'docs\' directory
           cp .htaccess docs/
-      
+
       - name: Push to PurpurWebsite repo
         uses: granny/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_file: 'docs'
-          destination_repo: 'pl3xgaming/PurpurWebsite'
+          destination_repo: 'PurpurMC/PurpurWebsite'
           destination_folder: 'public'
           destination_branch: master
           user_email: '41898282+github-actions[bot]@users.noreply.github.com'

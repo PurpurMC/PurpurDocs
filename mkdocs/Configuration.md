@@ -13,7 +13,7 @@ If you want information on settings in airplane.yml, paper.yml, spigot.yml, bukk
 * [Airplane Configuration (airplane.yml)](https://github.com/TECHNOVE/Airplane/wiki)
 
 ???+ warning "Warning"
-    Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpur.pl3x.net/discord/) server.
+    Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpurmc.org/discord/) server.
 
 ## Global Settings
 
@@ -1566,7 +1566,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: Percent chance (0.0 - 1.0) that a wolf will spawn as rabid
 * ##### default-collar-color
     - **default**: RED
-    - **description**: Set the default collar color when a wolf is tamed. [Available Colors](https://purpur.pl3x.net/javadoc/org/bukkit/Color.html)
+    - **description**: Set the default collar color when a wolf is tamed. [Available Colors](https://purpurmc.org/javadoc/org/bukkit/Color.html)
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1692,7 +1692,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### portal-spawn-modifier
     - **default**: 2000
     - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
-based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Purpur/blob/ver/1.16.5/patches/server/0198-Piglin-portal-spawn-modifier.patch)
+based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purpur/blob/ver/1.16.5/patches/server/0198-Piglin-portal-spawn-modifier.patch)
 * ##### attributes
     * ###### max_health
         - **default**: 16.0
@@ -2086,7 +2086,7 @@ based on the world difficulty. [Read more here](https://github.com/pl3xgaming/Pu
     - **description**: Set to true for this mob to start taking damage from water
 * ##### default-collar-color
     - **default**: RED
-    - **description**: Set the default collar color when a cat is tamed. [Available Colors](https://purpur.pl3x.net/javadoc/org/bukkit/Color.html)
+    - **description**: Set the default collar color when a cat is tamed. [Available Colors](https://purpurmc.org/javadoc/org/bukkit/Color.html)
 * ##### spawn-delay
     - **default**: 1200
     - **description**: Number of ticks between attempting to naturally spawn a cat
