@@ -40,27 +40,23 @@ Yes! It's where the Purpur community resides. Don't be afraid to poke your head 
 
 ## What does Purpur add/change from upstream?
 
-Quite a lot, actually. But none of it goes into effect unless **you** enable it in `purpur.yml`. Everything we change is set to the default behaviors. If you don't edit anything in `purpur.yml`, running this JAR is no different than running Airplane.
+Quite a lot, actually. But none of it goes into effect unless **you** enable it in `purpur.yml`. Everything we change is set to the default behaviors. If you don't edit anything in `purpur.yml`, running this JAR is no different than running Paper.
 
 For the curious, you can view all the code changes on GitHub here: https://github.com/PurpurMC/Purpur/tree/master/patches
 
 Don't worry if you can't read code. Most people can't. We have this nice wiki that covers every single option in `purpur.yml` and all the new permission nodes added for some new features/commands.
 
-## Does Purpur have feature *X* from Paper/Airplane?
+## Does Purpur have feature *X* from Paper?
 
 Yes, Thats how forks work. All features from upstream are inherited by design
 
-`Vanilla -> CraftBukkit -> Spigot -> Paper -> Airplane -> Purpur`
+`Vanilla -> CraftBukkit -> Spigot -> Paper -> Purpur`
 
 We have it all ^_^
 
 ## Do CraftBukkit/Spigot/Paper plugins work on Purpur?
 
 Yes. The only time there's incompatibility is due to authors hard-coding support for CraftBukkit/Spigot, ignoring the existence of Paper and its forks. If you run into any bugs that you know are because of Purpur, [create a ticket](https://github.com/PurpurMC/Purpur/issues/new) and/or [join our Discord server](https://purpurmc.org/discord) so we can take a look.
-
-## Why isn't Purpur a direct fork of Airplane? Why are all of Airplane's patches squashed into 1 patch?
-
-Because Airplane doesn't merge upstream Paper nearly as often as I would prefer. Doing it this way allows me to upstream merge Paper's patches before Airplane does. \o/
 
 ## Is there a Purpur for MC insert _`random version here`_?
 Maybe. Check the downloads page.

@@ -1,6 +1,6 @@
 This page details the various configuration settings exposed by Purpur in the purpur.yml file.
 
-If you want information on settings in airplane.yml, paper.yml, spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
+If you want information on settings in paper.yml, spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
 
 * [Server Configuration (server.properties)](https://minecraft.fandom.com/wiki/Server.properties)
 
@@ -9,8 +9,6 @@ If you want information on settings in airplane.yml, paper.yml, spigot.yml, bukk
 * [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/)
 
 * [Paper Configuration (paper.yml)](https://paper.readthedocs.io/en/latest/server/configuration.html)
-
-* [Airplane Configuration (airplane.yml)](https://github.com/TECHNOVE/Airplane/wiki)
 
 ???+ warning "Warning"
     Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpurmc.org/discord/) server.
