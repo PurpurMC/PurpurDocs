@@ -214,7 +214,7 @@ Requires the [`bukkit.command.uptime`](../Permissions#bukkitcommanduptime) permi
 `<uptime>` - The format from [`<global>.command.uptime.format`](#format)
 
 - **default**: &lt;green>Server uptime is &lt;uptime>
-- **description**: Actionbar message that shows when someone attempts to run with scissors
+- **description**: Message that shows when the `/uptime` command is ran.
 
 #### dont-run-with-scissors
 Requires the [`damage-if-sprinting`](#damage-if-sprinting) option to be enabled
