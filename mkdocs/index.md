@@ -29,7 +29,8 @@ Downloads can be obtained from the [downloads page](https://purpurmc.org/downloa
 
 Latest build shortcut links:
 
-* [1.18](https://api.purpurmc.org/v2/purpur/1.18/latest/download) builds 1429+
+* [1.18.1](https://api.purpurmc.org/v2/purpur/1.18.1/latest/download) builds 1434+
+* [1.18](https://api.purpurmc.org/v2/purpur/1.18/latest/download) builds 1429-1433
 * [1.17.1](https://api.purpurmc.org/v2/purpur/1.17.1/latest/download) builds 1256-1428
 * [1.17](https://api.purpurmc.org/v2/purpur/1.17/latest/download) builds 1172-1255
 * [1.16.5](https://api.purpurmc.org/v2/purpur/1.16.5/latest/download) builds 957-1171
@@ -83,7 +84,7 @@ https://purpurmc.org/javadoc
     <dependency>
         <groupId>org.purpurmc.purpur</groupId>
         <artifactId>purpur-api</artifactId>
-        <version>1.18-R0.1-SNAPSHOT</version>
+        <version>1.18.1-R0.1-SNAPSHOT</version>
         <scope>provided</scope>
     </dependency>
     ```
@@ -96,7 +97,7 @@ https://purpurmc.org/javadoc
     ```
     ``` kotlin linenums="1"
     dependencies {
-        compileOnly("org.purpurmc.purpur", "purpur-api", "1.18-R0.1-SNAPSHOT")
+        compileOnly("org.purpurmc.purpur", "purpur-api", "1.18.1-R0.1-SNAPSHOT")
     }
     ```
 
