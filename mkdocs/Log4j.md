@@ -28,10 +28,9 @@ To test if this exploit affects you, send `${date:YYYY}` in your server’s chat
 The flag, `-Dlog4j2.formatMsgNoLookups=true`, does not stop the exploit from functioning on versions older than 1.17. It only works on versions newer than 1.16.5, which already have better hotfixes in provided.
 
 <!-- Needed: a basic explanation about how it works -->
-Current knowledge indicates that all versions of Java can allow remote code execution, according to [Paper’s team](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855).
+Current knowledge indicates that all versions of Java can allow remote code execution, according to [Paper’s team](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1].
 
-![Paper Log4j information pin](images/paper-log4j-pin.png)
+For more information, read [Mojang’s blog post about the vulnerability](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition). It contains fixes for other platforms, such as third-party clients. Paper’s [information post](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1] and [announcement](https://discord.com/channels/289587909051416579/492517675680006144/918581596825718815)[^2] may help as well.
 
-For more information, read [Mojang’s blog post about the vulnerability](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition). It contains fixes for other platforms, such as third-party clients. Paper’s [information post](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855) and [announcement](https://discord.com/channels/289587909051416579/492517675680006144/918581596825718815) may help as well.
-
-![Paper Log4j announcement](images/paper-log4j-announcement.png)
+[^1]: <img width="25%" src="images/paper-log4j-pin.png">
+[^2]: <img width="25%" src="images/paper-log4j-announcement.png">
