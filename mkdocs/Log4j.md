@@ -9,16 +9,16 @@ Mojang has pushed a fix for all client versions 1.8 and newer. 1.7.10 and older 
 Due to the way our tooling works, we cannot push fixed jars for versions older than 1.17.1. Now is a good time to get off unsupported versions and onto the latest and greatest versions of the game.
 
 ### 1.18 and newer
-All 1.18.1 builds and newer are patched, as this exploit was one of the reasons it was released. If you’re running 1.18, builds [#1433](https://api.purpurmc.org/v2/purpur/1.18/1433/download) and newer contain the fix.
+All 1.18.1 builds and newer are patched, as this exploit was one of the reasons it was released. [Download the latest builds here](https://purpurmc.org/downloads). If you’re running 1.18, builds [#1433](https://api.purpurmc.org/v2/purpur/1.18/1433/download) and newer contain the fix.
 
 ### 1.17.1
 For 1.17.1, the fix is as easy as updating the jar. Download the latest hotfix from [the downloads page](https://purpurmc.org/downloads?v=1.17.1), and edit your launch script to run the updated jar.
 
 ### 1.17
-As stated above, Purpur does not provide a patched jar. Instead, we provide an XML file that disables what causes the exploit. To install, [download this XML file](https://api.purpurmc.org/hotfixes/1.17/purpur_log4j2_117.xml), place it in your server’s root directory (where the jar files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
+As stated above, Purpur does not provide a patched jar. Instead, we provide an XML file that disables what causes the exploit. To install, [download this XML file](https://raw.githubusercontent.com/PurpurMC/PurpurDocs/HEAD/xml/purpur_log4j2_117.xml), place it in your server’s root directory (where the jar files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
 
 ### 1.16.5 and older
-The process is the same as the above, but with a different XML file. [Download this XML file](https://api.purpurmc.org/hotfixes/1.16.5/purpur_log4j2_1141-1165.xml) to your server’s root directory, and add `-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml` after `java` in your launch arguments.
+The process is the same as the above, but with a different XML file. [Download this XML file](https://raw.githubusercontent.com/PurpurMC/PurpurDocs/HEAD/xml/purpur_log4j2_1141-1165.xml) to your server’s root directory, and add `-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml` after `java` in your launch arguments.
 
 Beware of other plugins that claim to fix the exploit by redirecting the log to the system output stream, as Paper automatically redirects those calls back to Log4j. Filtering out the problematic string will not patch the exploit, as all filters can be bypassed in various ways.
 
@@ -30,4 +30,8 @@ The flag, `-Dlog4j2.formatMsgNoLookups=true`, does not stop the exploit from fun
 <!-- Needed: a basic explanation about how it works -->
 Current knowledge indicates that all versions of Java can allow remote code execution, according to [Paper’s team](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855).
 
+![Paper Log4j information pin](images/paper-log4j-pin.png)
+
 For more information, read [Mojang’s blog post about the vulnerability](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition). It contains fixes for other platforms, such as third-party clients. Paper’s [information post](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855) and [announcement](https://discord.com/channels/289587909051416579/492517675680006144/918581596825718815) may help as well.
+
+![Paper Log4j announcement](images/paper-log4j-announcement.png)
