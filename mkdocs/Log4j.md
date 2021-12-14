@@ -5,7 +5,6 @@ It exists for all vanilla Minecraft versions older than 1.18, and affects every 
 
 Mojang has pushed a fix for all client versions 1.8 and newer. 1.7.10 and older are not vulnerable. Purpur has pushed a jar containing a fix for 1.17.1, and published XML files for 1.17 and older. Plugins that shade or depend on older versions of the library will also require updates.
 
-
 ## Updating Purpur
 Due to the way our tooling works, we cannot push fixed jars for versions older than 1.17.1. Now is a good time to get off unsupported versions and onto the latest and greatest versions of the game.
 
