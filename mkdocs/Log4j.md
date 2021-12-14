@@ -32,5 +32,5 @@ Current knowledge indicates that all versions of Java can allow remote code exec
 
 For more information, read [Mojang’s blog post about the vulnerability](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition). It contains fixes for other platforms, such as third-party clients. Paper’s [information post](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1] and [announcement](https://discord.com/channels/289587909051416579/492517675680006144/918581596825718815)[^2] may help as well.
 
-[^1]: <img width="25%" src="images/paper-log4j-pin.png">
-[^2]: <img width="25%" src="images/paper-log4j-announcement.png">
+[^1]: ![Paper's Log4j information pin](images/paper-log4j-pin.png)
+[^2]: ![Paper's Log4j information pin](images/paper-log4j-announcement.png)
