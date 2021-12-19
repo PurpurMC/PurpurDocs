@@ -23,7 +23,7 @@ The process is the same as the above, but with a different XML file. <a download
 Beware of other plugins that claim to fix the exploit by redirecting the log to the system output stream, as Paper automatically redirects those calls back to Log4j. Filtering out the problematic string will not patch the exploit, as all filters can be bypassed in various ways.
 
 ## How it works
-To test if this exploit affects you, send `${date:YYYY}` in your server’s chat, and check your server’s log. If the console shows your message as the current year, then your server is vulnerable.
+To test if this exploit affects you, send `${jndi:ldap://127.0.0.1:1389/a}` in your server’s chat, and check your server’s log. If the console shows *any* response, then your server is vulnerable.
 
 The flag, `-Dlog4j2.formatMsgNoLookups=true`, does not stop the exploit from functioning on versions older than 1.17. It only works on versions newer than 1.16.5, which already have better hotfixes in provided.
 
