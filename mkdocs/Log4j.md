@@ -12,7 +12,7 @@ Due to the way our tooling works, we cannot push fixed jars for versions older t
 All 1.18.1 builds and newer are patched, as this exploit was one of the reasons it was released. [Download the latest builds here](https://purpurmc.org/downloads). If you’re running 1.18, builds [#1433](https://api.purpurmc.org/v2/purpur/1.18/1433/download) and newer contain the fix.
 
 ### 1.17.1
-For 1.17.1, the fix is as easy as updating the jar. Download the latest hotfix from [the downloads page](https://purpurmc.org/downloads?v=1.17.1), and edit your launch script to run the updated jar.
+For 1.17.1, the fix is as easy as updating the jar. Download the latest hotfix from [the downloads page](https://purpurmc.org/downloads/1.17.1/), and edit your launch script to run the updated jar.
 
 ### 1.17
 As stated above, Purpur does not provide a patched jar. Instead, we provide an XML file that disables what causes the exploit. To install, [download this XML file](https://raw.githubusercontent.com/PurpurMC/PurpurDocs/HEAD/xml/purpur_log4j2_117.xml), place it in your server’s root directory (where the jar files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
