@@ -15,10 +15,10 @@ All 1.18.1 builds and newer are patched, as this exploit was one of the reasons 
 For 1.17.1, the fix is as easy as updating the jar. Download the latest hotfix from [the downloads page](https://purpurmc.org/downloads/1.17.1/), and edit your launch script to run the updated jar.
 
 ### 1.17
-As stated above, Purpur does not provide a patched jar. Instead, we provide an XML file that disables what causes the exploit. To install, [download this XML file](https://raw.githubusercontent.com/PurpurMC/PurpurDocs/HEAD/xml/purpur_log4j2_117.xml), place it in your server’s root directory (where the jar files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
+As stated above, Purpur does not provide a patched jar. Instead, we provide an XML file that disables what causes the exploit. To install, <a download href="/xml/purpur_log4j2_117.xml" >download this XML file</a>, place it in your server’s root directory (where the jar files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
 
 ### 1.16.5 and older
-The process is the same as the above, but with a different XML file. [Download this XML file](https://raw.githubusercontent.com/PurpurMC/PurpurDocs/HEAD/xml/purpur_log4j2_1141-1165.xml) to your server’s root directory, and add `-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml` after `java` in your launch arguments.
+The process is the same as the above, but with a different XML file. <a download href="/xml/purpur_log4j2_1141-1165.xml" >Download this XML file</a> to your server’s root directory, and add `-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml` after `java` in your launch arguments.
 
 Beware of other plugins that claim to fix the exploit by redirecting the log to the system output stream, as Paper automatically redirects those calls back to Log4j. Filtering out the problematic string will not patch the exploit, as all filters can be bypassed in various ways.
 
