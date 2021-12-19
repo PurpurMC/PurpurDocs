@@ -46,6 +46,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.magiclink
   - markdown.extensions.md_in_html
+  - footnotes
   - toc:
       permalink: 🔗
   - pymdownx.emoji:
