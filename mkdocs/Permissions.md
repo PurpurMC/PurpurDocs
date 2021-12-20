@@ -1,6 +1,6 @@
 Purpur adds a few new permission nodes for some of its added features.
 
-By default **all** of these permissions are for OP users only. Any other users will need to be granted the permissions using a permissions plugin.
+By default **all** of these permissions are disabled, no matter if a user has OP. Users will need to be granted permissions using a permissions plugin such as [LuckPerms](https://luckperms.net/).
 
 ## allow.ride.<mob_id&gt;
 Requires [`<mob_id>.ridable`](../Configuration#mobs) to be enabled in purpur.yml
