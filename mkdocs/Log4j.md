@@ -3,7 +3,7 @@ A remote code execution (RCE) vulnerability was found within the logger library 
 
 It exists for all vanilla Minecraft versions older than 1.18, and affects every application that utilizes the library. Notably the vanilla client, all vanilla-based servers such as Paper and Purpur, Velocity, and Waterfall. If you run any other Java-based applications, such as Jenkins or UniFi, ensure they are up-to-date as well.
 
-Mojang has pushed a fix for all client versions 1.8 and newer. 1.7.10 and older are not vulnerable. Purpur has pushed a jar containing a fix for 1.17.1, and published XML files for 1.17 and older. Plugins that shade or depend on older versions of the library will also require updates.
+Mojang has pushed a fix for all client versions 1.8 and newer. 1.7.10 and older are not vulnerable. Purpur has pushed a jar containing a fix for 1.18.1, and published XML files for 1.18 and older. Plugins that shade or depend on older versions of the library will also require updates.
 
 ## Updating Purpur
 Due to the way our tooling works, we cannot push fixed jars for versions older than 1.17.1. Now is a good time to get off unsupported versions and onto the latest and greatest versions of the game.
