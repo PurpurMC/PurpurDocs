@@ -14,7 +14,8 @@ Due to the way our tooling works, we cannot push fixed jars for versions older t
 ### 1.18 to 1.17
 As stated above, Purpur does not provide a patched jar. Instead, we provide an XML file that disables what causes the exploit. To install, <a download href="../xml/purpur_log4j2_117.xml" >download this XML file</a>, place it in your server’s root directory (where the jar files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
 
-???+ warning "Warning" This method has not been fully tested on 1.18. Report any issues found on the documentation's [issue tracker](https://github.com/PurpurMC/PurpurDocs/issues).
+???+ warning "Warning"
+    This method has not been fully tested on 1.18. Report any issues found on the documentation's [issue tracker](https://github.com/PurpurMC/PurpurDocs/issues).
 
 ### 1.16.5 and older
 The process is the same as the above, but with a different XML file. <a download href="../xml/purpur_log4j2_1141-1165.xml" >Download this XML file</a> to your server’s root directory, and add `-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml` after `java` in your launch arguments.
