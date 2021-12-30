@@ -9,7 +9,7 @@ Mojang has pushed a fix for all client versions 1.8 and newer. 1.7.10 and older 
 Due to the way our tooling works, we cannot push fixed jars for versions older than 1.17.1. Now is a good time to get off unsupported versions and onto the latest and greatest versions of the game.
 
 ### 1.18.1 and newer
-All 1.18.1 builds and newer are patched, as this exploit was one of the reasons it was released. [Download the latest builds here](https://purpurmc.org/downloads).
+1.18.1 Builds [`#1464`](https://api.purpurmc.org/v2/purpur/1.18.1/1464/download) and newer are patched. [Download the latest builds here](https://purpurmc.org/downloads).
 
 ### 1.18 to 1.17
 As stated above, Purpur does not provide a patched jar. Instead, we provide an XML file that disables what causes the exploit. To install, <a download href="../xml/purpur_log4j2_117.xml" >download this XML file</a>, place it in your server’s root directory (where the jar files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
