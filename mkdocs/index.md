@@ -25,7 +25,7 @@ Join us on [Discord](https://discord.gg/mtAAnkk)!
 
 ## Downloads
 
-Downloads can be obtained from the [downloads page](https://purpurmc.org/downloads), or the downloads API.
+Downloads can be obtained from the [downloads page](https://purpurmc.org/downloads), or the [downloads API](https://api.purpurmc.org/).
 
 Downloads API endpoints:
 
