@@ -138,14 +138,6 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **default**: true
 - **description**: Allows the placement of water in the end.
 	
-### dont-send-useless-entity-packets
-
-- **default**: false
-- **description**: Skips sending relative move packets for entities that didn't really move
-
-???+ warning "Warning"
-    The `dont-send-useless-entity-packets` option is known to cause issues with certain plugins installed, notably `Tab` and `Companions`.
-	
 ### use-alternate-keepalive
 
 - **default**: false
@@ -162,7 +154,11 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 ### server-mod-name
 - **default**: Purpur
 - **description**: This modifies the server name that shows up when a client is outdated or when someone opens the debug screen [F3]
-	
+
+### username-valid-characters
+- **default**: ^[a-zA-Z0-9_.]*$
+- **description**: Characters that can be used in usernames. Configurable with regex.
+
 ### lagging-threshold
 - **default**: 19.0
 - **description**: Purpur keeps track of when it is lagging in order to have the ability to change behaviors accordingly. This value is that threshold when you want to consider the server to be lagging. Right now this is only used for mob.villager.brain-ticks setting
@@ -245,7 +241,15 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 #### sleeping-players-percent
 - **default**: default
 - **description**: The actionbar message that appears when a player is asleep. Set to "default" to let the clients use their own translatable components. Set to an empty string to disable it. Available placeholders: `<count>` - the current amount of players sleeping, `<total>` - the total amount of players needed to sleep
-	
+
+#### death-message
+* ##### stonecutter
+    - **default**: <player> has sawed themself in half
+    - **description**: The death message that appears when the player is killed because they were standing on a stonecutter
+* ##### run-with-scissors
+    - **default**: <player> slipped and fell on their shears
+    - **description**: The death message that appears when the player is killed because they were running with scissors
+
 ### network
 ####  upnp-port-forwarding
 - **default**: false
@@ -345,6 +349,9 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 * ##### allow-infinity-on-crossbow
     - **default**: false
     - **description**: allows the infinity enchantment on a crossbow
+* ##### allow-looting-on-shears
+    - **default**: false
+    - **description**: allows the looting enchantment on a shears
 * ##### allow-unsafe-enchants
     - **default**: false
     - **description**: allows the ability to increase enchantments passed their max level
@@ -411,6 +418,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for turtle eggs to bypass the mob griefing gamerule
+* ##### random-tick-crack-chance
+    - **default**: 500
+    - **description**: The chance a turtle egg will crack
 #### powered-rail
 * ##### activation-range
     - **default**: 8
@@ -575,6 +585,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### disable-trampling
     - **default**: false
     - **description**: Set to true to disable trampling completely.
+* ##### trample-height
+    - **default**: -1.0
+    - **description**: Set the height a player/entity needs to fall before it tramples farmland
 * ##### feather-fall-distance-affects-trampling
     - **default**: false
     - **description**: Set to true if entities can stop trampling if they fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
@@ -601,10 +614,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### stonecutter
 * ##### damage
     - **default**: 0.0
-    - **description**: If a value is set, Mobs will also avoid walking over the stonecutter. 
-#### no-random-tick
-- **default**: []
-- **description**: List of blocks that will not randomly tick (Only applies to the [blocks affected by random tick](https://minecraft.fandom.com/wiki/Tick#Random_tick))
+    - **description**: If a value is set, Mobs will also avoid walking over the stonecutter.
 #### furnace
 * ##### use-lava-from-underneath
     - **default**: false
@@ -626,23 +636,14 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **default**: []
     - **description**: Allows you to set the doors that require redstone to be operated
 #### twisting_vines
-* ##### growth-modifier
-    - **default**: 0.10
-    - **description**: Changes the rate of growth of the vine
 * ##### max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
 #### weeping_vines
-* ##### growth-modifier
-    - **default**: 0.10
-    - **description**: Changes the rate of growth of the vine
 * ##### max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
 #### cave_vines
-* ##### growth-modifier
-    - **default**: 0.10
-    - **description**: Changes the rate of growth of the vine
 * ##### max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
@@ -711,6 +712,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 200.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### cave_spider
 * ##### ridable
     - **default**: false
@@ -725,6 +729,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 12.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### endermite
 * ##### ridable
     - **default**: false
@@ -739,6 +746,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### mooshroom
 * ##### ridable
     - **default**: false
@@ -756,6 +766,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### polar_bear
 * ##### ridable
     - **default**: false
@@ -776,6 +789,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 30.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### vindicator
 * ##### ridable
     - **default**: false
@@ -794,6 +810,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 24.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### zombie_horse
 * ##### ridable
     - **default**: false
@@ -829,6 +848,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
         * max
             - **default**: 0.2
             - **description**: Max movement_speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### wither
 * ##### ridable
     - **default**: false
@@ -864,6 +886,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 300.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### wither_skeleton
 * ##### ridable
     - **default**: false
@@ -878,6 +903,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### zombie_villager
 * ##### ridable
     - **default**: false
@@ -916,6 +944,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### wandering_trader
 * ##### ridable
     - **default**: false
@@ -939,6 +970,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### silverfish
 * ##### ridable
     - **default**: false
@@ -956,6 +990,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### zombified_piglin
 * ##### ridable
     - **default**: false
@@ -986,6 +1023,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### spawn_reinforcements
         - **default**: 0.0
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### snow_golem
 ???+ info "The formula used to determine the amount of ticks between shots"
     ``` sh
@@ -1030,6 +1070,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 4.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### skeleton_horse
 * ##### can-swim
     - **default**: false
@@ -1062,6 +1105,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
         * max
             - **default**: 0.2
             - **description**: Max movement_speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### phantom
 * ##### ridable
     - **default**: false
@@ -1140,6 +1186,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### chicken
 * ##### ridable
     - **default**: false
@@ -1160,6 +1209,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 4.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### creeper
 * ##### ridable
     - **default**: false
@@ -1189,6 +1241,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### head-visibility-percent
+    - **default**: 0.5
+    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### donkey
 * ##### ridable-in-water
     - **default**: false
@@ -1221,6 +1279,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### cow
 * ##### ridable
     - **default**: false
@@ -1248,6 +1309,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### enderman
 * ##### ridable
     - **default**: false
@@ -1286,6 +1350,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 40.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### evoker
 * ##### ridable
     - **default**: false
@@ -1303,6 +1370,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 24.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### drowned
 * ##### ridable
     - **default**: false
@@ -1333,6 +1403,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### pillager
 * ##### ridable
     - **default**: false
@@ -1350,6 +1423,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 24.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### fox
 * ##### ridable
     - **default**: false
@@ -1373,6 +1449,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### giant
 * ##### ridable
     - **default**: false
@@ -1405,6 +1484,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 100.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### hoglin
 * ##### ridable
     - **default**: false
@@ -1422,6 +1504,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 40.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### glow_squid
 * ##### ridable
     - **default**: false
@@ -1436,6 +1521,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### squid
 * ##### ridable
     - **default**: false
@@ -1456,6 +1544,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### villager
 * ##### ridable
     - **default**: false
@@ -1496,13 +1587,6 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### cleric-wart-farmers-throw-warts-at-villagers
     - **default**: true
     - **description**: Set to false for clerics to not throw nether wart at other villagers
-* ##### lobotomize
-    * ###### enabled
-        - **default**: false
-        - **description**: Lobotomizes the villager if it cannot move (Does not disable trading)
-    * ###### check-interval
-        - **default**: 60
-        - **description**: The interval in ticks to check if a villager is lobotomized 
 * ##### spawn-iron-golem
     * ###### radius
         - **default**: 0
@@ -1514,6 +1598,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### mule
 * ##### ridable-in-water
     - **default**: false
@@ -1546,6 +1633,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### wolf
 * ##### ridable
     - **default**: false
@@ -1572,6 +1662,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### zoglin
 * ##### ridable
     - **default**: false
@@ -1586,6 +1679,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 40.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### ocelot
 * ##### ridable
     - **default**: false
@@ -1603,6 +1699,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### shulker
 * ##### ridable
     - **default**: false
@@ -1636,6 +1735,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 30.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### horse
 * ##### ridable-in-water
     - **default**: false
@@ -1643,9 +1745,6 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### tempted-by-gold
-    - **default**: false
-    - **description**: Set to true for this mob to follow the player when holding a golden carrot, golden apple, or enchanted golden apple
 * ##### stand-with-rider
     - **default**: true
     - **description**: Should a horse (with a rider) stand when it's ambient noise is played
@@ -1674,6 +1773,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
         * max
             - **default**: 0.3375
             - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### piglin
 * ##### ridable
     - **default**: false
@@ -1695,6 +1797,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 16.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### piglin_brute
 * ##### ridable
     - **default**: false
@@ -1709,6 +1814,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 50.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### skeleton
 * ##### ridable
     - **default**: false
@@ -1723,6 +1831,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+* ##### head-visibility-percent
+    - **default**: 0.5
+    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### stray
 * ##### ridable
     - **default**: false
@@ -1737,6 +1851,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### goat
 * ##### ridable
     - **default**: false
@@ -1754,6 +1871,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### panda
 * ##### ridable
     - **default**: false
@@ -1771,6 +1891,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### strider
 * ##### ridable
     - **default**: false
@@ -1791,6 +1914,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### rabbit
 * ##### takes-damage-from-water
     - **default**: false
@@ -1811,6 +1937,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### husk
 * ##### ridable
     - **default**: false
@@ -1821,6 +1950,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 * ##### jockey
     * ###### only-babies
         - **default**: true
@@ -1838,6 +1970,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### spider
 * ##### ridable
     - **default**: false
@@ -1848,10 +1983,16 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
+* #### can-climb-world-border
+    - **default**: true
+    - **description**: Turning this to false will prevent spiders from climbing the world border
 * ##### attributes
     * ###### max_health
         - **default**: 16.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### sheep
 * ##### ridable
     - **default**: false
@@ -1872,6 +2013,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+* ##### jeb-shear-random-color
+    - **default**: false
+    - **description**: Shearing a sheep named jeb_ will drop a wool block with a random colour
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### ravager
 * ##### ridable
     - **default**: false
@@ -1904,6 +2051,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 100.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### pig
 * ##### ridable
     - **default**: false
@@ -1924,6 +2074,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### witch
 * ##### ridable
     - **default**: false
@@ -1938,6 +2091,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 26.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### zombie
 * ##### ridable
     - **default**: false
@@ -1971,6 +2127,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+* ##### head-visibility-percent
+    - **default**: 0.5
+    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### dolphin
 * ##### ridable
     - **default**: false
@@ -1998,6 +2160,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### axolotl
 * ##### ridable
     - **default**: false
@@ -2012,6 +2177,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 14.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### bat
 * ##### ridable
     - **default**: false
@@ -2029,6 +2197,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 6.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### bee
 * ##### ridable
     - **default**: false
@@ -2051,10 +2222,16 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 * ##### can-work-in-rain
     - **default**: false
     - **description**: Controls whether bees can work during rainy weather
+* ##### dies-after-sting
+    - **default**: true
+    - **description**: Set whether a bee should die after stinging
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### blaze
 * ##### ridable
     - **default**: false
@@ -2072,6 +2249,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### cat
 * ##### ridable
     - **default**: false
@@ -2102,6 +2282,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### cod
 * ##### ridable
     - **default**: false
@@ -2113,6 +2296,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### elder_guardian
 * ##### ridable
     - **default**: false
@@ -2124,6 +2310,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 80.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### ghast
 * ##### ridable
     - **default**: false
@@ -2144,6 +2333,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### guardian
 * ##### ridable
     - **default**: false
@@ -2155,6 +2347,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 30.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### illusioner
 * ##### ridable
     - **default**: false
@@ -2178,6 +2373,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 32.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### iron_golem
 * ##### ridable
     - **default**: false
@@ -2201,6 +2399,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 100.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### llama
 * ##### ridable
     - **default**: false
@@ -2211,9 +2412,6 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### tempted-by-hay
-    - **default**: false
-    - **description**: Set to true for this mob to follow the player when holding a hay block
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2242,6 +2440,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### trader_llama
 * ##### ridable
     - **default**: false
@@ -2277,6 +2478,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### magma_cube
 * ##### ridable
     - **default**: false
@@ -2291,6 +2495,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: "size * size"
         - **description**: The Max health equation used to calculate the max health
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### parrot
 * ##### ridable
     - **default**: false
@@ -2311,6 +2518,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 6.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### pufferfish
 * ##### ridable
     - **default**: false
@@ -2322,6 +2532,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### salmon
 * ##### ridable
     - **default**: false
@@ -2333,6 +2546,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### slime
 * ##### ridable
     - **default**: false
@@ -2347,6 +2563,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: "size * size"
         - **description**: The Max health equation used to calculate the max health
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### tropical_fish
 * ##### ridable
     - **default**: false
@@ -2358,6 +2577,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### turtle
 * ##### ridable
     - **default**: false
@@ -2375,6 +2597,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 30.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### vex
 * ##### ridable
     - **default**: false
@@ -2392,6 +2617,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: 14.0
         - **description**: Max health attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 	
 ### gameplay-mechanics
 
@@ -2555,6 +2783,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - **default**: true
     - **description**: Set to false to disallow armorstands from moving in water over a fence
 #### player
+* ##### exp-pickup-delay-ticks
+    - **default**: 2
+    - **description**: The delay a player can pick up experience after it is dropped
 * ##### shift-right-click-repairs-mending-points
     - **default**: 0
     - **description**: The amount of experience points to use from the player's bar for repairing items enchanted with mending in the player's inventory
