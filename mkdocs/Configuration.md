@@ -6,7 +6,7 @@ If you want information on settings in paper.yml, spigot.yml, bukkit.yml and ser
 
 * [Bukkit Configuration (bukkit.yml)](https://bukkit.gamepedia.com/Bukkit.yml)
 
-* [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/)
+* [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/spigot-configuration/)
 
 * [Paper Configuration (paper.yml)](https://paper.readthedocs.io/en/latest/server/configuration.html)
 
