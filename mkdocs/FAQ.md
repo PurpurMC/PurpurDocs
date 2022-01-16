@@ -50,7 +50,7 @@ Don't worry if you can't read code. Most people can't. We have this nice wiki th
 
 Yes, Thats how forks work. All features from upstream are inherited by design
 
-`Vanilla -> CraftBukkit -> Spigot -> Paper -> Purpur`
+`Vanilla -> CraftBukkit -> Spigot -> Paper -> Pufferfish -> Purpur`
 
 We have it all ^_^
 
