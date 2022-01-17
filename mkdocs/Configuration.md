@@ -588,6 +588,22 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### trample-height
     - **default**: -1.0
     - **description**: Set the height a player/entity needs to fall before it tramples farmland
+
+???+ note "Note"
+        Trample height is in block height or an exact distance. During testing was found that the values for fallDistance are very inconsistent. The results of these tests can be found here:
+        Value set -> Actual fall distance needed to trample
+        1.0 -> 1.25
+        1.5 -> 1.75
+        2.0 -> 2.25
+        2.5 -> 2.87
+        3.0 -> 3.5
+        3.5 -> 4.25
+        4.0 -> 4.25
+        4.5 -> 5.0
+        5.0 -> 5.87
+        5.5 -> 5.87
+        6.0 -> 6.75
+
 * ##### feather-fall-distance-affects-trampling
     - **default**: false
     - **description**: Set to true if entities can stop trampling if they fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
@@ -712,9 +728,6 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 200.0
         - **description**: Max health attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
 #### cave_spider
 * ##### ridable
     - **default**: false
@@ -1950,9 +1963,6 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
 * ##### jockey
     * ###### only-babies
         - **default**: true
