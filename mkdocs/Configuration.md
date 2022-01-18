@@ -686,9 +686,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
 ### mobs
 
 #### ender_dragon
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -712,9 +715,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 200.0
         - **description**: Max health attribute
 #### cave_spider
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -726,9 +732,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 12.0
         - **description**: Max health attribute
 #### endermite
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -740,9 +749,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 8.0
         - **description**: Max health attribute
 #### mooshroom
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -757,9 +769,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 10.0
         - **description**: Max health attribute
 #### polar_bear
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -777,9 +792,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 30.0
         - **description**: Max health attribute
 #### vindicator
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -795,9 +813,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 24.0
         - **description**: Max health attribute
 #### zombie_horse
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -830,9 +851,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
             - **default**: 0.2
             - **description**: Max movement_speed attribute
 #### wither
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -865,9 +889,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 300.0
         - **description**: Max health attribute
 #### wither_skeleton
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -879,9 +906,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 20.0
         - **description**: Max health attribute
 #### zombie_villager
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -917,9 +947,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 #### wandering_trader
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -940,9 +973,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 20.0
         - **description**: Max health attribute
 #### silverfish
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -957,9 +993,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 8.0
         - **description**: Max health attribute
 #### zombified_piglin
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -993,9 +1032,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
     ```
     If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to 0, snow golems won't shoot any snowballs.
 
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1063,9 +1105,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
             - **default**: 0.2
             - **description**: Max movement_speed attribute
 #### phantom
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1141,9 +1186,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 20.0
         - **description**: Max health attribute
 #### chicken
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1161,9 +1209,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 4.0
         - **description**: Max health attribute
 #### creeper
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1222,9 +1273,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
             - **default**: 0.175
             - **description**: Max movement speed attribute
 #### cow
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1249,9 +1303,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 10.0
         - **description**: Max health attribute
 #### enderman
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1287,9 +1344,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 40.0
         - **description**: Max health attribute
 #### evoker
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1304,9 +1364,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 24.0
         - **description**: Max health attribute
 #### drowned
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1334,9 +1397,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 #### pillager
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1351,9 +1417,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 24.0
         - **description**: Max health attribute
 #### fox
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1374,9 +1443,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 10.0
         - **description**: Max health attribute
 #### giant
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1406,9 +1478,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 100.0
         - **description**: Max health attribute
 #### hoglin
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1423,9 +1498,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 40.0
         - **description**: Max health attribute
 #### glow_squid
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### can-fly
     - **default**: false
     - **description**: Makes it so squids can fly, Oh my!
@@ -1437,9 +1515,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 10.0
         - **description**: Max health attribute
 #### squid
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1457,9 +1538,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 10.0
         - **description**: Max health attribute
 #### villager
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1547,9 +1631,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
             - **default**: 0.175
             - **description**: Max movement speed attribute
 #### wolf
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1573,9 +1660,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 8.0
         - **description**: Max health attribute
 #### zoglin
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1587,9 +1677,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 40.0
         - **description**: Max health attribute
 #### ocelot
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1604,9 +1697,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - **default**: 10.0
         - **description**: Max health attribute
 #### shulker
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1675,9 +1771,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
             - **default**: 0.3375
             - **description**: Max movement speed attribute
 #### piglin
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1696,8 +1795,8 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 16.0
         - **description**: Max health attribute
 #### piglin_brute
-* ##### ridable
-    - **default**: false
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
@@ -1710,9 +1809,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 50.0
         - **description**: Max health attribute
 #### skeleton
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1724,9 +1826,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 8.0
         - **description**: Max health attribute
 #### stray
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1738,9 +1843,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 20.0
         - **description**: Max health attribute
 #### goat
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1755,9 +1863,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 10.0
         - **description**: Max health attribute
 #### panda
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1772,9 +1883,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 20.0
         - **description**: Max health attribute
 #### strider
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1812,9 +1926,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 3.0
         - **description**: Max health attribute
 #### husk
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1839,9 +1956,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 #### spider
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1853,9 +1973,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 16.0
         - **description**: Max health attribute
 #### sheep
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1873,9 +1996,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 8.0
         - **description**: Max health attribute
 #### ravager
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1905,9 +2031,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 100.0
         - **description**: Max health attribute
 #### pig
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1925,9 +2054,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 10.0
         - **description**: Max health attribute
 #### witch
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1939,9 +2071,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 26.0
         - **description**: Max health attribute
 #### zombie
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -1972,9 +2107,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 #### dolphin
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1999,9 +2137,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 10.0
         - **description**: Max health attribute
 #### axolotl
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2013,9 +2154,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 14.0
         - **description**: Max health attribute
 #### bat
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2030,9 +2174,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 6.0
         - **description**: Max health attribute
 #### bee
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2056,9 +2203,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 10.0
         - **description**: Max health attribute
 #### blaze
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2073,9 +2223,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 20.0
         - **description**: Max health attribute
 #### cat
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2103,9 +2256,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 10.0
         - **description**: Max health attribute
 #### cod
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2114,9 +2270,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 3.0
         - **description**: Max health attribute
 #### elder_guardian
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2125,9 +2284,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 80.0
         - **description**: Max health attribute
 #### ghast
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2145,9 +2307,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 10.0
         - **description**: Max health attribute
 #### guardian
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2156,9 +2321,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 30.0
         - **description**: Max health attribute
 #### illusioner
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2179,9 +2347,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 32.0
         - **description**: Max health attribute
 #### iron_golem
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2202,9 +2373,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 100.0
         - **description**: Max health attribute
 #### llama
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable. Llama's must be tamed and saddled (with carpet) to be WASD controllable.
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable. Llama's must be tamed and saddled (with carpet) to be WASD controllable.
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2278,9 +2452,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
             - **default**: 0.175
             - **description**: Max movement speed attribute
 #### magma_cube
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2292,9 +2469,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: "size * size"
         - **description**: The Max health equation used to calculate the max health
 #### parrot
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2312,9 +2492,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 6.0
         - **description**: Max health attribute
 #### pufferfish
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2323,9 +2506,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 3.0
         - **description**: Max health attribute
 #### salmon
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2334,9 +2520,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 3.0
         - **description**: Max health attribute
 #### slime
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2348,9 +2537,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: "size * size"
         - **description**: The Max health equation used to calculate the max health
 #### tropical_fish
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2359,9 +2551,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 3.0
         - **description**: Max health attribute
 #### turtle
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
@@ -2376,9 +2571,12 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
         - **default**: 30.0
         - **description**: Max health attribute
 #### vex
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob WASD controllable
+    - **description**: Lets players mount this mob
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob ridable in water (it wont eject you)
