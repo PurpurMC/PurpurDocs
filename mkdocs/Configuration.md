@@ -11,7 +11,7 @@ If you want information on settings in paper.yml, spigot.yml, bukkit.yml and ser
 * [Paper Configuration (paper.yml)](https://paper.readthedocs.io/en/latest/server/configuration.html)
 
 ???+ warning "Warning"
-    Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord](http://purpurmc.org/discord/) server.
+    Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord]({{ social[0].link }}) server.
 
 ## Global Settings
 
@@ -61,6 +61,10 @@ Global settings affect all worlds on the server as well as the core server funct
         - Requires [`minecraft.command.gamemode.<gamemode>`](../Permissions#minecraftcommandgamemodegamemode) permission
         - **default**: false
         - **description**: Set to true for each gamemode to require it's own permission
+* #### fill
+    * ##### max-area
+        - **default**: 32768
+        - **description**: The max area that the fill command can affect
 * #### tpsbar
     * ##### title
         `<tps>` - The current TPS
@@ -172,13 +176,13 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 #### afk-broadcast-away
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 
-- **default**: §e§o%s is now AFK
+- **default**: &lt;yellow>&lt;italic>%s is now AFK
 - **description**: This is the message that gets broadcasted when a user goes AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
 
 #### afk-broadcast-back
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 
-- **default**: §e§o%s is no longer AFK
+- **default**: &lt;yellow>&lt;italic>%s is no longer AFK
 - **description**: This is the message that gets broadcasted when a user is no longer AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
 
 #### afk-tab-list-prefix
@@ -196,13 +200,13 @@ Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 #### ping-command-output
 Requires the [`bukkit.command.ping`](../Permissions#bukkitcommandping) permission
 
-- **default**: §a%s's ping is %sms
+- **default**: &lt;green>%s's ping is %sms
 - **description**: Output when `/ping <user>` is run.
 
 #### cannot-ride-mob
 Requires the [`allow.ride.<mob_id>`](../Permissions#allowridemob_id) permission
 
-- **default**: §cYou cannot mount that mob
+- **default**: &lt;red>You cannot mount that mob
 - **description**: Message that shows when someone tries to mount a mob they're not allowed to.
 
 #### uptime-command-output
@@ -221,13 +225,19 @@ Requires the [`damage-if-sprinting`](#damage-if-sprinting) option to be enabled
 #### demo-command-output
 Requires the [`bukkit.command.demo`](../Permissions#bukkitcommanddemo) permission
 
-- **default**: §a%s has been shown the demo screen
+- **default**: &lt;green>%s has been shown the demo screen
 - **description**: Message that shows when the demo screen is enabled for a user using the `/demo` command.
 
 #### credits-command-output
 Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) permission
 
-- **default**: §a%s has been shown the end credits
+- **default**: &lt;green>%s has been shown the end credits
+- **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
+
+#### tpsbar-command-output
+Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permission
+
+- **default**: &lt;green>Tpsbar toggled &lt;onoff> for &lt;target>
 - **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
 
 #### unverified-username
@@ -254,6 +264,9 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 ####  upnp-port-forwarding
 - **default**: false
 - **description**: Attempt to automatically port forward using UPnP when the server starts up
+####  max-joins-per-second
+- **default**: false
+- **description**: Set to true to make the `max-joins-per-tick` setting in paper.yml be used per second instead of per tick
 	
 ### blocks
 
@@ -266,9 +279,19 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
     - **default**: 3
     - **description**: The maximum amount of bees allowed inside of a beehive/bee_nest
 ####  grindstone
-* ##### ignore-curses
-    - **default**: true
-    - **description**: Set to false to allow the grindstone to remove the curse enchantment from items
+* ##### ignored-enchants
+    - **default**:
+        ``` yaml
+        - minecraft:binding_curse
+        - minecraft:vanishing_curse
+        ```
+    - **description**: The enchantments to ignore from being removed on a grindstone
+* ##### remove-attributes
+    - **default**: false
+    - **description**: Set to true to allow the grindstone to remove the attributes from an item
+* ##### remove-name-and-lore
+    - **default**: false
+    - **description**: Set to true to allow the grindstone to remove the name and lore from an item
 ####  ender_chest
 * ##### six-rows
     - **default**: false
@@ -318,6 +341,9 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 #### suppress-unrecognized-recipe-errors
 - **default**: false
 - **description**: Suppress warnings about attempts to load an unrecognized recipe
+#### suppress-setblock-in-far-chunk-errors
+- **default**: false
+- **description**: Suppress errors where setBlock was detected in a far chunk
 	
 ### seed
 
@@ -328,9 +354,6 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
 ##### mineshaft
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### stronghold
 - **default**: -1
 - **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
 	
@@ -354,7 +377,10 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
     - **description**: allows the looting enchantment on a shears
 * ##### allow-unsafe-enchants
     - **default**: false
-    - **description**: allows the ability to increase enchantments passed their max level
+    - **description**: allows the ability to increase enchantments passed their max level through the anvil
+* ##### allow-unsafe-enchant-command
+    - **default**: false
+    - **description**: allows the ability to increase enchantments passed their max level through the command
 	
 
 ## World Settings
@@ -434,7 +460,6 @@ World settings are on a per-world basis. The child-node `default` is used for al
         - minecraft:sea_lantern
         - minecraft:dark_prismarine
         ```
-    - **default**:
     - **description**: Blocks that can be used to build a conduit
 * ##### effect-distance
     - **default**: 16
@@ -611,6 +636,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### deactivate-by-redstone
     - **default**: false
     - **description**: Allow spawners to be deactivated by redstone
+* ##### fix-mc-50647
+    - **default**: false
+    - **description**: Fix spawners not spawning slimes correctly; MC-50647
+* ##### fix-mc-238526
+    - **default**: false
+    - **description**: Fix spawners not spawning water animals correctly; MC-238526
 #### dispenser
 * ##### place-anvils
     - **default**: false
@@ -623,6 +654,12 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### cumulative-cost
     - **default**: true
     - **description**: If the cumulative cost should apply when an item is used in an anvil
+* ##### iron-ingots-used-for-repair
+    - **default**: 0
+    - **description**: The amount of iron ingots required to repair an anvil
+* ##### obsidian-used-for-damage
+    - **default**: 0
+    - **description**: The amount of obsidian required to damage an anvil
 #### lightning_rod
 * ##### range
     - **default**: 128
@@ -705,10 +742,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### ender_dragon
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
@@ -731,10 +771,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### cave_spider
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -748,10 +791,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### endermite
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -765,10 +811,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### mooshroom
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -785,10 +834,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### polar_bear
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -808,10 +860,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### vindicator
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -829,10 +884,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### zombie_horse
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -867,10 +925,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### wither
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
@@ -905,10 +966,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### wither_skeleton
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -922,10 +986,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### zombie_villager
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -963,10 +1030,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### wandering_trader
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -989,10 +1059,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### silverfish
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1009,10 +1082,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### zombified_piglin
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1048,10 +1124,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### leave-trail-when-ridden
     - **default**: false
     - **description**: Leaves a trail where a snowman walks when being ridden
@@ -1092,7 +1171,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: Can skeleton horses swim in water. False makes them sink to the bottom (vanilla default)
 * ##### ridable-in-water
     - **default**: true
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1124,10 +1203,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### phantom
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1155,6 +1237,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### allow-griefing
     - **default**: false
     - **description**: Whether a phantom's flames can burn items
+* ###### size
+    * min
+        - **default**: 0
+        - **description**: Minimum size to randomly choose from when spawning naturally
+    * max
+        - **default**: 0
+        - **description**: Maximum size to randomly choose from when spawning naturally
 * ##### spawn
     * ###### min-sky-darkness
         - **default**: 5
@@ -1199,16 +1288,22 @@ World settings are on a per-world basis. The child-node `default` is used for al
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### attack_damage
+        - **default**: "6 + size"
+        - **description**: The base value to set for the attack damage of the phantom
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
 #### chicken
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1228,10 +1323,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### creeper
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1263,7 +1361,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### donkey
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1298,10 +1396,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### cow
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1328,10 +1429,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### enderman
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### allow-griefing
     - **default**: true
     - **description**: Set to false to stop the enderman from griefing
@@ -1369,10 +1473,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### evoker
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1389,10 +1496,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### drowned
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1422,10 +1532,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### pillager
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1442,10 +1555,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### fox
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1468,10 +1584,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### giant
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1503,10 +1622,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### hoglin
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1523,6 +1645,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### glow_squid
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### can-fly
     - **default**: false
@@ -1540,6 +1665,9 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### squid
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -1563,10 +1691,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### villager
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1588,6 +1719,19 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### allow-trading
     - **default**: true
     - **description**: Set to false to disable trading with villagers
+* ##### display-trade-item
+    - **default**: true
+    - **description**: Set to false to stop the villager from displaying the trade item
+* ##### lobotomize
+    * ###### enabled
+        - **default**: false
+        - **description**: Lobotomizes the villager if it cannot move (Does not disable trading)
+    * ###### check-interval
+        - **default**: 100
+        - **description**: The interval in ticks to check if a villager is lobotomized 
+* ##### minimum-demand
+    - **default**: 0
+    - **description**: Addresses MC-163962 where villager demand decreases indefinitely. Paper adds a patch to fix this by preventing demand from going below zero. This option allows the minimum demand to be configurable.
 * ##### can-breed
     - **default**: true
     - **description**: Whether villagers can breed or not
@@ -1617,7 +1761,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### mule
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1652,10 +1796,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### wolf
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1667,7 +1814,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
     - **description**: Percent chance (0.0 - 1.0) that a wolf will spawn as rabid
 * ##### default-collar-color
     - **default**: RED
-    - **description**: Set the default collar color when a wolf is tamed. [Available Colors](https://purpurmc.org/javadoc/org/bukkit/Color.html)
+    - **description**: Set the default collar color when a wolf is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -1681,10 +1828,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### zoglin
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1698,10 +1848,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### ocelot
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1718,10 +1871,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### shulker
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1754,7 +1910,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### horse
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1792,10 +1948,13 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### piglin
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1805,7 +1964,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 * ##### portal-spawn-modifier
     - **default**: 2000
     - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
-based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purpur/blob/ver/1.16.5/patches/server/0198-Piglin-portal-spawn-modifier.patch)
+based on the world difficulty. [Read more here]({{ project.source }}/blob/ver/1.16.5/patches/server/0198-Piglin-portal-spawn-modifier.patch)
 * ##### attributes
     * ###### max_health
         - **default**: 16.0
@@ -1816,10 +1975,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### piglin_brute
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1833,10 +1995,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### skeleton
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1853,10 +2018,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### stray
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1870,10 +2038,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### goat
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1890,10 +2061,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### panda
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1910,10 +2084,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### strider
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### give-saddle-back
     - **default**: false
     - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
@@ -1956,10 +2133,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### husk
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -1986,10 +2166,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### spider
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2006,10 +2189,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### sheep
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2032,10 +2218,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### ravager
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2067,10 +2256,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### pig
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2090,10 +2282,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### witch
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2107,10 +2302,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### zombie
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2146,6 +2344,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### dolphin
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -2176,6 +2377,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### axolotl
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -2193,10 +2397,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### bat
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2213,10 +2420,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### bee
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2245,10 +2455,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### blaze
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
@@ -2265,16 +2478,19 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### cat
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
 * ##### default-collar-color
     - **default**: RED
-    - **description**: Set the default collar color when a cat is tamed. [Available Colors](https://purpurmc.org/javadoc/org/bukkit/Color.html)
+    - **description**: Set the default collar color when a cat is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
 * ##### spawn-delay
     - **default**: 1200
     - **description**: Number of ticks between attempting to naturally spawn a cat
@@ -2298,6 +2514,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### cod
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -2312,6 +2531,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### elder_guardian
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -2326,10 +2548,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### ghast
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2349,6 +2574,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### guardian
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -2363,10 +2591,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### illusioner
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2389,10 +2620,16 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### iron_golem
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### healing-calms-anger
+    - **default**: false
+    - **description**: Calms the iron golem when it's healed if it's angry
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2415,10 +2652,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### llama
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable. Llama's must be tamed and saddled (with carpet) to be WASD controllable.
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2456,10 +2696,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### trader_llama
 * ##### ridable
     - **default**: false
-    - **description**: Makes this mob mountable and WASD controllable. Trader llama's must be tamed to be WASD controllable. Being saddled (carpet) is not a requirement since it technically always has a carpet.
+    - **description**: Makes this mob mountable.
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable. Trader llama's must be tamed to be WASD controllable. Being saddled (carpet) is not a requirement since it technically always has a carpet.
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2494,10 +2737,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### magma_cube
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2505,16 +2751,22 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
     * ###### max_health
         - **default**: "size * size"
         - **description**: The Max health equation used to calculate the max health
+    * ###### attack_damage
+        - **default**: "size"
+        - **description**: The base value to set for the attack damage of the magma cube
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
 #### parrot
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2534,6 +2786,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### pufferfish
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -2548,6 +2803,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### salmon
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -2562,23 +2820,32 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### slime
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### attributes
     * ###### max_health
         - **default**: "size * size"
         - **description**: The Max health equation used to calculate the max health
+    * ###### attack_damage
+        - **default**: "size"
+        - **description**: The base value to set for the attack damage of the slime
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
 #### tropical_fish
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### takes-damage-from-water
     - **default**: false
@@ -2593,10 +2860,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### turtle
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2613,10 +2883,13 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### vex
 * ##### ridable
     - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob ridable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
@@ -2645,6 +2918,9 @@ based on the world difficulty. [Read more here](https://github.com/PurpurMC/Purp
 #### thunder-stops-after-sleep
 - **default**: true
 - **description**: Set to false to make thunder continue even after a player sleeps
+#### mob-last-hurt-by-player-time
+- **default**: 100
+- **description**: Allows you to expand the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
 #### halloween
 * ##### force
     - **default**: false
@@ -2808,6 +3084,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### teleport-if-outside-border
     - **default**: false
     - **description**: Teleports you to spawn if you somehow get outside the world border
+* ##### allow-void-trading
+    - **default**: false
+    - **description**: Allows the ability to continuously trade with a villager through an End Gateway exploit.
 * ##### totem-of-undying-works-in-inventory
     - **default**: false
     - **description**: Allows the totem of undying to work in your inventory, not just your offhand

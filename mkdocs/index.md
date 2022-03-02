@@ -1,31 +1,31 @@
-[![Purpur Image](https://repository-images.githubusercontent.com/184300222/14b11480-3303-11eb-8ca4-ea5711d942fb)](https://purpurmc.org)
+[![Purpur Image](https://repository-images.githubusercontent.com/184300222/14b11480-3303-11eb-8ca4-ea5711d942fb)]({{ project.website }})
 
 <div markdown="1" id="center">
 
 [![MIT License](https://img.shields.io/github/license/PurpurMC/Purpur?&logo=github)](License)&nbsp;
-[![Github Actions Build](https://img.shields.io/github/workflow/status/purpurmc/purpur/Build?event=push&logo=github)](https://purpurmc.org/downloads)
+[![Github Actions Build](https://img.shields.io/github/workflow/status/purpurmc/purpur/Build?event=push&logo=github)]({{ project.downloads }})
 [![CodeFactor](https://www.codefactor.io/repository/github/purpurmc/purpur/badge)](https://www.codefactor.io/repository/github/purpurmc/purpur)&nbsp;
-[![Join us on Discord](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/mtAAnkk)&nbsp;  
+[![Join us on Discord](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)]({{ social[0].link }})&nbsp;  
 
-[![Purpur's Stargazers](https://img.shields.io/github/stars/PurpurMC/Purpur?label=stars&logo=github)](https://github.com/PurpurMC/Purpur/stargazers)&nbsp;
-[![Purpur Forks](https://img.shields.io/github/forks/PurpurMC/Purpur?label=forks&logo=github)](https://github.com/PurpurMC/Purpur/network/members)&nbsp;
-[![Purpur Watchers](https://img.shields.io/github/watchers/PurpurMC/Purpur?label=watchers&logo=github)](https://github.com/PurpurMC/Purpur/watchers)&nbsp;
+[![Purpur's Stargazers](https://img.shields.io/github/stars/PurpurMC/Purpur?label=stars&logo=github)]({{ project.source }}/stargazers)&nbsp;
+[![Purpur Forks](https://img.shields.io/github/forks/PurpurMC/Purpur?label=forks&logo=github)]({{ project.source }}/network/members)&nbsp;
+[![Purpur Watchers](https://img.shields.io/github/watchers/PurpurMC/Purpur?label=watchers&logo=github)]({{ project.source }}/watchers)&nbsp;
 
-Welcome to the official documentation source for the&nbsp;[Purpur](https://github.com/PurpurMC/Purpur/)&nbsp;project.
+Welcome to the official documentation source for the&nbsp;[Purpur]({{ project.source }}/)&nbsp;project.
 
-This wiki was last updated to Build&nbsp;[#1502](https://api.purpurmc.org/v2/purpur/1.18.1/1502/download)&nbsp;([`0494fff`](https://github.com/PurpurMC/Purpur/commit/0494fff566e5cbf22cb7e4efb8ee6adef7c29629))
+This wiki was last updated to Build&nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;([`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }}))
 
 Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers designed for configurability, and new fun and exciting gameplay features.
 
 </div>
 
-## Contact [![Discord shield.io](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/mtAAnkk)
+## Contact [![Discord shield.io](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)]({{ social[0].link }})
 
-Join us on [Discord](https://discord.gg/mtAAnkk)!
+Join us on [Discord]({{ social[0].link }})!
 
 ## Downloads
 
-Downloads can be obtained from the [downloads page](https://purpurmc.org/downloads), or the [downloads API](https://api.purpurmc.org/).
+Downloads can be obtained from the [downloads page]({{ project.downloads }}), or the [downloads API](https://api.purpurmc.org/).
 
 Downloads API endpoints:
 
@@ -53,7 +53,7 @@ See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of materia
 
 ### Javadoc
 
-https://purpurmc.org/javadoc
+{{ project.javadoc }}
 
 ### Dependency Information
 === "Maven"
@@ -67,7 +67,7 @@ https://purpurmc.org/javadoc
     <dependency>
         <groupId>org.purpurmc.purpur</groupId>
         <artifactId>purpur-api</artifactId>
-        <version>1.18.1-R0.1-SNAPSHOT</version>
+        <version>{{ project.version }}-R0.1-SNAPSHOT</version>
         <scope>provided</scope>
     </dependency>
     ```
@@ -80,7 +80,7 @@ https://purpurmc.org/javadoc
     ```
     ``` kotlin linenums="1"
     dependencies {
-        compileOnly("org.purpurmc.purpur", "purpur-api", "1.18.1-R0.1-SNAPSHOT")
+        compileOnly("org.purpurmc.purpur", "purpur-api", "{{ project.version }}-R0.1-SNAPSHOT")
     }
     ```
 
@@ -101,7 +101,7 @@ To create one, just add a commit to either repo and run `./gradlew rebuildPatche
 patch will be placed in the patches folder. Modifying commits will also modify its 
 corresponding patch file.
 
-See [CONTRIBUTING.md](https://github.com/PurpurMC/Purpur/blob/HEAD/CONTRIBUTING.md) for more detailed information.
+See [CONTRIBUTING.md]({{ project.source }}/blob/HEAD/CONTRIBUTING.md) for more detailed information.
 
 
 #### Compiling
