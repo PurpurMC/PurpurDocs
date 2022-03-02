@@ -84,7 +84,7 @@ See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of materia
     }
     ```
 
-Yes, this also includes all API provided by Paper, Spigot, and Bukkit.
+Yes, this also includes all API provided by Pufferfish, Paper, Spigot, and Bukkit.
 
 ## Building and setting up
 
