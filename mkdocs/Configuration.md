@@ -515,7 +515,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 #### sand
 * ##### fix-duping
     - **default**: true
-    - **description**: Set to false to re-enable the ability to sand dupe
+    - **description**: Set to false to re-enable the ability to sand dupe. You might also need to enable [`safe-teleporting`](#safe-teleporting)
 #### end_portal
 * ##### safe-teleporting
     - **default**: true
