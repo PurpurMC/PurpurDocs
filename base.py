@@ -32,7 +32,7 @@ async def find_default_value(config_result, patch):
         return {config_result[1]: config_result[2]}
 
     search_config = re.search(config_result[2] + r'\s*=\s*(.+);', patch)
-    if len(search_config.groups()):
+    if search_config != None and len(search_config.groups()):
         return {config_result[1]: search_config.group(1)}
     return config_result[1]
 
