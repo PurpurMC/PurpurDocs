@@ -1,4 +1,4 @@
-[![Purpur Image](https://repository-images.githubusercontent.com/184300222/14b11480-3303-11eb-8ca4-ea5711d942fb)]({{ project.website }})
+[![Purpur Image](https://user-images.githubusercontent.com/74448585/150906023-101cd383-da82-4a3c-9603-a3b5741c3994.png)]({{ project.website }})
 
 <div markdown="1" id="center">
 
