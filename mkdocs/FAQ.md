@@ -4,6 +4,15 @@ We have a downloads page on our website that's almost as majestic as my beard ![
 
 If you'd rather use the downloads API directly (for automation, scripts, or whatever) you can find the API endpoints listed on [the home page]({{ project.downloads }}).
 
+## What are the best purpur options?
+
+It's hard to summarize Purpur because then it wouldn't be fully representative of everything it can do.
+
+Take a look at the [most liked features](https://www.reddit.com/r/admincraft/comments/pbx5le/what_is_your_favorite_purpur_feature/) poll over on reddit.  
+But that list is hardly exhaustive, so do make sure to check out all the available options, there's something for everyone \o/  
+{{ site_url }}/Configuration
+
+
 ## Can I make a feature request or report a bug?
 
 Of course you can! That's what makes Purpur better and better ^_^
