@@ -389,7 +389,7 @@ World settings are on a per-world basis. The child-node `default` is used for al
 A new section must be manually added to the bottom of `purpur.yml` for each world which
 requires a unique configuration. This section will not be automatically generated; it must be added.
 
-For example, to disable loading the spawn chunks in `world_nether` and `world_the_end`,
+For example, to set specific starvation damage amounts in `world_nether` and `world_the_end`,
 configuration would be added like this:
 
 ```yaml
