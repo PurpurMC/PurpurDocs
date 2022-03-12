@@ -385,7 +385,70 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 
 ## World Settings
 
-World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings
+World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings.
+A new section must be manually added to the bottom of `purpur.yml` for each world which
+requires a unique configuration. This section will not be automatically generated; it must be added.
+Remember! YAML (the configuration format used by Paper) cares about spaces. When adding a new world,
+ensure there are two spaces behind it.
+
+For example, to disable loading the spawn chunks in `world_nether` and `world_the_end`,
+configuration would be added like this:
+
+```yaml
+world-settings:
+  default:
+    hunger:
+      starvation-damage: 1.0 # This is auto generated
+  world_nether:
+    hunger:
+      starvation-damage: 0.5
+  world_the_end:
+    hunger:
+      starvation-damage: 2.0
+```
+
+This is a very stripped-down example. In reality, the `default` section will be much more extensive
+as it contains all possible configuration options. This may look overwhelming at first, but always
+remember to put new worlds at the very bottom of the configuration file. If you do this, and add
+correct spacing (two spaces `  ` before each world) everything will work.
+
+All configuration not explicitly defined for a world is inherited from the `default` section. This
+means there is no need to repeat configuration options with the same value between sections, so
+there is no need to copy and paste the entire `default` section into each new world created.
+
+For a more complex real-world example: setting both different `hunger.starvation-damage` and
+`mobs.ender_dragon.ridable` in two worlds.
+
+```yaml
+world-settings:
+  default:
+    hunger:
+      starvation-damage: 1.0
+    mobs:
+      ender_dragon:
+        ridable: true
+  world_nether:
+    hunger:
+      starvation-damage: 2.0
+  resource_world:
+    hunger:
+      starvation-damage: 0.0
+    mobs:
+      ender_dragon:
+        ridable: false
+```
+
+This example demonstrates the concept of inheritance. For each world, this is the effective
+configuration which will be applied:
+
+| Configuration Key           | world  | world_nether | world_the_end | resource_world |
+|-----------------------------|--------|--------------|---------------|----------------|
+| `hunger.starvation-damage`  | `1.0`  | `2.0`        | `1.0`         | `0.0`          |
+| `mobs.ender_dragon.ridable` | `true` | `true`       | `true`        | `false`        |
+
+Notice that `world_the_end` was never specified in this configuration. Because of this, it inherits
+all the configuration options from the `default` section. Additionally, `mobs.ender_dragon.ridable` was only
+disabled in `resource_world` because in the `default` section, `mobs.ender_dragon.ridable` is set to `true`.
 
 ### hunger
 
