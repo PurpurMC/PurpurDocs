@@ -388,8 +388,6 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings.
 A new section must be manually added to the bottom of `purpur.yml` for each world which
 requires a unique configuration. This section will not be automatically generated; it must be added.
-Remember! YAML (the configuration format used by Paper) cares about spaces. When adding a new world,
-ensure there are two spaces behind it.
 
 For example, to disable loading the spawn chunks in `world_nether` and `world_the_end`,
 configuration would be added like this:
