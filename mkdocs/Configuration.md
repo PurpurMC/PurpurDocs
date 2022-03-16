@@ -385,7 +385,9 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 
 ## World Settings
 
-World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings
+World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings.
+
+For a more clear explanation of the world settings section of the config, feel free to read through Paper's explanation here: https://docs.papermc.io/paper/per-world-configuration
 
 ### hunger
 
