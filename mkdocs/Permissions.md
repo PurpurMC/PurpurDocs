@@ -74,7 +74,7 @@ Requires [`gamemode.requires-specific-permission`](../Configuration#command) to 
 Player must have this perm _and_ the gamemode perm for it to work.
 
 ## purpur.drop.spawners
-Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch) to be enabled in purpur.yml
+Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch_1) to be enabled in purpur.yml
 
 - Players with this permission can use a configured tool with silk
 touch enchantment to mine up any spawner cage instead of disappearing.
@@ -89,7 +89,7 @@ touch enchantment to mine up any spawner cage instead of disappearing.
 - Allows players to instantly teleport through portals when stepping through them
   
 ## purpur.place.spawners
-Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch) to be enabled in purpur.yml
+Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch_1) to be enabled in purpur.yml
 
 - Players with this permission can place down a spawner cage and
 have the mob type restored to what it was when it was mined using silk touch.
