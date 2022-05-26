@@ -1966,7 +1966,7 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### portal-spawn-modifier
     - **default**: 2000
     - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
-based on the world difficulty. [Read more here]({{ project.source }}/blob/ver/1.16.5/patches/server/0198-Piglin-portal-spawn-modifier.patch)
+based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a557fc0eedececd63d44d43ce6431bc23bb/patches/server/0167-Piglin-portal-spawn-modifier.patch)
 * ##### attributes
     * ###### max_health
         - **default**: 16.0
