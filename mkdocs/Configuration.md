@@ -383,6 +383,12 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 * ##### allow-unsafe-enchant-command
     - **default**: false
     - **description**: allows the ability to increase enchantments passed their max level through the command
+* ##### clamp-levels
+    - **default**: true
+    - **description**: Setting this to `false` allows levels to go up to `32767` by storing them as shorts instead of bytes.
+
+???+ note "Note"
+    Clients will not display levels higher than `255`
 	
 
 ## World Settings
@@ -435,6 +441,12 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### powder-snow
         - **default**: 0.1
         - **description**: The speed in which a cauldron fills with powdered snow (depends on random tick)
+    * ###### dripstone-water
+        - **default**: 0.17578125
+        - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has water placed a block above it fills with water (depends on random tick)
+    * ###### dripstone-lava
+        - **default**: 0.05859375
+        - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has lava placed a block above it fills with lava (depends on random tick)
 #### turtle_egg
 * ##### break-from-exp-orbs
     - **default**: true
@@ -451,6 +463,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### random-tick-crack-chance
     - **default**: 500
     - **description**: The chance a turtle egg will crack
+* ##### feather-fall-distance-affects-trampling
+    - **default**: false
+    - **description**: Set to true to stop trampling if entities fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
 #### powered-rail
 * ##### activation-range
     - **default**: 8
@@ -635,14 +650,11 @@ For a more clear explanation of the world settings section of the config, feel f
 
 * ##### feather-fall-distance-affects-trampling
     - **default**: false
-    - **description**: Set to true if entities can stop trampling if they fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
+    - **description**: Set to true to stop trampling if entities fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
 #### spawner
 * ##### deactivate-by-redstone
     - **default**: false
     - **description**: Allow spawners to be deactivated by redstone
-* ##### fix-mc-50647
-    - **default**: false
-    - **description**: Fix spawners not spawning slimes correctly; MC-50647
 * ##### fix-mc-238526
     - **default**: false
     - **description**: Fix spawners not spawning water animals correctly; MC-238526
@@ -1921,6 +1933,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### stand-with-rider
     - **default**: true
     - **description**: Should a horse (with a rider) stand when it's ambient noise is played
+* ##### stand-when-hurt
+    - **default**: true
+    - **description**: Should a horse stand when it's being hurt
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
