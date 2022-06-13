@@ -63,7 +63,7 @@ extra:
     javadoc: https://purpurmc.org/javadoc
     downloads: https://purpurmc.org/downloads
     source: https://github.com/PurpurMC/Purpur
-    version: 1.18.2
+    version: 1.19
     build:
       number: 1566
       commit: 133b3e1
