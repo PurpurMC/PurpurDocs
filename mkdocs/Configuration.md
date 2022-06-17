@@ -614,7 +614,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: DESTROY
     - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
 #### farmland
-* ##### get-moist-from-below
+* ##### gets-moist-from-below
     - **default**: false
     - **description**: Allow soil to moisten from water directly below it
 * ##### use-alpha-farmland

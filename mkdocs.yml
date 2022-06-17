@@ -24,7 +24,7 @@ plugins:
   - autolink_references:
       autolinks:
           - reference_prefix: MC-
-            target_url: https://bugs.mojang.com/projects/MC/issues/MC-<num>
+            target_url: https://bugs.mojang.com/browse/MC-<num>
   - redirects:
       redirect_maps:
           'commands.md': 'Commands.md'
