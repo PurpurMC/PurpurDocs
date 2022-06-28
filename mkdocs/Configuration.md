@@ -346,6 +346,9 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 #### suppress-setblock-in-far-chunk-errors
 - **default**: false
 - **description**: Suppress errors where setBlock was detected in a far chunk
+#### suppress-sent-expired-chat
+- **default**: false
+- **description**: Suppress warnings about unsynchronized client/server system time 
 	
 ### seed
 
@@ -405,6 +408,10 @@ For a more clear explanation of the world settings section of the config, feel f
 
 ### blocks
 
+#### enchantment-table
+* ##### lapis-persists
+    - **default**: false
+    - **description**: Setting this to true makes it so lapis lazuli can stay in the enchanting table slot, so you can leave your lapis lazuli in the table
 #### dragon_egg
 * ##### teleport
     - **default**: true
@@ -755,6 +762,52 @@ For a more clear explanation of the world settings section of the config, feel f
 	
 ### mobs
 
+#### allay
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+#### frog
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### ridable-jump-height
+    - **default**: 0.65
+    - **description**: The height this mob can jump when riding it (in blocks)
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+#### tadpole
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+#### warden
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
 #### ender_dragon
 * ##### ridable
     - **default**: false
@@ -2034,6 +2087,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### feed-wither-roses
+    - **default**: 0
+    - **description**: Right-clicking a skeleton while holding a wither rose will convert the skeleton into a wither skeleton. With the value being how many wither roses you would need to convert the skeleton, and 0 meaning the feature is disabled.
 #### stray
 * ##### ridable
     - **default**: false
@@ -3321,46 +3377,6 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 #### raid-cooldown-seconds
 - **default**: 0
 - **description**: How long you should wait before another raid can be initiated
-#### projectile-despawn-rates
-* ##### dragon_fireball
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### egg
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### ender_pearl
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### experience_bottle
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### firework_rocket
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### fishing_bobber
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### fireball
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### llama_spit
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### potion
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### shulker_bullet
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### small_fireball
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### snowball
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
-* ##### wither_skull
-    - **default**: -1
-    - **description**: The rate at which the projectile despawns in ticks. -1 means disabled
 #### entities-can-use-portals
 - **default**: true
 - **description**: Set to false to stop entities from being able to use portals
