@@ -319,8 +319,8 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
     - **description**: Set to true to make it so you can create portals out of crying obsidian
 ####  coral
 * ##### die-outside-water
-    - **default**: false
-    - **description**: Set to true to keep coral alive when placed on land
+    - **default**: true
+    - **description**: Set to false to keep coral alive when placed on land
 
 ### broadcasts
 
