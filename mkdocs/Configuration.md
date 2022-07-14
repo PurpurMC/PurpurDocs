@@ -263,6 +263,9 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
     - **description**: The death message that appears when the player is killed because they were running with scissors
 
 ### network
+### kick-for-out-of-order-chat
+- **default**: true
+- **description**: Set to false if you do not want to be kicked for out of order chat
 ####  upnp-port-forwarding
 - **default**: false
 - **description**: Attempt to automatically port forward using UPnP when the server starts up
@@ -321,6 +324,10 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 * ##### die-outside-water
     - **default**: true
     - **description**: Set to false to keep coral alive when placed on land
+#### sculk_shrieker
+* #### can-summon-default
+    - **default**: false
+    - **description**: Set to true to set `can_summon` to `true` on placement
 
 ### broadcasts
 
