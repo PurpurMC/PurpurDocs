@@ -65,8 +65,8 @@ extra:
     source: https://github.com/PurpurMC/Purpur
     version: 1.19
     build:
-      number: 1713
-      commit: 38f224
+      number: 1696
+      commit: d1485fa
   social:
     - icon: fontawesome/brands/discord
       link: https://purpurmc.org/discord
