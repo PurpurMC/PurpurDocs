@@ -265,7 +265,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 ### network
 ### kick-for-out-of-order-chat
 - **default**: true
-- **description**: Set to false if you do not want to be kicked for out of order chat
+- **description**: Set to false to stop the server from kicking a player for their chat being out of order 
 ####  upnp-port-forwarding
 - **default**: false
 - **description**: Attempt to automatically port forward using UPnP when the server starts up
