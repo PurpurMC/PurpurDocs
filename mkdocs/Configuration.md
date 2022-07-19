@@ -552,7 +552,7 @@ For a more clear explanation of the world settings section of the config, feel f
 #### sand
 * ##### fix-duping
     - **default**: true
-    - **description**: Set to false to re-enable the ability to sand dupe. You might also need to enable [`safe-teleporting`](#safe-teleporting)
+    - **description**: Set to false to re-enable the ability to sand dupe. You might also need to disable [`safe-teleporting`](#safe-teleporting)
 #### end_portal
 * ##### safe-teleporting
     - **default**: true
