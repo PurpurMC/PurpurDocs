@@ -378,34 +378,44 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 #### enderman
 * ##### short-height
     - **default**: false
-    - **description**: allows endermen to fit into 2 block tall spaces if enabled. Since client hitbox remains the same, you can still hit them in the head
-	
-#### enchantment
+    - **description**: Allows endermen to fit into 2 block tall spaces if enabled. Since client hitbox remains the same, you can still hit them in the head
+
+### enchantment
 
 * ##### allow-infinity-and-mending-together
     - **default**: false
-    - **description**: allows the mending and infinity enchantment to be on the same weapon/tool
+    - **description**: Allows the mending and infinity enchantment to be on the same weapon/tool
 * ##### allow-infinity-on-crossbow
     - **default**: false
-    - **description**: allows the infinity enchantment on a crossbow
+    - **description**: Allows the infinity enchantment on a crossbow
 * ##### allow-looting-on-shears
     - **default**: false
-    - **description**: allows the looting enchantment on a shears
-* ##### allow-unsafe-enchants
-    - **default**: false
-    - **description**: allows the ability to increase enchantments passed their max level through the anvil
+    - **description**: Allows the looting enchantment on a shears
 * ##### allow-unsafe-enchant-command
     - **default**: false
-    - **description**: allows the ability to increase enchantments passed their max level through the command
+    - **description**: Allows the ability to increase enchantments passed their max level through the command
 * ##### clamp-levels
     - **default**: true
     - **description**: Setting this to `false` allows levels to go up to `32767` by storing them as shorts instead of bytes.
 
 ???+ note "Note"
     Clients will not display levels higher than `255`
-	
 
-## World Settings
+####  anvil
+* ##### allow-unsafe-enchants
+    - **default**: false
+    - **description**: This option is required to make the following unsafe enchantment settings work.
+* ##### allow-inapplicable-enchants
+    - **default**: true
+    - **description**: Allows applying enchantments on tools or armour that are normally not applicable. For example, sharpness on a pickaxe.
+* ##### allow-incompatible-enchants
+    - **default**: true
+    - **description**: Allows applying enchantments together that are normally incompatible. For example, protection and fire protection or fortune and silk touch.
+* ##### allow-higher-enchants-levels
+    - **default**: true
+    - **description**: Allows the ability to increase enchantments passed their maximum level. For example, efficiency V + efficiency V = efficiency VI.
+
+## world-settings
 
 World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings.
 
@@ -416,6 +426,17 @@ For a more clear explanation of the world settings section of the config, feel f
 #### starvation-damage
 - **default**: 1.0
 - **description**: The amount of damage starvation will do
+
+### settings
+
+#### entity
+* #### shared-random
+- **default**: true
+- **description**: Setting this to false allows RNG manipulation. Paper patches RNG manipulation by using a shared (and locked) random source. This comes with a performance gain, but technical players may prefer to turn this off for the ability to manipulate RNG.
+
+???+ warning "Warning"
+    The shared-random setting is not tested by the Purpur team and can be seen as unsafe. (The shared random is designed to be multithread safe. Undoing this patch *can* cause ConcurrentModificationExceptions to fire in some situations, with or without plugins. And increase memory usage.)
+
 
 ### blocks
 
@@ -2179,7 +2200,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### give-saddle-back
     - **default**: false
-    - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
+    - **description**: Sneak and right-click a strider with a saddle on it's back to remove it with this option enabled
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2992,6 +3013,10 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 	
 ### gameplay-mechanics
 
+#### arrow
+* ##### movement-resets-despawn-counter
+    - **default**: true
+    - **description**: Setting this to false prevents keeping arrows alive indefinitely (such as when the block the arrow is stuck in gets removed, like a piston head going up/down).
 #### use-better-mending
 - **default**: false
 - **description**: Set to true for mending enchantment to always repair the most damaged equipment first
