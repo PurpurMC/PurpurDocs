@@ -7,7 +7,6 @@ if (location.pathname.toLowerCase().includes('configuration')) {
     anchorElement.addEventListener('click', (event) => {
       event.preventDefault();
       const anchor = anchorElement.getAttribute('href');
-      console.log("Anchor: " + anchor);
 
       window.history.pushState(null, '', anchor);
       const y = anchorElement.parentElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -21,7 +20,6 @@ if (location.pathname.toLowerCase().includes('configuration')) {
     anchorElement.addEventListener('click', (event) => {
       event.preventDefault();
       const anchor = anchorElement.getAttribute('href');
-      console.log("Anchor: " + anchor);
 
       const headerElement = document.getElementById(anchorElement.innerText);
 
