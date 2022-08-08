@@ -17,6 +17,8 @@ if (location.pathname.toLowerCase().includes('configuration')) {
 
   /* side bar */
   for (const anchorElement of document.getElementsByClassName('md-nav__link')) {
+    if (anchorElement.classList.contains("md-nav__link--active")) continue;
+
     anchorElement.addEventListener('click', (event) => {
       event.preventDefault();
       const anchor = anchorElement.getAttribute('href');
