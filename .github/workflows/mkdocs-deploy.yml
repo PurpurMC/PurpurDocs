@@ -8,6 +8,8 @@ on:
       - '**.md'
       - 'mkdocs/**'
       - 'mkdocs.yml'
+      - '**.js'
+      - '**.html'
 
 jobs:
   build:
