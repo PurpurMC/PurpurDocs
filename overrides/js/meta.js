@@ -2,6 +2,16 @@ if (location.pathname.toLowerCase().includes('configuration')) {
   //const options = { behavior: "smooth", block: "start", inline: "nearest" };
   const yOffset = -75;
 
+  /* onload */
+  const option = document.location.pathname.substring(document.location.pathname.lastIndexOf("/") + 1);
+  if (option.length > 0) {
+    const anchor = document.getElementById(option);
+    if (anchor !== null) {
+      const y = anchor.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
+  }
+
   /* anchors */
   for (const anchorElement of document.getElementsByClassName('headerlink')) {
     anchorElement.addEventListener('click', (event) => {
