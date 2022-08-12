@@ -71,11 +71,3 @@ Yes. The only time there's incompatibility is due to authors hard-coding support
 Maybe. Check the downloads page.
 
 {{ project.downloads }}
-
-## My server is lagging and I don't understand my timings report!? Can you read it for me and tell me what to fix?
-
-At the top right of your timings report is a link to a video tutorial that will teach you how to read and understand your timings report. I highly advise giving that a watch before reaching out to others for help. I understand its long (45 minutes?!) but its got a lot of good information in it and it really will help you more in the long run.
-
-For those that are impatient and just want quick fixes, the good people over at [![Birdflop Emote](https://cdn.discordapp.com/emojis/799601349095587840.png?size=16) Birdflop Hosting](https://discord.com/invite/nmgtX5z) have made a nice bot that can analyze your timings report and recommend the most common community recommended optimization changes to boost your performance. Head on over to their Discord Server and paste your timings link in their `#bot` channel to have their bot scan it. Here is the invite: https://discord.com/invite/nmgtX5z
-
-Some people may want to know what all of these options the bot is recommending you change actually do. Well, my friend, you're in luck \o/ There is a nice community written optimization guide that's been compiled with a ton of information over these performance related options, including what they do and what are some good starting points to use for your own server. The Birdflop bot gets most of its information from this guide, too. Just remember, these are starting points, not the golden rule. Be sure you understand what each option does before you change them, or you might end up surprised later with your server doing something you didnt expect or don't want. That guide is here: https://github.com/YouHaveTrouble/minecraft-optimization
