@@ -13,7 +13,7 @@
 
 Welcome to the official documentation source for the&nbsp;[Purpur]({{ project.source }}/)&nbsp;project.
 
-This wiki was last updated to Build&nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;([`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }}))
+This documentation was last updated to Build&nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;([`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }}))
 
 Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers designed for configurability, and new fun and exciting gameplay features.
 
