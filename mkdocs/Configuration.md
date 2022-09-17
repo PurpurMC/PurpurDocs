@@ -4,7 +4,7 @@ If you want information on settings in paper.yml, spigot.yml, bukkit.yml and ser
 
 * [Server Configuration (server.properties)](https://minecraft.fandom.com/wiki/Server.properties)
 
-* [Bukkit Configuration (bukkit.yml)](https://bukkit.gamepedia.com/Bukkit.yml)
+* [Bukkit Configuration (bukkit.yml)](https://bukkit.fandom.com/wiki/Bukkit.yml)
 
 * [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/spigot-configuration/)
 
