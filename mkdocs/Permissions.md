@@ -119,15 +119,20 @@ Hex colors only register once a book has been signed
 
 - Allows players to use the legacy and hex color codes in books which update after the book is signed
 
-## purpur.anvil.color
-Requires [`anvil.allow-colors`](../Configuration#anvil) to be enabled in purpur.yml
+## purpur.anvil.minimessage
+Requires [`anvil.allow-minimessage`](../Configuration#use-mini-message) to be enabled in purpur.yml
 
-- Allows players to use color codes in anvils
+- This allows players to use MiniMessage tags in an anvil.
+
+## purpur.anvil.color
+Requires [`anvil.allow-colors`](../Configuration#allow-colors_1) to be enabled in purpur.yml
+
+- Allows players to use legacy color codes in anvil. [`There is more information about colour codes on the Minecraft website.`](**https://minecraft.fandom.com/wiki/Formatting_codes**)
 
 ## purpur.anvil.remove_italics
 Requires [`anvil.allow-colors`](../Configuration#anvil) to be enabled in purpur.yml
 
-- Allows players to remove the italics from items renamed in the anvil by starting the text with '&r'
+- Allows players to remove the italics from items renamed in the anvil by starting the text with '&r'. The permission [`purpur.anvil-colors`](../Permissions#purpuranvilcolor) is required for this permission to work.
 
 ## purpur.enderchest.rows.<number&gt;
 Requires [`ender_chest.six-rows`](../Configuration#ender_chest) and [`ender_chest.use-permissions-for-rows`](../Configuration#ender_chest) to be enabled in purpur.yml

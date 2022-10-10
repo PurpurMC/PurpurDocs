@@ -114,6 +114,47 @@ Global settings affect all worlds on the server as well as the core server funct
     * ##### tick-interval
         - **default**: 20
         - **description**: How often the bossbar should update
+* #### rambar
+    * ##### title
+        `<used>` - The current amount of ram used.
+
+        `<xmx>` - The max set Xmx.
+
+        `<percent>` - The percentage of ram used.
+
+      - **default**: '"&lt;gray>Ram<yellow>:</yellow> <used>/<xmx> (&lt;percent>)"'
+      - **description**: The format of the bossbar when the `/rambar` command is ran
+
+    * ##### overlay
+        - **default**: NOTCHED_20
+        - **description**:
+          Sets the overlay type of the Bossbar  
+          Available options: `PROGRESS`, `NOTCHED_6`, `NOTCHED_10`, `NOTCHED_12`, `NOTCHED_20`
+    * ##### progress-color
+      Available options: `PINK`, `BLUE`, `RED`, `GREEN`, `YELLOW`, `PURPLE`, `WHITE`
+        * ###### good
+            - **default**: GREEN
+            - **description**: What color should show when the ram used "good"
+        * ###### medium
+            - **default**: YELLOW
+            - **description**: What color should show when the ram used is "medium"
+        * ###### low
+            - **default**: RED
+            - **description**: What color should show when the ram used is "low"
+    * ##### text-color
+      `<text>` - The format from [`settings.command.tpsbar.title`](#title)
+        * ###### good
+            - **default**: &lt;gradient:#55ff55:#00aa00>&lt;text>&lt;/gradient>
+            - **description**: The gradient of `<text>` when the ram used is "good"
+        * ###### medium
+            - **default**: &lt;gradient:#ffff55:#ffaa00>&lt;text>&lt;/gradient>
+            - **description**: The gradient of `<text>` when the ram used is "medium"
+        * ###### low
+            - **default**: &lt;gradient:#ff5555:#aa0000>&lt;text>&lt;/gradient>
+            - **description**: The gradient of `<text>` when the ram used is "low"
+    * ##### tick-interval
+        - **default**: 20
+        - **description**: How often the bossbar should update
 * #### compass
     * ##### title
         - **default**: "S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  
@@ -161,6 +202,10 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **default**: Purpur
 - **description**: This modifies the server name that shows up when a client is outdated or when someone opens the debug screen [F3]
 
+### fix-projectile-looting-transfer
+- **default**: false
+- **description**: Addresses [`MC-3304`](https://bugs.mojang.com/browse/MC-3304) by preventing looting from being applied to deaths caused by a projectile, unless if a plugin changed the looting modifier.
+
 ### username-valid-characters
 - **default**: ^[a-zA-Z0-9_.]*$
 - **description**: Characters that can be used in usernames. Configurable with regex.
@@ -199,17 +244,23 @@ Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 - **default**: ""
 - **description**: The suffix that shows up on the playerlist after someone's name when they're AFK
 
-#### ping-command-output
-Requires the [`bukkit.command.ping`](../Permissions#bukkitcommandping) permission
-
-- **default**: &lt;green>%s's ping is %sms
-- **description**: Output when `/ping <user>` is run.
-
 #### cannot-ride-mob
 Requires the [`allow.ride.<mob_id>`](../Permissions#allowridemob_id) permission
 
 - **default**: &lt;red>You cannot mount that mob
 - **description**: Message that shows when someone tries to mount a mob they're not allowed to.
+
+#### dont-run-with-scissors
+Requires the [`damage-if-sprinting`](#damage-if-sprinting) option to be enabled
+
+- **default**: &lt;red>&lt;italic>Don't run with scissors!
+- **description**: Actionbar message that shows when someone attempts to run with scissors
+
+#### ping-command-output
+Requires the [`bukkit.command.ping`](../Permissions#bukkitcommandping) permission
+
+- **default**: &lt;green>%s's ping is %sms
+- **description**: Output when `/ping <user>` is run.
 
 #### uptime-command-output
 Requires the [`bukkit.command.uptime`](../Permissions#bukkitcommanduptime) permission
@@ -217,12 +268,6 @@ Requires the [`bukkit.command.uptime`](../Permissions#bukkitcommanduptime) permi
 
 - **default**: &lt;green>Server uptime is &lt;uptime>
 - **description**: Message that shows when the `/uptime` command is ran.
-
-#### dont-run-with-scissors
-Requires the [`damage-if-sprinting`](#damage-if-sprinting) option to be enabled
-
-- **default**: &lt;red>&lt;italic>Don't run with scissors!
-- **description**: Actionbar message that shows when someone attempts to run with scissors
 
 #### demo-command-output
 Requires the [`bukkit.command.demo`](../Permissions#bukkitcommanddemo) permission
@@ -240,7 +285,17 @@ Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) per
 Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permission
 
 - **default**: &lt;green>Tpsbar toggled &lt;onoff> for &lt;target>
-- **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
+- **description**: Message that shows when the tpsbar is enabled for a user using the `/tpsbar` command.
+
+#### ram-command-output
+
+- **default**: '&lt;green>Ram Usage: <used>/<xmx> (&lt;percent>)'
+- **description**: A chat message that shows the ram usage when someone uses the `/ram` command.
+
+#### rambar-command-output
+
+- **default**: &lt;green>Rambar toggled <onoff> for &lt;target>
+- **description**: Message that shows when the rambar is enabled for a user using the `/rambar` command.
 
 #### unverified-username
 - **default**: default
@@ -325,10 +380,25 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
     - **default**: true
     - **description**: Set to false to keep coral alive when placed on land
 #### sculk_shrieker
-* #### can-summon-default
+* ##### can-summon-default
     - **default**: false
     - **description**: Set to true to set `can_summon` to `true` on placement
-
+#### twisting_vines
+* ##### max-growth-age
+    - **default**: 25
+    - **description**: The max growth age that the plant can grow
+#### weeping_vines
+* ##### max-growth-age
+    - **default**: 25
+    - **description**: The max growth age that the plant can grow
+#### cave_vines
+* ##### max-growth-age
+    - **default**: 25
+    - **description**: The max growth age that the plant can grow
+#### kelp
+* ##### max-growth-age
+    - **default**: 25
+    - **description**: The max growth age that the plant can grow
 ### broadcasts
 
 #### advancement
@@ -702,6 +772,10 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: false
     - **description**: Allows anvils to be placed by dispensers
 #### anvil
+* ##### use-mini-message
+    - Requires [`purpur.anvil.minimessage`](../Permissions#purpuranvilminimessage) permission
+    - **default**: false
+    - **description**:  Allows players to use MiniMessage tags in an anvil.
 * ##### allow-colors
     - Requires [`purpur.anvil.color`](../Permissions#purpuranvilcolor) permission
     - **default**: false
@@ -743,26 +817,10 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### requires-redstone
     - **default**: []
     - **description**: Allows you to set the doors that require redstone to be operated
-#### twisting_vines
-* ##### max-growth-age
-    - **default**: 25
-    - **description**: The max growth age that the plant can grow
-#### weeping_vines
-* ##### max-growth-age
-    - **default**: 25
-    - **description**: The max growth age that the plant can grow
-#### cave_vines
-* ##### max-growth-age
-    - **default**: 25
-    - **description**: The max growth age that the plant can grow
 #### powder_snow
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for powdered snow to bypass the mob griefing gamerule
-#### kelp
-* ##### max-growth-age
-    - **default**: 25
-    - **description**: The max growth age that the plant can grow
 #### end-crystal
 * ##### baseless
     * ###### explode
@@ -803,7 +861,10 @@ For a more clear explanation of the world settings section of the config, feel f
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
     - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
+    - **description**: Makes this mob mountable in water (it won't eject you)
+* ##### respect-nbt
+    - **default**: []
+    - **description**: It ensures that Allays respect the NBT from the items they pick up. If you add stored enchantments to the list to respect, then if you give an Allay a sword with an enchantment, it will only pick up swords with the same enchantments.
 #### frog
 * ##### ridable
     - **default**: false
@@ -1763,6 +1824,30 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### rainglow-mode
+    - **default**: rainbow
+    - **description**: Lets you change the colours of your glow squids. You can choose from the following options:
+        ``` yaml
+        Basic:
+        - rainbow: red, orange, yellow, green, blue, indigo and violet.
+        - all_colors: blue, red, green, pink, yellow, orange, indigo, purple, white, gray and black.
+        - monochrome: white, grey, and black.
+        - vanilla: just blue.
+        
+        Pride:
+        - trans_pride: blue, white and pink.
+        - lesbian_pride: red, orange, white, pink and purple.
+        - bi_pride: blue, pink and purple.
+        - pan_pride: pink, yellow and blue.
+        - ace_pride: black, gray, white and purple.
+        - aro_pride: black, gray, white and green.
+        - genderfluid: blue, pink, purple, white and black.
+        - enby_pride: yellow, white, black and purple.
+        ```
+
+???+ note "Note"
+    Please note that you must have the [`Rainglow Fabric mod`](https://modrinth.com/mod/rainglow) installed on your client in order for this to work.
+
 #### squid
 * ##### ridable
     - **default**: false
@@ -2122,6 +2207,14 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### feed-wither-roses
     - **default**: 0
     - **description**: Right-clicking a skeleton while holding a wither rose will convert the skeleton into a wither skeleton. With the value being how many wither roses you would need to convert the skeleton, and 0 meaning the feature is disabled.
+* ##### bow-accuracy
+    - **default**: 14 - difficulty * 4
+    - **description**: Change the accuracy with which Skeletons shoot. The outcome of the formula is the divergence (spread). The higher the value, the less accurate the shot is.
+      ``` yaml
+      easy:   14 - 1 * 4 = 10
+      normal: 14 - 2 * 4 = 6
+      hard:   14 - 3 * 4 = 2
+      ```
 #### stray
 * ##### ridable
     - **default**: false
@@ -3410,6 +3503,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### village-sieges
     - **default**: default
     - **description**: Set to true to spawn in the world that this option is a part of
+* ##### ignore-creative-players
+    - **default**: false
+    - **description**: Option to choose whether or not to ignore creative players when spawning mobs.
 #### raid-cooldown-seconds
 - **default**: 0
 - **description**: How long you should wait before another raid can be initiated
