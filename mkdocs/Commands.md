@@ -1,7 +1,7 @@
 Purpur adds a few new commands to the game.
 
 ???+ note "Note"
-    When Essentials is installed, a few of the commands below will be overriden by Essentials. To use Purpur's commands instead, add this to the `disabled_commands` section of the Essentials config.
+    When you install Essentials, Essentials will override a few of the commands below. To use Purpur's commands instead, add this to the `disabled_commands` section of the Essentials config.
     ``` yaml
     disabled-commands:
       - ping
@@ -10,7 +10,7 @@ Purpur adds a few new commands to the game.
     ```
 
 ## /purpur
-- This command allows reloading the purpur.yml config and viewing the Purpur version.
+- This command reloads the purpur.yml config and shows the Purpur version.
 
 - **examples**:
     - `/purpur reload` reloads purpur.yml without a restart
@@ -20,7 +20,7 @@ Purpur adds a few new commands to the game.
     - `bukkit.command.purpur`
 
 ## /ping
-- This command allows viewing the ping of players. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show you your own ping.
+- This command shows the ping of players. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show you your own ping.
 
 - **examples**
     - `/ping` shows you your own ping
@@ -32,7 +32,7 @@ Purpur adds a few new commands to the game.
     - `bukkit.command.ping`
 
 ## /uptime
-- This command allows viewing the uptime of the server.
+- This command shows the uptime of the server.
 
 - **permission**:
     - `bukkit.command.uptime`

@@ -29,7 +29,7 @@ Feature Request: {{ project.source }}/discussions/new
 
 Yes.
 
-Purpur adds a few permissions for a few features and commands that have been added. Some permissions for specific features will not work unless that feature is enabled in purpur.yml, too, so keep an eye out for those :wink:
+Purpur adds a few permissions for a few features and commands that it has added. Some permissions for specific features will not work unless you enable that feature in purpur.yml, too, so keep an eye out for those :wink:
 
 {{ site_url }}/Permissions
 
@@ -39,7 +39,7 @@ Stuff.
 
 No seriously, we get asked this quite a lot. We built this wiki to answer all these questions so we wouldn't have to repeat them daily.
 
-I promise, this wiki covers every single option in purpur.yml - you wont find any missing entries. (the only exception is when a new option gets added; it might take a day or two before it's updated)
+I promise, this wiki covers every single option in purpur.yml - you won't find any missing entries. (the only exception is when a new option gets added; it might take a day or two before the wiki updates)
 
 {{ site_url }}/Configuration
 
@@ -49,7 +49,7 @@ Yes! It's where the Purpur community resides. Don't be afraid to poke your head 
 
 ## What does Purpur add/change from upstream?
 
-Quite a lot, actually. But none of it goes into effect unless **you** enable it in `purpur.yml`. Everything we change is set to the default behaviors. If you don't edit anything in `purpur.yml`, running this JAR is no different than running Pufferfish.
+Quite a lot, actually. But none of it goes into effect unless **you** enable it in `purpur.yml`. We set everything we change to the default behaviors. If you don't edit anything in `purpur.yml`, running this JAR is no different than running Pufferfish.
 
 For the curious, you can view all the code changes on GitHub here: {{ project.source }}/tree/master/patches
 
@@ -57,7 +57,7 @@ Don't worry if you can't read code. Most people can't. We have this nice wiki th
 
 ## Does Purpur have feature *X* from Paper?
 
-Yes, Thats how forks work. All features from upstream are inherited by design
+Yes, that's how forks work. All features from upstream are inherited by design
 
 `Vanilla -> CraftBukkit -> Spigot -> Paper -> Pufferfish -> Purpur`
 

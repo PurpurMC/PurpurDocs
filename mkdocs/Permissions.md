@@ -1,9 +1,9 @@
 Purpur adds a few new permission nodes for some of its added features.
 
-By default **all** of these permissions are disabled, no matter if a user has OP. Users will need to be granted permissions using a permissions plugin such as [LuckPerms](https://luckperms.net/).
+By default, Purpur disables **all** of these permissions, no matter if a user has OP. Servers will need a permissions plugin such as [LuckPerms](https://luckperms.net/) to grant permissions to users.
 
 ## allow.ride.<mob_id&gt;
-Requires [`<mob_id>.ridable`](../Configuration#mobs) to be enabled in purpur.yml
+Requires enabling [`<mob_id>.ridable`](../Configuration#mobs) in purpur.yml
 
 - This permission gives the ability to ride a certain mob by shift
 right-clicking it. Once mounted you can use WASD to move around, and spacebar to jump or fly. Just replace "<mob_id&gt;" with the mob's Entity ID.
@@ -14,7 +14,7 @@ right-clicking it. Once mounted you can use WASD to move around, and spacebar to
     - `allow.ride.snow_golem`
 
 ## allow.special.<mob_id&gt;
-Requires [`<mob_id>.ridable`](../Configuration#mobs) to be enabled in purpur.yml
+Requires enabling [`<mob_id>.ridable`](../Configuration#mobs) in purpur.yml
 
 - This permission gives the ability to activate a ridable mob's
 special ability. Not all mobs have a special ability. Just replace "<mob_id&gt;" with
@@ -31,7 +31,7 @@ the mob's Entity ID.
         - Shoots a wither head on mouse click
 
 ## allow.powered.creeper
-Requires [`creeper.ridable`](../Configuration#creeper) to be enabled in purpur.yml
+Requires enabling [`creeper.ridable`](../Configuration#creeper) in purpur.yml
 
 - This permission gives the ability to toggle a creeper's powered state while riding.
 Hold the spacebar while not moving to charge the toggle. Instead of blowing up the powered
@@ -56,14 +56,14 @@ state will toggle on or off.
 - Allows the use of the [`/compass`](../Commands#compass) command.
 
 ## minecraft.command.gamemode.<gamemode&gt;
-Requires [`gamemode.requires-specific-permission`](../Configuration#command) to be enabled in purpur.yml
+Requires enabling [`gamemode.requires-specific-permission`](../Configuration#command) in purpur.yml
 
 - Allows the user to set their own gamemode to <gamemode&gt;
 - Available gamemodes
     - adventure, creative, spectator, survival
 
 ## minecraft.command.gamemode.<gamemode&gt;.other;
-Requires [`gamemode.requires-specific-permission`](../Configuration#command) to be enabled in purpur.yml
+Requires enabling [`gamemode.requires-specific-permission`](../Configuration#command) in purpur.yml
 
 - Allows the user to set their own and other players' gamemode to <gamemode&gt;
 - Available gamemodes
@@ -74,13 +74,13 @@ Requires [`gamemode.requires-specific-permission`](../Configuration#command) to 
 Player must have this perm _and_ the gamemode perm for it to work.
 
 ## purpur.drop.spawners
-Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch_1) to be enabled in purpur.yml
+Requires enabling [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch_1) in purpur.yml
 
 - Players with this permission can use a configured tool with silk
 touch enchantment to mine up any spawner cage instead of disappearing.
 
 ## purpur.joinfullserver
-- Allows players to join when server is full
+- Allows players to join when the server is full
 
 ## purpur.bypassIdleKick
 - Allows players to bypass being kicked while idle
@@ -89,28 +89,28 @@ touch enchantment to mine up any spawner cage instead of disappearing.
 - Allows players to instantly teleport through portals when stepping through them
   
 ## purpur.place.spawners
-Requires [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch_1) to be enabled in purpur.yml
+Requires enabling [`gameplay-mechanics.silk-touch`](../Configuration#silk-touch_1) in purpur.yml
 
 - Players with this permission can place down a spawner cage and
-have the mob type restored to what it was when it was mined using silk touch.
+restore the mob type to what it was when it was mined using silk touch.
 
 ## purpur.sign.edit
-Requires [`sign.right-click-edit`](../Configuration#sign) to be enabled in purpur.yml
+Requires enabling [`sign.right-click-edit`](../Configuration#sign) in purpur.yml
 
 - Allows players to open the sign editor when right clicking a sign while holding a sign.
 
 ## purpur.sign.color
-Requires [`sign.allow-colors`](../Configuration#sign) to be enabled in purpur.yml
+Requires enabling [`sign.allow-colors`](../Configuration#sign) in purpur.yml
 
 - Allows players to use color codes on signs
 
 ## purpur.sign.style
-Requires [`sign.allow-colors`](../Configuration#sign) to be enabled in purpur.yml
+Requires enabling [`sign.allow-colors`](../Configuration#sign) in purpur.yml
 
 - Allows players to use style codes on signs (except the magic/obfuscated code)
 
 ## purpur.sign.magic
-Requires [`sign.allow-colors`](../Configuration#sign) to be enabled in purpur.yml
+Requires enabling [`sign.allow-colors`](../Configuration#sign) in purpur.yml
 
 - Allows players to use the magic/obfuscated style code on signs
 
@@ -120,22 +120,22 @@ Hex colors only register once a book has been signed
 - Allows players to use the legacy and hex color codes in books which update after the book is signed
 
 ## purpur.anvil.minimessage
-Requires [`anvil.allow-minimessage`](../Configuration#use-mini-message) to be enabled in purpur.yml
+Requires enabling [`anvil.allow-minimessage`](../Configuration#use-mini-message) in purpur.yml
 
 - This allows players to use MiniMessage tags in an anvil.
 
 ## purpur.anvil.color
-Requires [`anvil.allow-colors`](../Configuration#allow-colors_1) to be enabled in purpur.yml
+Requires enabling [`anvil.allow-colors`](../Configuration#allow-colors_1) in purpur.yml
 
 - Allows players to use legacy color codes in anvil. [`There is more information about colour codes on the Minecraft website.`](**https://minecraft.fandom.com/wiki/Formatting_codes**)
 
 ## purpur.anvil.remove_italics
-Requires [`anvil.allow-colors`](../Configuration#anvil) to be enabled in purpur.yml
+Requires enabling [`anvil.allow-colors`](../Configuration#anvil) in purpur.yml
 
-- Allows players to remove the italics from items renamed in the anvil by starting the text with '&r'. The permission [`purpur.anvil-colors`](../Permissions#purpuranvilcolor) is required for this permission to work.
+- Allows players to remove the italics from items renamed in the anvil by starting the text with '&r'. The permission requires [`purpur.anvil-colors`](../Permissions#purpuranvilcolor) for this permission to work.
 
 ## purpur.enderchest.rows.<number&gt;
-Requires [`ender_chest.six-rows`](../Configuration#ender_chest) and [`ender_chest.use-permissions-for-rows`](../Configuration#ender_chest) to be enabled in purpur.yml
+Requires enabling [`ender_chest.six-rows`](../Configuration#ender_chest) and [`ender_chest.use-permissions-for-rows`](../Configuration#ender_chest) in purpur.yml
 
 - Controls how many rows a player's enderchest has
 - Available sizes

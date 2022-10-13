@@ -13,9 +13,9 @@
 
 Welcome to the official documentation source for the&nbsp;[Purpur]({{ project.source }}/)&nbsp;project.
 
-This documentation was last updated to Build&nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;([`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }}))
+This documentation is current to Build&nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;([`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }}))
 
-Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers designed for configurability, and new fun and exciting gameplay features.
+Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers that's designed for configurability, and new fun and exciting gameplay features.
 
 </div>
 
@@ -25,7 +25,7 @@ Join us on [Discord]({{ social[0].link }})!
 
 ## Downloads
 
-Downloads can be obtained from the [downloads page]({{ project.downloads }}), or the [downloads API](https://api.purpurmc.org/).
+You can download Purpur from the [downloads page]({{ project.downloads }}) or the [downloads API](https://api.purpurmc.org/).
 
 Downloads API endpoints:
 
@@ -40,9 +40,9 @@ Downloads API endpoints:
 
 ## License [![MIT License](https://img.shields.io/github/license/PurpurMC/Purpur?&logo=github)](./#license)
 
-All patches are licensed under the MIT license, unless otherwise noted in the patch headers.
+This project licenses all patches under the MIT license, unless the patch headers note otherwise.
 
-See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of material used by this project.
+See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of material this project uses.
 
 ## bStats
 
@@ -84,7 +84,7 @@ See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of materia
     }
     ```
 
-Yes, this also includes all API provided by Pufferfish, Paper, Spigot, and Bukkit.
+Yes, this also includes all APIs provided by Pufferfish, Paper, Spigot, and Bukkit.
 
 ## Building and setting up
 
@@ -97,17 +97,17 @@ Run the following commands in the root directory:
 
 #### Creating a patch
 Patches are effectively just commits in either `Purpur-API` or `Purpur-Server`. 
-To create one, just add a commit to either repo and run `./gradlew rebuildPatches`, and a 
-patch will be placed in the patches folder. Modifying commits will also modify its 
-corresponding patch file.
+To create one, just add a commit to either repo and run `./gradlew rebuildPatches`, and Gradle will 
+place a patch in the patches folder. Modifying commits will also modify their 
+corresponding patch file(s).
 
 See [CONTRIBUTING.md]({{ project.source }}/blob/HEAD/CONTRIBUTING.md) for more detailed information.
 
 
 #### Compiling
 
-Use the command `./gradlew build` to build the api and server. Compiled jars
-will be placed under `Purpur-API/build/libs` and `Purpur-Server/build/libs`.
+Use the command `./gradlew build` to build the api and server. Gradle will place compiled jars
+ under `Purpur-API/build/libs` and `Purpur-Server/build/libs`.
 
 To get a purpurclip jar, run `./gradlew paperclip`.
 To install the `purpur-api` and `purpur` dependencies to your local maven repo, run `./gradlew publishToMavenLocal`

@@ -1,5 +1,5 @@
 # Log4j security vulnerability
-A remote code execution (RCE) vulnerability was found within the logger library utilized in Minecraft and many other Java-based applications. This vulnerability allows anybody to execute commands and run code on your server with minimal effort, and grab your backend server’s public IP address.
+Several researchers found a remote code execution (RCE) vulnerability within the logger library utilized in Minecraft and many other Java-based applications. This vulnerability allows anybody to execute commands and run code on your server with minimal effort, and grab your backend server’s public IP address.
 
 It exists for all vanilla Minecraft versions newer than 1.7.10, and affects every application that utilizes the library. Notably the vanilla client, all vanilla-based servers such as Paper and Purpur, Velocity, and Waterfall. If you run any other Java-based applications, such as Jenkins or UniFi, ensure they are up-to-date as well.
 
