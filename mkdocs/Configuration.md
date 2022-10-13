@@ -26,14 +26,14 @@ Global settings affect all worlds on the server as well as the core server funct
 	
 ### config-version
 
-* **Do not change this for any reason!** This is used internally to help automatically update your config
+* **Do not change this for any reason!** Purpur uses this internally to help automatically update your config
 	
 ### command
 
 * #### uptime
     * ##### format
         - **default**: "&lt;days>&lt;hours>&lt;minutes>&lt;seconds>"
-        - **description**: The format used in the `<uptime>` placeholder for [`uptime-command-output`](#uptime-command-output)
+        - **description**: The format the `<uptime>` placeholder uses for [`uptime-command-output`](#uptime-command-output)
     * ##### day
         - **default**: "%02d day, "
         - **description**: Output of `<day>` placeholder in [command.uptime.format](#format) option
@@ -62,7 +62,7 @@ Global settings affect all worlds on the server as well as the core server funct
     * ##### requires-specific-permission
         - Requires [`minecraft.command.gamemode.<gamemode>`](../Permissions#minecraftcommandgamemodegamemode) permission
         - **default**: false
-        - **description**: Set to true for each gamemode to require it's own permission
+        - **description**: Set to true for each gamemode to require its own permission
 * #### fill
     * ##### max-area
         - **default**: 32768
@@ -77,7 +77,7 @@ Global settings affect all worlds on the server as well as the core server funct
 
         - **default**: &lt;gray>TPS&lt;yellow>:&lt;/yellow> &lt;tps> MSPT&lt;yellow>:&lt;/yellow>
       &lt;mspt> Ping&lt;yellow>:&lt;/yellow> &lt;ping>ms
-        - **description**: The format of the bossbar when the `/tpsbar` command is ran
+        - **description**: The format of the bossbar when the server runs the `/tpsbar` command
 
     * ##### overlay
         - **default**: NOTCHED_20
@@ -123,7 +123,7 @@ Global settings affect all worlds on the server as well as the core server funct
         `<percent>` - The percentage of ram used.
 
       - **default**: '"&lt;gray>Ram<yellow>:</yellow> <used>/<xmx> (&lt;percent>)"'
-      - **description**: The format of the bossbar when the `/rambar` command is ran
+      - **description**: The format of the bossbar when the server runs the `/rambar` command
 
     * ##### overlay
         - **default**: NOTCHED_20
@@ -159,7 +159,7 @@ Global settings affect all worlds on the server as well as the core server funct
     * ##### title
         - **default**: "S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  
 S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  "
-        - **description**: The format of the bossbar when the [`/compass`](../Commands#compass) command is ran
+        - **description**: The format of the bossbar when the server runs the [`/compass`](../Commands#compass) command
 
     * ##### overlay
         - **default**: PROGRESS
@@ -188,7 +188,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 ### use-alternate-keepalive
 
 - **default**: false
-- **description**: Uses a different approach to keepalive ping timeouts. Enabling this sends a keepalive packet once per second to a player, and only kicks for timeout if none of them were responded to in 30 seconds. Responding to any of them in any order will keep the player connected. AKA, it won't kick your players because 1 packet gets dropped somewhere along the lines
+- **description**: Uses a different approach to keepalive ping timeouts. Enabling this sends a keepalive packet once per second to a player, and only kicks for timeout if none of them were responded to in 30 seconds. Responding to any of them in any order will keep the player connected. AKA, it won't kick your players because one packet gets dropped somewhere along the lines
 	
 ### tps-catchup
 
