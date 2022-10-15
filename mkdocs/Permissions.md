@@ -119,20 +119,26 @@ Hex colors only register once a book has been signed
 
 - Allows players to use the legacy and hex color codes in books which update after the book is signed
 
-## purpur.anvil.minimessage
-Requires enabling [`anvil.allow-minimessage`](../Configuration#use-mini-message) in purpur.yml
-
-- This allows players to use MiniMessage tags in an anvil.
-
 ## purpur.anvil.color
 Requires enabling [`anvil.allow-colors`](../Configuration#allow-colors_1) in purpur.yml
 
 - Allows players to use legacy color codes in anvil. [`There is more information about colour codes on the Minecraft website.`](**https://minecraft.fandom.com/wiki/Formatting_codes**)
 
+## purpur.anvil.minimessage
+Requires enabling [`anvil.allow-minimessage`](../Configuration#use-mini-message) in purpur.yml
+
+- This allows players to use MiniMessage tags in an anvil. [`You can test your minimessage tags here.`](https://webui.adventure.kyori.net/)
+
 ## purpur.anvil.remove_italics
 Requires enabling [`anvil.allow-colors`](../Configuration#anvil) in purpur.yml
 
-- Allows players to remove the italics from items renamed in the anvil by starting the text with '&r'. The permission requires [`purpur.anvil-colors`](../Permissions#purpuranvilcolor) for this permission to work.
+- Allows players to remove the italics from items renamed in the anvil by starting the text with '&r'
+
+## purpur.anvil.format
+Requires enabling [`anvil.allow-colors`](../Configuration#anvil) in purpur.yml
+
+- Allows players to use legacy formatting codes in an anvil (&l, &m, &n, &o)
+
 
 ## purpur.enderchest.rows.<number&gt;
 Requires enabling [`ender_chest.six-rows`](../Configuration#ender_chest) and [`ender_chest.use-permissions-for-rows`](../Configuration#ender_chest) in purpur.yml
@@ -140,3 +146,13 @@ Requires enabling [`ender_chest.six-rows`](../Configuration#ender_chest) and [`e
 - Controls how many rows a player's enderchest has
 - Available sizes
     - one, two, three, four, five, six
+
+## purpur.inventory_totem
+Requires enabling [`totem-of-undying-works-in-inventory`](../Configuration#totem-of-undying-works-in-inventory)
+
+- Allows player's totem to work while in their inventory
+
+## purpur.mending_shift_click
+Requires setting [`shift-right-click-repairs-mending-points`](../Configuration#shift-right-click-repairs-mending-points) to a number greater than 0
+
+- Allows a player to shift-right-click to use their stored experience to mend their gear
