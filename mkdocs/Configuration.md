@@ -429,7 +429,10 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 - **description**: Suppress errors where setBlock was detected in a far chunk
 #### suppress-sent-expired-chat
 - **default**: false
-- **description**: Suppress warnings about unsynchronized client/server system time 
+- **description**: Suppress warnings about unsynchronized client/server system time
+#### suppress-library-loader
+- **default**: false
+- **description**: Suppress logs related to the library loader
 	
 ### seed
 
@@ -464,6 +467,9 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
 * ##### allow-unsafe-enchant-command
     - **default**: false
     - **description**: Allows the ability to increase enchantments passed their max level through the command
+* ##### allow-transparent-blocks-in-enchantment-box
+    - **default**: false
+    - **description**: Allows the placement of transparent blocks in the area between the enchantment table and the bookshelves
 * ##### clamp-levels
     - **default**: true
     - **description**: Setting this to `false` allows levels to go up to `32767` by storing them as shorts instead of bytes.
@@ -1495,6 +1501,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
+* ##### encircle-target
+    - **default**: false
+    - **description**: Set to true for this mob to circle around the player as it ignites
 * ##### allow-griefing
     - **default**: true
     - **description**: Set to false to stop the creeper from griefing.
@@ -3204,6 +3213,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### milk-cures-bad-omen
 - **default**: true
 - **description**: Allow players to drink milk to cure bad omen status effect
+#### milk-clears-beneficial-effects
+- **default**: true
+- **description**: Set to false to have milk clear only negative status effects
 #### trident-loyalty-void-return-height
 - **default**: 0.0
 - **description**: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.
@@ -3315,6 +3327,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### burp-when-full
     - **default**: false
     - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
+* ##### burp-delay
+    - **default**: 10
+    - **description**: Amount of ticks to delay sound; `burp-when-full` option must be enabled
 * ##### curse-of-binding
     * ###### remove-with-weakness
         - **default**: false
