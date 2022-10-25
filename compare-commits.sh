@@ -11,15 +11,15 @@ then
         done
         read -p 'Enter the second commit or leave blank to compare against latest commit: ' secondCommit
 
-        python3.8 base.py $firstCommit $secondCommit
+        python3 base.py $firstCommit $secondCommit
     else
-        python3.8 base.py
+        python3 base.py
     fi
 else
     if [[ $1 = '--no-commits' ]] || [[ $1 = '-nc' ]]
     then
-        python3.8 base.py
+        python3 base.py
     else
-        python3.8 base.py $1 $2
+        python3 base.py $1 $2
     fi
 fi
