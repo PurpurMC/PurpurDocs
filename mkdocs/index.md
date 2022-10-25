@@ -57,6 +57,7 @@ See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of materia
 
 ### Dependency Information
 === "Maven"
+
     ``` xml linenums="1"
     <repository>
         <id>purpur</id>
@@ -73,6 +74,7 @@ See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of materia
     ```
 
 === "Gradle"
+
     ``` kotlin linenums="1"
     repositories {
         maven("https://repo.purpurmc.org/snapshots")

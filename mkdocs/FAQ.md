@@ -10,7 +10,7 @@ It's hard to summarize Purpur because then it wouldn't be fully representative o
 
 Take a look at the [most liked features](https://www.reddit.com/r/admincraft/comments/pbx5le/what_is_your_favorite_purpur_feature/) poll over on reddit.  
 But that list is hardly exhaustive, so do make sure to check out all the available options, there's something for everyone \o/  
-{{ site_url }}/Configuration
+{{ site_url }}Configuration
 
 
 ## Can I make a feature request or report a bug?
@@ -31,7 +31,7 @@ Yes.
 
 Purpur adds a few permissions for a few features and commands that it has added. Some permissions for specific features will not work unless you enable that feature in purpur.yml, too, so keep an eye out for those :wink:
 
-{{ site_url }}/Permissions
+{{ site_url }}Permissions
 
 ## What does *&lt;insert random config option>* do?
 
@@ -41,7 +41,7 @@ No seriously, we get asked this quite a lot. We built this wiki to answer all th
 
 I promise, this wiki covers every single option in purpur.yml - you won't find any missing entries. (the only exception is when a new option gets added; it might take a day or two before the wiki updates)
 
-{{ site_url }}/Configuration
+{{ site_url }}Configuration
 
 ## Does Purpur have a Discord?
 
