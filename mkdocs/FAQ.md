@@ -67,7 +67,7 @@ We have it all ^_^
 
 Yes. The only time there's incompatibility is due to authors hard-coding support for CraftBukkit/Spigot, ignoring the existence of Paper and its forks. If you run into any bugs that you know are because of Purpur, [create a ticket]({{ project.source }}/issues/new) and/or [join our Discord server]({{ social[0].link }}) so we can take a look.
 
-## Is there a Purpur for MC insert _`random version here`_?
+## Is there a Purpur for MC _`insert random version here`_?
 Maybe. Check the downloads page.
 
 {{ project.downloads }}
