@@ -20,7 +20,7 @@ Requires enabling [`<mob_id>.ridable`](../Configuration#mobs) in purpur.yml
 special ability. Not all mobs have a special ability. Just replace "<mob_id&gt;" with
 the mob's Entity ID.
 
-- **Currently Available Specials
+- **Currently Available Specials**
     - `allow.special.creeper`
         - Ignites when spacebar is pressed
     - `allow.special.dolphin`
@@ -148,7 +148,7 @@ Requires enabling [`ender_chest.six-rows`](../Configuration#ender_chest) and [`e
     - one, two, three, four, five, six
 
 ## purpur.inventory_totem
-Requires enabling [`totem-of-undying-works-in-inventory`](../Configuration#totem-of-undying-works-in-inventory)
+Requires enabling [`totem-of-undying-works-in-inventory`](../Configuration#totem-of-undying-works-in-inventory) in purpur.yml
 
 - Allows player's totem to work while in their inventory
 
