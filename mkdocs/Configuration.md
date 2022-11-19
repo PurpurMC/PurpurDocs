@@ -122,7 +122,7 @@ Global settings affect all worlds on the server as well as the core server funct
 
         `<percent>` - The percentage of ram used.
 
-      - **default**: '"&lt;gray>Ram<yellow>:</yellow> <used>/<xmx> (&lt;percent>)"'
+      - **default**: '"&lt;gray>Ram&lt;yellow>:&lt;/yellow> &lt;used>/&lt;xmx> (&lt;percent>)"'
       - **description**: The format of the bossbar when the server runs the `/rambar` command
 
     * ##### overlay
@@ -289,12 +289,12 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 
 #### ram-command-output
 
-- **default**: '&lt;green>Ram Usage: <used>/<xmx> (&lt;percent>)'
+- **default**: '&lt;green>Ram Usage: &lt;used>/&lt;xmx> (&lt;percent>)'
 - **description**: A chat message that shows the ram usage when someone uses the `/ram` command.
 
 #### rambar-command-output
 
-- **default**: &lt;green>Rambar toggled <onoff> for &lt;target>
+- **default**: &lt;green>Rambar toggled &lt;onoff> for &lt;target>
 - **description**: Message that shows when the rambar is enabled for a user using the `/rambar` command.
 
 #### unverified-username
@@ -311,10 +311,10 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 
 #### death-message
 * ##### stonecutter
-    - **default**: <player> has sawed themself in half
+    - **default**: &lt;player> has sawed themself in half
     - **description**: The death message that appears when the player is killed because they were standing on a stonecutter
 * ##### run-with-scissors
-    - **default**: <player> slipped and fell on their shears
+    - **default**: &lt;player> slipped and fell on their shears
     - **description**: The death message that appears when the player is killed because they were running with scissors
 
 ### network
