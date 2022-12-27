@@ -606,6 +606,9 @@ For a more clear explanation of the world settings section of the config, feel f
         - **default**: 4
         - **description**: The amount of damage to apply to hostile mobs every 2 seconds if they are in contact with water/rain
 #### beacon
+* ##### allow-effects-with-tinted-glass
+    - **default**: false
+    - **description**: Whether to allow beacon effects to activate when it's covered by tinted glass
 * ##### effect-range
     * ###### level-1
         - **default**: 20
