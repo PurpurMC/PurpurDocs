@@ -206,6 +206,14 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **default**: false
 - **description**: Addresses [`MC-3304`](https://bugs.mojang.com/browse/MC-3304) by preventing looting from being applied to deaths caused by a projectile, unless if a plugin changed the looting modifier.
 
+### clamp-attributes
+- **default**: true
+- **description**: Controls if attributes should have their values clamped.
+
+### limit-armor
+- **default**: true
+- **description**: Controls if armor should limit how much damage they can reduce.
+
 ### username-valid-characters
 - **default**: ^[a-zA-Z0-9_.]*$
 - **description**: Characters that can be used in usernames. Configurable with regex.
