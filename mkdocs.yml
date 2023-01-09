@@ -64,10 +64,10 @@ extra:
     javadoc: https://purpurmc.org/javadoc
     downloads: https://purpurmc.org/downloads
     source: https://github.com/PurpurMC/Purpur
-    version: 1.19.2
+    version: 1.19.3
     build:
-      number: 1832
-      commit: 0d5fd5
+      number: 1888
+      commit: fe99b3
   social:
     - icon: fontawesome/brands/discord
       link: https://purpurmc.org/discord
