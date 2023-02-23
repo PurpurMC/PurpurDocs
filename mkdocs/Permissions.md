@@ -127,7 +127,7 @@ Requires enabling [`anvil.allow-colors`](../Configuration#allow-colors_1) in pur
 ## purpur.anvil.minimessage
 Requires enabling [`anvil.allow-minimessage`](../Configuration#use-mini-message) in purpur.yml
 
-- This allows players to use MiniMessage tags in an anvil. [`You can test your minimessage tags here.`](https://webui.adventure.kyori.net/)
+- This allows players to use MiniMessage tags in an anvil. [`You can test your minimessage tags here.`](https://webui.advntr.dev/)
 
 ## purpur.anvil.remove_italics
 Requires enabling [`anvil.allow-colors`](../Configuration#anvil) in purpur.yml
