@@ -172,7 +172,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
         - **description**: The color of the bossbar
     * ##### percent
         - **default**: 1.0
-        - **description**: How filled the bossbar is rangin from 0.0 to 1.0
+        - **description**: How filled the bossbar is ranging from 0.0 to 1.0
     * ##### tick-interval
         - **default**: 5
         - **description**: How often the bossbar should update
@@ -196,7 +196,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **description**: Control tps catch-up
 
 ???+ note "Note"
-    TPS catchup makes your server tick faster than 20 TPS after any period of time that below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects
+    TPS catchup makes your server tick faster than 20 TPS after any period of time that is below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects, an example being when players get insta-killed by mobs during a lag spike
 	
 ### server-mod-name
 - **default**: Purpur
@@ -353,7 +353,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
         - minecraft:binding_curse
         - minecraft:vanishing_curse
         ```
-    - **description**: The enchantments to ignore from being removed on a grindstone
+    - **description**: The enchantments that aren't removed from grindstones
 * ##### remove-attributes
     - **default**: false
     - **description**: Set to true to allow the grindstone to remove the attributes from an item
@@ -363,7 +363,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 ####  ender_chest
 * ##### six-rows
     - **default**: false
-    - **description**: Ender chests should have six rows of inventory space
+    - **description**: When enabled, ender chests should have six rows of inventory space
 * ##### use-permissions-for-rows
     - Requires [`ender_chest.six-rows`](#six-rows) to be true
     - Requires [`purpur.enderchest.rows.<number>`](../Permissions#purpurenderchestrowsnumber) permission
@@ -468,10 +468,10 @@ Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_de
     - **description**: Allows the mending and infinity enchantment to be on the same weapon/tool
 * ##### allow-infinity-on-crossbow
     - **default**: false
-    - **description**: Allows the infinity enchantment on a crossbow
+    - **description**: Allows the infinity enchantment on crossbows
 * ##### allow-looting-on-shears
     - **default**: false
-    - **description**: Allows the looting enchantment on a shears
+    - **description**: Allows the looting enchantment on shears
 * ##### allow-unsafe-enchant-command
     - **default**: false
     - **description**: Allows the ability to increase enchantments passed their max level through the command
@@ -539,7 +539,7 @@ For a more clear explanation of the world settings section of the config, feel f
 #### observer
 * ##### disable-clock
     - **default**: false
-    - **description**: disable observer clocks
+    - **description**: Set to true to disable observer clocks
 #### azalea
 * ##### growth-chance
     - **default**: 0.0
@@ -729,7 +729,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **description**: Whether beds explode. Setting this to false just makes the bed blip out of existence
 * ##### explode-on-villager-sleep
     - **default**: false
-    - **description**: Whether beds explode when a villager sleeps in one.
+    - **description**: Whether beds explode in the overworld when a villager sleeps in one.
 * ##### explosion-power
     - **default**: 5.0
     - **description**: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)
@@ -809,7 +809,7 @@ For a more clear explanation of the world settings section of the config, feel f
 #### lightning_rod
 * ##### range
     - **default**: 128
-    - **description**: Change the range in which the lightning rod redirect lightning
+    - **description**: Change the range in which the lightning rod redirects lightning
 #### stonecutter
 * ##### damage
     - **default**: 0.0
@@ -833,7 +833,7 @@ For a more clear explanation of the world settings section of the config, feel f
 #### door
 * ##### requires-redstone
     - **default**: []
-    - **description**: Allows you to set the doors that require redstone to be operated
+    - **description**: Allows you to set the doors that require redstone to be operated (oak, spruce, etc)
 #### powder_snow
 * ##### bypass-mob-griefing
     - **default**: false
@@ -1880,7 +1880,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **description**: Set to true for this mob to start taking damage from water
 * ##### immune-to-EAR
     - **default**: true
-    - **description**: Makes this mob immune to EAR (Entity Activation Range)
+    - **description**: Makes this mob immune to EAR (Entity Activation Range - See spigot.yml)
 * ##### water-offset-check
     - **default**: 0.0
     - **description**: Stops squids from floating on top of water
@@ -1909,7 +1909,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **description**: Set to true for this mob to start taking damage from water
 * ##### brain-ticks
     - **default**: 1
-    - **description**: How often (in ticks) should villager's tick their brain logic. Vanilla value is to tick every tick (1). Higher amounts makes them tick less often to reduce lag, but setting it too high could result is unresponsive villagers
+    - **description**: How often (in ticks) should villager's tick their brain logic. Vanilla value is to tick every tick (1). Higher amounts makes them tick less often to reduce lag, but setting it too high could result is unresponsive villagers (It's suggested to use paper-world-defaults.yml and their villager settings instead)
 * ##### use-brain-ticks-only-when-lagging
     - **default**: true
     - **description**: Only use the brain ticks setting when the server is lagging (see lagging-threshold above). If set to false, the brain ticks setting is always used
@@ -2544,7 +2544,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
         - **description**: Scan for existing chickens to spawn on
 * ##### aggressive-towards-villager-when-lagging
     - **default**: true
-    - **description**: disable to stop zombie aggressiveness towards villagers when lagging
+    - **description**: Set to false to stop zombie aggressiveness towards villagers when lagging
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Set to true for zombies to bypass the mob griefing gamerule
@@ -3144,7 +3144,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 - **description**: Set to false to make thunder continue even after a player sleeps
 #### mob-last-hurt-by-player-time
 - **default**: 100
-- **description**: Allows you to expand the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
+- **description**: Allows you to change the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
 #### halloween
 * ##### force
     - **default**: false
@@ -3183,10 +3183,10 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **description**: The projectile offset of a crossbow
 * ##### egg
     - **default**: 1.0
-    - **description**: The projectile offset of a egg
+    - **description**: The projectile offset of an egg
 * ##### ender-pearl
     - **default**: 1.0
-    - **description**: The projectile offset of a ender-pearl
+    - **description**: The projectile offset of an ender-pearl
 * ##### throwable-potion
     - **default**: 1.0
     - **description**: The projectile offset of a throwable-potion
@@ -3269,7 +3269,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 #### boat
 * ##### eject-players-on-land
     - **default**: false
-    - **description**: Boats should eject players when on land
+    - **description**: Set to true for boats to eject players when on land
 * ##### do-fall-damage
     - **default**: true
     - **description**: Set to false for boats to not do fall damage to players
@@ -3316,7 +3316,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - **description**: Allows the ability to continuously trade with a villager through an End Gateway exploit.
 * ##### totem-of-undying-works-in-inventory
     - **default**: false
-    - **description**: Allows the totem of undying to work in your inventory, not just your offhand
+    - **description**: Allows the totem of undying to work anywhere in your inventory, not just your offhand
 * ##### ridable-in-water
     - **default**: false
     - **description**: Lets mobs/players ride on players if the player is in the water
@@ -3496,7 +3496,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 #### elytra
 * ##### damage-per-second
     - **default**: 1
-    - **description**: How much damage an elytra takes during flight each second
+    - **description**: How much damage an elytra's durability takes during flight each second
 * ##### damage-multiplied-by-speed
     - **default**: 0.0
     - **description**: Damage is multiplied by speed if flight is faster than set speed. Value of 0 disables this multiplier
