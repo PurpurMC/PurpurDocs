@@ -539,7 +539,7 @@ For a more clear explanation of the world settings section of the config, feel f
 #### observer
 * ##### disable-clock
     - **default**: false
-    - **description**: disable observer clocks
+    - **description**: Set to true to disable observer clocks
 #### azalea
 * ##### growth-chance
     - **default**: 0.0
@@ -1880,7 +1880,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **description**: Set to true for this mob to start taking damage from water
 * ##### immune-to-EAR
     - **default**: true
-    - **description**: Makes this mob immune to EAR (Entity Activation Range - Found in spigot.yml)
+    - **description**: Makes this mob immune to EAR (Entity Activation Range - See spigot.yml)
 * ##### water-offset-check
     - **default**: 0.0
     - **description**: Stops squids from floating on top of water
@@ -3189,7 +3189,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **description**: The projectile offset of an ender-pearl
 * ##### throwable-potion
     - **default**: 1.0
-    - **description**: The projectile offset of an throwable-potion
+    - **description**: The projectile offset of a throwable-potion
 * ##### trident
     - **default**: 1.0
     - **description**: The projectile offset of a trident
@@ -3316,7 +3316,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - **description**: Allows the ability to continuously trade with a villager through an End Gateway exploit.
 * ##### totem-of-undying-works-in-inventory
     - **default**: false
-    - **description**: Allows the totem of undying to work in your inventory, not just your offhand
+    - **description**: Allows the totem of undying to work anywhere in your inventory, not just your offhand
 * ##### ridable-in-water
     - **default**: false
     - **description**: Lets mobs/players ride on players if the player is in the water
