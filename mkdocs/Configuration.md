@@ -172,7 +172,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
         - **description**: The color of the bossbar
     * ##### percent
         - **default**: 1.0
-        - **description**: How filled the bossbar is rangin from 0.0 to 1.0
+        - **description**: How filled the bossbar is ranging from 0.0 to 1.0
     * ##### tick-interval
         - **default**: 5
         - **description**: How often the bossbar should update
@@ -196,7 +196,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **description**: Control tps catch-up
 
 ???+ note "Note"
-    TPS catchup makes your server tick faster than 20 TPS after any period of time that below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects, an example being when players get insta-killed by mobs during a lag spike
+    TPS catchup makes your server tick faster than 20 TPS after any period of time that is below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects, an example being when players get insta-killed by mobs during a lag spike
 	
 ### server-mod-name
 - **default**: Purpur
@@ -3183,13 +3183,13 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **description**: The projectile offset of a crossbow
 * ##### egg
     - **default**: 1.0
-    - **description**: The projectile offset of a egg
+    - **description**: The projectile offset of an egg
 * ##### ender-pearl
     - **default**: 1.0
-    - **description**: The projectile offset of a ender-pearl
+    - **description**: The projectile offset of an ender-pearl
 * ##### throwable-potion
     - **default**: 1.0
-    - **description**: The projectile offset of a throwable-potion
+    - **description**: The projectile offset of an throwable-potion
 * ##### trident
     - **default**: 1.0
     - **description**: The projectile offset of a trident
@@ -3269,7 +3269,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 #### boat
 * ##### eject-players-on-land
     - **default**: false
-    - **description**: Set to true for boats should eject players when on land
+    - **description**: Set to true for boats to eject players when on land
 * ##### do-fall-damage
     - **default**: true
     - **description**: Set to false for boats to not do fall damage to players
