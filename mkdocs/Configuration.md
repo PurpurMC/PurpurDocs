@@ -441,6 +441,26 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 #### suppress-library-loader
 - **default**: false
 - **description**: Suppress logs related to the library loader
+
+### food-properties: {}
+- **default**: {}
+- **description:** Modify to change food properties. An example using all settings with explanations:
+``` yaml
+spider_eye:                # The food to edit
+  nutrition: 2              # The amount of hunger points restored
+  saturation-modifier: 0.8  # The amount of saturation restored. Equation used is "nutrition * saturation-modifier * 2"
+  is-meat: false            # Marks a food as edible for wolfs
+  can-always-eat: false     # Marks if this food can be eaten even at full hunger
+  fast-food: false          # How long it takes to eat food (false: 32 ticks, true: 16 ticks)
+  effects:                  # List of all the effects to be applied when eaten (can have multiple effects)
+    poison:                 # Effect to apply
+      duration: 100         # Duration of effect (in ticks)
+      chance: 1.0           # Chance for effect to be applied (0.0 - 1.0)
+      visible: true         # Shows particles
+      amplifier: 1          # Amplification of effect
+      ambient: false        # Set to true to make particles less obtrusive on screen (like beacon effects)
+      show-icon: true       # Show effect icon on HUD
+```
 	
 ### seed
 
