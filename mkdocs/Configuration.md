@@ -442,7 +442,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 - **default**: false
 - **description**: Suppress logs related to the library loader
 
-### food-properties: {}
+### food-properties
 - **default**: {}
 - **description:** Modify to change food properties. An example using all settings with explanations:
 ``` yaml
