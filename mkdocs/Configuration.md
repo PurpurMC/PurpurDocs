@@ -729,7 +729,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **description**: Whether beds explode. Setting this to false just makes the bed blip out of existence
 * ##### explode-on-villager-sleep
     - **default**: false
-    - **description**: Whether beds explode in the overworld when a villager sleeps in one.
+    - **description**: Whether beds explode when a villager sleeps in one.
 * ##### explosion-power
     - **default**: 5.0
     - **description**: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)
