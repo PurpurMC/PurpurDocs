@@ -3450,6 +3450,12 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     * ###### damage-if-sprinting
         - **default**: false
         - **description**: Holding shears while sprinting will randomly damage the player (Don't run with scissors!)
+    * ###### ignore-in-water
+        - **default**: false
+        - **description**: Should damage be ignored while in water if `damage-if-sprinting` is enabled
+    * ###### ignore-in-lava
+        - **default**: false
+        - **description**: Should damage be ignored while in lava if `damage-if-sprinting` is enabled
     * ###### sprinting-damage
         - **default**: 1
         - **description**: The amount of damage to give if `damage-if-sprinting` is enabled
