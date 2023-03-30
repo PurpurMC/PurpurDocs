@@ -462,18 +462,6 @@ spider_eye:                # The food to edit
       show-icon: true       # Show effect icon on HUD
 ```
 	
-### seed
-
-#### structure
-Check out https://minecraft.fandom.com/wiki/Custom_world_generation#Structure_defaults for more information on the options below
-
-##### buried_treasure
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-##### mineshaft
-- **default**: -1
-- **description**: The default value is `-1` for "use the world seed". anything not -1 will be a custom seed. it can accept any Integer value (-2147483648 to 2147483647)
-	
 ### entity
 
 #### enderman
@@ -897,7 +885,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
 * ##### respect-nbt
     - **default**: []
@@ -910,7 +898,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### ridable-jump-height
     - **default**: 0.65
@@ -926,7 +914,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 #### warden
 * ##### ridable
@@ -936,7 +924,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 #### ender_dragon
 * ##### ridable
@@ -946,7 +934,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### ridable-max-y
     - **default**: 256
@@ -975,7 +963,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -995,7 +983,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1015,7 +1003,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1038,7 +1026,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1064,7 +1052,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1129,7 +1117,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### ridable-max-y
     - **default**: 256
@@ -1170,7 +1158,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1190,7 +1178,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1234,7 +1222,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1263,7 +1251,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1286,7 +1274,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1328,7 +1316,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### leave-trail-when-ridden
     - **default**: false
@@ -1407,7 +1395,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1527,7 +1515,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1603,7 +1591,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1636,7 +1624,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### allow-griefing
     - **default**: true
@@ -1680,7 +1668,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1703,7 +1691,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1739,7 +1727,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1762,7 +1750,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1791,7 +1779,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1829,7 +1817,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -1922,17 +1910,11 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### brain-ticks
-    - **default**: 1
-    - **description**: How often (in ticks) should villager's tick their brain logic. Vanilla value is to tick every tick (1). Higher amounts makes them tick less often to reduce lag, but setting it too high could result is unresponsive villagers (It's suggested to use paper-world-defaults.yml and their villager settings instead)
-* ##### use-brain-ticks-only-when-lagging
-    - **default**: true
-    - **description**: Only use the brain ticks setting when the server is lagging (see lagging-threshold above). If set to false, the brain ticks setting is always used
 * ##### bypass-mob-griefing
     - **default**: false
     - **description**: Ignores the `mobGriefing` gamerule and allows the villagers to drop items, allowing them to breed
@@ -2027,7 +2009,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2059,7 +2041,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2079,7 +2061,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2102,7 +2084,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2182,7 +2164,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2209,7 +2191,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2229,7 +2211,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2263,7 +2245,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2283,7 +2265,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2306,7 +2288,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2378,7 +2360,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2434,7 +2416,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2527,7 +2509,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2547,7 +2529,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2642,7 +2624,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2665,7 +2647,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2700,7 +2682,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### ridable-max-y
     - **default**: 256
@@ -2723,7 +2705,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2793,7 +2775,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2836,7 +2818,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2868,7 +2850,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: false
     - **description**: Calms the iron golem when it's healed if it's angry
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -2982,7 +2964,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -3005,7 +2987,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -3068,7 +3050,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### attributes
     * ###### max_health
@@ -3105,7 +3087,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -3128,7 +3110,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: true
     - **description**: Makes this mob WASD controllable
 * ##### ridable-in-water
-    - **default**: false
+    - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### takes-damage-from-water
     - **default**: false
@@ -3143,6 +3125,49 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### camel
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        * min
+            - **default**: 32.0
+            - **description**: Min health attribute
+        * max
+            - **default**: 32.0
+            - **description**: Max health attribute
+    * ###### jump_strength
+        * min
+            - **default**: 0.42
+            - **description**: Min jump strength attribute
+        * max
+            - **default**: 0.42
+            - **description**: Max jump strength attribute
+    * ###### movement_speed
+        * min
+            - **default**: 0.09
+            - **description**: Min movement speed attribute
+        * max
+            - **default**: 0.09
+            - **description**: Max movement speed attribute
+#### sniffer
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+    - **default**: 14.0
+    - **description**: Max health attribute
 	
 ### gameplay-mechanics
 
@@ -3291,14 +3316,14 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - **default**: false
     - **description**: Set to true for boats to eject players when on land
 * ##### do-fall-damage
-    - **default**: true
+    - **default**: false
     - **description**: Set to false for boats to not do fall damage to players
 #### armorstand
 * ##### step-height
     - **default**: 0.0
     - **description**: Set the default step height of armorstands. Useful for plugins that utilize armorstands as vehicles to be able to drive over blocks without jumping, etc
 * ##### set-name-visible-when-placing-with-custom-name
-    - **default**: false
+    - **default**: true
     - **description**: Makes the name visible when placing with a custom name
 * ##### fix-nametags
     - **default**: false
@@ -3365,13 +3390,6 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     * ###### remove-with-weakness
         - **default**: false
         - **description**: Allows the player to remove curse of binding armor when they have a weakness effect applied to them
-* ##### armor-click-equip
-    * ###### allow-hot-swapping
-        - **default**: false
-        - **description**: Allows players to swap the armor in their armor slots with the one in hand by right clicking
-    * ###### creative-makes-copy
-        - **default**: true
-        - **description**: Set to false to stop duplicating the armor in hand when right clicking to place it in the player's armor slot
 * ##### idle-timeout
     * ###### kick-if-idle
         - **default**: true
@@ -3568,7 +3586,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 - **default**: false
 - **description**: Set to true to make TE's display names and lores persist after breaking (ex. named custom player heads retain their name)
 #### persistent-droppable-entity-display-names
-- **default**: false
+- **default**: true
 - **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
 #### infinity-bow
 * ##### normal-arrows
