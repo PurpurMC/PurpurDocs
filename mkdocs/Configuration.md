@@ -23,11 +23,11 @@ Global settings affect all worlds on the server as well as the core server funct
 
 - **default**: false
 - **description**: Sets whether the server should dump all configuration values to the server log on startup
-	
+
 ### config-version
 
 * **Do not change this for any reason!** Purpur uses this internally to help automatically update your config
-	
+
 ### command
 
 * #### uptime
@@ -63,10 +63,6 @@ Global settings affect all worlds on the server as well as the core server funct
         - Requires [`minecraft.command.gamemode.<gamemode>`](../Permissions#minecraftcommandgamemodegamemode) permission
         - **default**: false
         - **description**: Set to true for each gamemode to require its own permission
-* #### fill
-    * ##### max-area
-        - **default**: 32768
-        - **description**: The max area that the fill command can affect
 * #### tpsbar
     * ##### title
         `<tps>` - The current TPS
@@ -184,12 +180,12 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 
 - **default**: true
 - **description**: Allows the placement of water in the end.
-	
+
 ### use-alternate-keepalive
 
 - **default**: false
 - **description**: Uses a different approach to keepalive ping timeouts. Enabling this sends a keepalive packet once per second to a player, and only kicks for timeout if none of them were responded to in 30 seconds. Responding to any of them in any order will keep the player connected. AKA, it won't kick your players because one packet gets dropped somewhere along the lines
-	
+
 ### tps-catchup
 
 - **default**: true
@@ -197,7 +193,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 
 ???+ note "Note"
     TPS catchup makes your server tick faster than 20 TPS after any period of time that is below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects, an example being when players get insta-killed by mobs during a lag spike
-	
+
 ### server-mod-name
 - **default**: Purpur
 - **description**: This modifies the server name that shows up when a client is outdated or when someone opens the debug screen [F3]
@@ -220,12 +216,16 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 
 ### lagging-threshold
 - **default**: 19.0
-- **description**: Purpur keeps track of when it is lagging in order to have the ability to change behaviors accordingly. This value is that threshold when you want to consider the server to be lagging. Right now this is only used for mob.villager.brain-ticks setting
-	
+- **description**: Purpur keeps track of when it is lagging in order to have the ability to change behaviors accordingly. This value is that threshold when you want to consider the server to be lagging. ~~Right now this is only used for mob.villager.brain-ticks setting~~
+
+### fix-network-serialized-items-in-creative
+- **default**: false
+- **description**: Set to true to fix items modified by NetworkItemSerializeEvent that persist even though they're client-sided due to the creative client using creative inventory actions
+
 ### disable-give-dropping
 - **default**: false
 - **description**: Set to true to disable the /give command from dropping items on the floor when a player's inventory is full
-	
+
 ### messages
 
 #### afk-broadcast-away
@@ -308,7 +308,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 #### unverified-username
 - **default**: default
 - **description**: Message that shows when a player is kicked for having an unverified username (user is in offline-mode). Setting as "default" displays the default message "Failed to verify username!"
-	
+
 #### sleep-skipping-night
 - **default**: default
 - **description**: The actionbar message that appears when the night has been skipped. Set to "default" to let the client's use their own translatable components. Set to an empty string to disable it.
@@ -335,7 +335,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 ####  max-joins-per-second
 - **default**: false
 - **description**: Set to true to make the `max-joins-per-tick` setting in paper.yml be used per second instead of per tick
-	
+
 ### blocks
 
 ####  barrel
@@ -420,7 +420,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 ##### only-broadcast-to-affected-player
 - **default**: false
 - **description**: Broadcasts the death messages in chat only to the affected player
-	
+
 ### logger
 
 #### suppress-init-legacy-material-errors
@@ -435,9 +435,6 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 #### suppress-setblock-in-far-chunk-errors
 - **default**: false
 - **description**: Suppress errors where setBlock was detected in a far chunk
-#### suppress-sent-expired-chat
-- **default**: false
-- **description**: Suppress warnings about unsynchronized client/server system time
 #### suppress-library-loader
 - **default**: false
 - **description**: Suppress logs related to the library loader
@@ -461,7 +458,7 @@ spider_eye:                # The food to edit
       ambient: false        # Set to true to make particles less obtrusive on screen (like beacon effects)
       show-icon: true       # Show effect icon on HUD
 ```
-	
+
 ### entity
 
 #### enderman
@@ -564,6 +561,17 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### breaks-from-solid-neighbors
     - **default**: true
     - **description**: Whether a cactus will break from a solid block next to it
+* ##### affected-by-bonemeal
+    - **default**: false
+    - **description**: Set to true to make it so cacti can be bonemealed
+#### sugar_cane
+* ##### affected-by-bonemeal
+    - **default**: false
+    - **description**: Set to true to make it so cacti can be bonemealed
+#### nether_wart
+* ##### affected-by-bonemeal
+    - **default**: false
+    - **description**: Set to true to make it so cacti can be bonemealed
 #### cauldron
 * ##### fill-chances
     * ###### rain
@@ -707,9 +715,6 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: false
     - **description**: Set to true to enable damage when walking with boots enchanted with frost-walker
 #### lava
-* ##### infinite-source
-    - **default**: false
-    - **description**: Allow lava to take on infinite supply properties similar to water (&lt;infinite-required-sources> source blocks flowing together creates a new source block)
 * ##### infinite-required-sources
     - **default**: 2
     - **description**: The amount of sources required to have infinite lava
@@ -721,9 +726,6 @@ For a more clear explanation of the world settings section of the config, feel f
         - **default**: 30
         - **description**: Delay in ticks between physics/flowing (lower is faster)
 #### water
-* ##### infinite-source
-    - **default**: true
-    - **description**: Set if water should have infinite properties (&lt;infinite-required-sources> source blocks flowing together creates a new source block)
 * ##### infinite-required-sources
     - **default**: 2
     - **description**: The amount of sources required to have infinite water
@@ -870,11 +872,14 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### explosion-fire
         - **default**: false
         - **description**: Set to true to place fire when the end-crystal explodes
+    * ###### cramming-amount
+        - **default**: 0
+        - **description**: Controls how many end crystals can occupy the same hitbox space. When set to a certain number, any additional crystals will cause an explosion.
     * ###### explosion-effect
         - **default**: DESTROY
         - **description**: The type of explosion effect. Available values are `NONE`, `BREAK`, and `DESTROY`.
 
-	
+
 ### mobs
 
 #### allay
@@ -1444,26 +1449,6 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### local-difficulty-chance
         - **default**: 3.0
         - **description**: Local difficulty must be greater than a random value chosen between 0.0 and this value
-    * ###### min-time-since-slept
-        - **default**: 72000
-        - **description**: Minimum number of ticks since the player has last slept before spawning
-    * ###### delay
-        * min
-            - **default**: 1200
-            - **description**: Minimum time (in ticks) between spawn attempts (globally)
-        * max
-            - **default**: 2400
-            - **description**: Maximum time (in ticks) between spawn attempts (globally)
-    * ###### overhead
-        * min
-            - **default**: 20
-            - **description**: Minimum number of blocks to spawn at above players head
-        * max
-            - **default**: 35
-            - **description**: Maximum number of blocks to spawn at above players head
-        * radius
-            - **default**: 10
-            - **description**: Radius of blocks to spawn at above players head
     * ###### per-attempt
         * min
             - **default**: 1
@@ -2122,12 +2107,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### stand-with-rider
-    - **default**: true
-    - **description**: Should a horse (with a rider) stand when it's ambient noise is played
-* ##### stand-when-hurt
-    - **default**: true
-    - **description**: Should a horse stand when it's being hurt
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2180,6 +2159,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 16.0
         - **description**: Max health attribute
+* ##### head-visibility-percent
+    - **default**: 0.5
+    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2398,9 +2380,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* #### can-climb-world-border
-    - **default**: true
-    - **description**: Turning this to false will prevent spiders from climbing the world border
 * ##### attributes
     * ###### max_health
         - **default**: 16.0
@@ -3168,7 +3147,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
     - **default**: 14.0
     - **description**: Max health attribute
-	
+
 ### gameplay-mechanics
 
 #### arrow
@@ -3281,6 +3260,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### void-damage-height
 - **default**: -64.0
 - **description**: The height at which void damage begins
+#### clamp-explosion-radius
+- **default**: true
+- **description**: Set to false to allow setting a negative `ExplosionRadius` value on explosions
 #### entity-lifespan
 - **default**: 0
 - **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
@@ -3356,6 +3338,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### teleport-if-outside-border
     - **default**: false
     - **description**: Teleports you to spawn if you somehow get outside the world border
+* ##### teleport-on-nether-ceiling-damage
+    - **default**: false
+    - **description**: Teleports you to spawn if you take damage while on top of the nether ceiling
 * ##### allow-void-trading
     - **default**: false
     - **description**: Allows the ability to continuously trade with a villager through an End Gateway exploit.
@@ -3641,7 +3626,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     - minecraft:rooted_dirt
     ```
 - **description**: List of blocks that can be turned into a grass path when right-clicked with a shovel
-	
+
 ### ridable-settings
 
 #### babies-are-ridable
@@ -3653,4 +3638,6 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 #### use-night-vision
 - **default**: false
 - **description**: Set to true to give night vision to riders while on a ridable
-	
+#### use-dismounts-underwater-tag
+- **default**: true
+- **description**: Set to false to use `<mob>.ridable-in-water` options instead of the [`DISMOUNTS_UNDERWATER`](https://minecraft.fandom.com/wiki/Tag#Entity_types) tag
