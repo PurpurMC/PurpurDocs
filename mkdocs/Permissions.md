@@ -43,14 +43,35 @@ state will toggle on or off.
 ## bukkit.command.demo
 - Allows the use of the [`/demo`](../Commands#demo) command.
 
+## bukkit.command.demo.other
+- Allows the use of the [`/demo`](../Commands#demo) command on other players.
+
 ## bukkit.command.credits
 - Allows the use of the [`/credits`](../Commands#credits) command.
+
+## bukkit.command.credits.other
+- Allows the use of the [`/credits`](../Commands#credits) command on other players.
 
 ## bukkit.command.ping
 - Allows the use of the [`/ping`](../Commands#ping) command.
 
+## bukkit.command.ping.other
+- Allows the use of the [`/ping`](../Commands#ping) command on other players.
+
 ## bukkit.command.tpsbar
 - Allows the use of the [`/tpsbar`](../Commands#tpsbar) command.
+
+## bukkit.command.tpsbar.other
+- Allows the use of the [`/tpsbar`](../Commands#tpsbar) command on other players.
+
+## bukkit.command.ram
+- Allows the use of the [`/ram`](../Commands#ram) command.
+
+## bukkit.command.rambar
+- Allows the use of the [`/rambar`](../Commands#rambar) command.
+
+## bukkit.command.rambar.other
+- Allows the use of the [`/rambar`](../Commands#rambar) command on other players.
 
 ## bukkit.command.compass
 - Allows the use of the [`/compass`](../Commands#compass) command.
