@@ -33,7 +33,7 @@ Purpur adds a few new commands to the game.
     - `bukkit.command.ping.other`
 
 ???+ note "Note"
-Player Entity Selectors will NOT work unless you have the `minecraft.command.selector` permission.
+    Player Entity Selectors will NOT work unless you have the `minecraft.command.selector` permission.
 
 ## /uptime
 - This command shows the uptime of the server.
@@ -57,7 +57,7 @@ Player Entity Selectors will NOT work unless you have the `minecraft.command.sel
     - `bukkit.command.demo.other`
 
 ???+ note "Note"
-Player Entity Selectors will NOT work unless you have the `minecraft.command.selector` permission.
+    Player Entity Selectors will NOT work unless you have the `minecraft.command.selector` permission.
 
 ## /credits
 ??? info "Image of the Credits screen 📷"
@@ -75,7 +75,7 @@ Player Entity Selectors will NOT work unless you have the `minecraft.command.sel
     - `bukkit.command.credits.other`
 
 ???+ note "Note"
-Player Entity Selectors will NOT work unless you have the `minecraft.command.selector` permission.
+    Player Entity Selectors will NOT work unless you have the `minecraft.command.selector` permission.
 
 ## /tpsbar
 ??? info "Image of the tpsbar in action 📷"
@@ -93,7 +93,7 @@ Player Entity Selectors will NOT work unless you have the `minecraft.command.sel
     - `bukkit.command.tpsbar.other`
 
 ???+ note "Note"
-Player Entity Selectors will NOT work unless you have the `minecraft.command.selector` permission.
+    Player Entity Selectors will NOT work unless you have the `minecraft.command.selector` permission.
 
 ## /compass
 ??? info "Image of the compass in action 📷"
