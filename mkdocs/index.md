@@ -52,46 +52,87 @@ See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of materia
 ## API
 
 ### Javadoc
-
-{{ project.javadoc }}
+You can find the Javadocs for Purpur at: {{ project.javadoc }}
 
 ### Dependency Information
 === "Maven"
 
     ``` xml linenums="1"
-    <repository>
-        <id>purpur</id>
-        <url>https://repo.purpurmc.org/snapshots</url>
-    </repository>
+    <repositories>
+        <!-- other repos... -->
+        <repository>
+            <id>purpur</id>
+            <name>Purpur Maven Repo</name>
+            <url>https://repo.purpurmc.org/snapshots</url>
+        </repository>
+        <!-- other repos... -->
+    </repositories>
     ```
     ``` xml linenums="1"
-    <dependency>
-        <groupId>org.purpurmc.purpur</groupId>
-        <artifactId>purpur-api</artifactId>
-        <version>{{ project.version }}-R0.1-SNAPSHOT</version>
-        <scope>provided</scope>
-    </dependency>
+    <dependencies>
+        <!-- other dependencies -->
+        <dependency>
+            <groupId>org.purpurmc.purpur</groupId>
+            <artifactId>purpur-api</artifactId>
+            <version>{{ project.version }}-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- other dependencies -->
+    </dependencies>
     ```
 
-=== "Gradle"
+=== "Gradle (Kotlin)"
 
     ``` kotlin linenums="1"
     repositories {
+        //... other repos ...//
+        
+        //Add this somewhere after mavenCentral()
         maven("https://repo.purpurmc.org/snapshots")
+        
+        //... other repos ...//
     }
     ```
     ``` kotlin linenums="1"
     dependencies {
+        //... other dependencies ...//
+        
         compileOnly("org.purpurmc.purpur", "purpur-api", "{{ project.version }}-R0.1-SNAPSHOT")
+        
+        //... other dependencies ...//
     }
     ```
 
-Yes, this also includes all APIs provided by Pufferfish, Paper, Spigot, and Bukkit.
+=== "Gradle (Groovy)"
+
+    ``` groovy linenums="1"
+    repositories {
+        //... other repos ...//
+        
+        //Add this somewhere after mavenCentral()
+        maven {
+            url "https://repo.purpurmc.org/snapshots"
+        }
+        
+        //... other repos ...//
+    }
+    ```
+    ``` groovy linenums="1"
+    dependencies {
+        //... other dependencies ...//
+        
+        compileOnly "org.purpurmc.purpur:purpur-api:{{ project.version }}-R0.1-SNAPSHOT"
+        
+        //... other dependencies ...///
+    }
+    ````
+
+Importing Purpur into your project also includes all APIs provided by Pufferfish, Paper, Spigot, and Bukkit.
 
 ## Building and setting up
 
 #### Initial setup
-Run the following commands in the root directory:
+Run the following command in the root of the project directory:
 
 ``` bash linenums="1"
 ./gradlew applyPatches
