@@ -125,7 +125,7 @@ You can find the Javadocs for Purpur at: {{ project.javadoc }}
         
         //... other dependencies ...///
     }
-    ````
+    ```
 
 Importing Purpur into your project also includes all APIs provided by Pufferfish, Paper, Spigot, and Bukkit.
 
