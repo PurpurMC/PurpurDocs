@@ -3371,6 +3371,12 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### burp-delay
     - **default**: 10
     - **description**: Amount of ticks to delay sound; `burp-when-full` option must be enabled
+* ##### portal-wait-time
+    - **default**: 80
+    - **description**: Amount of ticks to wait before letting the player teleport through the portal
+* ##### creative-portal-wait-time
+    - **default**: 1
+    - **description**: Amount of ticks to wait before letting the creative player teleport through the portal
 * ##### curse-of-binding
     * ###### remove-with-weakness
         - **default**: false
