@@ -3165,6 +3165,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### use-better-mending
 - **default**: false
 - **description**: Set to true for mending enchantment to always repair the most damaged equipment first
+#### mending-multiplier
+- **default**: 1.0
+- **description**: How effective mending is at repairing items, higher values mean less xp is used to repair items. (1.0 = 100%)
 #### mobs-ignore-rails
 - **default**: false
 - **description**: Set to true to allow mobs to walk over rails
