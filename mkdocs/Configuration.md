@@ -240,6 +240,14 @@ Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 - **default**: &lt;yellow>&lt;italic>%s is no longer AFK
 - **description**: This is the message that gets broadcasted when a user is no longer AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
 
+### afk-broadcast-use-display-name
+Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+Requires [`afk-broadcast-away`](#afk-broadcast-away) or [`afk-broadcast-back`](#afk-broadcast-back) to have a non-null value
+
+- **default**: false
+- **description**: Uses a plain-text version of the player's display name in the AFK broadcast, instead of their username.
+- **NOTE**: This option does NOT set a player's TAB name
+
 #### afk-tab-list-prefix
 Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 
