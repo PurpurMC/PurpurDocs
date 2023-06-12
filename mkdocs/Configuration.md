@@ -488,9 +488,6 @@ spider_eye:                # The food to edit
 * ##### allow-unsafe-enchant-command
     - **default**: false
     - **description**: Allows the ability to increase enchantments passed their max level through the command
-* ##### allow-transparent-blocks-in-enchantment-box
-    - **default**: false
-    - **description**: Allows the placement of transparent blocks in the area between the enchantment table and the bookshelves
 * ##### clamp-levels
     - **default**: true
     - **description**: Setting this to `false` allows levels to go up to `32767` by storing them as shorts instead of bytes.
@@ -545,10 +542,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### teleport
     - **default**: true
     - **description**: Control whether the dragon egg will teleport when hit
-#### amethyst
-* ##### silk-touch
-    - **default**: false
-    - **description**: Whether amethyst can be picked up by breaking it with an item enchanted with silk touch
 #### observer
 * ##### disable-clock
     - **default**: false
