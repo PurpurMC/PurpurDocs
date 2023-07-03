@@ -177,3 +177,8 @@ Requires enabling [`totem-of-undying-works-in-inventory`](../Configuration#totem
 Requires setting [`shift-right-click-repairs-mending-points`](../Configuration#shift-right-click-repairs-mending-points) to a number greater than 0
 
 - Allows a player to shift-right-click to use their stored experience to mend their gear
+
+## purpur.tnt.defuse
+Requires enabling [`defuse-tnt-chance`](../Configuration#defuse-tnt-chance) to a chance greater than 0
+
+- Allows a player to defuse primed TNT when right-clicking with shears
