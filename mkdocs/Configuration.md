@@ -3472,6 +3472,9 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     * ###### sprinting-damage
         - **default**: 1
         - **description**: The amount of damage to give if `damage-if-sprinting` is enabled
+    * ###### defuse-tnt-chance
+        - **default**: 0.0
+        - **description**: Percent chance (0.0 - 1.0) that right-clicking primed TNT will defuse it
 * ##### snowball
     * ###### extinguish
         * ###### fire
