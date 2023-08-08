@@ -697,8 +697,17 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Whether the explosion can cause fire or not
 * ##### explosion-effect
-    - **default**: DESTROY
-    - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
+    - **default**: BLOCK
+    - **description**: What to do with the blocks that are effected by the explosion.
+
+        ???+ note "Available Values"
+            All values will break blocks
+
+            - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
+            - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
+            - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
+            - `NONE` - all items will drop
+
 #### sign
 * ##### allow-colors
     - Requires [`purpur.sign.color`](../Permissions#purpursigncolor), [`purpur.sign.style`](../Permissions#purpursignstyle), and/or [`purpur.sign.magic`](../Permissions#purpursignmagic) permission
@@ -748,8 +757,16 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Whether the explosion can cause fire or not
 * ##### explosion-effect
-    - **default**: DESTROY
-    - **description**: What to do with the blocks that are effected by the explosion. `DESTROY` will destroy the blocks (no item drops). `BREAK` will naturally break the blocks (items will drop). `NONE` will not break any blocks
+    - **default**: BLOCK
+    - **description**: What to do with the blocks that are effected by the explosion.
+
+        ???+ note "Available Values"
+            All values will break blocks
+
+            - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
+            - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
+            - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
+            - `NONE` - all items will drop
 #### farmland
 * ##### gets-moist-from-below
     - **default**: false
@@ -861,8 +878,16 @@ For a more clear explanation of the world settings section of the config, feel f
         - **default**: false
         - **description**: Set to true to place fire when the end-crystal explodes
     * ###### explosion-effect
-        - **default**: DESTROY
-        - **description**: The type of explosion effect. Available values are `NONE`, `BREAK`, and `DESTROY`.
+        - **default**: BLOCK
+        - **description**: What to do with the blocks that are effected by the explosion.
+
+            ???+ note "Available Values"
+                All values will break blocks
+
+                - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
+                - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
+                - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
+                - `NONE` - all items will drop
 * ##### base
     * ###### explode
         - **default**: true
@@ -877,8 +902,16 @@ For a more clear explanation of the world settings section of the config, feel f
         - **default**: 0
         - **description**: Controls how many end crystals can occupy the same hitbox space. When set to a certain number, any additional crystals will cause an explosion.
     * ###### explosion-effect
-        - **default**: DESTROY
-        - **description**: The type of explosion effect. Available values are `NONE`, `BREAK`, and `DESTROY`.
+        - **default**: BLOCK
+        - **description**: What to do with the blocks that are effected by the explosion.
+
+            ???+ note "Available Values"
+                All values will break blocks
+
+                - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
+                - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
+                - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
+                - `NONE` - all items will drop
 
 
 ### mobs
