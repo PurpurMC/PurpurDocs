@@ -1,5 +1,5 @@
 # Project information
-site_name: Purpur Documentation
+site_name: PurpurMC Documentation
 site_url: https://purpurmc.org/docs
 site_author: granny
 site_description: >-
@@ -7,12 +7,28 @@ site_description: >-
   Purpur is a fork of Pufferfish (and by extension, Paper) with the goal of providing new and interesting configuration options, which allow for creating a unique gameplay experience not seen anywhere else.
 docs_dir: mkdocs
 nav:
-    - Home: index.md
-    - Installation: Installation.md
-    - Configuration: Configuration.md
-    - Commands: Commands.md
-    - Permissions: Permissions.md
-    - Frequently Asked Questions: FAQ.md
+    - index.md
+    - Purpur:
+      - Purpur: purpur/index.md
+      - Installation: purpur/installation.md
+      - Configuration: purpur/configuration.md
+      - Commands: purpur/commands.md
+      - Permissions: purpur/permissions.md
+      - Frequently Asked Questions: purpur/faq.md
+    - PurpurExtras:
+      - PurpurExtras: purpurextras/index.md
+      # - Installation: purpurextras/installation.md
+      # - Configuration: purpurextras/configuration.md
+      # - Commands: purpurextras/commands.md
+      # - Permissions: purpurextras/permissions.md
+      # - Frequently Asked Questions: purpurextras/faq.md
+    - PurpurPacks:
+      - PurpurPacks: purpurpacks/index.md
+      # - Installation: purpurpacks/installation.md
+      # - Configuration: purpurpacks/configuration.md
+      # - Commands: purpurpacks/commands.md
+      # - Permissions: purpurpacks/permissions.md
+      # - Frequently Asked Questions: purpurpacks/faq.md
 repo_url: https://github.com/PurpurMC/PurpurDocs
 repo_name: PurpurDocs
 edit_uri: edit/main/mkdocs/
@@ -20,6 +36,7 @@ extra_css:
   - stylesheets/extra.css
 plugins:
   - search
+  - ezlinks
   - markdownextradata
   - autolink_references:
       autolinks:
@@ -27,18 +44,27 @@ plugins:
             target_url: https://bugs.mojang.com/browse/MC-<num>
   - redirects:
       redirect_maps:
-          'commands.md': 'Commands.md'
-          'cmds.md': 'Commands.md'
-          'configuration.md': 'Configuration.md'
-          'config.md': 'Configuration.md'
-          'permissions.md': 'Permissions.md'
-          'perms.md': 'Permissions.md'
-          'faq.md': 'FAQ.md'
+          'commands.md': 'purpur/commands.md'
+          'cmds.md': 'purpur/commands.md'
+          'configuration.md': 'purpur/configuration.md'
+          'config.md': 'purpur/configuration.md'
+          'permissions.md': 'purpur/permissions.md'
+          'perms.md': 'purpur/permissions.md'
+          'faq.md': 'purpur/faq.md'
+          'Commands.md': 'purpur/commands.md'
+          'Configuration.md': 'purpur/configuration.md'
+          'FAQ.md': 'purpur/faq.md'
+          'Installation.md': 'purpur/installation.md'
+          'Log4j.md': 'purpur/log4j.md'
+          'Permissions.md': 'purpur/permissions.md'
 theme:
   name: material
   custom_dir: overrides
   favicon: images/purpur-small.png
   logo: images/purpur-small.png
+  features:
+    - navigation.tabs
+    - navigation.indexes
   palette:
     - scheme: slate
       primary: light blue

@@ -60,7 +60,7 @@ Global settings affect all worlds on the server as well as the core server funct
         - **description**: Output of `<seconds>` placeholder in [command.uptime.format](#format) option
 * #### gamemode
     * ##### requires-specific-permission
-        - Requires [`minecraft.command.gamemode.<gamemode>`](../Permissions#minecraftcommandgamemodegamemode) permission
+        - Requires [`minecraft.command.gamemode.<gamemode>`](permissions#minecraftcommandgamemodegamemode) permission
         - **default**: false
         - **description**: Set to true for each gamemode to require its own permission
 * #### tpsbar
@@ -155,7 +155,7 @@ Global settings affect all worlds on the server as well as the core server funct
     * ##### title
         - **default**: "S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  
 S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  "
-        - **description**: The format of the bossbar when the server runs the [`/compass`](../Commands#compass) command
+        - **description**: The format of the bossbar when the server runs the [`/compass`](commands#compass) command
 
     * ##### overlay
         - **default**: PROGRESS
@@ -265,7 +265,7 @@ Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
 - **description**: The suffix that shows up on the playerlist after someone's name when they're AFK
 
 #### cannot-ride-mob
-Requires the [`allow.ride.<mob_id>`](../Permissions#allowridemob_id) permission
+Requires the [`allow.ride.<mob_id>`](permissions#allowridemob_id) permission
 
 - **default**: &lt;red>You cannot mount that mob
 - **description**: Message that shows when someone tries to mount a mob they're not allowed to.
@@ -277,32 +277,32 @@ Requires the [`damage-if-sprinting`](#damage-if-sprinting) option to be enabled
 - **description**: Actionbar message that shows when someone attempts to run with scissors
 
 #### ping-command-output
-Requires the [`bukkit.command.ping`](../Permissions#bukkitcommandping) permission
+Requires the [`bukkit.command.ping`](permissions#bukkitcommandping) permission
 
 - **default**: &lt;green>%s's ping is %sms
 - **description**: Output when `/ping <user>` is run.
 
 #### uptime-command-output
-Requires the [`bukkit.command.uptime`](../Permissions#bukkitcommanduptime) permission
+Requires the [`bukkit.command.uptime`](permissions#bukkitcommanduptime) permission
 `<uptime>` - The format from [`<global>.command.uptime.format`](#format)
 
 - **default**: &lt;green>Server uptime is &lt;uptime>
 - **description**: Message that shows when the `/uptime` command is ran.
 
 #### demo-command-output
-Requires the [`bukkit.command.demo`](../Permissions#bukkitcommanddemo) permission
+Requires the [`bukkit.command.demo`](permissions#bukkitcommanddemo) permission
 
 - **default**: &lt;green>%s has been shown the demo screen
 - **description**: Message that shows when the demo screen is enabled for a user using the `/demo` command.
 
 #### credits-command-output
-Requires the [`bukkit.command.credits`](../Permissions#bukkitcommandcredits) permission
+Requires the [`bukkit.command.credits`](permissions#bukkitcommandcredits) permission
 
 - **default**: &lt;green>%s has been shown the end credits
 - **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
 
 #### tpsbar-command-output
-Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permission
+Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permission
 
 - **default**: &lt;green>Tpsbar toggled &lt;onoff> for &lt;target>
 - **description**: Message that shows when the tpsbar is enabled for a user using the `/tpsbar` command.
@@ -382,7 +382,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
     - **description**: When enabled, ender chests should have six rows of inventory space
 * ##### use-permissions-for-rows
     - Requires [`ender_chest.six-rows`](#six-rows) to be true
-    - Requires [`purpur.enderchest.rows.<number>`](../Permissions#purpurenderchestrowsnumber) permission
+    - Requires [`purpur.enderchest.rows.<number>`](permissions#purpurenderchestrowsnumber) permission
     - **default**: false
     - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have `six` rows unless otherwise specified using permissions.
 
@@ -725,7 +725,7 @@ For a more clear explanation of the world settings section of the config, feel f
 
 #### sign
 * ##### allow-colors
-    - Requires [`purpur.sign.color`](../Permissions#purpursigncolor), [`purpur.sign.style`](../Permissions#purpursignstyle), and/or [`purpur.sign.magic`](../Permissions#purpursignmagic) permission
+    - Requires [`purpur.sign.color`](permissions#purpursigncolor), [`purpur.sign.style`](permissions#purpursignstyle), and/or [`purpur.sign.magic`](permissions#purpursignmagic) permission
     - **default**: false
     - **description**: Allow players to use color codes on signs
 #### magma-block
@@ -832,11 +832,11 @@ For a more clear explanation of the world settings section of the config, feel f
     - **description**: Allows anvils to be placed by dispensers
 #### anvil
 * ##### use-mini-message
-    - Requires [`purpur.anvil.minimessage`](../Permissions#purpuranvilminimessage) permission
+    - Requires [`purpur.anvil.minimessage`](permissions#purpuranvilminimessage) permission
     - **default**: false
     - **description**:  Allows players to use MiniMessage tags in an anvil.
 * ##### allow-colors
-    - Requires [`purpur.anvil.color`](../Permissions#purpuranvilcolor) permission
+    - Requires [`purpur.anvil.color`](permissions#purpuranvilcolor) permission
     - **default**: false
     - **description**: Allows players to use color codes in anvils
 * ##### iron-ingots-used-for-repair
@@ -3305,7 +3305,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 - **default**: 0
 - **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
 #### silk-touch
-Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`purpur.place.spawners`](../Permissions#purpurplacespawners) permissions
+Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purpur.place.spawners`](permissions#purpurplacespawners) permissions
 
 * ##### enabled
     - **default**: false
@@ -3531,7 +3531,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
 * ##### compass
     * ###### holding-shows-bossbar
         - **default**: false
-        - **description**: If the bossbar from the [`/compass`](../Commands#compass) command should show when holding a compass
+        - **description**: If the bossbar from the [`/compass`](commands#compass) command should show when holding a compass
 * ##### glow_berries
     * ###### eat-glow-duration
         - **default**: 0
