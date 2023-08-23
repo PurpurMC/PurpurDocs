@@ -423,6 +423,10 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 * ##### can-summon-default
     - **default**: false
     - **description**: Set to true to set `can_summon` to `true` on placement
+#### anvil
+* ##### cumulative-cost
+    - **default**: true
+    - **description**: If the cumulative cost should apply when an item is used in an anvil
 ### broadcasts
 
 #### advancement
@@ -833,9 +837,6 @@ For a more clear explanation of the world settings section of the config, feel f
     - Requires [`purpur.anvil.color`](../Permissions#purpuranvilcolor) permission
     - **default**: false
     - **description**: Allows players to use color codes in anvils
-* ##### cumulative-cost
-    - **default**: true
-    - **description**: If the cumulative cost should apply when an item is used in an anvil
 * ##### iron-ingots-used-for-repair
     - **default**: 0
     - **description**: The amount of iron ingots required to repair an anvil
