@@ -698,10 +698,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### safe-teleporting
     - **default**: true
     - **description**: Toggles protection against unsafe code in the handling of end portal teleportation. Disabling this may be necessary for some exploits
-#### dispenser
-* ##### apply-cursed-to-armor-slots
-    - **default**: true
-    - **description**: Should dispensers apply armor to armor slots if enchanted with curse of binding
 #### respawn_anchor
 * ##### explode
     - **default**: true
@@ -829,6 +825,9 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: false
     - **description**: Fix spawners not spawning water animals correctly; MC-238526
 #### dispenser
+* ##### apply-cursed-to-armor-slots
+    - **default**: true
+    - **description**: Should dispensers apply armor to armor slots if enchanted with curse of binding
 * ##### place-anvils
     - **default**: false
     - **description**: Allows anvils to be placed by dispensers
