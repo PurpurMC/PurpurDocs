@@ -325,6 +325,10 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 - **default**: default
 - **description**: The actionbar message that appears when a player is asleep. Set to "default" to let the clients use their own translatable components. Set to an empty string to disable it. Available placeholders: `<count>` - the current amount of players sleeping, `<total>` - the total amount of players needed to sleep
 
+#### sleep-not-possible
+- **default**: default
+- **description**: The actionbar message that appears when a player tries to sleep, but the `playersSleepingPercentage` gamerule is set to a value greater than 100. Set to "default" to let the clients use their own translatable components. Set to an empty string to disable it.
+
 #### death-message
 * ##### stonecutter
     - **default**: &lt;player> has sawed themself in half
