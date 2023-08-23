@@ -872,6 +872,9 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: false
     - **description**: Set to true for powdered snow to bypass the mob griefing gamerule
 #### end-crystal
+* ##### cramming-amount
+    - **default**: 0
+    - **description**: Controls how many end crystals can occupy the same hitbox space. When set to a certain number, any additional crystals will cause an explosion.
 * ##### baseless
     * ###### explode
         - **default**: true
@@ -893,6 +896,7 @@ For a more clear explanation of the world settings section of the config, feel f
                 - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
                 - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
                 - `NONE` - all items will drop
+
 * ##### base
     * ###### explode
         - **default**: true
@@ -903,9 +907,6 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### explosion-fire
         - **default**: false
         - **description**: Set to true to place fire when the end-crystal explodes
-    * ###### cramming-amount
-        - **default**: 0
-        - **description**: Controls how many end crystals can occupy the same hitbox space. When set to a certain number, any additional crystals will cause an explosion.
     * ###### explosion-effect
         - **default**: BLOCK
         - **description**: What to do with the blocks that are effected by the explosion.
