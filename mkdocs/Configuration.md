@@ -687,6 +687,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### allow-mob-spawns
     - **default**: true
     - **description**: Set to false to disallow mob spawning on blue ice
+* ##### allow-snow-formation
+    - **default**: true
+    - **description**: Set to false to disallow snow formation on blue ice
 #### sand
 * ##### fix-duping
     - **default**: true
@@ -852,10 +855,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### use-lava-from-underneath
     - **default**: false
     - **description**: Allows the furnace to be infinitely powered by lava placed underneath it
-#### blue_ice
-* ##### allow-snow-formation
-    - **default**: true
-    - **description**: Set to false to disallow snow formation on blue ice
 #### chest
 * ##### open-with-solid-block-on-top
     - **default**: false
