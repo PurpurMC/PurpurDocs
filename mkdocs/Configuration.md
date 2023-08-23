@@ -3280,9 +3280,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### entities-pick-up-loot-bypass-mob-griefing
 - **default**: false
 - **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
-#### fix-climbing-bypassing-cramming-rule
-- **default**: false
-- **description**: Stops entities from bypassing the cramming gamerule by climbing
 #### milk-cures-bad-omen
 - **default**: true
 - **description**: Allow players to drink milk to cure bad omen status effect
