@@ -427,6 +427,10 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 * ##### cumulative-cost
     - **default**: true
     - **description**: If the cumulative cost should apply when an item is used in an anvil
+#### lightning_rod
+* ##### range
+    - **default**: 128
+    - **description**: Change the range in which the lightning rod redirects lightning
 ### broadcasts
 
 #### advancement
@@ -843,10 +847,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### obsidian-used-for-damage
     - **default**: 0
     - **description**: The amount of obsidian required to damage an anvil
-#### lightning_rod
-* ##### range
-    - **default**: 128
-    - **description**: Change the range in which the lightning rod redirects lightning
 #### stonecutter
 * ##### damage
     - **default**: 0.0
