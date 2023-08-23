@@ -3490,6 +3490,10 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
             ```
         - **description**: List of speed overrides per block type
 #### item
+* ##### end-crystal
+    * ###### place-anywhere
+        - **default**: false
+        - **description**: Allows you to place an end crystal on any block, not just obsidian and bedrock
 * ##### shears
     * ###### damage-if-sprinting
         - **default**: false
