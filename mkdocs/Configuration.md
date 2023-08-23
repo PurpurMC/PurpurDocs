@@ -226,6 +226,10 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **default**: false
 - **description**: Set to true to disable the /give command from dropping items on the floor when a player's inventory is full
 
+### player-deaths-always-show-item
+- **default**: false
+- **description**: Set to true to always show the item used to kill the player in player death messages.
+
 ### messages
 
 #### afk-broadcast-away
