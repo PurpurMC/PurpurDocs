@@ -725,10 +725,6 @@ For a more clear explanation of the world settings section of the config, feel f
     - Requires [`purpur.sign.color`](../Permissions#purpursigncolor), [`purpur.sign.style`](../Permissions#purpursignstyle), and/or [`purpur.sign.magic`](../Permissions#purpursignmagic) permission
     - **default**: false
     - **description**: Allow players to use color codes on signs
-* ##### right-click-edit
-    - Requires [`purpur.sign.edit`](../Permissions#purpursignedit) permission
-    - **default**: false
-    - **description**: Ability to edit signs by right clicking them with another sign in hand
 #### magma-block
 * ##### damage-when-sneaking
     - **default**: false
