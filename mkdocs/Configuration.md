@@ -3320,7 +3320,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     ```
     - **description**: Whitelist of tools that can mine spawners with silk touch
 * ##### spawner-name
-    - **default**: "&lt;reset>&lt;white>Spawner"
+    - **default**: "&lt;reset>&lt;white>Monster Spawner"
     - **description**: The name of the spawner
 * ##### spawner-lore
     - **default**:
