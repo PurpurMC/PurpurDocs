@@ -342,7 +342,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
     - **description**: The death message that appears when the player is killed because they were running with scissors
 
 ### network
-### kick-for-out-of-order-chat
+#### kick-for-out-of-order-chat
 - **default**: true
 - **description**: Set to false to stop the server from kicking a player for their chat being out of order 
 ####  upnp-port-forwarding
@@ -399,14 +399,6 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 * ##### valid-for-portal-frame
     - **default**: false
     - **description**: Set to true to make it so you can create portals out of crying obsidian
-####  coral
-* ##### die-outside-water
-    - **default**: true
-    - **description**: Set to false to keep coral alive when placed on land
-#### sculk_shrieker
-* ##### can-summon-default
-    - **default**: false
-    - **description**: Set to true to set `can_summon` to `true` on placement
 #### twisting_vines
 * ##### max-growth-age
     - **default**: 25
@@ -423,6 +415,14 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 * ##### max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
+####  coral
+* ##### die-outside-water
+    - **default**: true
+    - **description**: Set to false to keep coral alive when placed on land
+#### sculk_shrieker
+* ##### can-summon-default
+    - **default**: false
+    - **description**: Set to true to set `can_summon` to `true` on placement
 ### broadcasts
 
 #### advancement
