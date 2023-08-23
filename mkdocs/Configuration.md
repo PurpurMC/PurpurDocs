@@ -392,9 +392,6 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 #### disable-chorus-plant-updates  
 - **default**: false
 - **description**: Stops the chorus plant from updating it's block state server side
-#### disable-note-block-updates  
-- **default**: false
-- **description**: Stops the note block from updating it's block state server side
 ####  crying_obsidian
 * ##### valid-for-portal-frame
     - **default**: false
