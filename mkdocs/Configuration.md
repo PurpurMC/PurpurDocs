@@ -412,14 +412,6 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 * ##### max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
-####  coral
-* ##### die-outside-water
-    - **default**: true
-    - **description**: Set to false to keep coral alive when placed on land
-#### sculk_shrieker
-* ##### can-summon-default
-    - **default**: false
-    - **description**: Set to true to set `can_summon` to `true` on placement
 #### anvil
 * ##### cumulative-cost
     - **default**: true
@@ -675,6 +667,14 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### sneak-to-bulk-process
     - **default**: false
     - **description**: Set to true to allow bulk processing of food/plant items by sneak right-clicking with the item in hand
+####  coral
+* ##### die-outside-water
+    - **default**: true
+    - **description**: Set to false to keep coral alive when placed on land
+#### sculk_shrieker
+* ##### can-summon-default
+    - **default**: false
+    - **description**: Set to true to set `can_summon` to `true` on placement
 #### slab
 * ##### break-individual-slabs-when-sneaking
     - **default**: false
