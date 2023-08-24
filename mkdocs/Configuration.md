@@ -342,7 +342,7 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
     - **description**: The death message that appears when the player is killed because they were running with scissors
 
 ### network
-### kick-for-out-of-order-chat
+#### kick-for-out-of-order-chat
 - **default**: true
 - **description**: Set to false to stop the server from kicking a player for their chat being out of order 
 ####  upnp-port-forwarding
@@ -392,21 +392,10 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 #### disable-chorus-plant-updates  
 - **default**: false
 - **description**: Stops the chorus plant from updating it's block state server side
-#### disable-note-block-updates  
-- **default**: false
-- **description**: Stops the note block from updating it's block state server side
 ####  crying_obsidian
 * ##### valid-for-portal-frame
     - **default**: false
     - **description**: Set to true to make it so you can create portals out of crying obsidian
-####  coral
-* ##### die-outside-water
-    - **default**: true
-    - **description**: Set to false to keep coral alive when placed on land
-#### sculk_shrieker
-* ##### can-summon-default
-    - **default**: false
-    - **description**: Set to true to set `can_summon` to `true` on placement
 #### twisting_vines
 * ##### max-growth-age
     - **default**: 25
@@ -423,6 +412,14 @@ Requires the [`bukkit.command.tpsbar`](../Permissions#bukkitcommandtpsbar) permi
 * ##### max-growth-age
     - **default**: 25
     - **description**: The max growth age that the plant can grow
+#### anvil
+* ##### cumulative-cost
+    - **default**: true
+    - **description**: If the cumulative cost should apply when an item is used in an anvil
+#### lightning_rod
+* ##### range
+    - **default**: 128
+    - **description**: Change the range in which the lightning rod redirects lightning
 ### broadcasts
 
 #### advancement
@@ -673,6 +670,14 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### sneak-to-bulk-process
     - **default**: false
     - **description**: Set to true to allow bulk processing of food/plant items by sneak right-clicking with the item in hand
+####  coral
+* ##### die-outside-water
+    - **default**: true
+    - **description**: Set to false to keep coral alive when placed on land
+#### sculk_shrieker
+* ##### can-summon-default
+    - **default**: false
+    - **description**: Set to true to set `can_summon` to `true` on placement
 #### slab
 * ##### break-individual-slabs-when-sneaking
     - **default**: false
@@ -685,6 +690,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### allow-mob-spawns
     - **default**: true
     - **description**: Set to false to disallow mob spawning on blue ice
+* ##### allow-snow-formation
+    - **default**: true
+    - **description**: Set to false to disallow snow formation on blue ice
 #### sand
 * ##### fix-duping
     - **default**: true
@@ -693,10 +701,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### safe-teleporting
     - **default**: true
     - **description**: Toggles protection against unsafe code in the handling of end portal teleportation. Disabling this may be necessary for some exploits
-#### dispenser
-* ##### apply-cursed-to-armor-slots
-    - **default**: true
-    - **description**: Should dispensers apply armor to armor slots if enchanted with curse of binding
 #### respawn_anchor
 * ##### explode
     - **default**: true
@@ -724,10 +728,6 @@ For a more clear explanation of the world settings section of the config, feel f
     - Requires [`purpur.sign.color`](../Permissions#purpursigncolor), [`purpur.sign.style`](../Permissions#purpursignstyle), and/or [`purpur.sign.magic`](../Permissions#purpursignmagic) permission
     - **default**: false
     - **description**: Allow players to use color codes on signs
-* ##### right-click-edit
-    - Requires [`purpur.sign.edit`](../Permissions#purpursignedit) permission
-    - **default**: false
-    - **description**: Ability to edit signs by right clicking them with another sign in hand
 #### magma-block
 * ##### damage-when-sneaking
     - **default**: false
@@ -824,6 +824,9 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: false
     - **description**: Fix spawners not spawning water animals correctly; MC-238526
 #### dispenser
+* ##### apply-cursed-to-armor-slots
+    - **default**: true
+    - **description**: Should dispensers apply armor to armor slots if enchanted with curse of binding
 * ##### place-anvils
     - **default**: false
     - **description**: Allows anvils to be placed by dispensers
@@ -836,19 +839,12 @@ For a more clear explanation of the world settings section of the config, feel f
     - Requires [`purpur.anvil.color`](../Permissions#purpuranvilcolor) permission
     - **default**: false
     - **description**: Allows players to use color codes in anvils
-* ##### cumulative-cost
-    - **default**: true
-    - **description**: If the cumulative cost should apply when an item is used in an anvil
 * ##### iron-ingots-used-for-repair
     - **default**: 0
     - **description**: The amount of iron ingots required to repair an anvil
 * ##### obsidian-used-for-damage
     - **default**: 0
     - **description**: The amount of obsidian required to damage an anvil
-#### lightning_rod
-* ##### range
-    - **default**: 128
-    - **description**: Change the range in which the lightning rod redirects lightning
 #### stonecutter
 * ##### damage
     - **default**: 0.0
@@ -857,10 +853,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### use-lava-from-underneath
     - **default**: false
     - **description**: Allows the furnace to be infinitely powered by lava placed underneath it
-#### blue_ice
-* ##### allow-snow-formation
-    - **default**: true
-    - **description**: Set to false to disallow snow formation on blue ice
 #### chest
 * ##### open-with-solid-block-on-top
     - **default**: false
@@ -878,6 +870,9 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: false
     - **description**: Set to true for powdered snow to bypass the mob griefing gamerule
 #### end-crystal
+* ##### cramming-amount
+    - **default**: 0
+    - **description**: Controls how many end crystals can occupy the same hitbox space. When set to a certain number, any additional crystals will cause an explosion.
 * ##### baseless
     * ###### explode
         - **default**: true
@@ -899,6 +894,7 @@ For a more clear explanation of the world settings section of the config, feel f
                 - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
                 - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
                 - `NONE` - all items will drop
+
 * ##### base
     * ###### explode
         - **default**: true
@@ -909,9 +905,6 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### explosion-fire
         - **default**: false
         - **description**: Set to true to place fire when the end-crystal explodes
-    * ###### cramming-amount
-        - **default**: 0
-        - **description**: Controls how many end crystals can occupy the same hitbox space. When set to a certain number, any additional crystals will cause an explosion.
     * ###### explosion-effect
         - **default**: BLOCK
         - **description**: What to do with the blocks that are effected by the explosion.
@@ -3290,9 +3283,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### entities-pick-up-loot-bypass-mob-griefing
 - **default**: false
 - **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
-#### fix-climbing-bypassing-cramming-rule
-- **default**: false
-- **description**: Stops entities from bypassing the cramming gamerule by climbing
 #### milk-cures-bad-omen
 - **default**: true
 - **description**: Allow players to drink milk to cure bad omen status effect
@@ -3333,7 +3323,7 @@ Requires the [`purpur.drop.spawners`](../Permissions#purpurdropspawners) and [`p
     ```
     - **description**: Whitelist of tools that can mine spawners with silk touch
 * ##### spawner-name
-    - **default**: "&lt;reset>&lt;white>Spawner"
+    - **default**: "&lt;reset>&lt;white>Monster Spawner"
     - **description**: The name of the spawner
 * ##### spawner-lore
     - **default**:
