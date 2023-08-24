@@ -516,6 +516,9 @@ spider_eye:                # The food to edit
 * ##### allow-higher-enchants-levels
     - **default**: true
     - **description**: Allows the ability to increase enchantments passed their maximum level. For example, efficiency V + efficiency V = efficiency VI.
+* ##### replace-incompatible-enchants
+    - **default**: false
+    - **description**: When applying enchantments together that are incompatible, instead of using the enchantment in the base item, the enchantment will be replaced by the enchantment on the secondary item.
 
 ## world-settings
 
