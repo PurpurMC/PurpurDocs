@@ -18,7 +18,7 @@ nav:
     - PurpurExtras:
       - PurpurExtras: purpurextras/index.md
       # - Installation: purpurextras/installation.md
-      # - Configuration: purpurextras/configuration.md
+      - Configuration: purpurextras/configuration.md
       # - Commands: purpurextras/commands.md
       # - Permissions: purpurextras/permissions.md
       # - Frequently Asked Questions: purpurextras/faq.md
@@ -94,6 +94,9 @@ extra:
     build:
       number: 1976
       commit: 68117a4e
+  purpur_extras:
+    downloads: https://modrinth.com/plugin/purpurextras/versions
+    source: https://github.com/PurpurMC/PurpurExtras
   social:
     - icon: fontawesome/brands/discord
       link: https://purpurmc.org/discord
