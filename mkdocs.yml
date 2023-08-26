@@ -19,7 +19,7 @@ nav:
       - PurpurExtras: purpurextras/index.md
       - Installation: purpurextras/installation.md
       - Configuration: purpurextras/configuration.md
-      # - Commands: purpurextras/commands.md
+      - Commands: purpurextras/commands.md
       # - Permissions: purpurextras/permissions.md
       # - Frequently Asked Questions: purpurextras/faq.md
     - PurpurPacks:
