@@ -17,7 +17,7 @@ nav:
       - Frequently Asked Questions: purpur/faq.md
     - PurpurExtras:
       - PurpurExtras: purpurextras/index.md
-      # - Installation: purpurextras/installation.md
+      - Installation: purpurextras/installation.md
       - Configuration: purpurextras/configuration.md
       # - Commands: purpurextras/commands.md
       # - Permissions: purpurextras/permissions.md
