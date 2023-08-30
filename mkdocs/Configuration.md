@@ -3210,6 +3210,26 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### mob-last-hurt-by-player-time
 - **default**: 100
 - **description**: Allows you to change the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
+##### lightning-transforms-blocks
+* ###### enabled
+    - **default**: false
+    - **description**: Makes it so blocks transform when hit by lightning
+* ###### nearby-sand-into-glass
+    * ###### enabled
+        - **default**: true
+        - **description**: Turn the sand around the struck block into glass
+    * ###### max-depth
+        - **default**: 3
+        - **description**: The depth to check
+    * ###### max-iteration
+        - **default**: 6
+        - **description**: The amount of times to try changing a block
+* ###### water-into-stone
+    - **default**: true
+    - **description**: Turn the struck water into stone
+* ###### stone-into-obsidian
+    - **default**: true
+    - **description**: Turn the struck stone into obsidian
 #### halloween
 * ##### force
     - **default**: false
