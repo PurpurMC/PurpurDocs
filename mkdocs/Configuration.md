@@ -3224,6 +3224,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max-iteration
         - **default**: 6
         - **description**: The amount of times to try changing a block
+* ##### sand-into-glass
+    - **default**: true
+    - **description**: Turn the struck sand into glass
 * ##### water-into-stone
     - **default**: true
     - **description**: Turn the struck water into stone
