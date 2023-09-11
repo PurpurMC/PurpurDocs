@@ -576,11 +576,11 @@ For a more clear explanation of the world settings section of the config, feel f
 #### sugar_cane
 * ##### affected-by-bonemeal
     - **default**: false
-    - **description**: Set to true to make it so cacti can be bonemealed
+    - **description**: Set to true to make it so sugarcane can be bonemealed
 #### nether_wart
 * ##### affected-by-bonemeal
     - **default**: false
-    - **description**: Set to true to make it so cacti can be bonemealed
+    - **description**: Set to true to make it so netherwart can be bonemealed
 #### cauldron
 * ##### fill-chances
     * ###### rain
