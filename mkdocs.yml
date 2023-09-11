@@ -101,3 +101,5 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://purpurmc.org/discord
       name: Purpur Discord Server
+  purpur_packs:
+    source: https://github.com/PurpurMC/PurpurPacks
