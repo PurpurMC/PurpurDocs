@@ -64,6 +64,7 @@ theme:
   favicon: images/purpur-small.png
   logo: images/purpur-small.png
   features:
+    - navigation.instant
     - navigation.tabs
     - navigation.indexes
   palette:
