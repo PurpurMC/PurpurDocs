@@ -23,7 +23,7 @@ div#center {
     letter-spacing: -0.01em;
 }
 
-.md-header {
+.md-header, .md-tabs {
     background-color: var(--header-color);
 }
 
