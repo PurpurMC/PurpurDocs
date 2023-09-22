@@ -87,6 +87,8 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 extra:
+  org:
+    source: https://github.com/PurpurMC/
   project:
     website: https://purpurmc.org
     javadoc: https://purpurmc.org/javadoc
