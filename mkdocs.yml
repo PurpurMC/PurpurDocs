@@ -24,7 +24,8 @@ nav:
       # - Frequently Asked Questions: purpurextras/faq.md
     - PurpurPacks:
       - PurpurPacks: purpurpacks/index.md
-      # - Installation: purpurpacks/installation.md
+      - Installation: purpurpacks/installation.md
+      - Packs List: purpurpacks/packs.md
       # - Configuration: purpurpacks/configuration.md
       # - Commands: purpurpacks/commands.md
       # - Permissions: purpurpacks/permissions.md
