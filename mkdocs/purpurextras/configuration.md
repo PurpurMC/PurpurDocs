@@ -24,6 +24,19 @@ If enabled, dropping an anvil from significant height onto chest boat in its ite
 ## dye-boss-bars
 If enabled, allows players to dye boss health bars by right-clicking the boss with a dye item.
 
+## loom
+
+### max-layers
+Maximum amount of layers that can be added to a banner. By default, this is 6. The client might not display more than 6 layers at the time.
+
+## raid-totem-drops
+
+### enabled
+If enabled, drop rate of totems from evokers in raids can be configured.
+
+### chance
+Chance of evoker in a raid dropping a totem. This is a float number between 0 and 1.
+
 ## shields
 
 ### damage-reduction
