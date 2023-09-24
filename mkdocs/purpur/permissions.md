@@ -115,11 +115,6 @@ Requires enabling [`gameplay-mechanics.silk-touch`](configuration#silk-touch_1) 
 - Players with this permission can place down a spawner cage and
 restore the mob type to what it was when it was mined using silk touch.
 
-## purpur.sign.edit
-Requires enabling [`sign.right-click-edit`](configuration#sign) in purpur.yml
-
-- Allows players to open the sign editor when right clicking a sign while holding a sign.
-
 ## purpur.sign.color
 Requires enabling [`sign.allow-colors`](configuration#sign) in purpur.yml
 

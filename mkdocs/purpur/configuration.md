@@ -386,12 +386,6 @@ Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permissi
     - **default**: false
     - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have `six` rows unless otherwise specified using permissions.
 
-#### disable-mushroom-updates  
-- **default**: false
-- **description**: Stops the mushroom block from updating it's block state server side
-#### disable-chorus-plant-updates  
-- **default**: false
-- **description**: Stops the chorus plant from updating it's block state server side
 ####  crying_obsidian
 * ##### valid-for-portal-frame
     - **default**: false
@@ -1875,29 +1869,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
-* ##### rainglow-mode
-    - **default**: rainbow
-    - **description**: Lets you change the colours of your glow squids. You can choose from the following options:
-        ``` yaml
-        Basic:
-        - rainbow: red, orange, yellow, green, blue, indigo and violet.
-        - all_colors: blue, red, green, pink, yellow, orange, indigo, purple, white, gray and black.
-        - monochrome: white, grey, and black.
-        - vanilla: just blue.
-        
-        Pride:
-        - trans_pride: blue, white and pink.
-        - lesbian_pride: red, orange, white, pink and purple.
-        - bi_pride: blue, pink and purple.
-        - pan_pride: pink, yellow and blue.
-        - ace_pride: black, gray, white and purple.
-        - aro_pride: black, gray, white and green.
-        - genderfluid: blue, pink, purple, white and black.
-        - enby_pride: yellow, white, black and purple.
-        ```
-
-???+ note "Note"
-    Please note that you must have the [`Rainglow Fabric mod`](https://modrinth.com/mod/rainglow) installed on your client in order for this to work.
 
 #### squid
 * ##### ridable
@@ -2089,6 +2060,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
+* ##### spawn-below-sea-level
+    - **default**: false
+    - **description**: Set to true for this mob to spawn below the sea level
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
@@ -2650,6 +2624,27 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
 * ##### attributes
+    * ###### follow_range
+        - **default**: 16.0
+        - **description**: Follow range attribute
+    * ###### knockback_resistance
+        - **default**: 0.0
+        - **description**: Knockback resistance attribute
+    * ###### movement_speed
+        - **default**: 0.6
+        - **description**: Movement speed attribute
+    * ###### flying_speed
+        - **default**: 0.6
+        - **description**: Flying speed attribute
+    * ###### armor
+        - **default**: 0.0
+        - **description**: Armor attribute
+    * ###### armor_toughness
+        - **default**: 0.0
+        - **description**: Armor toughness attribute
+    * ###### attack_knockback
+        - **default**: 0.0
+        - **description**: Attack knockback attribute
     * ###### max_health
         - **default**: 6.0
         - **description**: Max health attribute
@@ -3143,6 +3138,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
 #### camel
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
