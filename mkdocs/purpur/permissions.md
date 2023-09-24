@@ -138,7 +138,7 @@ Hex colors only register once a book has been signed
 ## purpur.anvil.color
 Requires enabling [`anvil.allow-colors`](configuration#allow-colors_1) in purpur.yml
 
-- Allows players to use legacy color codes in anvil. [`There is more information about colour codes on the Minecraft website.`](https://minecraft.fandom.com/wiki/Formatting_codes)
+- Allows players to use legacy color codes in anvil. [`There is more information about colour codes on the Minecraft website.`](https://minecraft.wiki/wiki/Formatting_codes)
 
 ## purpur.anvil.minimessage
 Requires enabling [`anvil.allow-minimessage`](configuration#use-mini-message) in purpur.yml
