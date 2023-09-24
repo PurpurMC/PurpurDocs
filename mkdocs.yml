@@ -96,7 +96,7 @@ extra:
     source: https://github.com/PurpurMC/Purpur
     version: 1.20.2
     build:
-      number: 2063
+      number: 2064
       commit: cb4586d9
   purpur_extras:
     downloads: https://modrinth.com/plugin/purpurextras/versions
