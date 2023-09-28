@@ -2901,7 +2901,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **description**: The amount of ticks to wait before being able to breed again
 * ##### join-caravans
     - **default**: true
-    - **description**: Set to false to disable the [llama caravan feature](https://minecraft.gamepedia.com/Llama#Leading)
+    - **description**: Set to false to disable the [llama caravan feature](https://minecraft.wiki/w/Llama#Caravans)
 * ##### attributes
     * ###### max_health
         * min
