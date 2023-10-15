@@ -3208,6 +3208,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### mob-last-hurt-by-player-time
 - **default**: 100
 - **description**: Allows you to change the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
+#### disable-oxidation-proximity-penalty
+- **default**: false
+- **description**: Set to true to remove the slowdown of oxidation caused by nearby unoxidized copper blocks
 #### halloween
 * ##### force
     - **default**: false
