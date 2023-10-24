@@ -12,13 +12,13 @@ Due to the way our tooling works, we cannot push fixed JARs for versions older t
 1.18.1 Builds [`#1464`](https://api.purpurmc.org/v2/purpur/1.18.1/1464/download) and newer are patched. [Download the latest builds here]({{ project.downloads }}).
 
 ### 1.18 to 1.17
-As stated above, Purpur does not provide a patched JAR. Instead, we provide an XML file that disables what causes the exploit. To install, <a download href="../xml/purpur_log4j2_117.xml" >download this XML file</a>, place it in your server’s root directory (where the JAR files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
+As stated above, Purpur does not provide a patched JAR. Instead, we provide an XML file that disables what causes the exploit. To install, <a download href="../../xml/purpur_log4j2_117.xml" >download this XML file</a>, place it in your server’s root directory (where the JAR files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
 
 ???+ warning "Warning"
     This method has not been fully tested on 1.18. Report any issues found on the documentation's [issue tracker](https://github.com/PurpurMC/PurpurDocs/issues).
 
 ### 1.16.5 and older
-The process is the same as the above, but with a different XML file. <a download href="../xml/purpur_log4j2_1141-1165.xml" >Download this XML file</a> to your server’s root directory, and add `-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml` after `java` in your launch arguments.
+The process is the same as the above, but with a different XML file. <a download href="../../xml/purpur_log4j2_1141-1165.xml" >Download this XML file</a> to your server’s root directory, and add `-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml` after `java` in your launch arguments.
 
 Beware of other plugins that claim to fix the exploit by redirecting the log to the system output stream, as Paper automatically redirects those calls back to Log4j. Filtering out the problematic string will not patch the exploit, as all filters can be bypassed in various ways.
 
