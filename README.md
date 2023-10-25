@@ -127,3 +127,9 @@ permission:
 22b876
 ```
 </details>
+
+## All Thanks To Our Contributors
+
+<a href="https://github.com/PurpurMC/PurpurDocs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=PurpurMC/PurpurDocs" />
+</a>
