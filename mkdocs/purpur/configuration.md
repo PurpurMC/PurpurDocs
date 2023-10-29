@@ -202,6 +202,15 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **default**: false
 - **description**: Addresses [`MC-3304`](https://bugs.mojang.com/browse/MC-3304) by preventing looting from being applied to deaths caused by a projectile, unless if a plugin changed the looting modifier.
 
+### blast-resistance-overrides
+- **default**: {}
+- **description:** Modify to change the blast resistance of blocks. Example:
+``` yaml
+  blast-resistance-overrides:
+    minecraft:oak_leaves: 55
+    minecraft:obsidian: 1.5
+```
+
 ### clamp-attributes
 - **default**: true
 - **description**: Controls if attributes should have their values clamped.
