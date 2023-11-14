@@ -1399,6 +1399,9 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
 #### skeleton_horse
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
 * ##### can-swim
     - **default**: false
     - **description**: Can skeleton horses swim in water. False makes them sink to the bottom (vanilla default)
