@@ -85,10 +85,10 @@ Message to display in action bar when trying to build above set limit in nether 
 If false, will make it so respawn anchors will never run out of charges.
 
 ### open-iron-doors-with-hand
-Allows opening iron doors with a hand, just like wooden doors.
+Allows opening iron doors with a hand, just like wooden doors. Can be controlled by `purpurextras.openirondoors` permission (defaults to true).
 
 ### open-iron-trapdoors-with-hand
-Allows opening iron trapdoors with a hand, just like wooden trapdoors.
+Allows opening iron trapdoors with a hand, just like wooden trapdoors. Can be controlled by `purpurextras.openirontrapdoors` permission (defaults to true).
 
 ### spawner-placement-requires-specific-permission
 Players will need `purpurextras.spawnerplace.<mobtype>` permission to place spawners of that mob.
