@@ -150,6 +150,20 @@ If enabled, only name tagged mobs can be mounted/steered using Purpur's rideable
 
 If enabled, multiplier field will be used to modify fuel burn time in furnaces.
 
+## mobs
+
+### snow_golem
+
+#### drop-pumpkin-when-sheared
+
+If set to false prevents snow golems from dropping carved pumpkin when shearing them when they have it on their head.
+
+### sheep
+
+#### jeb-shear-random-color
+
+Shearing a sheep named jeb_ will drop wool blocks with a random colour
+
 ## totem
 
 ### work-on-void-death
