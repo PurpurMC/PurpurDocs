@@ -1367,9 +1367,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### leave-trail-when-ridden
     - **default**: false
     - **description**: Leaves a trail where a snowman walks when being ridden
-* ##### drops-pumpkin-when-sheared
-    - **default**: true
-    - **description**: Control if shearing a snowman makes the pumpkin drop to the ground
 * ##### pumpkin-can-be-added-back
     - **default**: false
     - **description**: Control if pumpkins can be placed back onto snowmen
@@ -2434,9 +2431,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
-* ##### jeb-shear-random-color
-    - **default**: false
-    - **description**: Shearing a sheep named jeb_ will drop a wool block with a random colour
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
