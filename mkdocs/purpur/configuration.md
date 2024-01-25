@@ -1940,6 +1940,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### check-interval
         - **default**: 100
         - **description**: The interval in ticks to check if a villager is lobotomized 
+    * ###### wait-until-trade-locked
+        - **default**: false
+        - **description**: Wait until a villager has been traded with before lobotomizing
 * ##### minimum-demand
     - **default**: 0
     - **description**: Addresses MC-163962 where villager demand decreases indefinitely. Paper adds a patch to fix this by preventing demand from going below zero. This option allows the minimum demand to be configurable.
