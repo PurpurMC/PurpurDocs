@@ -600,13 +600,13 @@ For a more clear explanation of the world settings section of the config, feel f
         - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has lava placed a block above it fills with lava (depends on random tick)
 #### turtle_egg
 * ##### break-from-exp-orbs
-    - **default**: true
+    - **default**: false
     - **description**: Allow exp orbs to damage/break turtle eggs
 * ##### break-from-items
-    - **default**: true
+    - **default**: false
     - **description**: Allow dropped items to damage/break turtle eggs
 * ##### break-from-minecarts
-    - **default**: true
+    - **default**: false
     - **description**: Allow minecarts to damage/break turtle eggs
 * ##### bypass-mob-griefing
     - **default**: false
