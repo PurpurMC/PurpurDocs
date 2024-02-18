@@ -239,6 +239,10 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **default**: false
 - **description**: Set to true to always show the item used to kill the player in player death messages.
 
+### bee-count-payload
+- **default**: false
+- **description**: Set to true to allow clients to request the bee count of beehives using custom payload packets. (Primarily used by the Purpur client mod)
+
 ### messages
 
 #### afk-broadcast-away
