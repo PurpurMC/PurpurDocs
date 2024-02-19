@@ -200,7 +200,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 
 ### fix-projectile-looting-transfer
 - **default**: false
-- **description**: Addresses [`MC-3304`](https://bugs.mojang.com/browse/MC-3304) by preventing looting from being applied to deaths caused by a projectile, unless if a plugin changed the looting modifier.
+- **description**: Addresses MC-3304 by preventing looting from being applied to deaths caused by a projectile, unless if a plugin changed the looting modifier.
 
 ### blast-resistance-overrides
 - **default**: {}
