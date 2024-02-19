@@ -239,6 +239,11 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **default**: false
 - **description**: Set to true to always show the item used to kill the player in player death messages.
 
+
+### register-minecraft-debug-commands
+- **default**: false
+- **description**: Set to true to register unused/hidden minecraft commands. The following commands become available (along with their `minecraft.command.<command_name>` permission counterpart): `debugconfig`, `serverpack`, `spawn_armor_trims`, `warden_spawn_tracker`, `debugmobspawning`, `debugpath`, `raid`, `resetchunks`, `test`. This list may or may not be incomplete depending on if they get removed or new ones get added in newer minecraft versions.
+
 ### bee-count-payload
 - **default**: false
 - **description**: Set to true to allow clients to request the bee count of beehives using custom payload packets. (Primarily used by the [PurpurClient](https://modrinth.com/mod/PurpurClient) mod)
