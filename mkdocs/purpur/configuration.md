@@ -705,14 +705,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### allow-snow-formation
     - **default**: true
     - **description**: Set to false to disallow snow formation on blue ice
-#### sand
-* ##### fix-duping
-    - **default**: true
-    - **description**: Set to false to re-enable the ability to sand dupe. You might also need to disable [`safe-teleporting`](#safe-teleporting)
-#### end_portal
-* ##### safe-teleporting
-    - **default**: true
-    - **description**: Toggles protection against unsafe code in the handling of end portal teleportation. Disabling this may be necessary for some exploits
 #### respawn_anchor
 * ##### explode
     - **default**: true
