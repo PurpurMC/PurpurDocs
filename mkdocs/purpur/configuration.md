@@ -1966,6 +1966,13 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### limit
         - **default**: 0
         - **description**: Maximum amount of iron golems villagers can spawn in configured radius
+* ##### search-radius
+    * ###### acquire-poi
+        - **default**: 48
+        - **description**: Radius within which villagers search to acquire POI.
+    * ###### nearest-bed-sensor
+        - **default**: 48
+        - **description**: Radius within which villagers search to detect the nearest bed.
 * ##### attributes
     * ###### max_health
         - **default**: 20.0
