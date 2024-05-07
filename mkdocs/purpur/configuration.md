@@ -2483,6 +2483,10 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### avoid-rabbits
+    - **default**: false
+    - **description**: Set to true if this mob should avoid rabbits, similar to how creepers avoid cats
+
 #### pig
 * ##### ridable
     - **default**: false
@@ -3427,12 +3431,6 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 * ##### burp-delay
     - **default**: 10
     - **description**: Amount of ticks to delay sound; `burp-when-full` option must be enabled
-* ##### portal-wait-time
-    - **default**: 80
-    - **description**: Amount of ticks to wait before letting the player teleport through the portal
-* ##### creative-portal-wait-time
-    - **default**: 1
-    - **description**: Amount of ticks to wait before letting the creative player teleport through the portal
 * ##### curse-of-binding
     * ###### remove-with-weakness
         - **default**: false
@@ -3636,9 +3634,12 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 #### entities-can-use-portals
 - **default**: true
 - **description**: Set to false to stop entities from being able to use portals
-#### persistent-tileentity-display-names-and-lore
+#### persistent-tileentity-display-name
+- **default**: true
+- **description**: Set to false to disable TE's display names being persistant after breaking (ex. named custom player heads stop retaining their name)
+#### persistent-tileentity-lore
 - **default**: false
-- **description**: Set to true to make TE's display names and lores persist after breaking (ex. named custom player heads retain their name)
+- **description**: Set to true to make TE's lores persist after breaking (ex. custom player heads with lore will retain their lore)
 #### persistent-droppable-entity-display-names
 - **default**: true
 - **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)

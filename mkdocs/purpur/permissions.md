@@ -130,10 +130,13 @@ Requires enabling [`sign.allow-colors`](configuration#sign) in purpur.yml
 
 - Allows players to use the magic/obfuscated style code on signs
 
+## purpur.book.color.edit
+- Allows players to use the legacy (`&a`) color codes in books which update when the book is closed
+
 ## purpur.book.color.sign
 Hex colors only register once a book has been signed
 
-- Allows players to use the legacy and hex color codes in books which update after the book is signed
+- Allows players to use the legacy (`&a`) and hex (`&#AAAAAA`) color codes in books which update after the book is signed
 
 ## purpur.anvil.color
 Requires enabling [`anvil.allow-colors`](configuration#allow-colors_1) in purpur.yml

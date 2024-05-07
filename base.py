@@ -11,7 +11,7 @@ LOG_DIR = './logs/'
 PROJECT = {
     'owner': 'PurpurMC',
     'repo': 'Purpur',
-    'branch': 'ver/1.20.2'
+    'branch': 'ver/1.20.6'
 }
 
 
