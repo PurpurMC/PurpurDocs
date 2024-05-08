@@ -3515,6 +3515,14 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
             ```
         - **description**: List of speed overrides per block type
 #### item
+* ##### bow
+    * ###### use-bundle-as-quiver
+        - **default**: false
+        - **description**: Allows you to use arrows that are stored in bundles, similar to a quiver
+* ##### crossbow
+    * ###### use-bundle-as-quiver
+        - **default**: false
+        - **description**: Allows you to use arrows that are stored in bundles, similar to a quiver
 * ##### end-crystal
     * ###### place-anywhere
         - **default**: false
