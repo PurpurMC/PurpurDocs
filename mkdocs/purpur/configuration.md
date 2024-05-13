@@ -3371,7 +3371,7 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
     - **default**: 0.0
     - **description**: Set the default step height of armorstands. Useful for plugins that utilize armorstands as vehicles to be able to drive over blocks without jumping, etc
 * ##### set-name-visible-when-placing-with-custom-name
-    - **default**: true
+    - **default**: false
     - **description**: Makes the name visible when placing with a custom name
 * ##### fix-nametags
     - **default**: false
