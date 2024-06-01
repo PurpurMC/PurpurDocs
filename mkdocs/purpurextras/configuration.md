@@ -177,3 +177,13 @@ Regular system chat message
 
 ### ACTION_BAR
 Action bar message
+
+## twerk-to-reduce-burn-time
+
+### chance
+
+The chance for a twerk to succeed to reducing the burn time. This is a float number between 0 and 1.
+
+### amount
+
+The percentage to reduce the burn time by.
