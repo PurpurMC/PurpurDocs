@@ -170,14 +170,6 @@ Shearing a sheep named jeb_ will drop wool blocks with a random colour
 
 If enabled, totem of undying will save players from death in the void and will teleport them to the last place their feet touched the ground. If for any reason that position is not found, they will be teleported to world spawn.
 
-## Message types
-
-### CHAT
-Regular system chat message
-
-### ACTION_BAR
-Action bar message
-
 ## twerk-to-reduce-burn-time
 
 ### chance
@@ -187,3 +179,11 @@ The chance for a twerk to succeed to reducing the burn time. This is a float num
 ### amount
 
 The percentage to reduce the burn time by.
+
+## Message types
+
+### CHAT
+Regular system chat message
+
+### ACTION_BAR
+Action bar message
