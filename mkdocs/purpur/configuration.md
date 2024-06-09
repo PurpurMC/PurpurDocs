@@ -441,11 +441,11 @@ Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permissi
 #### magma-block
 * ##### reverse-bubble-column-flow
     - **default**: false
-    - **description**: Set to true to make upward bubble columns generate instead of downward bubble columns when magma blocks are placed.
+    - **description**: Set to true to make upward bubble columns generate instead of downward bubble columns when magma blocks are placed/generated under water-source blocks.
 #### soul-sand
 * ##### reverse-bubble-column-flow
     - **default**: false
-    - **description**: Set to true to make downward bubble columns generate instead of upward bubble columns when soul sand is placed.
+    - **description**: Set to true to make downward bubble columns generate instead of upward bubble columns when soul sand is placed/generated under water-source blocks.
 
 
 
