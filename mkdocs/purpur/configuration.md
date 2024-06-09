@@ -438,6 +438,17 @@ Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permissi
 * ##### range
     - **default**: 128
     - **description**: Change the range in which the lightning rod redirects lightning
+#### magma-block
+* ##### reverse-bubble-column-flow
+    - **default**: false
+    - **description**: Set to true to make upward bubble columns generate instead of downward bubble columns when magma blocks are placed.
+#### soul-sand
+* ##### reverse-bubble-column-flow
+    - **default**: false
+    - **description**: Set to true to make downward bubble columns generate instead of upward bubble columns when soul sand is placed.
+
+
+
 ### broadcasts
 
 #### advancement
