@@ -94,9 +94,9 @@ extra:
     javadoc: https://purpurmc.org/javadoc
     downloads: https://purpurmc.org/downloads
     source: https://github.com/PurpurMC/Purpur
-    version: 1.20.6
+    version: 1.21
     build:
-      number: 2202
+      number: 2234
       commit: be47af0
   purpur_extras:
     downloads: https://modrinth.com/plugin/purpurextras/versions

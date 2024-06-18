@@ -510,12 +510,6 @@ spider_eye:                # The food to edit
 
 ### enchantment
 
-* ##### allow-infinity-and-mending-together
-    - **default**: false
-    - **description**: Allows the mending and infinity enchantment to be on the same weapon/tool
-* ##### allow-infinity-on-crossbow
-    - **default**: false
-    - **description**: Allows the infinity enchantment on crossbows
 * ##### allow-looting-on-shears
     - **default**: false
     - **description**: Allows the looting enchantment on shears
@@ -3648,9 +3642,6 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 #### raid-cooldown-seconds
 - **default**: 0
 - **description**: How long you should wait before another raid can be initiated
-#### entities-can-use-portals
-- **default**: true
-- **description**: Set to false to stop entities from being able to use portals
 #### persistent-tileentity-display-name
 - **default**: true
 - **description**: Set to false to disable TE's display names being persistant after breaking (ex. named custom player heads stop retaining their name)
@@ -3661,15 +3652,6 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 - **default**: true
 - **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
 #### infinity-bow
-* ##### normal-arrows
-    - **default**: true
-    - **description**: Set to true to make the Infinity enchantment work on this arrow type
-* ##### spectral-arrows
-    - **default**: false
-    - **description**: Set to true to make the Infinity enchantment work on this arrow type
-* ##### tipped-arrows
-    - **default**: false
-    - **description**: Set to true to make the Infinity enchantment work on this arrow type
 * ##### works-without-arrows
     - **default**: false
     - **description**: Set to true for the infinity bow to work without arrows
