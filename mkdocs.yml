@@ -96,8 +96,8 @@ extra:
     source: https://github.com/PurpurMC/Purpur
     version: 1.21
     build:
-      number: 2234
-      commit: be47af0
+      number: 2240
+      commit: c0f5e78
   purpur_extras:
     downloads: https://modrinth.com/plugin/purpurextras/versions
     source: https://github.com/PurpurMC/PurpurExtras

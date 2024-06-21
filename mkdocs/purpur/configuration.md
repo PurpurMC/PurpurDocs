@@ -1321,6 +1321,12 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+    * ###### movement_speed
+        - **default**: 0.25
+        - **description**: Movement speed attribute
+    * ###### attack_damage
+        - **default**: 1.0
+        - **description**: Attack damage attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
