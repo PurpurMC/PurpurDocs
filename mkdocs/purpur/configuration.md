@@ -1013,6 +1013,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 200.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 #### cave_spider
 * ##### ridable
     - **default**: false
@@ -1030,6 +1033,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 12.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1050,6 +1056,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1073,6 +1082,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1099,6 +1111,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 30.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1123,6 +1138,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 24.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1205,6 +1223,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 300.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1225,6 +1246,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1266,6 +1290,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
@@ -1298,6 +1325,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1321,6 +1351,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
     * ###### movement_speed
         - **default**: 0.25
         - **description**: Movement speed attribute
@@ -1360,6 +1393,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
     * ###### spawn_reinforcements
         - **default**: 0.0
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
@@ -1410,6 +1446,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 4.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1519,6 +1558,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
     * ###### attack_damage
         - **default**: "6 + size"
         - **description**: The base value to set for the attack damage of the phantom
@@ -1548,6 +1590,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 4.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1586,6 +1631,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### head-visibility-percent
     - **default**: 0.5
     - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
@@ -1657,6 +1705,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1701,6 +1752,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 40.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1724,6 +1778,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 24.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1757,6 +1814,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
@@ -1783,6 +1843,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 24.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1812,6 +1875,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1850,6 +1916,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 100.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1873,6 +1942,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 40.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1893,6 +1965,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1920,6 +1995,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -1994,6 +2072,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2061,6 +2142,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2081,6 +2165,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 40.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2107,6 +2194,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2146,6 +2236,9 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### max_health
         - **default**: 30.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute. Cannot be higher than 3.0
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2208,6 +2301,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 16.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### head-visibility-percent
     - **default**: 0.5
     - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
@@ -2231,6 +2327,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 50.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2251,6 +2350,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### head-visibility-percent
     - **default**: 0.5
     - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
@@ -2285,6 +2387,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2308,6 +2413,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2331,6 +2439,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2357,6 +2468,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2380,6 +2494,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2410,6 +2527,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
@@ -2433,6 +2553,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 16.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2459,6 +2582,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 8.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2497,6 +2623,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 100.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2527,6 +2656,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2547,6 +2679,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 26.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2583,6 +2718,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
@@ -2622,6 +2760,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2642,6 +2783,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 14.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2686,6 +2830,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 6.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2721,6 +2868,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2744,6 +2894,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 20.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2780,6 +2933,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2797,6 +2953,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2814,6 +2973,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 80.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2840,6 +3002,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 10.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2857,6 +3022,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 30.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2886,6 +3054,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 32.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2918,6 +3089,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 100.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3052,6 +3226,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 6.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3069,6 +3246,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3086,6 +3266,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3126,6 +3309,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 3.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3149,6 +3335,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 30.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3172,6 +3361,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### max_health
         - **default**: 14.0
         - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
