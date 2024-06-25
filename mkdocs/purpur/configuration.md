@@ -3879,6 +3879,12 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 #### impose-teleport-restrictions-on-gateways
 - **default**: false
 - **description**: Set to true to impose teleport restrictions on gateways. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+#### impose-teleport-restrictions-on-nether-portals
+- **default**: false
+- **description**: Set to true to impose teleport restrictions on nether portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+#### impose-teleport-restrictions-on-end-portals
+- **default**: false
+- **description**: Set to true to impose teleport restrictions on end portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
 #### always-tame-in-creative
 - **default**: false
 - **description**: Set to true to have 100% chance of taming a mob
