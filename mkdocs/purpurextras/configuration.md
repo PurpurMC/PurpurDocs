@@ -180,6 +180,22 @@ The chance for a twerk to succeed to reducing the burn time. This is a float num
 
 The percentage to reduce the burn time by.
 
+## leash-snap
+
+If enabled, a sound will play when a leash snaps due to the distance being too great.
+
+### sound
+
+The sound that gets played when the leash snaps. A list of sounds can be found [here](https://minecraft.wiki/w/Sounds.json).
+
+### Volume
+
+The volume at which the sound will be played at. This is an integer number above 0.
+
+### Pitch
+
+The pitch at which the sound is played at. This is a float number between -1 and 1
+
 ## Message types
 
 ### CHAT
