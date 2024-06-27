@@ -3504,7 +3504,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **description**: Amount of damage done while drowning
 #### tick-fluids
 - **default**: true
-- **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](https://media.discordapp.net/attachments/595431462510002206/821169659382333440/unknown.png). Attachment: [FreezeFluids-1.0.jar](https://cdn.discordapp.com/attachments/720375089123688488/820951359519326218/FreezeFluids-1.0.jar)
+- **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](images/freezefluids-chat-screenshot.png)
 #### disable-drops-on-cramming-death
 - **default**: false
 - **description**: Stops entities from dropping loot on death, if killed by cramming gamerule
