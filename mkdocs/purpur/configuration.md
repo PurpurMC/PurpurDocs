@@ -565,102 +565,25 @@ For a more clear explanation of the world settings section of the config, feel f
 
 ### blocks
 
-#### enchantment-table
-* ##### lapis-persists
+#### anvil
+* ##### use-mini-message
+    - Requires [`purpur.anvil.minimessage`](permissions#purpuranvilminimessage) permission
     - **default**: false
-    - **description**: Setting this to true makes it so lapis lazuli can stay in the enchanting table slot, so you can leave your lapis lazuli in the table
-#### dragon_egg
-* ##### teleport
-    - **default**: true
-    - **description**: Control whether the dragon egg will teleport when hit
-#### observer
-* ##### disable-clock
+    - **description**:  Allows players to use MiniMessage tags in an anvil.
+* ##### allow-colors
+    - Requires [`purpur.anvil.color`](permissions#purpuranvilcolor) permission
     - **default**: false
-    - **description**: Set to true to disable observer clocks
+    - **description**: Allows players to use color codes in anvils
+* ##### iron-ingots-used-for-repair
+    - **default**: 0
+    - **description**: The amount of iron ingots required to repair an anvil
+* ##### obsidian-used-for-damage
+    - **default**: 0
+    - **description**: The amount of obsidian required to damage an anvil
 #### azalea
 * ##### growth-chance
     - **default**: 0.0
     - **description**: Chance for azalea to grow into trees naturally
-#### flowering_azalea
-* ##### growth-chance
-    - **default**: 0.0
-    - **description**: Chance for flowering azalea to grow into trees naturally
-#### campfire
-* ##### lit-when-placed
-    - **default**: true
-    - **description**: Set to false to stop the campfire from being lit when placed
-#### cactus
-* ##### breaks-from-solid-neighbors
-    - **default**: true
-    - **description**: Whether a cactus will break from a solid block next to it
-* ##### affected-by-bonemeal
-    - **default**: false
-    - **description**: Set to true to make it so cacti can be bonemealed
-#### sugar_cane
-* ##### affected-by-bonemeal
-    - **default**: false
-    - **description**: Set to true to make it so sugarcane can be bonemealed
-#### nether_wart
-* ##### affected-by-bonemeal
-    - **default**: false
-    - **description**: Set to true to make it so netherwart can be bonemealed
-#### cauldron
-* ##### fill-chances
-    * ###### rain
-        - **default**: 0.05
-        - **description**: The speed in which a cauldron fills with rain (depends on random tick)
-    * ###### powder-snow
-        - **default**: 0.1
-        - **description**: The speed in which a cauldron fills with powdered snow (depends on random tick)
-    * ###### dripstone-water
-        - **default**: 0.17578125
-        - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has water placed a block above it fills with water (depends on random tick)
-    * ###### dripstone-lava
-        - **default**: 0.05859375
-        - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has lava placed a block above it fills with lava (depends on random tick)
-#### turtle_egg
-* ##### break-from-exp-orbs
-    - **default**: false
-    - **description**: Allow exp orbs to damage/break turtle eggs
-* ##### break-from-items
-    - **default**: false
-    - **description**: Allow dropped items to damage/break turtle eggs
-* ##### break-from-minecarts
-    - **default**: false
-    - **description**: Allow minecarts to damage/break turtle eggs
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for turtle eggs to bypass the mob griefing gamerule
-* ##### random-tick-crack-chance
-    - **default**: 500
-    - **description**: The chance a turtle egg will crack
-* ##### feather-fall-distance-affects-trampling
-    - **default**: false
-    - **description**: Set to true to stop trampling if entities fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
-#### powered-rail
-* ##### activation-range
-    - **default**: 8
-    - **description**: The amount of powered rails that get activated by a single redstone source
-#### conduit
-* ##### valid-ring-blocks
-    - **default**:
-        ``` yaml
-        - minecraft:prismarine
-        - minecraft:prismarine_bricks
-        - minecraft:sea_lantern
-        - minecraft:dark_prismarine
-        ```
-    - **description**: Blocks that can be used to build a conduit
-* ##### effect-distance
-    - **default**: 16
-    - **description**: The effective radius of the conduit for every seven blocks in the frame
-* ##### mob-damage
-    * ###### distance
-        - **default**: 8
-        - **description**: The distance (in blocks) to damage hostile mobs
-    * ###### damage-amount
-        - **default**: 4
-        - **description**: The amount of damage to apply to hostile mobs every 2 seconds if they are in contact with water/rain
 #### beacon
 * ##### allow-effects-with-tinted-glass
     - **default**: false
@@ -678,97 +601,6 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### level-4
         - **default**: 50
         - **description**: Amount of blocks the effect range reaches for this level
-#### sponge
-* ##### absorbs-lava
-    - **default**: false
-    - **description**: Set to true to allow sponges to absorb lava
-* ##### absorption
-    * ###### area
-        - **default**: 64
-        - **description**: Area of blocks that a sponge absorbs water
-    * ###### radius
-        - **default**: 6
-        - **description**: The radius of blocks that a sponge absorbs water
-#### composter
-* ##### sneak-to-bulk-process
-    - **default**: false
-    - **description**: Set to true to allow bulk processing of food/plant items by sneak right-clicking with the item in hand
-####  coral
-* ##### die-outside-water
-    - **default**: true
-    - **description**: Set to false to keep coral alive when placed on land
-#### sculk_shrieker
-* ##### can-summon-default
-    - **default**: false
-    - **description**: Set to true to set `can_summon` to `true` on placement
-#### slab
-* ##### break-individual-slabs-when-sneaking
-    - **default**: false
-    - **description**: Set to true to allow breaking individual slabs in a double slab block while sneaking
-#### packed_ice
-* ##### allow-mob-spawns
-    - **default**: true
-    - **description**: Set to false to disallow mob spawning on packed ice
-#### blue_ice
-* ##### allow-mob-spawns
-    - **default**: true
-    - **description**: Set to false to disallow mob spawning on blue ice
-* ##### allow-snow-formation
-    - **default**: true
-    - **description**: Set to false to disallow snow formation on blue ice
-#### respawn_anchor
-* ##### explode
-    - **default**: true
-    - **description**: Whether respawn anchors explode. Setting this to false just makes the respawn anchors blip out of existence
-* ##### explosion-power
-    - **default**: 5.0
-    - **description**: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)
-* ##### explosion-fire
-    - **default**: true
-    - **description**: Whether the explosion can cause fire or not
-* ##### explosion-effect
-    - **default**: BLOCK
-    - **description**: What to do with the blocks that are effected by the explosion.
-
-        ???+ note "Available Values"
-            All values will break blocks
-
-            - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
-            - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
-            - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
-            - `NONE` - all items will drop
-
-#### sign
-* ##### allow-colors
-    - Requires [`purpur.sign.color`](permissions#purpursigncolor), [`purpur.sign.style`](permissions#purpursignstyle), and/or [`purpur.sign.magic`](permissions#purpursignmagic) permission
-    - **default**: false
-    - **description**: Allow players to use color codes on signs
-#### magma-block
-* ##### damage-when-sneaking
-    - **default**: false
-    - **description**: Set to true to enable damage when sneaking
-* ##### damage-with-frost-walker
-    - **default**: false
-    - **description**: Set to true to enable damage when walking with boots enchanted with frost-walker
-#### lava
-* ##### infinite-required-sources
-    - **default**: 2
-    - **description**: The amount of sources required to have infinite lava
-* ##### speed
-    * ###### nether
-        - **default**: 10
-        - **description**: Delay in ticks between physics/flowing (lower is faster)
-    * ###### not-nether
-        - **default**: 30
-        - **description**: Delay in ticks between physics/flowing (lower is faster)
-#### water
-* ##### infinite-required-sources
-    - **default**: 2
-    - **description**: The amount of sources required to have infinite water
-#### piston
-* ##### block-push-limit
-    - **default**: 12
-    - **description**: The amount of blocks a piston can push
 #### bed
 * ##### explode
     - **default**: true
@@ -793,51 +625,71 @@ For a more clear explanation of the world settings section of the config, feel f
             - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
             - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
             - `NONE` - all items will drop
-#### farmland
-* ##### gets-moist-from-below
-    - **default**: false
-    - **description**: Allow soil to moisten from water directly below it
-* ##### use-alpha-farmland
-    - **default**: false
-    - **description**: Stops the farmland from getting trampled if a fence or a cobble wall is placed directly underneath it
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for farmland to bypass the mob griefing gamerule
-* ##### only-players-trample
-    - **default**: false
-    - **description**: Set to true if only players may trample farmland.
-* ##### disable-trampling
-    - **default**: false
-    - **description**: Set to true to disable trampling completely.
-* ##### trample-height
-    - **default**: -1.0
-    - **description**: Set the height a player/entity needs to fall before it tramples farmland
 
-???+ note "Note"
-        Trample height is in block height or an exact distance. During testing was found that the values for fallDistance are very inconsistent. The results of these tests can be found here:
-        Value set -> Actual fall distance needed to trample
-        1.0 -> 1.25
-        1.5 -> 1.75
-        2.0 -> 2.25
-        2.5 -> 2.87
-        3.0 -> 3.5
-        3.5 -> 4.25
-        4.0 -> 4.25
-        4.5 -> 5.0
-        5.0 -> 5.87
-        5.5 -> 5.87
-        6.0 -> 6.75
-
-* ##### feather-fall-distance-affects-trampling
+#### blue_ice
+* ##### allow-mob-spawns
+    - **default**: true
+    - **description**: Set to false to disallow mob spawning on blue ice
+* ##### allow-snow-formation
+    - **default**: true
+    - **description**: Set to false to disallow snow formation on blue ice
+#### cactus
+* ##### breaks-from-solid-neighbors
+    - **default**: true
+    - **description**: Whether a cactus will break from a solid block next to it
+* ##### affected-by-bonemeal
     - **default**: false
-    - **description**: Set to true to stop trampling if entities fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
-#### spawner
-* ##### deactivate-by-redstone
+    - **description**: Set to true to make it so cacti can be bonemealed
+#### campfire
+* ##### lit-when-placed
+    - **default**: true
+    - **description**: Set to false to stop the campfire from being lit when placed
+#### cauldron
+* ##### fill-chances
+    * ###### rain
+        - **default**: 0.05
+        - **description**: The speed in which a cauldron fills with rain (depends on random tick)
+    * ###### powder-snow
+        - **default**: 0.1
+        - **description**: The speed in which a cauldron fills with powdered snow (depends on random tick)
+    * ###### dripstone-water
+        - **default**: 0.17578125
+        - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has water placed a block above it fills with water (depends on random tick)
+    * ###### dripstone-lava
+        - **default**: 0.05859375
+        - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has lava placed a block above it fills with lava (depends on random tick)
+#### chest
+* ##### open-with-solid-block-on-top
     - **default**: false
-    - **description**: Allow spawners to be deactivated by redstone
-* ##### fix-mc-238526
+    - **description**: Allows for chests to open even with a solid block on top
+#### composter
+* ##### sneak-to-bulk-process
     - **default**: false
-    - **description**: Fix spawners not spawning water animals correctly; MC-238526
+    - **description**: Set to true to allow bulk processing of food/plant items by sneak right-clicking with the item in hand
+#### conduit
+* ##### valid-ring-blocks
+    - **default**:
+        ``` yaml
+        - minecraft:prismarine
+        - minecraft:prismarine_bricks
+        - minecraft:sea_lantern
+        - minecraft:dark_prismarine
+        ```
+    - **description**: Blocks that can be used to build a conduit
+* ##### effect-distance
+    - **default**: 16
+    - **description**: The effective radius of the conduit for every seven blocks in the frame
+* ##### mob-damage
+    * ###### distance
+        - **default**: 8
+        - **description**: The distance (in blocks) to damage hostile mobs
+    * ###### damage-amount
+        - **default**: 4
+        - **description**: The amount of damage to apply to hostile mobs every 2 seconds if they are in contact with water/rain
+#### coral
+* ##### die-outside-water
+    - **default**: true
+    - **description**: Set to false to keep coral alive when placed on land
 #### dispenser
 * ##### apply-cursed-to-armor-slots
     - **default**: true
@@ -845,45 +697,18 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### place-anvils
     - **default**: false
     - **description**: Allows anvils to be placed by dispensers
-#### anvil
-* ##### use-mini-message
-    - Requires [`purpur.anvil.minimessage`](permissions#purpuranvilminimessage) permission
-    - **default**: false
-    - **description**:  Allows players to use MiniMessage tags in an anvil.
-* ##### allow-colors
-    - Requires [`purpur.anvil.color`](permissions#purpuranvilcolor) permission
-    - **default**: false
-    - **description**: Allows players to use color codes in anvils
-* ##### iron-ingots-used-for-repair
-    - **default**: 0
-    - **description**: The amount of iron ingots required to repair an anvil
-* ##### obsidian-used-for-damage
-    - **default**: 0
-    - **description**: The amount of obsidian required to damage an anvil
-#### stonecutter
-* ##### damage
-    - **default**: 0.0
-    - **description**: If a value is set, Mobs will also avoid walking over the stonecutter.
-#### furnace
-* ##### use-lava-from-underneath
-    - **default**: false
-    - **description**: Allows the furnace to be infinitely powered by lava placed underneath it
-#### chest
-* ##### open-with-solid-block-on-top
-    - **default**: false
-    - **description**: Allows for chests to open even with a solid block on top
-#### shulker_box
-* ##### allow-oversized-stacks
-    - **default**: false
-    - **description**: Controls whether overstacked items are allowed in shulker boxes (default fixes chunk ban issue PaperMC/Paper#4748)
 #### door
 * ##### requires-redstone
     - **default**: []
     - **description**: Allows you to set the doors that require redstone to be operated (oak, spruce, etc)
-#### powder_snow
-* ##### bypass-mob-griefing
+#### dragon_egg
+* ##### teleport
+    - **default**: true
+    - **description**: Control whether the dragon egg will teleport when hit
+#### enchantment-table
+* ##### lapis-persists
     - **default**: false
-    - **description**: Set to true for powdered snow to bypass the mob griefing gamerule
+    - **description**: Setting this to true makes it so lapis lazuli can stay in the enchanting table slot, so you can leave your lapis lazuli in the table
 #### end-crystal
 * ##### cramming-amount
     - **default**: 0
@@ -931,6 +756,184 @@ For a more clear explanation of the world settings section of the config, feel f
                 - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
                 - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
                 - `NONE` - all items will drop
+
+#### farmland
+* ##### gets-moist-from-below
+    - **default**: false
+    - **description**: Allow soil to moisten from water directly below it
+* ##### use-alpha-farmland
+    - **default**: false
+    - **description**: Stops the farmland from getting trampled if a fence or a cobble wall is placed directly underneath it
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for farmland to bypass the mob griefing gamerule
+* ##### only-players-trample
+    - **default**: false
+    - **description**: Set to true if only players may trample farmland.
+* ##### disable-trampling
+    - **default**: false
+    - **description**: Set to true to disable trampling completely.
+* ##### trample-height
+    - **default**: -1.0
+    - **description**: Set the height a player/entity needs to fall before it tramples farmland
+
+???+ note "Note"
+        Trample height is in block height or an exact distance. During testing was found that the values for fallDistance are very inconsistent. The results of these tests can be found here:
+        Value set -> Actual fall distance needed to trample
+        1.0 -> 1.25
+        1.5 -> 1.75
+        2.0 -> 2.25
+        2.5 -> 2.87
+        3.0 -> 3.5
+        3.5 -> 4.25
+        4.0 -> 4.25
+        4.5 -> 5.0
+        5.0 -> 5.87
+        5.5 -> 5.87
+        6.0 -> 6.75
+
+* ##### feather-fall-distance-affects-trampling
+    - **default**: false
+    - **description**: Set to true to stop trampling if entities fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
+
+#### flowering_azalea
+* ##### growth-chance
+    - **default**: 0.0
+    - **description**: Chance for flowering azalea to grow into trees naturally
+#### furnace
+* ##### use-lava-from-underneath
+    - **default**: false
+    - **description**: Allows the furnace to be infinitely powered by lava placed underneath it
+#### lava
+* ##### infinite-required-sources
+    - **default**: 2
+    - **description**: The amount of sources required to have infinite lava
+* ##### speed
+    * ###### nether
+        - **default**: 10
+        - **description**: Delay in ticks between physics/flowing (lower is faster)
+    * ###### not-nether
+        - **default**: 30
+        - **description**: Delay in ticks between physics/flowing (lower is faster)
+#### magma-block
+* ##### damage-when-sneaking
+    - **default**: false
+    - **description**: Set to true to enable damage when sneaking
+* ##### damage-with-frost-walker
+    - **default**: false
+    - **description**: Set to true to enable damage when walking with boots enchanted with frost-walker
+#### nether_wart
+* ##### affected-by-bonemeal
+    - **default**: false
+    - **description**: Set to true to make it so netherwart can be bonemealed
+#### observer
+* ##### disable-clock
+    - **default**: false
+    - **description**: Set to true to disable observer clocks
+#### packed_ice
+* ##### allow-mob-spawns
+    - **default**: true
+    - **description**: Set to false to disallow mob spawning on packed ice
+#### piston
+* ##### block-push-limit
+    - **default**: 12
+    - **description**: The amount of blocks a piston can push
+#### powder_snow
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for powdered snow to bypass the mob griefing gamerule
+#### powered-rail
+* ##### activation-range
+    - **default**: 8
+    - **description**: The amount of powered rails that get activated by a single redstone source
+#### respawn_anchor
+* ##### explode
+    - **default**: true
+    - **description**: Whether respawn anchors explode. Setting this to false just makes the respawn anchors blip out of existence
+* ##### explosion-power
+    - **default**: 5.0
+    - **description**: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)
+* ##### explosion-fire
+    - **default**: true
+    - **description**: Whether the explosion can cause fire or not
+* ##### explosion-effect
+    - **default**: BLOCK
+    - **description**: What to do with the blocks that are effected by the explosion.
+
+        ???+ note "Available Values"
+            All values will break blocks
+
+            - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
+            - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
+            - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
+            - `NONE` - all items will drop
+
+#### sculk_shrieker
+* ##### can-summon-default
+    - **default**: false
+    - **description**: Set to true to set `can_summon` to `true` on placement
+#### shulker_box
+* ##### allow-oversized-stacks
+    - **default**: false
+    - **description**: Controls whether overstacked items are allowed in shulker boxes (default fixes chunk ban issue PaperMC/Paper#4748)
+#### sign
+* ##### allow-colors
+    - Requires [`purpur.sign.color`](permissions#purpursigncolor), [`purpur.sign.style`](permissions#purpursignstyle), and/or [`purpur.sign.magic`](permissions#purpursignmagic) permission
+    - **default**: false
+    - **description**: Allow players to use color codes on signs
+#### slab
+* ##### break-individual-slabs-when-sneaking
+    - **default**: false
+    - **description**: Set to true to allow breaking individual slabs in a double slab block while sneaking
+#### spawner
+* ##### deactivate-by-redstone
+    - **default**: false
+    - **description**: Allow spawners to be deactivated by redstone
+* ##### fix-mc-238526
+    - **default**: false
+    - **description**: Fix spawners not spawning water animals correctly; MC-238526
+#### sponge
+* ##### absorbs-lava
+    - **default**: false
+    - **description**: Set to true to allow sponges to absorb lava
+* ##### absorption
+    * ###### area
+        - **default**: 64
+        - **description**: Area of blocks that a sponge absorbs water
+    * ###### radius
+        - **default**: 6
+        - **description**: The radius of blocks that a sponge absorbs water
+#### stonecutter
+* ##### damage
+    - **default**: 0.0
+    - **description**: If a value is set, Mobs will also avoid walking over the stonecutter.
+#### sugar_cane
+* ##### affected-by-bonemeal
+    - **default**: false
+    - **description**: Set to true to make it so sugarcane can be bonemealed
+#### turtle_egg
+* ##### break-from-exp-orbs
+    - **default**: false
+    - **description**: Allow exp orbs to damage/break turtle eggs
+* ##### break-from-items
+    - **default**: false
+    - **description**: Allow dropped items to damage/break turtle eggs
+* ##### break-from-minecarts
+    - **default**: false
+    - **description**: Allow minecarts to damage/break turtle eggs
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for turtle eggs to bypass the mob griefing gamerule
+* ##### random-tick-crack-chance
+    - **default**: 500
+    - **description**: The chance a turtle egg will crack
+* ##### feather-fall-distance-affects-trampling
+    - **default**: false
+    - **description**: Set to true to stop trampling if entities fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
+#### water
+* ##### infinite-required-sources
+    - **default**: 2
+    - **description**: The amount of sources required to have infinite water
 
 
 ### mobs
