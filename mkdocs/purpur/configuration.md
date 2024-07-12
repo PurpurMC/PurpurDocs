@@ -951,1824 +951,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### respect-nbt
     - **default**: []
     - **description**: It ensures that Allays respect the NBT from the items they pick up. If you add stored enchantments to the list to respect, then if you give an Allay a sword with an enchantment, it will only pick up swords with the same enchantments.
-#### frog
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### ridable-jump-height
-    - **default**: 0.65
-    - **description**: The height this mob can jump when riding it (in blocks)
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-#### tadpole
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-#### warden
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-#### ender_dragon
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### always-drop-full-exp
-    - **default**: false
-    - **description**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for the ender dragon to bypass the mob griefing gamerule
-* ##### can-ride-vehicles
-    - **default**: false
-    - **description**: Set to true for the ender dragon to gain the ability to ride vehicles
-* ##### attributes
-    * ###### max_health
-        - **default**: 200.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-#### cave_spider
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 12.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### endermite
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### mooshroom
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### polar_bear
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breedable-item
-    - **default**: ""
-    - **description**: Item to tempt/feed polar bears and make them breed
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 30.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### vindicator
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### johnny
-    * ###### spawn-chance
-        - **default**: 0.0
-        - **description**: Percent chance (0.0 - 1.0) a vindicator named "Johnny" will spawn instead of a vindicator
-* ##### attributes
-    * ###### max_health
-        - **default**: 24.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### zombie_horse
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### spawn-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0 - 1.0) a zombie horse will spawn instead of a skeleton horse (natural spawns during thunderstorms)
-* ##### attributes
-    * ###### max_health
-        * min
-            - **default**: 15.0
-            - **description**: Min health attribute
-        * max
-            - **default**: 15.0
-            - **description**: Max health attribute
-    * ###### jump_strength
-        * min
-            - **default**: 0.4
-            - **description**: Min jump_strength attribute
-        * max
-            - **default**: 1.0
-            - **description**: Max jump_strength attribute
-    * ###### movement_speed
-        * min
-            - **default**: 0.2
-            - **description**: Min movement_speed attribute
-        * max
-            - **default**: 0.2
-            - **description**: Max movement_speed attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### wither
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### can-ride-vehicles
-    - **default**: false
-    - **description**: Set to true for the wither to gain the ability to ride vehicles
-* ##### play-spawn-sound
-    - **default**: true
-    - **description**: Play the wither's spawn sound globally when it is spawned
-* ##### explosion-radius
-    - **default**: 1.0
-    - **description**: The explosion radius of a wither's projectile attack
-* ##### health-regen-amount
-    - **default**: 1.0
-    - **description**: The regen amount of the wither
-* ##### health-regen-delay
-    - **default**: 20
-    - **description**: How long to delay the health regen
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for withers to bypass the mob griefing gamerule
-* ##### attributes
-    * ###### max_health
-        - **default**: 300.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### wither_skeleton
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### zombie_villager
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### cure
-    * ###### enabled
-        - **default**: true
-        - **description**: Set to false to stop zombie villagers from being curable 
-* ##### curing_time
-    * ###### min
-        - **default**: 3600
-        - **description**: The minimum amount of ticks to randomly choose from when curing
-    * ###### max
-        - **default**: 6000
-        - **description**: The maximum amount of ticks to randomly choose from when curing
-* ##### jockey
-    * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
-    * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
-    * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-    * ###### spawn_reinforcements
-        - **default**: 0.1
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### wandering_trader
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### can-be-leashed
-    - **default**: false
-    - **description**: Allow players to use leads on villagers (trader not included)
-* ##### allow-trading
-    - **default**: true
-    - **description**: Set to false to disable trading with wandering traders
-* ##### follow-emerald-blocks
-    - **default**: false
-    - **description**: Villagers will be tempted by emerald blocks and follow players holding them
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### silverfish
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for silverfish to bypass the mob griefing gamerule
-* ##### attributes
-    * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-    * ###### movement_speed
-        - **default**: 0.25
-        - **description**: Movement speed attribute
-    * ###### attack_damage
-        - **default**: 1.0
-        - **description**: Attack damage attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### zombified_piglin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### count-as-player-kill-when-angry
-    - **default**: true
-    - **description**: Set to false to stop zombified piglins from dropping XP if they were angered (but not killed) by a player
-* ##### jockey
-    * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
-    * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
-    * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-    * ###### spawn_reinforcements
-        - **default**: 0.0
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### snow_golem
-???+ info "The formula used to determine the amount of ticks between shots"
-    ``` sh
-    ((sqrt(distanceToTarget) / attack-distance) / snow-ball-modifier) * (max-shoot-interval-ticks - min-shoot-interval-ticks) + min-shoot-interval-ticks
-    ```
-    If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to 0, snow golems won't shoot any snowballs.
-
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### leave-trail-when-ridden
-    - **default**: false
-    - **description**: Leaves a trail where a snowman walks when being ridden
-* ##### pumpkin-can-be-added-back
-    - **default**: false
-    - **description**: Control if pumpkins can be placed back onto snowmen
-* ##### min-shoot-interval-ticks
-    - **default**: 20
-    - **description**: Min amount of interval ticks that get shot
-* ##### max-shoot-interval-ticks
-    - **default**: 20
-    - **description**: Max amount of interval ticks that get shot
-* ##### snow-ball-modifier
-    - **default**: 10.0
-    - **description**: The modifier value of snow-ball projectiles
-* ##### attack-distance
-    - **default**: 1.25
-    - **description**: The distance at which the snow golem will attack
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for snow golems to bypass the mob griefing gamerule
-* ##### takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 4.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### skeleton_horse
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### can-swim
-    - **default**: false
-    - **description**: Can skeleton horses swim in water. False makes them sink to the bottom (vanilla default)
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        * min
-            - **default**: 15.0
-            - **description**: Min health attribute
-        * max
-            - **default**: 15.0
-            - **description**: Max health attribute
-    * ###### jump_strength
-        * min
-            - **default**: 0.4
-            - **description**: Min jump_strength attribute
-        * max
-            - **default**: 1.0
-            - **description**: Max jump_strength attribute
-    * ###### movement_speed
-        * min
-            - **default**: 0.2
-            - **description**: Min movement_speed attribute
-        * max
-            - **default**: 0.2
-            - **description**: Max movement_speed attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### phantom
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attacked-by-crystal-range
-    - **default**: 0.0
-    - **description**: Radius crystals scan for phantoms to attack. Value of 0 disables feature
-* ##### attacked-by-crystal-damage
-    - **default**: 1.0
-    - **description**: Amount of damage per second crystals deal to phantoms. Value of 1.0 is half a heart
-* ##### orbit-crystal-radius
-    - **default**: 0.0
-    - **description**: Radius which phantoms scan for crystals to orbit. Value of 0 disables feature
-* ##### burn-in-light
-    - **default**: 0
-    - **description**: What light level the phantoms will burn at
-* ##### burn-in-daylight
-    - **default**: true
-    - **description**: Whether phantoms burn in daylight or not
-* ##### flames-on-swoop
-    - **default**: false
-    - **description**: Set to true for phantoms to shoot flames on swoop
-* ##### ignore-players-with-torch
-    - **default**: false
-    - **description**: Whether phantoms avoid players with a torch in their hand
-* ##### allow-griefing
-    - **default**: false
-    - **description**: Whether a phantom's flames can burn items
-* ###### size
-    * min
-        - **default**: 0
-        - **description**: Minimum size to randomly choose from when spawning naturally
-    * max
-        - **default**: 0
-        - **description**: Maximum size to randomly choose from when spawning naturally
-* ##### spawn
-    * ###### min-sky-darkness
-        - **default**: 5
-        - **description**: The amount of darkness in the sky (5 is dark enough for thunderstorms, but not regular rain)
-    * ###### only-above-sea-level
-        - **default**: true
-        - **description**: Only spawn on players above sea level
-    * ###### only-with-visible-sky
-        - **default**: true
-        - **description**: Only spawn on players that have visible sky above them
-    * ###### local-difficulty-chance
-        - **default**: 3.0
-        - **description**: Local difficulty must be greater than a random value chosen between 0.0 and this value
-    * ###### per-attempt
-        * min
-            - **default**: 1
-            - **description**: Minimum number of phantoms to spawn per attempt
-        * max
-            - **default**: -1
-            - **description**: Maximum number of phantoms to spawn per attempt (Use -1 to base this off of world difficulty)
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-    * ###### attack_damage
-        - **default**: "6 + size"
-        - **description**: The base value to set for the attack damage of the phantom
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### chicken
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### retaliate
-    - **default**: false
-    - **description**: If a chicken is hit, it will attack back
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 4.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### creeper
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### encircle-target
-    - **default**: false
-    - **description**: Set to true for this mob to circle around the player as it ignites
-* ##### allow-griefing
-    - **default**: true
-    - **description**: Set to false to stop the creeper from griefing.
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for creepers to bypass the mob griefing gamerule
-* ##### naturally-charged-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning
-* ##### explode-when-killed
-    - **default**: false
-    - **description**: Makes the creeper explode when killed
-* ##### health-impacts-explosion
-    - **default**: false
-    - **description**: Makes the creeper's explosion be proportionate to the amount of health it has (lower health, weaker explosion)
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### donkey
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        * min
-            - **default**: 15.0
-            - **description**: Min health attribute
-        * max
-            - **default**: 30.0
-            - **description**: Max health attribute
-    * ###### jump_strength
-        * min
-            - **default**: 0.5
-            - **description**: Min jump strength attribute
-        * max
-            - **default**: 0.5
-            - **description**: Max jump strength attribute
-    * ###### movement_speed
-        * min
-            - **default**: 0.175
-            - **description**: Min movement speed attribute
-        * max
-            - **default**: 0.175
-            - **description**: Max movement speed attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### cow
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### feed-mushrooms-for-mooshroom
-    - **default**: 0
-    - **description**: Number of mushrooms to feed a cow to make it transform into a mooshroom. Value of 0 disables feature
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### naturally-aggressive-to-players
-    * ###### chance
-        - **default**: 0.0
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
-    * ###### damage
-        - **default**: 2.0
-        - **description**: The amount of damage it will do to players
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### enderman
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### allow-griefing
-    - **default**: true
-    - **description**: Set to false to stop the enderman from griefing
-* ##### can-despawn-with-held-block
-    - **default**: false
-    - **description**: Makes the enderman despawn even if it's holding a block
-* ##### ignore-projectiles
-    - **default**: false
-    - **description**: Stops the enderman from being immune to projectiles
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for enderman to bypass the mob griefing gamerule
-* ##### takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
-* ##### aggressive-towards-endermites
-    - **default**: true
-    - **description**: Set to false to stop enderman from being aggro towards *all* types of spawned endermites 
-* ##### aggressive-towards-endermites-only-spawned-by-player-thrown-ender-pearls
-    - **default**: false
-    - **description**: Set to true to make enderman aggro towards endermites *only* if they've been spawned by a player thrown ender pearl. This option does nothing if `aggressive-towards-endermites` is false
-* ##### ignore-players-wearing-dragon-head
-    - **default**: false
-    - **description**: Set to true to make enderman ignore players that wear the dragon head
-* ##### disable-player-stare-aggression
-    - **default**: false
-    - **description**: Set to true to stop an enderman from going aggro by a player looking into the enderman's eyes
-* ##### attributes
-    * ###### max_health
-        - **default**: 40.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### evoker
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for evokers to bypass the mob griefing gamerule
-* ##### attributes
-    * ###### max_health
-        - **default**: 24.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### drowned
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### can-break-doors
-    - **default**: false
-    - **description**: Set to true to allow drowned to break doors
-* ##### jockey
-    * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
-    * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
-    * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-    * ###### spawn_reinforcements
-        - **default**: 0.1
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### pillager
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for pillagers to bypass the mob griefing gamerule
-* ##### attributes
-    * ###### max_health
-        - **default**: 24.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### fox
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### tulips-change-type
-    - **default**: false
-    - **description**: Feeding a white/orange tulip changes type snow/regular
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for foxes to bypass the mob griefing gamerule
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### giant
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### step-height
-    - **default**: 2.0
-    - **description**: How many blocks giants can walk up without having to jump
-* ##### jump-height
-    - **default**: 1.0
-    - **description**: Jump height modifier. Default value of 1.0 makes giants jump about as high as their waist
-* ##### movement-speed
-    - **default**: 0.5
-    - **description**: Movement speed attribute
-* ##### attack-damage
-    - **default**: 50.0
-    - **description**: Attack damage (in half hearts)
-* ##### have-ai
-    - **default**: false
-    - **description**: Control if giant zombies have AI instead of just standing there
-* ##### have-hostile-ai
-    - **default**: false
-    - **description**: Control if giant zombies have hostile AI also
-* ##### attributes
-    * ###### max_health
-        - **default**: 100.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### hoglin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 40.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### glow_squid
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### can-fly
-    - **default**: false
-    - **description**: Makes it so squids can fly, Oh my!
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-
-#### squid
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### immune-to-EAR
-    - **default**: true
-    - **description**: Makes this mob immune to EAR (Entity Activation Range - See spigot.yml)
-* ##### water-offset-check
-    - **default**: 0.0
-    - **description**: Stops squids from floating on top of water
-* ##### can-fly
-    - **default**: false
-    - **description**: Makes it so squids can fly, Oh my!
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### villager
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Ignores the `mobGriefing` gamerule and allows the villagers to drop items, allowing them to breed
-* ##### can-be-leashed
-    - **default**: false
-    - **description**: Allow players to use leads on villagers (trader not included)
-* ##### follow-emerald-blocks
-    - **default**: false
-    - **description**: Villagers will be tempted by emerald blocks and follow players holding them
-* ##### allow-trading
-    - **default**: true
-    - **description**: Set to false to disable trading with villagers
-* ##### display-trade-item
-    - **default**: true
-    - **description**: Set to false to stop the villager from displaying the trade item
-* ##### lobotomize
-    * ###### enabled
-        - **default**: false
-        - **description**: Lobotomizes the villager if it cannot move (Does not disable trading)
-    * ###### check-interval
-        - **default**: 100
-        - **description**: The interval in ticks to check if a villager is lobotomized 
-    * ###### wait-until-trade-locked
-        - **default**: false
-        - **description**: Wait until a villager has been traded with before lobotomizing
-* ##### minimum-demand
-    - **default**: 0
-    - **description**: Addresses MC-163962 where villager demand decreases indefinitely. Paper adds a patch to fix this by preventing demand from going below zero. This option allows the minimum demand to be configurable.
-* ##### can-breed
-    - **default**: true
-    - **description**: Whether villagers can breed or not
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### clerics-farm-warts
-    - **default**: false
-    - **description**: Set to true for clerics to farm nether wart
-* ##### cleric-wart-farmers-throw-warts-at-villagers
-    - **default**: true
-    - **description**: Set to false for clerics to not throw nether wart at other villagers
-* ##### spawn-iron-golem
-    * ###### radius
-        - **default**: 0
-        - **description**: Radius villagers search for existing iron golems before spawning more. Value of 0 disables features
-    * ###### limit
-        - **default**: 0
-        - **description**: Maximum amount of iron golems villagers can spawn in configured radius
-* ##### search-radius
-    * ###### acquire-poi
-        - **default**: 48
-        - **description**: Radius within which villagers search to acquire POI.
-    * ###### nearest-bed-sensor
-        - **default**: 48
-        - **description**: Radius within which villagers search to detect the nearest bed.
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### mule
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        * min
-            - **default**: 15.0
-            - **description**: Min health attribute
-        * max
-            - **default**: 30.0
-            - **description**: Max health attribute
-    * ###### jump_strength
-        * min
-            - **default**: 0.5
-            - **description**: Min jump strength attribute
-        * max
-            - **default**: 0.5
-            - **description**: Max jump strength attribute
-    * ###### movement_speed
-        * min
-            - **default**: 0.175
-            - **description**: Min movement speed attribute
-        * max
-            - **default**: 0.175
-            - **description**: Max movement speed attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### wolf
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### milk-cures-rabid-wolves
-    - **default**: true
-    - **description**: Set to false for rabid wolves to not be cured by milk
-* ##### spawn-rabid-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0 - 1.0) that a wolf will spawn as rabid
-* ##### default-collar-color
-    - **default**: RED
-    - **description**: Set the default collar color when a wolf is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### zoglin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 40.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### ocelot
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### spawn-below-sea-level
-    - **default**: false
-    - **description**: Set to true for this mob to spawn below the sea level
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### shulker
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### change-color-with-dye
-    - **default**: false
-    - **description**: Lets you change the color of the shulker by right-clicking it with a dye
-* ##### spawn-from-bullet:
-    * ###### base-chance
-        - **default**: 1.0
-        - **description**: Base chance
-    * ###### require-open-lid
-        - **default**: true
-        - **description**: Require shulkers to have their lid open to spawn from bullet
-    * ###### nearby-range
-        - **default**: 8.0
-        - **description**: The nearby range to check for shulkers
-    * ###### nearby-equation
-        - **default**: `(nearby - 1) / 5.0`
-        - **description**: The equation to use for calculating a shulker spawning from a bullet (`nearby` is the amount of shulker entities nearby) Make this blank to always spawn if there's a shulker nearby
-    * ###### random-color
-        - **default**: false
-        - **description**: Set the shulker to a random color when spawned from a bullet
-* ##### attributes
-    * ###### max_health
-        - **default**: 30.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute. Cannot be higher than 3.0
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### horse
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        * min
-            - **default**: 15.0
-            - **description**: Min health attribute
-        * max
-            - **default**: 30.0
-            - **description**: Max health attribute
-    * ###### jump_strength
-        * min
-            - **default**: 0.4
-            - **description**: Min jump strength attribute
-        * max
-            - **default**: 1.0
-            - **description**: Max jump strength attribute
-    * ###### movement_speed
-        * min
-            - **default**: 0.1125
-            - **description**: Min movement speed attribute
-        * max
-            - **default**: 0.3375
-            - **description**: Max movement speed attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### piglin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for piglins to bypass the mob griefing gamerule
-* ##### portal-spawn-modifier
-    - **default**: 2000
-    - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
-based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a557fc0eedececd63d44d43ce6431bc23bb/patches/server/0167-Piglin-portal-spawn-modifier.patch)
-* ##### attributes
-    * ###### max_health
-        - **default**: 16.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### piglin_brute
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 50.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### skeleton
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-* ##### feed-wither-roses
-    - **default**: 0
-    - **description**: Right-clicking a skeleton while holding a wither rose will convert the skeleton into a wither skeleton. With the value being how many wither roses you would need to convert the skeleton, and 0 meaning the feature is disabled.
-* ##### bow-accuracy
-    - **default**: 14 - difficulty * 4
-    - **description**: Change the accuracy with which Skeletons shoot. The outcome of the formula is the divergence (spread). The higher the value, the less accurate the shot is.
-      ``` yaml
-      easy:   14 - 1 * 4 = 10
-      normal: 14 - 2 * 4 = 6
-      hard:   14 - 3 * 4 = 2
-      ```
-#### stray
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### goat
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### panda
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### strider
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### give-saddle-back
-    - **default**: false
-    - **description**: Sneak and right-click a strider with a saddle on it's back to remove it with this option enabled
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### rabbit
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### spawn-killer-rabbit-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0-1.0) the killer rabbit naturally spawns
-* ##### spawn-toast-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0-1.0) to naturally spawn a rabbit named Toast
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for rabbits to bypass the mob griefing gamerule
-* ##### attributes
-    * ###### max_health
-        - **default**: 3.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### husk
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### jockey
-    * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
-    * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
-    * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-    * ###### spawn_reinforcements
-        - **default**: 0.1
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### spider
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 16.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### sheep
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for sheep to bypass the mob griefing gamerule
-* ##### attributes
-    * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### ravager
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for ravagers to bypass the mob griefing gamerule
-* ##### griefable-blocks
-    - **default**:
-        ``` yaml
-        - minecraft:oak_leaves
-        - minecraft:spruce_leaves
-        - minecraft:birch_leaves
-        - minecraft:jungle_leaves
-        - minecraft:acacia_leaves
-        - minecraft:dark_oak_leaves
-        - minecraft:beetroots
-        - minecraft:carrots
-        - minecraft:potatoes
-        - minecraft:wheat
-        ```
-    - **description**: Whitelist of blocks that can be broken by the ravager
-* ##### attributes
-    * ###### max_health
-        - **default**: 100.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-* ##### avoid-rabbits
-    - **default**: false
-    - **description**: Set to true if this mob should avoid rabbits, similar to how creepers avoid cats
-
-#### pig
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### give-saddle-back
-    - **default**: false
-    - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### witch
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 26.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### zombie
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### jockey
-    * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
-    * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
-    * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### aggressive-towards-villager-when-lagging
-    - **default**: true
-    - **description**: Set to false to stop zombie aggressiveness towards villagers when lagging
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for zombies to bypass the mob griefing gamerule
-* ##### attributes
-    * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-    * ###### spawn_reinforcements
-        - **default**: 0.1
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-* ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### dolphin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### naturally-aggressive-to-players-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
-* ##### disable-treasure-searching
-    - **default**: false
-    - **description**: Stops the dolphin from treasure hunting
-* ##### spit
-    * ###### cooldown
-        - **default**: 20
-        - **description**: The cooldown of the dolphin spit
-    * ###### speed
-        - **default**: 1.0
-        - **description**: The speed of the dolphin spit
-    * ###### damage
-        - **default**: 2.0
-        - **description**: The damage of the dolphin spit
-* ##### attributes
-    * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
 #### axolotl
 * ##### ridable
     - **default**: false
@@ -2903,6 +1085,35 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### camel
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        * min
+            - **default**: 32.0
+            - **description**: Min health attribute
+        * max
+            - **default**: 32.0
+            - **description**: Max health attribute
+    * ###### jump_strength
+        * min
+            - **default**: 0.42
+            - **description**: Min jump strength attribute
+        * max
+            - **default**: 0.42
+            - **description**: Max jump strength attribute
+    * ###### movement_speed
+        * min
+            - **default**: 0.09
+            - **description**: Min movement speed attribute
+        * max
+            - **default**: 0.09
+            - **description**: Max movement speed attribute
 #### cat
 * ##### ridable
     - **default**: false
@@ -2942,6 +1153,58 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### cave_spider
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 12.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### chicken
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### retaliate
+    - **default**: false
+    - **description**: If a chicken is hit, it will attack back
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 4.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### cod
 * ##### ridable
     - **default**: false
@@ -2959,6 +1222,196 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### cow
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### feed-mushrooms-for-mooshroom
+    - **default**: 0
+    - **description**: Number of mushrooms to feed a cow to make it transform into a mooshroom. Value of 0 disables feature
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### naturally-aggressive-to-players
+    * ###### chance
+        - **default**: 0.0
+        - **description**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
+    * ###### damage
+        - **default**: 2.0
+        - **description**: The amount of damage it will do to players
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### creeper
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### encircle-target
+    - **default**: false
+    - **description**: Set to true for this mob to circle around the player as it ignites
+* ##### allow-griefing
+    - **default**: true
+    - **description**: Set to false to stop the creeper from griefing.
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for creepers to bypass the mob griefing gamerule
+* ##### naturally-charged-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning
+* ##### explode-when-killed
+    - **default**: false
+    - **description**: Makes the creeper explode when killed
+* ##### health-impacts-explosion
+    - **default**: false
+    - **description**: Makes the creeper's explosion be proportionate to the amount of health it has (lower health, weaker explosion)
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### head-visibility-percent
+    - **default**: 0.5
+    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### dolphin
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### naturally-aggressive-to-players-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
+* ##### disable-treasure-searching
+    - **default**: false
+    - **description**: Stops the dolphin from treasure hunting
+* ##### spit
+    * ###### cooldown
+        - **default**: 20
+        - **description**: The cooldown of the dolphin spit
+    * ###### speed
+        - **default**: 1.0
+        - **description**: The speed of the dolphin spit
+    * ###### damage
+        - **default**: 2.0
+        - **description**: The damage of the dolphin spit
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### donkey
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        * min
+            - **default**: 15.0
+            - **description**: Min health attribute
+        * max
+            - **default**: 30.0
+            - **description**: Max health attribute
+    * ###### jump_strength
+        * min
+            - **default**: 0.5
+            - **description**: Min jump strength attribute
+        * max
+            - **default**: 0.5
+            - **description**: Max jump strength attribute
+    * ###### movement_speed
+        * min
+            - **default**: 0.175
+            - **description**: Min movement speed attribute
+        * max
+            - **default**: 0.175
+            - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### drowned
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### can-break-doors
+    - **default**: false
+    - **description**: Set to true to allow drowned to break doors
+* ##### jockey
+    * ###### only-babies
+        - **default**: true
+        - **description**: Only babies can ride chickens
+    * ###### chance
+        - **default**: 0.05
+        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+    * ###### try-existing-chickens
+        - **default**: true
+        - **description**: Scan for existing chickens to spawn on
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### spawn_reinforcements
+        - **default**: 0.1
+        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2982,6 +1435,182 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### ender_dragon
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### ridable-max-y
+    - **default**: 256
+    - **description**: Maximum height this mob can fly to while being ridden
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### always-drop-full-exp
+    - **default**: false
+    - **description**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for the ender dragon to bypass the mob griefing gamerule
+* ##### can-ride-vehicles
+    - **default**: false
+    - **description**: Set to true for the ender dragon to gain the ability to ride vehicles
+* ##### attributes
+    * ###### max_health
+        - **default**: 200.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+#### enderman
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### allow-griefing
+    - **default**: true
+    - **description**: Set to false to stop the enderman from griefing
+* ##### can-despawn-with-held-block
+    - **default**: false
+    - **description**: Makes the enderman despawn even if it's holding a block
+* ##### ignore-projectiles
+    - **default**: false
+    - **description**: Stops the enderman from being immune to projectiles
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for enderman to bypass the mob griefing gamerule
+* ##### takes-damage-from-water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
+* ##### aggressive-towards-endermites
+    - **default**: true
+    - **description**: Set to false to stop enderman from being aggro towards *all* types of spawned endermites 
+* ##### aggressive-towards-endermites-only-spawned-by-player-thrown-ender-pearls
+    - **default**: false
+    - **description**: Set to true to make enderman aggro towards endermites *only* if they've been spawned by a player thrown ender pearl. This option does nothing if `aggressive-towards-endermites` is false
+* ##### ignore-players-wearing-dragon-head
+    - **default**: false
+    - **description**: Set to true to make enderman ignore players that wear the dragon head
+* ##### disable-player-stare-aggression
+    - **default**: false
+    - **description**: Set to true to stop an enderman from going aggro by a player looking into the enderman's eyes
+* ##### attributes
+    * ###### max_health
+        - **default**: 40.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### endermite
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 8.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### evoker
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for evokers to bypass the mob griefing gamerule
+* ##### attributes
+    * ###### max_health
+        - **default**: 24.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### fox
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### tulips-change-type
+    - **default**: false
+    - **description**: Feeding a white/orange tulip changes type snow/regular
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for foxes to bypass the mob griefing gamerule
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### frog
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### ridable-jump-height
+    - **default**: 0.65
+    - **description**: The height this mob can jump when riding it (in blocks)
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
 #### ghast
 * ##### ridable
     - **default**: false
@@ -3011,6 +1640,96 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### giant
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### step-height
+    - **default**: 2.0
+    - **description**: How many blocks giants can walk up without having to jump
+* ##### jump-height
+    - **default**: 1.0
+    - **description**: Jump height modifier. Default value of 1.0 makes giants jump about as high as their waist
+* ##### movement-speed
+    - **default**: 0.5
+    - **description**: Movement speed attribute
+* ##### attack-damage
+    - **default**: 50.0
+    - **description**: Attack damage (in half hearts)
+* ##### have-ai
+    - **default**: false
+    - **description**: Control if giant zombies have AI instead of just standing there
+* ##### have-hostile-ai
+    - **default**: false
+    - **description**: Control if giant zombies have hostile AI also
+* ##### attributes
+    * ###### max_health
+        - **default**: 100.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### glow_squid
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### can-fly
+    - **default**: false
+    - **description**: Makes it so squids can fly, Oh my!
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### goat
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### guardian
 * ##### ridable
     - **default**: false
@@ -3028,6 +1747,103 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### hoglin
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 40.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### horse
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        * min
+            - **default**: 15.0
+            - **description**: Min health attribute
+        * max
+            - **default**: 30.0
+            - **description**: Max health attribute
+    * ###### jump_strength
+        * min
+            - **default**: 0.4
+            - **description**: Min jump strength attribute
+        * max
+            - **default**: 1.0
+            - **description**: Max jump strength attribute
+    * ###### movement_speed
+        * min
+            - **default**: 0.1125
+            - **description**: Min movement speed attribute
+        * max
+            - **default**: 0.3375
+            - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### husk
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### jockey
+    * ###### only-babies
+        - **default**: true
+        - **description**: Only babies can ride chickens
+    * ###### chance
+        - **default**: 0.05
+        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+    * ###### try-existing-chickens
+        - **default**: true
+        - **description**: Scan for existing chickens to spawn on
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### spawn_reinforcements
+        - **default**: 0.1
+        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3142,6 +1958,883 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### magma_cube
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: "size * size"
+        - **description**: The Max health equation used to calculate the max health
+    * ###### attack_damage
+        - **default**: "size"
+        - **description**: The base value to set for the attack damage of the magma cube
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### mooshroom
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### mule
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        * min
+            - **default**: 15.0
+            - **description**: Min health attribute
+        * max
+            - **default**: 30.0
+            - **description**: Max health attribute
+    * ###### jump_strength
+        * min
+            - **default**: 0.5
+            - **description**: Min jump strength attribute
+        * max
+            - **default**: 0.5
+            - **description**: Max jump strength attribute
+    * ###### movement_speed
+        * min
+            - **default**: 0.175
+            - **description**: Min movement speed attribute
+        * max
+            - **default**: 0.175
+            - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### ocelot
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### spawn-below-sea-level
+    - **default**: false
+    - **description**: Set to true for this mob to spawn below the sea level
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### panda
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### parrot
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### ridable-max-y
+    - **default**: 256
+    - **description**: Maximum height this mob can fly to while being ridden
+* ##### can-breed
+    - **default**: false
+    - **description**: Gives parrots the ability to breed using any type of seeds (baby parrots don't exist D:, so "adult" parrots pop out)
+* ##### attributes
+    * ###### max_health
+        - **default**: 6.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### phantom
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attacked-by-crystal-range
+    - **default**: 0.0
+    - **description**: Radius crystals scan for phantoms to attack. Value of 0 disables feature
+* ##### attacked-by-crystal-damage
+    - **default**: 1.0
+    - **description**: Amount of damage per second crystals deal to phantoms. Value of 1.0 is half a heart
+* ##### orbit-crystal-radius
+    - **default**: 0.0
+    - **description**: Radius which phantoms scan for crystals to orbit. Value of 0 disables feature
+* ##### burn-in-light
+    - **default**: 0
+    - **description**: What light level the phantoms will burn at
+* ##### burn-in-daylight
+    - **default**: true
+    - **description**: Whether phantoms burn in daylight or not
+* ##### flames-on-swoop
+    - **default**: false
+    - **description**: Set to true for phantoms to shoot flames on swoop
+* ##### ignore-players-with-torch
+    - **default**: false
+    - **description**: Whether phantoms avoid players with a torch in their hand
+* ##### allow-griefing
+    - **default**: false
+    - **description**: Whether a phantom's flames can burn items
+* ###### size
+    * min
+        - **default**: 0
+        - **description**: Minimum size to randomly choose from when spawning naturally
+    * max
+        - **default**: 0
+        - **description**: Maximum size to randomly choose from when spawning naturally
+* ##### spawn
+    * ###### min-sky-darkness
+        - **default**: 5
+        - **description**: The amount of darkness in the sky (5 is dark enough for thunderstorms, but not regular rain)
+    * ###### only-above-sea-level
+        - **default**: true
+        - **description**: Only spawn on players above sea level
+    * ###### only-with-visible-sky
+        - **default**: true
+        - **description**: Only spawn on players that have visible sky above them
+    * ###### local-difficulty-chance
+        - **default**: 3.0
+        - **description**: Local difficulty must be greater than a random value chosen between 0.0 and this value
+    * ###### per-attempt
+        * min
+            - **default**: 1
+            - **description**: Minimum number of phantoms to spawn per attempt
+        * max
+            - **default**: -1
+            - **description**: Maximum number of phantoms to spawn per attempt (Use -1 to base this off of world difficulty)
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### attack_damage
+        - **default**: "6 + size"
+        - **description**: The base value to set for the attack damage of the phantom
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### pig
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### give-saddle-back
+    - **default**: false
+    - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### piglin
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for piglins to bypass the mob griefing gamerule
+* ##### portal-spawn-modifier
+    - **default**: 2000
+    - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
+based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a557fc0eedececd63d44d43ce6431bc23bb/patches/server/0167-Piglin-portal-spawn-modifier.patch)
+* ##### attributes
+    * ###### max_health
+        - **default**: 16.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### head-visibility-percent
+    - **default**: 0.5
+    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### piglin_brute
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 50.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### pillager
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for pillagers to bypass the mob griefing gamerule
+* ##### attributes
+    * ###### max_health
+        - **default**: 24.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### polar_bear
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breedable-item
+    - **default**: ""
+    - **description**: Item to tempt/feed polar bears and make them breed
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+        - **default**: 30.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### pufferfish
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 3.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### rabbit
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### spawn-killer-rabbit-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0-1.0) the killer rabbit naturally spawns
+* ##### spawn-toast-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0-1.0) to naturally spawn a rabbit named Toast
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for rabbits to bypass the mob griefing gamerule
+* ##### attributes
+    * ###### max_health
+        - **default**: 3.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### ravager
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for ravagers to bypass the mob griefing gamerule
+* ##### griefable-blocks
+    - **default**:
+        ``` yaml
+        - minecraft:oak_leaves
+        - minecraft:spruce_leaves
+        - minecraft:birch_leaves
+        - minecraft:jungle_leaves
+        - minecraft:acacia_leaves
+        - minecraft:dark_oak_leaves
+        - minecraft:beetroots
+        - minecraft:carrots
+        - minecraft:potatoes
+        - minecraft:wheat
+        ```
+    - **description**: Whitelist of blocks that can be broken by the ravager
+* ##### attributes
+    * ###### max_health
+        - **default**: 100.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+* ##### avoid-rabbits
+    - **default**: false
+    - **description**: Set to true if this mob should avoid rabbits, similar to how creepers avoid cats
+#### salmon
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 3.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### sheep
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for sheep to bypass the mob griefing gamerule
+* ##### attributes
+    * ###### max_health
+        - **default**: 8.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### shulker
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### change-color-with-dye
+    - **default**: false
+    - **description**: Lets you change the color of the shulker by right-clicking it with a dye
+* ##### spawn-from-bullet:
+    * ###### base-chance
+        - **default**: 1.0
+        - **description**: Base chance
+    * ###### require-open-lid
+        - **default**: true
+        - **description**: Require shulkers to have their lid open to spawn from bullet
+    * ###### nearby-range
+        - **default**: 8.0
+        - **description**: The nearby range to check for shulkers
+    * ###### nearby-equation
+        - **default**: `(nearby - 1) / 5.0`
+        - **description**: The equation to use for calculating a shulker spawning from a bullet (`nearby` is the amount of shulker entities nearby) Make this blank to always spawn if there's a shulker nearby
+    * ###### random-color
+        - **default**: false
+        - **description**: Set the shulker to a random color when spawned from a bullet
+* ##### attributes
+    * ###### max_health
+        - **default**: 30.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute. Cannot be higher than 3.0
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### silverfish
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for silverfish to bypass the mob griefing gamerule
+* ##### attributes
+    * ###### max_health
+        - **default**: 8.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### movement_speed
+        - **default**: 0.25
+        - **description**: Movement speed attribute
+    * ###### attack_damage
+        - **default**: 1.0
+        - **description**: Attack damage attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### skeleton
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 8.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### head-visibility-percent
+    - **default**: 0.5
+    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+* ##### feed-wither-roses
+    - **default**: 0
+    - **description**: Right-clicking a skeleton while holding a wither rose will convert the skeleton into a wither skeleton. With the value being how many wither roses you would need to convert the skeleton, and 0 meaning the feature is disabled.
+* ##### bow-accuracy
+    - **default**: 14 - difficulty * 4
+    - **description**: Change the accuracy with which Skeletons shoot. The outcome of the formula is the divergence (spread). The higher the value, the less accurate the shot is.
+      ``` yaml
+      easy:   14 - 1 * 4 = 10
+      normal: 14 - 2 * 4 = 6
+      hard:   14 - 3 * 4 = 2
+      ```
+#### skeleton_horse
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### can-swim
+    - **default**: false
+    - **description**: Can skeleton horses swim in water. False makes them sink to the bottom (vanilla default)
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        * min
+            - **default**: 15.0
+            - **description**: Min health attribute
+        * max
+            - **default**: 15.0
+            - **description**: Max health attribute
+    * ###### jump_strength
+        * min
+            - **default**: 0.4
+            - **description**: Min jump_strength attribute
+        * max
+            - **default**: 1.0
+            - **description**: Max jump_strength attribute
+    * ###### movement_speed
+        * min
+            - **default**: 0.2
+            - **description**: Min movement_speed attribute
+        * max
+            - **default**: 0.2
+            - **description**: Max movement_speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### slime
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### attributes
+    * ###### max_health
+        - **default**: "size * size"
+        - **description**: The Max health equation used to calculate the max health
+    * ###### attack_damage
+        - **default**: "size"
+        - **description**: The base value to set for the attack damage of the slime
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### sniffer
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### attributes
+    * ###### max_health
+    - **default**: 14.0
+    - **description**: Max health attribute
+#### snow_golem
+???+ info "The formula used to determine the amount of ticks between shots"
+    ``` sh
+    ((sqrt(distanceToTarget) / attack-distance) / snow-ball-modifier) * (max-shoot-interval-ticks - min-shoot-interval-ticks) + min-shoot-interval-ticks
+    ```
+    If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to 0, snow golems won't shoot any snowballs.
+
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### leave-trail-when-ridden
+    - **default**: false
+    - **description**: Leaves a trail where a snowman walks when being ridden
+* ##### pumpkin-can-be-added-back
+    - **default**: false
+    - **description**: Control if pumpkins can be placed back onto snowmen
+* ##### min-shoot-interval-ticks
+    - **default**: 20
+    - **description**: Min amount of interval ticks that get shot
+* ##### max-shoot-interval-ticks
+    - **default**: 20
+    - **description**: Max amount of interval ticks that get shot
+* ##### snow-ball-modifier
+    - **default**: 10.0
+    - **description**: The modifier value of snow-ball projectiles
+* ##### attack-distance
+    - **default**: 1.25
+    - **description**: The distance at which the snow golem will attack
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for snow golems to bypass the mob griefing gamerule
+* ##### takes-damage-from-water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 4.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### spider
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 16.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### squid
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### immune-to-EAR
+    - **default**: true
+    - **description**: Makes this mob immune to EAR (Entity Activation Range - See spigot.yml)
+* ##### water-offset-check
+    - **default**: 0.0
+    - **description**: Stops squids from floating on top of water
+* ##### can-fly
+    - **default**: false
+    - **description**: Makes it so squids can fly, Oh my!
+* ##### attributes
+    * ###### max_health
+        - **default**: 10.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### stray
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### strider
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### give-saddle-back
+    - **default**: false
+    - **description**: Sneak and right-click a strider with a saddle on it's back to remove it with this option enabled
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### takes-damage-from-water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### tadpole
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
 #### trader_llama
 * ##### ridable
     - **default**: false
@@ -3180,121 +2873,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
         * max
             - **default**: 0.175
             - **description**: Max movement speed attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### magma_cube
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: "size * size"
-        - **description**: The Max health equation used to calculate the max health
-    * ###### attack_damage
-        - **default**: "size"
-        - **description**: The base value to set for the attack damage of the magma cube
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### parrot
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### can-breed
-    - **default**: false
-    - **description**: Gives parrots the ability to breed using any type of seeds (baby parrots don't exist D:, so "adult" parrots pop out)
-* ##### attributes
-    * ###### max_health
-        - **default**: 6.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### pufferfish
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 3.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### salmon
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
-    * ###### max_health
-        - **default**: 3.0
-        - **description**: Max health attribute
-    * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
-* ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
-#### slime
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### attributes
-    * ###### max_health
-        - **default**: "size * size"
-        - **description**: The Max health equation used to calculate the max health
-    * ###### attack_damage
-        - **default**: "size"
-        - **description**: The base value to set for the attack damage of the slime
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3370,36 +2948,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
-#### camel
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
-    * ###### max_health
-        * min
-            - **default**: 32.0
-            - **description**: Min health attribute
-        * max
-            - **default**: 32.0
-            - **description**: Max health attribute
-    * ###### jump_strength
-        * min
-            - **default**: 0.42
-            - **description**: Min jump strength attribute
-        * max
-            - **default**: 0.42
-            - **description**: Max jump strength attribute
-    * ###### movement_speed
-        * min
-            - **default**: 0.09
-            - **description**: Min movement speed attribute
-        * max
-            - **default**: 0.09
-            - **description**: Max movement speed attribute
-#### sniffer
+#### villager
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob mountable
@@ -3409,13 +2958,462 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Ignores the `mobGriefing` gamerule and allows the villagers to drop items, allowing them to breed
+* ##### can-be-leashed
+    - **default**: false
+    - **description**: Allow players to use leads on villagers (trader not included)
+* ##### follow-emerald-blocks
+    - **default**: false
+    - **description**: Villagers will be tempted by emerald blocks and follow players holding them
+* ##### allow-trading
+    - **default**: true
+    - **description**: Set to false to disable trading with villagers
+* ##### display-trade-item
+    - **default**: true
+    - **description**: Set to false to stop the villager from displaying the trade item
+* ##### lobotomize
+    * ###### enabled
+        - **default**: false
+        - **description**: Lobotomizes the villager if it cannot move (Does not disable trading)
+    * ###### check-interval
+        - **default**: 100
+        - **description**: The interval in ticks to check if a villager is lobotomized 
+    * ###### wait-until-trade-locked
+        - **default**: false
+        - **description**: Wait until a villager has been traded with before lobotomizing
+* ##### minimum-demand
+    - **default**: 0
+    - **description**: Addresses MC-163962 where villager demand decreases indefinitely. Paper adds a patch to fix this by preventing demand from going below zero. This option allows the minimum demand to be configurable.
+* ##### can-breed
+    - **default**: true
+    - **description**: Whether villagers can breed or not
+* ##### breeding-delay-ticks
+    - **default**: 6000
+    - **description**: The amount of ticks to wait before being able to breed again
+* ##### clerics-farm-warts
+    - **default**: false
+    - **description**: Set to true for clerics to farm nether wart
+* ##### cleric-wart-farmers-throw-warts-at-villagers
+    - **default**: true
+    - **description**: Set to false for clerics to not throw nether wart at other villagers
+* ##### spawn-iron-golem
+    * ###### radius
+        - **default**: 0
+        - **description**: Radius villagers search for existing iron golems before spawning more. Value of 0 disables features
+    * ###### limit
+        - **default**: 0
+        - **description**: Maximum amount of iron golems villagers can spawn in configured radius
+* ##### search-radius
+    * ###### acquire-poi
+        - **default**: 48
+        - **description**: Radius within which villagers search to acquire POI.
+    * ###### nearest-bed-sensor
+        - **default**: 48
+        - **description**: Radius within which villagers search to detect the nearest bed.
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### vindicator
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### johnny
+    * ###### spawn-chance
+        - **default**: 0.0
+        - **description**: Percent chance (0.0 - 1.0) a vindicator named "Johnny" will spawn instead of a vindicator
+* ##### attributes
+    * ###### max_health
+        - **default**: 24.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### wandering_trader
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### can-be-leashed
+    - **default**: false
+    - **description**: Allow players to use leads on villagers (trader not included)
+* ##### allow-trading
+    - **default**: true
+    - **description**: Set to false to disable trading with wandering traders
+* ##### follow-emerald-blocks
+    - **default**: false
+    - **description**: Villagers will be tempted by emerald blocks and follow players holding them
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### warden
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+#### witch
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 26.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### wither
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### ridable-max-y
+    - **default**: 256
+    - **description**: Maximum height this mob can fly to while being ridden
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### can-ride-vehicles
+    - **default**: false
+    - **description**: Set to true for the wither to gain the ability to ride vehicles
+* ##### play-spawn-sound
+    - **default**: true
+    - **description**: Play the wither's spawn sound globally when it is spawned
+* ##### explosion-radius
+    - **default**: 1.0
+    - **description**: The explosion radius of a wither's projectile attack
+* ##### health-regen-amount
+    - **default**: 1.0
+    - **description**: The regen amount of the wither
+* ##### health-regen-delay
+    - **default**: 20
+    - **description**: How long to delay the health regen
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for withers to bypass the mob griefing gamerule
+* ##### attributes
+    * ###### max_health
+        - **default**: 300.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### wither_skeleton
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### wolf
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### milk-cures-rabid-wolves
+    - **default**: true
+    - **description**: Set to false for rabid wolves to not be cured by milk
+* ##### spawn-rabid-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) that a wolf will spawn as rabid
+* ##### default-collar-color
+    - **default**: RED
+    - **description**: Set the default collar color when a wolf is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
-    - **default**: 14.0
-    - **description**: Max health attribute
+        - **default**: 8.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### zoglin
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 40.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### zombie
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### jockey
+    * ###### only-babies
+        - **default**: true
+        - **description**: Only babies can ride chickens
+    * ###### chance
+        - **default**: 0.05
+        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+    * ###### try-existing-chickens
+        - **default**: true
+        - **description**: Scan for existing chickens to spawn on
+* ##### aggressive-towards-villager-when-lagging
+    - **default**: true
+    - **description**: Set to false to stop zombie aggressiveness towards villagers when lagging
+* ##### bypass-mob-griefing
+    - **default**: false
+    - **description**: Set to true for zombies to bypass the mob griefing gamerule
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### spawn_reinforcements
+        - **default**: 0.1
+        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+* ##### head-visibility-percent
+    - **default**: 0.5
+    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### zombie_horse
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### spawn-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) a zombie horse will spawn instead of a skeleton horse (natural spawns during thunderstorms)
+* ##### attributes
+    * ###### max_health
+        * min
+            - **default**: 15.0
+            - **description**: Min health attribute
+        * max
+            - **default**: 15.0
+            - **description**: Max health attribute
+    * ###### jump_strength
+        * min
+            - **default**: 0.4
+            - **description**: Min jump_strength attribute
+        * max
+            - **default**: 1.0
+            - **description**: Max jump_strength attribute
+    * ###### movement_speed
+        * min
+            - **default**: 0.2
+            - **description**: Min movement_speed attribute
+        * max
+            - **default**: 0.2
+            - **description**: Max movement_speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### zombie_villager
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### cure
+    * ###### enabled
+        - **default**: true
+        - **description**: Set to false to stop zombie villagers from being curable 
+* ##### curing_time
+    * ###### min
+        - **default**: 3600
+        - **description**: The minimum amount of ticks to randomly choose from when curing
+    * ###### max
+        - **default**: 6000
+        - **description**: The maximum amount of ticks to randomly choose from when curing
+* ##### jockey
+    * ###### only-babies
+        - **default**: true
+        - **description**: Only babies can ride chickens
+    * ###### chance
+        - **default**: 0.05
+        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+    * ###### try-existing-chickens
+        - **default**: true
+        - **description**: Scan for existing chickens to spawn on
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### spawn_reinforcements
+        - **default**: 0.1
+        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### zombified_piglin
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### count-as-player-kill-when-angry
+    - **default**: true
+    - **description**: Set to false to stop zombified piglins from dropping XP if they were angered (but not killed) by a player
+* ##### jockey
+    * ###### only-babies
+        - **default**: true
+        - **description**: Only babies can ride chickens
+    * ###### chance
+        - **default**: 0.05
+        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+    * ###### try-existing-chickens
+        - **default**: true
+        - **description**: Scan for existing chickens to spawn on
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### spawn_reinforcements
+        - **default**: 0.0
+        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 
 ### gameplay-mechanics
 
