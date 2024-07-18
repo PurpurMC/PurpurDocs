@@ -3417,159 +3417,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 
 ### gameplay-mechanics
 
-#### arrow
-* ##### movement-resets-despawn-counter
-    - **default**: true
-    - **description**: Setting this to false prevents keeping arrows alive indefinitely (such as when the block the arrow is stuck in gets removed, like a piston head going up/down).
-#### use-better-mending
+#### always-tame-in-creative
 - **default**: false
-- **description**: Set to true for mending enchantment to always repair the most damaged equipment first
-#### mending-multiplier
-- **default**: 1.0
-- **description**: How effective mending is at repairing items, higher values mean less xp is used to repair items. (1.0 = 100%)
-#### mobs-ignore-rails
-- **default**: false
-- **description**: Set to true to allow mobs to walk over rails
-#### rain-stops-after-sleep
-- **default**: true
-- **description**: Set to false to make rain continue even after a player sleeps
-#### thunder-stops-after-sleep
-- **default**: true
-- **description**: Set to false to make thunder continue even after a player sleeps
-#### mob-last-hurt-by-player-time
-- **default**: 100
-- **description**: Allows you to change the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
-#### disable-oxidation-proximity-penalty
-- **default**: false
-- **description**: Set to true to remove the slowdown of oxidation caused by nearby unoxidized copper blocks
-#### halloween
-* ##### force
-    - **default**: false
-    - **description**: Set to true to force the world into halloween
-* ##### head-chance
-    - **default**: 0.25
-    - **description**: Percent chance (0.0 - 1.0) a zombie or skeleton will spawn with a jack o' lantern/carved pumpkin on it's head
-#### mob-effects
-* ##### health-regen-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
-* ##### minimal-health-poison-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
-* ##### poison-degeneration-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
-* ##### wither-degeneration-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
-* ##### hunger-exhaustion-amount
-    - **default**: 0.005
-    - **description**: The amount at which this effect affects entities
-* ##### saturation-regen-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
-#### projectiles-bypass-mob-griefing
-* **default**: false
-* **description**: Set to true for projectiles to bypass the mob griefing gamerule
-#### projectile-offset
-* ##### bow
-    - **default**: 1.0
-    - **description**: The projectile offset of a bow
-* ##### crossbow
-    - **default**: 1.0
-    - **description**: The projectile offset of a crossbow
-* ##### egg
-    - **default**: 1.0
-    - **description**: The projectile offset of an egg
-* ##### ender-pearl
-    - **default**: 1.0
-    - **description**: The projectile offset of an ender-pearl
-* ##### throwable-potion
-    - **default**: 1.0
-    - **description**: The projectile offset of a throwable-potion
-* ##### trident
-    - **default**: 1.0
-    - **description**: The projectile offset of a trident
-* ##### snowball
-    - **default**: 1.0
-    - **description**: The projectile offset of a snowball
-#### drowning
-* ##### air-ticks
-    - **default**: 300
-    - **description**: How long you can breathe underwater before you start drowning
-* ##### ticks-per-damage
-    - **default**: 20
-    - **description**: Amount of ticks between the drowning damage
-* ##### damage-from-drowning
-    - **default**: 2.0
-    - **description**: Amount of damage done while drowning
-#### tick-fluids
-- **default**: true
-- **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](images/freezefluids-chat-screenshot.png)
-#### disable-drops-on-cramming-death
-- **default**: false
-- **description**: Stops entities from dropping loot on death, if killed by cramming gamerule
-#### entity-blindness-multiplier
-- **default**: 1
-- **description**: How blind a mob is when affected with the blindness potion effect
-#### entities-pick-up-loot-bypass-mob-griefing
-- **default**: false
-- **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
-#### milk-cures-bad-omen
-- **default**: true
-- **description**: Allow players to drink milk to cure bad omen status effect
-#### milk-clears-beneficial-effects
-- **default**: true
-- **description**: Set to false to have milk clear only negative status effects
-#### trident-loyalty-void-return-height
-- **default**: 0.0
-- **description**: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.
-#### void-damage-dealt
-- **default**: 4.0
-- **description**: The amount of void damage dealt
-#### void-damage-height
-- **default**: -64.0
-- **description**: The height at which void damage begins
-#### clamp-explosion-radius
-- **default**: true
-- **description**: Set to false to allow setting a negative `ExplosionRadius` value on explosions
-#### entity-lifespan
+- **description**: Set to true to have 100% chance of taming a mob
+#### animal-breeding-cooldown-seconds
 - **default**: 0
-- **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
-#### silk-touch
-Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purpur.place.spawners`](permissions#purpurplacespawners) permissions
-
-* ##### enabled
-    - **default**: false
-    - **description**: Makes it so you can mine spawners using a tool with silk touch
-* ##### minimal-level
-    - **default**: 1
-    - **description**: The minimal level of the Silktouch enchantment required to pick up mined spawners
-* ##### tools
-    - **default**:
-    ``` yaml
-    - minecraft:iron_pickaxe
-    - minecraft:golden_pickaxe
-    - minecraft:diamond_pickaxe
-    - minecraft:netherite_pickaxe
-    ```
-    - **description**: Whitelist of tools that can mine spawners with silk touch
-* ##### spawner-name
-    - **default**: "&lt;reset>&lt;white>Monster Spawner"
-    - **description**: The name of the spawner
-* ##### spawner-lore
-    - **default**:
-        ``` yaml
-        - Spawns a <mob>
-        ```
-    - **description**: The lore of the spawner
-#### boat
-* ##### eject-players-on-land
-    - **default**: false
-    - **description**: Set to true for boats to eject players when on land
-* ##### do-fall-damage
-    - **default**: false
-    - **description**: Set to false for boats to not do fall damage to players
+- **description**: Adds a cooldown to breeding animals per animal type
 #### armorstand
 * ##### step-height
     - **default**: 0.0
@@ -3592,6 +3445,278 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 * ##### can-move-in-water-over-fence
     - **default**: true
     - **description**: Set to false to disallow armorstands from moving in water over a fence
+#### arrow
+* ##### movement-resets-despawn-counter
+    - **default**: true
+    - **description**: Setting this to false prevents keeping arrows alive indefinitely (such as when the block the arrow is stuck in gets removed, like a piston head going up/down).
+#### boat
+* ##### eject-players-on-land
+    - **default**: false
+    - **description**: Set to true for boats to eject players when on land
+* ##### do-fall-damage
+    - **default**: false
+    - **description**: Set to false for boats to not do fall damage to players
+#### clamp-explosion-radius
+- **default**: true
+- **description**: Set to false to allow setting a negative `ExplosionRadius` value on explosions
+#### daylight-cycle-ticks
+* ##### daytime
+    - **default**: 12000
+    - **description**: Set how long the daylight cycle is ticked
+* ##### nighttime
+    - **default**: 12000
+    - **description**: Set how long the nighttime cycle is ticked
+#### disable-drops-on-cramming-death
+- **default**: false
+- **description**: Stops entities from dropping loot on death, if killed by cramming gamerule
+#### disable-oxidation-proximity-penalty
+- **default**: false
+- **description**: Set to true to remove the slowdown of oxidation caused by nearby unoxidized copper blocks
+#### drowning
+* ##### air-ticks
+    - **default**: 300
+    - **description**: How long you can breathe underwater before you start drowning
+* ##### ticks-per-damage
+    - **default**: 20
+    - **description**: Amount of ticks between the drowning damage
+* ##### damage-from-drowning
+    - **default**: 2.0
+    - **description**: Amount of damage done while drowning
+#### elytra
+* ##### damage-per-second
+    - **default**: 1
+    - **description**: How much damage an elytra's durability takes during flight each second
+* ##### damage-multiplied-by-speed
+    - **default**: 0.0
+    - **description**: Damage is multiplied by speed if flight is faster than set speed. Value of 0 disables this multiplier
+* ##### kinetic-damage
+    - **default**: true
+    - **description**: Should players take damage when flying into a wall
+* ##### ignore-unbreaking
+    - **default**: false
+    - **description**: Should elytras ignore the unbreaking enchantment
+* ##### damage-per-boost
+    * ###### firework
+        - **default**: 0
+        - **description**: How much damage to deal to the elytra when firework boost activates
+    * ###### trident
+        - **default**: 0
+        - **description**: How much damage to deal to the elytra when trident riptide boost activates
+#### entities-pick-up-loot-bypass-mob-griefing
+- **default**: false
+- **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
+#### entity-blindness-multiplier
+- **default**: 1
+- **description**: How blind a mob is when affected with the blindness potion effect
+#### entity-left-handed-chance
+- **default**: 0.05
+- **description**: Percent chance (0.0 - 1.0) an entity will spawn left-handed
+#### entity-lifespan
+- **default**: 0
+- **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
+#### fireballs-bypass-mob-griefing
+- **default**: false
+- **description**: Set to true for fireballs to bypass the mob griefing gamerule
+#### halloween
+* ##### force
+    - **default**: false
+    - **description**: Set to true to force the world into halloween
+* ##### head-chance
+    - **default**: 0.25
+    - **description**: Percent chance (0.0 - 1.0) a zombie or skeleton will spawn with a jack o' lantern/carved pumpkin on it's head
+#### impose-teleport-restrictions-on-end-portals
+- **default**: false
+- **description**: Set to true to impose teleport restrictions on end portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+#### impose-teleport-restrictions-on-gateways
+- **default**: false
+- **description**: Set to true to impose teleport restrictions on gateways. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+#### impose-teleport-restrictions-on-nether-portals
+- **default**: false
+- **description**: Set to true to impose teleport restrictions on nether portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+#### infinity-bow
+* ##### works-without-arrows
+    - **default**: false
+    - **description**: Set to true for the infinity bow to work without arrows
+#### item
+* ##### end-crystal
+    * ###### place-anywhere
+        - **default**: false
+        - **description**: Allows you to place an end crystal on any block, not just obsidian and bedrock
+* ##### shears
+    * ###### damage-if-sprinting
+        - **default**: false
+        - **description**: Holding shears while sprinting will randomly damage the player (Don't run with scissors!)
+    * ###### ignore-in-water
+        - **default**: false
+        - **description**: Should damage be ignored while in water if `damage-if-sprinting` is enabled
+    * ###### ignore-in-lava
+        - **default**: false
+        - **description**: Should damage be ignored while in lava if `damage-if-sprinting` is enabled
+    * ###### sprinting-damage
+        - **default**: 1
+        - **description**: The amount of damage to give if `damage-if-sprinting` is enabled
+    * ###### defuse-tnt-chance
+        - **default**: 0.0
+        - **description**: Percent chance (0.0 - 1.0) that right-clicking primed TNT will defuse it
+* ##### snowball
+    * ###### extinguish
+        * ###### fire
+            - **default**: false
+            - **description**: Whether snowballs, when thrown, should extinguish fires
+        * ###### candles
+            - **default**: false
+            - **description**: Whether snowballs, when thrown, should extinguish candles
+        * ###### campfires
+            - **default**: false
+            - **description**: Whether snowballs, when thrown, should extinguish campfires
+* ##### shulker_box
+    * ###### drop-contents-when-destroyed
+        - **default**: true
+        - **description**: Whether the shulker box should drop it's contents when it's been destroyed
+* ##### compass
+    * ###### holding-shows-bossbar
+        - **default**: false
+        - **description**: If the bossbar from the [`/compass`](commands#compass) command should show when holding a compass
+* ##### glow_berries
+    * ###### eat-glow-duration
+        - **default**: 0
+        - **description**: Amount of ticks the player will glow after eating a glow berry. Set to 0 to disable
+* ##### ender-pearl
+    * ###### damage
+        - **default**: 5
+        - **description**: The amount of damage to take after teleporting using an ender pearl
+    * ###### cooldown
+        - **default**: 20
+        - **description**: The cooldown after using an ender pearl (in ticks)
+    * ###### creative-cooldown
+        - **default**: 20
+        - **description**: The cooldown after using an ender pearl while in creative (in ticks)
+    * ###### endermite-spawn-chance
+        - **default**: 0.05
+        - **description**: Percent chance (0.0 - 1.0) an endermite will spawn after teleporting using an ender pearl
+* ##### immune
+    * ###### explosion
+        - **default**: []
+        - **description**: List of items that are immune to explosions
+    * ###### fire
+        - **default**: []
+        - **description**: List of items that are immune to fire
+    * ###### lightning
+        - **default**: []
+        - **description**: List of items that are immune to lightning
+    * ###### cactus
+        - **default**: []
+        - **description**: List of items that are immune to cactus
+    ???+ note "Example of item immune list:"
+        ``` yaml
+        explosion:
+          - minecraft:diamond
+          - minecraft:diamond_block
+          - minecraft:diamond_sword
+        ```
+
+???+ warning "Warning"
+    These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing that can be done about that from the server-side code.
+
+#### mending-multiplier
+- **default**: 1.0
+- **description**: How effective mending is at repairing items, higher values mean less xp is used to repair items. (1.0 = 100%)
+#### milk-clears-beneficial-effects
+- **default**: true
+- **description**: Set to false to have milk clear only negative status effects
+#### milk-cures-bad-omen
+- **default**: true
+- **description**: Allow players to drink milk to cure bad omen status effect
+#### minecart
+* ##### max-speed
+    - **default**: 0.4
+    - **description**: Max speed of a minecart when controlled
+* ##### place-anywhere
+    - **default**: false
+    - **description**: Whether minecarts can be placed anywhere, not just on rails
+* ##### powered-rail
+    * ###### boost-modifier
+        - **default**: 0.06
+        - **description**: the speed boost that minecarts gain from hitting a powered rail (Doesn't affect furnace minecarts)
+* ##### controllable
+    * ###### enabled
+        - **default**: false
+        - **description**: Whether minecarts can be controlled when not on rails
+    * ###### fall-damage
+        - **default**: true
+        - **description**: Set to true to give fall damage to the player while in a minecart
+    * ###### step-height
+        - **default**: 1.0
+        - **description**: The step height in which a minecarts can go up to the next block without jumping
+    * ###### hop-boost
+        - **default**: 0.5
+        - **description**: Jump power when pressing spacebar on a controllable minecart
+    * ###### base-speed
+        - **default**: 0.1
+        - **description**: Base speed of minecart when controlled
+    * ###### block-speed
+        - **default**:
+            ``` yaml
+            grass_block: 0.3
+            stone: 0.5
+            ```
+        - **description**: List of speed overrides per block type
+#### mob-effects
+* ##### health-regen-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+* ##### minimal-health-poison-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+* ##### poison-degeneration-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+* ##### wither-degeneration-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+* ##### hunger-exhaustion-amount
+    - **default**: 0.005
+    - **description**: The amount at which this effect affects entities
+* ##### saturation-regen-amount
+    - **default**: 1.0
+    - **description**: The amount at which this effect affects entities
+#### mob-last-hurt-by-player-time
+- **default**: 100
+- **description**: Allows you to change the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
+#### mob-spawning
+* ##### village-cats
+    - **default**: default
+    - **description**: Set to true to spawn in the world that this option is a part of
+* ##### raid-patrols
+    - **default**: default
+    - **description**: Set to true to spawn in the world that this option is a part of
+* ##### phantoms
+    - **default**: default
+    - **description**: Set to true to spawn in the world that this option is a part of
+* ##### wandering-traders
+    - **default**: default
+    - **description**: Set to true to spawn in the world that this option is a part of
+* ##### village-sieges
+    - **default**: default
+    - **description**: Set to true to spawn in the world that this option is a part of
+* ##### ignore-creative-players
+    - **default**: false
+    - **description**: Option to choose whether or not to ignore creative players when spawning mobs.
+#### mobs-ignore-rails
+- **default**: false
+- **description**: Set to true to allow mobs to walk over rails
+#### note-block-ignore-above
+- **default**: false
+- **description**: Set to true for note blocks to continue making sound even if there is a block above it
+#### persistent-droppable-entity-display-names
+- **default**: true
+- **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
+#### persistent-tileentity-display-name
+- **default**: true
+- **description**: Set to false to disable TE's display names being persistant after breaking (ex. named custom player heads stop retaining their name)
+#### persistent-tileentity-lore
+- **default**: false
+- **description**: Set to true to make TE's lores persist after breaking (ex. custom player heads with lore will retain their lore)
 #### player
 * ##### exp-pickup-delay-ticks
     - **default**: 2
@@ -3684,211 +3809,41 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
     * ###### show-icon
         - **default**: true
         - **description**: Set to false for the fire resistance effect to not display it's icon
-#### minecart
-* ##### max-speed
-    - **default**: 0.4
-    - **description**: Max speed of a minecart when controlled
-* ##### place-anywhere
-    - **default**: false
-    - **description**: Whether minecarts can be placed anywhere, not just on rails
-* ##### powered-rail
-    * ###### boost-modifier
-        - **default**: 0.06
-        - **description**: the speed boost that minecarts gain from hitting a powered rail (Doesn't affect furnace minecarts)
-* ##### controllable
-    * ###### enabled
-        - **default**: false
-        - **description**: Whether minecarts can be controlled when not on rails
-    * ###### fall-damage
-        - **default**: true
-        - **description**: Set to true to give fall damage to the player while in a minecart
-    * ###### step-height
-        - **default**: 1.0
-        - **description**: The step height in which a minecarts can go up to the next block without jumping
-    * ###### hop-boost
-        - **default**: 0.5
-        - **description**: Jump power when pressing spacebar on a controllable minecart
-    * ###### base-speed
-        - **default**: 0.1
-        - **description**: Base speed of minecart when controlled
-    * ###### block-speed
-        - **default**:
-            ``` yaml
-            grass_block: 0.3
-            stone: 0.5
-            ```
-        - **description**: List of speed overrides per block type
-#### item
-* ##### end-crystal
-    * ###### place-anywhere
-        - **default**: false
-        - **description**: Allows you to place an end crystal on any block, not just obsidian and bedrock
-* ##### shears
-    * ###### damage-if-sprinting
-        - **default**: false
-        - **description**: Holding shears while sprinting will randomly damage the player (Don't run with scissors!)
-    * ###### ignore-in-water
-        - **default**: false
-        - **description**: Should damage be ignored while in water if `damage-if-sprinting` is enabled
-    * ###### ignore-in-lava
-        - **default**: false
-        - **description**: Should damage be ignored while in lava if `damage-if-sprinting` is enabled
-    * ###### sprinting-damage
-        - **default**: 1
-        - **description**: The amount of damage to give if `damage-if-sprinting` is enabled
-    * ###### defuse-tnt-chance
-        - **default**: 0.0
-        - **description**: Percent chance (0.0 - 1.0) that right-clicking primed TNT will defuse it
-* ##### snowball
-    * ###### extinguish
-        * ###### fire
-            - **default**: false
-            - **description**: Whether snowballs, when thrown, should extinguish fires
-        * ###### candles
-            - **default**: false
-            - **description**: Whether snowballs, when thrown, should extinguish candles
-        * ###### campfires
-            - **default**: false
-            - **description**: Whether snowballs, when thrown, should extinguish campfires
-* ##### shulker_box
-    * ###### drop-contents-when-destroyed
-        - **default**: true
-        - **description**: Whether the shulker box should drop it's contents when it's been destroyed
-* ##### compass
-    * ###### holding-shows-bossbar
-        - **default**: false
-        - **description**: If the bossbar from the [`/compass`](commands#compass) command should show when holding a compass
-* ##### glow_berries
-    * ###### eat-glow-duration
-        - **default**: 0
-        - **description**: Amount of ticks the player will glow after eating a glow berry. Set to 0 to disable
-* ##### ender-pearl
-    * ###### damage
-        - **default**: 5
-        - **description**: The amount of damage to take after teleporting using an ender pearl
-    * ###### cooldown
-        - **default**: 20
-        - **description**: The cooldown after using an ender pearl (in ticks)
-    * ###### creative-cooldown
-        - **default**: 20
-        - **description**: The cooldown after using an ender pearl while in creative (in ticks)
-    * ###### endermite-spawn-chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) an endermite will spawn after teleporting using an ender pearl
-* ##### immune
-    * ###### explosion
-        - **default**: []
-        - **description**: List of items that are immune to explosions
-    * ###### fire
-        - **default**: []
-        - **description**: List of items that are immune to fire
-    * ###### lightning
-        - **default**: []
-        - **description**: List of items that are immune to lightning
-    * ###### cactus
-        - **default**: []
-        - **description**: List of items that are immune to cactus
-    ???+ note "Example of item immune list:"
-        ``` yaml
-        explosion:
-          - minecraft:diamond
-          - minecraft:diamond_block
-          - minecraft:diamond_sword
-        ```
-
-???+ warning "Warning"
-    These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing that can be done about that from the server-side code.
-
-#### elytra
-* ##### damage-per-second
-    - **default**: 1
-    - **description**: How much damage an elytra's durability takes during flight each second
-* ##### damage-multiplied-by-speed
-    - **default**: 0.0
-    - **description**: Damage is multiplied by speed if flight is faster than set speed. Value of 0 disables this multiplier
-* ##### kinetic-damage
-    - **default**: true
-    - **description**: Should players take damage when flying into a wall
-* ##### ignore-unbreaking
-    - **default**: false
-    - **description**: Should elytras ignore the unbreaking enchantment
-* ##### damage-per-boost
-    * ###### firework
-        - **default**: 0
-        - **description**: How much damage to deal to the elytra when firework boost activates
-    * ###### trident
-        - **default**: 0
-        - **description**: How much damage to deal to the elytra when trident riptide boost activates
-#### mob-spawning
-* ##### village-cats
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
-* ##### raid-patrols
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
-* ##### phantoms
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
-* ##### wandering-traders
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
-* ##### village-sieges
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
-* ##### ignore-creative-players
-    - **default**: false
-    - **description**: Option to choose whether or not to ignore creative players when spawning mobs.
-#### raid-cooldown-seconds
-- **default**: 0
-- **description**: How long you should wait before another raid can be initiated
-#### persistent-tileentity-display-name
-- **default**: true
-- **description**: Set to false to disable TE's display names being persistant after breaking (ex. named custom player heads stop retaining their name)
-#### persistent-tileentity-lore
-- **default**: false
-- **description**: Set to true to make TE's lores persist after breaking (ex. custom player heads with lore will retain their lore)
-#### persistent-droppable-entity-display-names
-- **default**: true
-- **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
-#### infinity-bow
-* ##### works-without-arrows
-    - **default**: false
-    - **description**: Set to true for the infinity bow to work without arrows
-#### daylight-cycle-ticks
-* ##### daytime
-    - **default**: 12000
-    - **description**: Set how long the daylight cycle is ticked
-* ##### nighttime
-    - **default**: 12000
-    - **description**: Set how long the nighttime cycle is ticked
-#### animal-breeding-cooldown-seconds
-- **default**: 0
-- **description**: Adds a cooldown to breeding animals per animal type
 #### projectile-damage
 * ##### snowball
     - **default**: -1
     - **description**: Set how much damage a snowball does (-1 will make damage be 3 for blazes & 0 for all other entities which is default)
-#### entity-left-handed-chance
-- **default**: 0.05
-- **description**: Percent chance (0.0 - 1.0) an entity will spawn left-handed
-#### fireballs-bypass-mob-griefing
-- **default**: false
-- **description**: Set to true for fireballs to bypass the mob griefing gamerule
-#### note-block-ignore-above
-- **default**: false
-- **description**: Set to true for note blocks to continue making sound even if there is a block above it
-#### impose-teleport-restrictions-on-gateways
-- **default**: false
-- **description**: Set to true to impose teleport restrictions on gateways. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
-#### impose-teleport-restrictions-on-nether-portals
-- **default**: false
-- **description**: Set to true to impose teleport restrictions on nether portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
-#### impose-teleport-restrictions-on-end-portals
-- **default**: false
-- **description**: Set to true to impose teleport restrictions on end portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
-#### always-tame-in-creative
-- **default**: false
-- **description**: Set to true to have 100% chance of taming a mob
+#### projectile-offset
+* ##### bow
+    - **default**: 1.0
+    - **description**: The projectile offset of a bow
+* ##### crossbow
+    - **default**: 1.0
+    - **description**: The projectile offset of a crossbow
+* ##### egg
+    - **default**: 1.0
+    - **description**: The projectile offset of an egg
+* ##### ender-pearl
+    - **default**: 1.0
+    - **description**: The projectile offset of an ender-pearl
+* ##### throwable-potion
+    - **default**: 1.0
+    - **description**: The projectile offset of a throwable-potion
+* ##### trident
+    - **default**: 1.0
+    - **description**: The projectile offset of a trident
+* ##### snowball
+    - **default**: 1.0
+    - **description**: The projectile offset of a snowball
+#### projectiles-bypass-mob-griefing
+* **default**: false
+* **description**: Set to true for projectiles to bypass the mob griefing gamerule
+#### raid-cooldown-seconds
+- **default**: 0
+- **description**: How long you should wait before another raid can be initiated
+#### rain-stops-after-sleep
+- **default**: true
+- **description**: Set to false to make rain continue even after a player sleeps
 #### shovel-turns-block-to-grass-path
 - **default**:
     ``` yaml
@@ -3900,6 +3855,51 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
     - minecraft:rooted_dirt
     ```
 - **description**: List of blocks that can be turned into a grass path when right-clicked with a shovel
+#### silk-touch
+Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purpur.place.spawners`](permissions#purpurplacespawners) permissions
+
+* ##### enabled
+    - **default**: false
+    - **description**: Makes it so you can mine spawners using a tool with silk touch
+* ##### minimal-level
+    - **default**: 1
+    - **description**: The minimal level of the Silktouch enchantment required to pick up mined spawners
+* ##### tools
+    - **default**:
+    ``` yaml
+    - minecraft:iron_pickaxe
+    - minecraft:golden_pickaxe
+    - minecraft:diamond_pickaxe
+    - minecraft:netherite_pickaxe
+    ```
+    - **description**: Whitelist of tools that can mine spawners with silk touch
+* ##### spawner-name
+    - **default**: "&lt;reset>&lt;white>Monster Spawner"
+    - **description**: The name of the spawner
+* ##### spawner-lore
+    - **default**:
+        ``` yaml
+        - Spawns a <mob>
+        ```
+    - **description**: The lore of the spawner
+#### thunder-stops-after-sleep
+- **default**: true
+- **description**: Set to false to make thunder continue even after a player sleeps
+#### tick-fluids
+- **default**: true
+- **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](images/freezefluids-chat-screenshot.png)
+#### trident-loyalty-void-return-height
+- **default**: 0.0
+- **description**: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.
+#### use-better-mending
+- **default**: false
+- **description**: Set to true for mending enchantment to always repair the most damaged equipment first
+#### void-damage-dealt
+- **default**: 4.0
+- **description**: The amount of void damage dealt
+#### void-damage-height
+- **default**: -64.0
+- **description**: The height at which void damage begins
 
 ### ridable-settings
 
@@ -3909,9 +3909,9 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 #### untamed-tamables-are-ridable
 - **default**: true
 - **description**: Set to false to stop untamed tamables from being ridable
-#### use-night-vision
-- **default**: false
-- **description**: Set to true to give night vision to riders while on a ridable
 #### use-dismounts-underwater-tag
 - **default**: true
 - **description**: Set to false to use `<mob>.ridable-in-water` options instead of the [`DISMOUNTS_UNDERWATER`](https://minecraft.wiki/w/Tag#Entity_types) tag
+#### use-night-vision
+- **default**: false
+- **description**: Set to true to give night vision to riders while on a ridable
