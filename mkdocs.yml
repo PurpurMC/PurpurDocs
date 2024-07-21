@@ -43,6 +43,8 @@ plugins:
       autolinks:
           - reference_prefix: MC-
             target_url: https://bugs.mojang.com/browse/MC-<num>
+          - reference_prefix: PaperMC/Paper#
+            target_url: https://github.com/PaperMC/Paper/issues/<num>
   - redirects:
       redirect_maps:
           'commands.md': 'purpur/commands.md'
