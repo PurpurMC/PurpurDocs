@@ -889,7 +889,7 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### deactivate-by-redstone
     - **default**: false
     - **description**: Allow spawners to be deactivated by redstone
-* ##### fix-mс-238526
+* ##### fix-mc-238526
     - **default**: false
     - **description**: Fix spawners not spawning water animals correctly; MC-238526
 #### sponge
