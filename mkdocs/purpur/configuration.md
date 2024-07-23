@@ -3901,6 +3901,10 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
     ```
 - **description**: List of blocks that can be turned into a grass path when right-clicked with a shovel
 
+#### old-raid-behavior
+- **default**: false
+- **description**: Set to true to revert the behavior of raids to what it was pre-1.21
+
 ### ridable-settings
 
 #### babies-are-ridable
