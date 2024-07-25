@@ -1627,9 +1627,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### ridable-max-y
     - **default**: 256
     - **description**: Maximum height this mob can fly to while being ridden
-* ##### allow-griefing
-    - **default**: true
-    - **description**: Set to false to stop the ghast from griefing
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
