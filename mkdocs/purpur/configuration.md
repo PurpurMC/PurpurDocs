@@ -3499,6 +3499,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### trident
         - **default**: 0
         - **description**: How much damage to deal to the elytra when trident riptide boost activates
+#### entities-can-use-portals
+- **default**: true
+- **description**: Set to false to stop entities from being able to use portals
 #### entities-pick-up-loot-bypass-mob-griefing
 - **default**: false
 - **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
