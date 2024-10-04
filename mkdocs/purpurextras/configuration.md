@@ -164,6 +164,18 @@ If set to false prevents snow golems from dropping carved pumpkin when shearing 
 
 Shearing a sheep named jeb_ will drop wool blocks with a random colour
 
+### squid
+
+#### creeper-squid
+
+If enabled, squids blow up when there is a player is nearby and will swing towards the player. If the squid explodes on land there will be fire.  
+Additionally it can be customized with these options after it has been enabled:
+
+- `fuse-ticks` - After what time should squids explode after fusing?
+- `agro-distance` - At which distance should squids detect players?
+- `explosion-radius` - How large should be the radius of the explosion?
+- `velocity` - How fast should the squid be?
+
 ## totem
 
 ### work-on-void-death

@@ -50,7 +50,7 @@
 
 ## Loot Tables
 
-#### [Add Netherite Smithing Template to Piglin barter table](https://modrinth.com/datapack/purpurpacks-one-step-dyed-shulker-boxes/versions)
+#### [Add Netherite Smithing Template to Piglin barter table](https://modrinth.com/datapack/purpurpacks-rebalanced-piglin-bartering/versions)
 * Adds the netherite smithing template to the piglin barter trade loot table
 
 #### [Pick Up Budding Amethyst blocks with Silk Touch](https://modrinth.com/datapack/purpurpacks-silk-touch-budding-amethyst/versions)
