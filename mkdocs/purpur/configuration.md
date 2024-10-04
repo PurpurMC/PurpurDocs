@@ -524,9 +524,6 @@ spider_eye:                # The food to edit
     Clients will not display levels higher than `255`
 
 ####  anvil
-* ##### allow-unsafe-enchants
-    - **default**: false
-    - **description**: This option is required to make the following unsafe enchantment settings work.
 * ##### allow-inapplicable-enchants
     - **default**: true
     - **description**: Allows applying enchantments on tools or armour that are normally not applicable. For example, sharpness on a pickaxe.
