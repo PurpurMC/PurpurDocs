@@ -525,13 +525,13 @@ spider_eye:                # The food to edit
 
 ####  anvil
 * ##### allow-inapplicable-enchants
-    - **default**: true
+    - **default**: false
     - **description**: Allows applying enchantments on tools or armour that are normally not applicable. For example, sharpness on a pickaxe.
 * ##### allow-incompatible-enchants
-    - **default**: true
+    - **default**: false
     - **description**: Allows applying enchantments together that are normally incompatible. For example, protection and fire protection or fortune and silk touch.
 * ##### allow-higher-enchants-levels
-    - **default**: true
+    - **default**: false
     - **description**: Allows the ability to increase enchantments passed their maximum level. For example, efficiency V + efficiency V = efficiency VI.
 * ##### replace-incompatible-enchants
     - **default**: false
