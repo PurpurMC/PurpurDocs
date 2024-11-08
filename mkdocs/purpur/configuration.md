@@ -517,7 +517,7 @@ spider_eye:                # The food to edit
     - **default**: false
     - **description**: Allows the ability to increase enchantments passed their max level through the command
 * ##### clamp-levels
-    - **default**: true
+    - **default**: false
     - **description**: Setting this to `false` allows levels to go up to `32767` by storing them as shorts instead of bytes.
 
 ???+ note "Note"
