@@ -3035,7 +3035,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
         - **description**: Scale attribute
     * ###### tempt_range
         - **default**: 10.0
-        - **description**: Tempt range attribute (Not in vanilla, only used for `follow-emerald-blocks` configuration)
+        - **description**: Tempt range attribute. Only works when `follow-emerald-blocks` is enabled.
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3097,7 +3097,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
         - **description**: Scale attribute
     * ###### tempt_range
         - **default**: 10.0
-        - **description**: Tempt range attribute (Not in vanilla, only used for `follow-emerald-blocks` configuration)
+        - **description**: Tempt range attribute. Only works when `follow-emerald-blocks` is enabled.
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
