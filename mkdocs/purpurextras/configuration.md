@@ -3,6 +3,30 @@ This page details the various configuration settings available in PurpurExtras c
 ## unlock-all-recipes-on-join
 Unlocks all available recipes on join. Players can be exempt from this by denying them `purpurextras.unlockallrecipesonjoin` permission.
 
+## creeper-squid
+
+Squids will act as Creepers - they will explode if within `agro-distance` after a fuse of `fuse-ticks` ticks, as well as moving towards you at a velocity of `velocity`. Explosion power / radius is also configurable through `explosion-radius`.
+
+### enabled
+
+Enables the feature.
+
+### fuse-ticks
+
+The amount of time it takes for the "fuse" to last.
+
+### agro-distance
+
+The detection range (in blocks).
+
+### explosion-radius
+
+The radius of the explosion.
+
+### velocity
+
+The speed at which it moves towards the player.
+
 ## protect-blocks-with-loot
 Makes it so blocks with loot tables are protected from being destroyed. By default, they can be destroyed while holding sneak, but it's configurable. Can be bypassed with `purpurextras.lootblockprotectionbypass` permission. Message displayed can be configured. [Message type](#message-types) can be configured.
 
