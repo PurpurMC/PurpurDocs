@@ -1258,6 +1258,23 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### creaking
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### attributes
+    * ###### max_health
+        - **default**: 1.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
 #### creeper
 * ##### ridable
     - **default**: false
@@ -3016,6 +3033,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
+    * ###### tempt_range
+        - **default**: 10.0
+        - **description**: Tempt range attribute. Only works when `follow-emerald-blocks` is enabled.
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3075,6 +3095,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
+    * ###### tempt_range
+        - **default**: 10.0
+        - **description**: Tempt range attribute. Only works when `follow-emerald-blocks` is enabled.
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
