@@ -1053,8 +1053,8 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
 * ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+    - **default**: true
+    - **description**: Set to false for this mob to stop taking damage from water
 * ##### ridable-max-y
     - **default**: 320.0
     - **description**: Maximum height this mob can fly to while being ridden
