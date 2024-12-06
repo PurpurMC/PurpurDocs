@@ -3565,7 +3565,10 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### shears
     * ###### damage-if-sprinting
         - **default**: false
-        - **description**: Holding shears while sprinting will randomly damage the player (Don't run with scissors!)
+        - **description**: Holding shears while sprinting will randomly damage the player (Don't run with scissors!) Will not activate for shears that have an `item_model` component or `custom_model_data` component
+    * ###### damage-if-sprinting-item-model
+        - **default**: "purpurmc:scissors"
+        - **description**: The resource location of the [`item_model`](https://minecraft.wiki/w/Data_component_format#item_model) to use for shears alongside the `damage-if-sprinting` option.
     * ###### ignore-in-water
         - **default**: false
         - **description**: Should damage be ignored while in water if `damage-if-sprinting` is enabled
