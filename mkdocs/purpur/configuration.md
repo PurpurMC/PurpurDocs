@@ -1043,6 +1043,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### can-work-in-rain
     - **default**: false
     - **description**: Controls whether bees can work during rainy weather
+* ##### can-instantly-start-drowning
+    - **default**: true
+    - **description**: If disabled, bees will stop instantly taking damage the moment they begin touching water. Bees will still be able to "drown" when they run out of air while underwater.
 * ##### dies-after-sting
     - **default**: true
     - **description**: Set whether a bee should die after stinging
