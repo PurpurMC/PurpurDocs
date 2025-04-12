@@ -434,6 +434,10 @@ Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permissi
 * ##### cumulative-cost
     - **default**: true
     - **description**: If the cumulative cost should apply when an item is used in an anvil
+#### snow
+* ##### smooth-accumulation-step
+    - **default**: 0
+    - **description**: When gamerule `snowAccumulationHeight` is set greater than 1, this value sets the maximum difference in height between 2 adjacent snow layers. 0 is vanilla behavior. [Example Images](https://github.com/PurpurMC/Purpur/pull/1651#issuecomment-2771393460)
 #### lightning_rod
 * ##### range
     - **default**: 128
