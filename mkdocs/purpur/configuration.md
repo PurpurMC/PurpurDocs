@@ -3460,8 +3460,8 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
 * ##### count-as-player-kill-when-angry
-    - **default**: true
-    - **description**: Set to false to stop zombified piglins from dropping XP if they were angered (but not killed) by a player
+    - **default**: false
+    - **description**: Set to true to allow zombified piglins to drop XP if they are angered (but not killed) by a player
 * ##### jockey
     * ###### only-babies
         - **default**: true
