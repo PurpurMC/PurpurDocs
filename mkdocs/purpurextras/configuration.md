@@ -126,7 +126,23 @@ If false, will make it so respawn anchors will never run out of charges.
 
 ### run-faster-on-paths
 
-If `speed-multiplier` value is higher than 0, player will gain speed potion effect of the level of that value. This only accepts integer values. Which blocks count as paths can be configured by listing them in `path-blocks` list.
+Makes running on path blocks apply movement speed modifier. The equivalent of a single level of potion of swiftness is `0.2` and `add_scalar` type.
+
+#### enabled
+
+Decides if feature is active or not.
+
+#### path-blocks
+
+List of blocks that will be considered as paths. By default, this is just `minecraft:grass_path`.
+
+#### attribute-modifier-type
+
+Available values here are `add_number`, `add_scalar` and `multiply_scalar_1`.
+
+#### value
+
+The decimal value of the attribute modifier.
 
 ### spawner-placement-requires-specific-permission
 
