@@ -251,7 +251,7 @@ Set the `Purpur.IReallyDontWantStartupCommands` system property to `true` to dis
 
 ### generate-end-void-rings
 - **default**: false
-- **description**: Set to true to reintroduce the End void rings patched by Paper which occur in vanilla Minecraft in a donut-shaped pattern; MC-159283
+- **description**: Set to true to reintroduce the generation of End void rings patched by Paper which occur in vanilla Minecraft in a donut-shaped pattern; MC-159283
 
 ### bee-count-payload
 - **default**: false
