@@ -239,7 +239,6 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 - **default**: false
 - **description**: Set to true to always show the item used to kill the player in player death messages.
 
-
 ### register-minecraft-debug-commands
 - **default**: false
 - **description**: Set to true to register unused/hidden minecraft commands. The following commands become available (along with their `minecraft.command.<command_name>` permission counterpart): `debugconfig`, `serverpack`, `spawn_armor_trims`, `warden_spawn_tracker`, `debugmobspawning`, `debugpath`, and `raid`. This list may or may not be incomplete depending on if they get removed or new ones get added in newer minecraft versions.
@@ -249,6 +248,10 @@ Set the `Purpur.IReallyDontWantStartupCommands` system property to `true` to dis
 
 - **default**: []
 - **description**: Allows you to set a list of console commands that will run when the server starts up. Useful for server owners that don't have access to their console. Inspired by [Vintagestory's "StartupCommands" config option](https://wiki.vintagestory.at/index.php/Setting_up_a_Multiplayer_Server#Acquiring_server_admin_rights).
+
+### generate-end-void-rings
+- **default**: false
+- **description**: Set to true to reintroduce the End void rings patched by Paper which occur in vanilla Minecraft in a donut-shaped pattern; MC-159283
 
 ### bee-count-payload
 - **default**: false
