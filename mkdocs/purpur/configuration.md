@@ -768,9 +768,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### use-alpha-farmland
     - **default**: false
     - **description**: Stops the farmland from getting trampled if a fence or a cobble wall is placed directly underneath it
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for farmland to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for farmland
+        `false` - permanently disables mob griefing for farmland
 * ##### only-players-trample
     - **default**: false
     - **description**: Set to true if only players may trample farmland.
@@ -843,9 +846,12 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: 12
     - **description**: The amount of blocks a piston can push
 #### powder_snow
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for powdered snow to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for powdered snow
+        `false` - permanently disables mob griefing for powdered snow
 #### powered-rail
 * ##### activation-range
     - **default**: 8
@@ -925,9 +931,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### break-from-minecarts
     - **default**: false
     - **description**: Allow minecarts to damage/break turtle eggs
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for turtle eggs to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for turtle eggs
+        `false` - permanently disables mob griefing for turtle eggs
 * ##### random-tick-crack-chance
     - **default**: 500
     - **description**: The chance a turtle egg will crack
@@ -1345,9 +1354,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### allow-griefing
     - **default**: true
     - **description**: Set to false to stop the creeper from griefing.
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for creepers to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for creepers
+        `false` - permanently disables mob griefing for creepers
 * ##### naturally-charged-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning
@@ -1519,9 +1531,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-full-exp
     - **default**: false
     - **description**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for the ender dragon to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for the ender dragon
+        `false` - permanently disables mob griefing for the ender dragon
 * ##### can-ride-vehicles
     - **default**: false
     - **description**: Set to true for the ender dragon to gain the ability to ride vehicles
@@ -1551,9 +1566,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### ignore-projectiles
     - **default**: false
     - **description**: Stops the enderman from being immune to projectiles
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for enderman to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for enderman
+        `false` - permanently disables mob griefing for enderman
 * ##### takes-damage-from-water
     - **default**: true
     - **description**: Set to false for this mob to stop taking damage from water
@@ -1615,9 +1633,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for evokers to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for evokers
+        `false` - permanently disables mob griefing for evokers
 * ##### attributes
     * ###### max_health
         - **default**: 24.0
@@ -1647,9 +1668,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for foxes to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for foxes
+        `false` - permanently disables mob griefing for foxes
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -2307,9 +2331,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for piglins to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for piglins
+        `false` - permanently disables mob griefing for piglins
 * ##### portal-spawn-modifier
     - **default**: 2000
     - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
@@ -2366,9 +2393,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for pillagers to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for pillagers
+        `false` - permanently disables mob griefing for pillagers
 * ##### attributes
     * ###### max_health
         - **default**: 24.0
@@ -2441,9 +2471,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for rabbits to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for rabbits
+        `false` - permanently disables mob griefing for rabbits
 * ##### attributes
     * ###### max_health
         - **default**: 3.0
@@ -2467,9 +2500,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for ravagers to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for ravagers
+        `false` - permanently disables mob griefing for ravagers
 * ##### griefable-blocks
     - **default**:
         ``` yaml
@@ -2534,9 +2570,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for sheep to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for sheep
+        `false` - permanently disables mob griefing for sheep
 * ##### attributes
     * ###### max_health
         - **default**: 8.0
@@ -2602,9 +2641,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for silverfish to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for silverfish
+        `false` - permanently disables mob griefing for silverfish
 * ##### attributes
     * ###### max_health
         - **default**: 8.0
@@ -2773,9 +2815,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### attack-distance
     - **default**: 1.25
     - **description**: The distance at which the snow golem will attack
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for snow golems to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for snow golems
+        `false` - permanently disables mob griefing for snow golems
 * ##### takes-damage-from-water
     - **default**: true
     - **description**: Set to false for this mob to stop taking damage from water
@@ -3029,9 +3074,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Ignores the `mobGriefing` gamerule and allows the villagers to drop items, allowing them to breed
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for villagers
+        `false` - permanently disables mob griefing for villagers
 * ##### can-be-leashed
     - **default**: false
     - **description**: Allow players to use leads on villagers (trader not included)
@@ -3222,9 +3270,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### health-regen-delay
     - **default**: 20
     - **description**: How long to delay the health regen
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for withers to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for withers
+        `false` - permanently disables mob griefing for withers
 * ##### attributes
     * ###### max_health
         - **default**: 300.0
@@ -3342,9 +3393,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### aggressive-towards-villager-when-lagging
     - **default**: true
     - **description**: Set to false to stop zombie aggressiveness towards villagers when lagging
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for zombies to bypass the mob griefing gamerule
+* ##### mob-griefing-override
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables mob griefing for zombies
+        `false` - permanently disables mob griefing for zombies
 * ##### attributes
     * ###### max_health
         - **default**: 20.0
@@ -3579,9 +3633,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### entities-can-use-portals
 - **default**: true
 - **description**: Set to false to stop entities from being able to use portals
-#### entities-pick-up-loot-bypass-mob-griefing
-- **default**: false
-- **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
+#### entities-pick-up-loot-mob-griefing-override
+- **default**: default
+- **description**:
+    `default` - respects the `mobGriefing` gamerule
+    `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+    `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 #### entity-blindness-multiplier
 - **default**: 1
 - **description**: How blind a mob is when affected with the blindness potion effect
@@ -3591,9 +3648,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### entity-lifespan
 - **default**: 0
 - **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
-#### fireballs-bypass-mob-griefing
-- **default**: false
-- **description**: Set to true for fireballs to bypass the mob griefing gamerule
+#### fireballs-mob-griefing-override
+- **default**: default
+- **description**:
+    `default` - respects the `mobGriefing` gamerule
+    `true` - permanently enables mob griefing for fireballs
+    `false` - permanently disables mob griefing for fireballs
 #### halloween
 * ##### force
     - **default**: false
@@ -3915,9 +3975,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### snowball
     - **default**: 1.0
     - **description**: The projectile offset of a snowball
-#### projectiles-bypass-mob-griefing
-* **default**: false
-* **description**: Set to true for projectiles to bypass the mob griefing gamerule
+#### projectiles-mob-griefing-override
+* **default**: default
+* **description**: Set to either true or false to override the `mobGriefing` gamerule for projectiles.
 #### raid-cooldown-seconds
 - **default**: 0
 - **description**: How long you should wait before another raid can be initiated
