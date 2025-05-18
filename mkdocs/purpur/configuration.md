@@ -2,15 +2,14 @@ This page details the various configuration settings exposed by Purpur in the pu
 
 If you want information on settings in paper.yml, spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
 
-* [Server Configuration (server.properties)](https://minecraft.wiki/w/Server.properties)
+* [Server Configuration (server.properties)](https://docs.papermc.io/paper/reference/server-properties/)
 
-* [Bukkit Configuration (bukkit.yml)](https://bukkit.fandom.com/wiki/Bukkit.yml)
+* [Bukkit Configuration (bukkit.yml)](https://docs.papermc.io/paper/reference/bukkit-configuration/)
 
-* [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/spigot-configuration/)
+* [Spigot Configuration (spigot.yml)](https://docs.papermc.io/paper/reference/spigot-configuration/)
 
-* [Paper Configuration (paper.yml)](https://docs.papermc.io/paper/reference/paper-global-configuration)
-
-* [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration/)
+* [Paper (Global) Configuration (paper-global.yml)](https://docs.papermc.io/paper/reference/global-configuration)
+* [Paper (World) Configuration (paper-global.yml)](https://docs.papermc.io/paper/reference/world-configuration/)
 
 ???+ warning "Warning"
     Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord]({{ social[0].link }}) server.
