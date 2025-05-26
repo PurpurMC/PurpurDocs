@@ -46,9 +46,7 @@ Allows players to send a message with a slash at the start by escaping it with b
 
 If enabled, sends messages in chat containing amount of players required to sleep based on playersSleepingPercentage gamerule.
 
-## create-suspicious-blocks
-
-If enabled, players will be able to shift-right click on sand and gravel with items in their hands to create suspicious blocks and put held item inside. Held item will disappear from player's hand and will be added as loot inside the suspicious block. Only one item can be added per block.
+## suspicious-blocks
 
 ### exclusion-list
 
@@ -67,6 +65,10 @@ Message to display if player tries to put excluded item inside suspicious block.
 #### message-type
 
 [Type of message](#message-types) to send to the player on triggering the exclusion list.
+
+### enabled
+
+If enabled, players will be able to shift-right click on sand and gravel with items in their hands to create suspicious blocks and put held item inside. Held item will disappear from player's hand and will be added as loot inside the suspicious block. Only one item can be added per block.
 
 ## creeper-squid
 
