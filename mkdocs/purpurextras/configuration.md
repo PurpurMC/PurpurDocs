@@ -50,6 +50,24 @@ If enabled, sends messages in chat containing amount of players required to slee
 
 If enabled, players will be able to shift-right click on sand and gravel with items in their hands to create suspicious blocks and put held item inside. Held item will disappear from player's hand and will be added as loot inside the suspicious block. Only one item can be added per block.
 
+### exclusion-list
+
+#### enable-item-exclusion-list
+
+Enables the exclusion list.
+
+#### item-exclusion-list
+
+List of item types that will not be allowed to be put inside suspicious blocks.
+
+#### item-excluded-message
+
+Message to display if player tries to put excluded item inside suspicious block. If set to empty string (`""`), no message will be displayed.
+
+#### message-type
+
+[Type of message](#message-types) to send to the player on triggering the exclusion list.
+
 ## creeper-squid
 
 Squids will act as Creepers - they will explode if within `agro-distance` after a fuse of `fuse-ticks` ticks, as well as moving towards you at a velocity of `velocity`. Explosion power / radius is also configurable through `explosion-radius`.
