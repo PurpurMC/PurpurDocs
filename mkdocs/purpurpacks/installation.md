@@ -17,7 +17,7 @@ There are mod versions available of these datapacks, which are functionally iden
 The mod versions of the datapack will apply to any new world that is created while the mod is enabled. 
 This makes it more useful for some cases, but not really for others. Datapacks can still be used in modded environments.
 
-> Note: The mod version cannot be used on Bukkit, Spigot, Paper, Pufferfish, or Purpur servers
+> Note: The mod version cannot be used on Bukkit, Spigot, Paper, or Purpur servers
 
 # Installation instructions for Fabric (Mod)
 * Download the mod version of the datapack from modrinth. 
