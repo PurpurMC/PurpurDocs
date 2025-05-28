@@ -1,3 +1,8 @@
+---
+title: Configuration
+description: A guide in my new Starlight docs site.
+---
+
 This page details the various configuration settings available in PurpurExtras configuration file.
 
 ## anvil-crushes-blocks

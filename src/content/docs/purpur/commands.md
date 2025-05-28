@@ -1,3 +1,8 @@
+---
+title: Commands
+description: A guide in my new Starlight docs site.
+---
+
 Purpur adds a few new commands to the game.
 
 ???+ note "Note"
@@ -43,7 +48,7 @@ Purpur adds a few new commands to the game.
 
 ## /demo
 ??? info "Image of the Demo Screen 📷"
-    ![Demo Screen](demo.png)
+    ![Demo Screen](../../../../public/images/demo.png)
 - This command shows the demo screen to players if you have the `bukkit.command.demo.other` permission. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show the demo screen to yourself.
 
 - **examples**:
@@ -61,7 +66,7 @@ Purpur adds a few new commands to the game.
 
 ## /credits
 ??? info "Image of the Credits screen 📷"
-    ![Credits screen](credits.png)
+    ![Credits screen](../../../../public/images/credits.png)
 - This command shows the credits screen to players if you have the `bukkit.command.credits.other` permission. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show the credits screen to yourself.
 
 - **examples**:
@@ -79,7 +84,7 @@ Purpur adds a few new commands to the game.
 
 ## /tpsbar
 ??? info "Image of the tpsbar in action 📷"
-    ![TPSBar in action](bossbar.gif)
+    ![TPSBar in action](../../../../public/images/bossbar.gif)
 - This command shows a bossbar showcasing your current TPS/MSPT to players if you have the `bukkit.command.tpsbar.other` permission. If you do not specify a player name or player entity selector (`@a`, `@r`, etc) it will show the tpsbar to yourself.
 
 - **examples**:
@@ -97,7 +102,7 @@ Purpur adds a few new commands to the game.
 
 ## /compass
 ??? info "Image of the compass in action 📷"
-    ![Compass in action](bossbar.gif)
+    ![Compass in action](../../../../public/images/bossbar.gif)
 - This command shows a bossbar showcasing your current facing direction.
 
 - **examples**

@@ -1,3 +1,8 @@
+---
+title: Example Guide
+description: A guide in my new Starlight docs site.
+---
+
 # Log4j security vulnerability
 Several researchers found a remote code execution (RCE) vulnerability within the logger library utilized in Minecraft and many other Java-based applications. This vulnerability allows anybody to execute commands and run code on your server with minimal effort, and grab your backend server’s public IP address.
 
@@ -31,5 +36,5 @@ A basic explanation of how the exploit works can be found [here](https://gist.gi
 
 For more information, read [Mojang’s blog post about the vulnerability](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition). It contains fixes for other platforms, such as third-party clients. Paper’s [information post](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1] and [announcement](https://discord.com/channels/289587909051416579/492517675680006144/918581596825718815)[^2] may help as well.
 
-[^1]: ![Paper's Log4j information pin](images/paper-log4j-pin.png)
-[^2]: ![Paper's Log4j information pin](images/paper-log4j-announcement.png)
+[^1]: ![Paper's Log4j information pin](../../../../public/images/paper-log4j-pin.png)
+[^2]: ![Paper's Log4j information pin](../../../../public/images/paper-log4j-announcement.png)

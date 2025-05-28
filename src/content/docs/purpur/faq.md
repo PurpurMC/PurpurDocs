@@ -1,3 +1,8 @@
+---
+title: Frequently Asked Questions
+description: A guide in my new Starlight docs site.
+---
+
 ## Where to download??!1?
 
 We have a downloads page on our website that's almost as majestic as my beard ![Billy's Majestic Beard](https://cdn.discordapp.com/emojis/768978823655063602.png?size=16). It is our user friendly front-end for our downloads API: {{ project.downloads }}

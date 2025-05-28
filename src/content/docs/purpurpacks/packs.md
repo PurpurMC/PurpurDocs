@@ -1,3 +1,8 @@
+---
+title: Packs List
+description: A guide in my new Starlight docs site.
+---
+
 ## Smithing Recipes
 
 #### [Upgrade Diamond Armor to Netherite Without A Template](https://modrinth.com/datapack/purpurpacks-no-template-netherite-armor-upgrades)

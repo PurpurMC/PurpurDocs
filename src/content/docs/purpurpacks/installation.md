@@ -1,3 +1,8 @@
+---
+title: Installation
+description: A guide in my new Starlight docs site.
+---
+
 [![Purpur Image](https://user-images.githubusercontent.com/74448585/150906023-101cd383-da82-4a3c-9603-a3b5741c3994.png)]({{ project.website }})
 
 # Installation instructions for Bukkit/Spigot/Paper and so on:
