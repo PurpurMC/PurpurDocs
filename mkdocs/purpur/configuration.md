@@ -3983,6 +3983,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### rain-stops-after-sleep
 - **default**: true
 - **description**: Set to false to make rain continue even after a player sleeps
+#### retain-projectile-owner-on-hit-if-owner-offline
+- **default** false
+- **description**: If true, projectiles will retain their owner even after hitting an entity while the owner is offline. This restores Vanilla behavior and can help preserve functionality of redstone contraptions or mechanics that rely on the projectile's owner.
 #### shovel-turns-block-to-grass-path
 - **default**:
     ``` yaml
