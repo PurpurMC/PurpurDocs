@@ -216,7 +216,7 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 
 ### limit-armor
 - **default**: true
-- **description**: Controls if armor should limit how much damage they can reduce.
+- **description**: Controls if armor should have a maximum amount of damage reduction.
 
 ### username-valid-characters
 - **default**: ^[a-zA-Z0-9_.]*$
