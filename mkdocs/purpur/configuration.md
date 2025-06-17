@@ -1835,6 +1835,38 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### happy_ghast
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it won't eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### tempt_range
+        - **default**: 16.0
+        - **description**: Tempt Range attribute
+    * ###### flying_speed
+        - **default**: 0.05
+        - **description**: Flying Speed attribute
+    * ###### movement_speed
+        - **default**: 0.05
+        - **description**: Movement Speed attribute
+    * ###### follow_range
+        - **default**: 16.0
+        - **description**: Follow Range attribute
+    * ###### camera_distance
+        - **default**: 8.0
+        - **description**: Camera Distance attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### hoglin
 * ##### ridable
     - **default**: false
