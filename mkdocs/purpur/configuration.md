@@ -3615,9 +3615,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### do-fall-damage
     - **default**: false
     - **description**: Set to false for boats to not do fall damage to players
-#### clamp-explosion-radius
-- **default**: true
-- **description**: Set to false to allow setting a negative `ExplosionRadius` value on explosions
 #### daylight-cycle-ticks
 * ##### daytime
     - **default**: 12000
