@@ -1285,6 +1285,38 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### copper_golem
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it won't eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### can-swim
+    - **default**: false
+    - **description**: Set whether iron golems can swim or not
+* ##### attributes
+    * ###### max_health
+        - **default**: 12.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+    * ###### step_height
+        - **default**: 1.0
+        - **description**: Step Height attribute
+    * ###### movement_speed
+        - **default**: 0.2
+        - **description**: Movement Speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### cow
 * ##### ridable
     - **default**: false
