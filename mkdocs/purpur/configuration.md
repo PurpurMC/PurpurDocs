@@ -1317,6 +1317,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### can-open-barrel
+    - **default**: false
+    - **description**: Set to true if the copper golem should be able to place items in barrels
 #### cow
 * ##### ridable
     - **default**: false
