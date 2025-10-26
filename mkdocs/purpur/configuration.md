@@ -3286,6 +3286,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
+* #### can-use-sonic-boom
+    - **default**: true
+    - **description**: Set to false to disable the Sonic Boom
 #### witch
 * ##### ridable
     - **default**: false
