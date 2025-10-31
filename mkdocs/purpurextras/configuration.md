@@ -176,26 +176,6 @@ If enabled and player has books in their inventory while disenchanting item in a
 
 ## items
 
-### beehive-lore
-
-If true, will add lore with amount of bees and honey to the picked up hives.
-
-## leash-snap
-
-If enabled, a sound will play when a leash snaps due to the distance being too great.
-
-### pitch
-
-The pitch at which the sound is played at. This is a float number between -1 and 1
-
-### sound
-
-The sound that gets played when the leash snaps. A list of sounds can be found [here](https://minecraft.wiki/w/Sounds.json).
-
-### volume
-
-The volume at which the sound will be played at. This is an integer number above 0.
-
 ## loom
 
 ### max-layers
@@ -210,6 +190,15 @@ If enabled, entities with type on the left will be transformed into entity of ty
 - `jeb_sheep` - rainbow sheep
 - `johnny` - vindicator aggressive to most mobs
 - `toast` - special variant of rabbit
+
+### enabled
+Enables or disables the feature.
+
+### entities
+Map of entity transformations. entity type on the left will be transformed into entity type on the right when hit by lightning.
+
+### preserve-entity-state
+A boolean value that decides if the entity state should be preserved when transforming, whenever possible. For example if transforming zombie to skeleton, zombie is holding a sword, the skeleton will also hold that sword after transformation.
 
 ## mobs
 
