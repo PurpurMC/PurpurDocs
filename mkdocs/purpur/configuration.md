@@ -991,6 +991,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### axolotl
 * ##### ridable
     - **default**: false
@@ -1014,6 +1017,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### bat
 * ##### ridable
     - **default**: false
@@ -1102,6 +1108,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### blaze
 * ##### ridable
     - **default**: false
@@ -1174,6 +1183,9 @@ For a more clear explanation of the world settings section of the config, feel f
         * max
             - **default**: 0.09
             - **description**: Max movement speed attribute
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### cat
 * ##### ridable
     - **default**: false
@@ -1213,6 +1225,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### cave_spider
 * ##### ridable
     - **default**: false
@@ -1265,6 +1280,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### cod
 * ##### ridable
     - **default**: false
@@ -1356,6 +1374,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### creaking
 * ##### ridable
     - **default**: false
@@ -1491,6 +1512,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### drowned
 * ##### ridable
     - **default**: false
@@ -1722,6 +1746,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### frog
 * ##### ridable
     - **default**: false
@@ -1932,6 +1959,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### horse
 * ##### ridable-in-water
     - **default**: false
@@ -1967,6 +1997,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### husk
 * ##### ridable
     - **default**: false
@@ -2114,6 +2147,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### magma_cube
 * ##### ridable
     - **default**: false
@@ -2163,6 +2199,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### mule
 * ##### ridable-in-water
     - **default**: false
@@ -2198,6 +2237,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### ocelot
 * ##### ridable
     - **default**: false
@@ -2227,6 +2269,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### panda
 * ##### ridable
     - **default**: false
@@ -2253,6 +2298,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### parrot
 * ##### ridable
     - **default**: false
@@ -2388,6 +2436,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### piglin
 * ##### ridable
     - **default**: false
@@ -2508,6 +2559,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### pufferfish
 * ##### ridable
     - **default**: false
@@ -2557,6 +2611,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### ravager
 * ##### ridable
     - **default**: false
@@ -2656,6 +2713,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### shulker
 * ##### ridable
     - **default**: false
@@ -3008,6 +3068,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### tadpole
 * ##### ridable
     - **default**: false
@@ -3059,6 +3122,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### tropical_fish
 * ##### ridable
     - **default**: false
@@ -3214,6 +3280,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### vindicator
 * ##### ridable
     - **default**: false
@@ -3417,6 +3486,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding-twin-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0 - 1.0) this mob will make two babies when breeding 
 #### zoglin
 * ##### ridable
     - **default**: false
