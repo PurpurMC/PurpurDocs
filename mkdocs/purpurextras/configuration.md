@@ -191,6 +191,15 @@ If enabled, entities with type on the left will be transformed into entity of ty
 - `johnny` - vindicator aggressive to most mobs
 - `toast` - special variant of rabbit
 
+### enabled
+Enables or disables the feature.
+
+### entities
+Map of entity transformations. entity type on the left will be transformed into entity type on the right when hit by lightning.
+
+### preserve-entity-state
+A boolean value that decides if the entity state should be preserved when transforming, whenever possible. For example if transforming zombie to skeleton, zombie is holding a sword, the skeleton will also hold that sword after transformation.
+
 ## mobs
 
 ### sheep
