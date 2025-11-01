@@ -2656,6 +2656,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### spawn-jeb-chance
+    - **default**: 0.0
+    - **description**: Percent chance (0.0-1.0) to naturally spawn a sheep named jeb_
 #### shulker
 * ##### ridable
     - **default**: false
