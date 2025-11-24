@@ -1320,6 +1320,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### can-open-barrel
     - **default**: false
     - **description**: Set to true if the copper golem should be able to place items in barrels
+* ##### can-open-shulker
+    - **default**: false
+    - **description**: Set to true if the copper golem should be able to place items in shulkers
 #### cow
 * ##### ridable
     - **default**: false
