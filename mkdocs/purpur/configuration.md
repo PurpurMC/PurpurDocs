@@ -958,6 +958,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### ridable
     - **default**: false
     - **description**: Makes this mob mountable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
@@ -1135,6 +1141,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -1501,6 +1513,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -1697,6 +1715,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -1977,6 +2001,12 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -2398,18 +2428,18 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### mob-griefing-override
-    - **default**: default
-    - **description**:
-        `default` - respects the `mobGriefing` gamerule
-        `true` - permanently enables mob griefing for piglins
-        `false` - permanently disables mob griefing for piglins
 * ##### portal-spawn-modifier
     - **default**: 2000
     - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
@@ -2437,6 +2467,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -2460,18 +2496,18 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### mob-griefing-override
-    - **default**: default
-    - **description**:
-        `default` - respects the `mobGriefing` gamerule
-        `true` - permanently enables mob griefing for pillagers
-        `false` - permanently disables mob griefing for pillagers
 * ##### attributes
     * ###### max_health
         - **default**: 24.0
@@ -2743,6 +2779,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -2966,6 +3008,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -3141,6 +3189,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -3224,6 +3278,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -3369,6 +3429,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -3450,6 +3516,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -3539,6 +3611,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -3586,6 +3664,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### controllable
     - **default**: true
     - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
@@ -3706,12 +3790,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### entities-can-use-portals
 - **default**: true
 - **description**: Set to false to stop entities from being able to use portals
-#### entities-pick-up-loot-mob-griefing-override
-- **default**: default
-- **description**:
-    `default` - respects the `mobGriefing` gamerule
-    `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
-    `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
 #### entity-blindness-multiplier
 - **default**: 1
 - **description**: How blind a mob is when affected with the blindness potion effect
