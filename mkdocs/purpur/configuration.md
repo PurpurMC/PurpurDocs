@@ -764,6 +764,10 @@ For a more clear explanation of the world settings section of the config, feel f
                 - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
                 - `NONE` - all items will drop
 
+#### ender_chest
+* ##### open-with-solid-block-on-top
+    - **default**: false
+    - **description**: Allows for ender chests to open even with a solid block on top
 #### farmland
 * ##### gets-moist-from-below
     - **default**: false
@@ -889,6 +893,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### allow-oversized-stacks
     - **default**: false
     - **description**: Controls whether overstacked items are allowed in shulker boxes (default fixes chunk ban issue PaperMC/Paper#4748)
+* ##### open-when-blocked
+    - **default**: false
+    - **description**: Allows for shulkerboxes to open even when blocked by a block
 #### sign
 * ##### allow-colors
     - Requires [`purpur.sign.color`](permissions#purpursigncolor), [`purpur.sign.style`](permissions#purpursignstyle), and/or [`purpur.sign.magic`](permissions#purpursignmagic) permission
