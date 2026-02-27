@@ -895,7 +895,7 @@ For a more clear explanation of the world settings section of the config, feel f
     - **description**: Controls whether overstacked items are allowed in shulker boxes (default fixes chunk ban issue PaperMC/Paper#4748)
 * ##### open-when-blocked
     - **default**: false
-    - **description**: Allows for shulkerboxes to open even when blocked by a solid block
+    - **description**: Allows for shulkerboxes to open even when blocked by a block
 #### sign
 * ##### allow-colors
     - Requires [`purpur.sign.color`](permissions#purpursigncolor), [`purpur.sign.style`](permissions#purpursignstyle), and/or [`purpur.sign.magic`](permissions#purpursignmagic) permission
