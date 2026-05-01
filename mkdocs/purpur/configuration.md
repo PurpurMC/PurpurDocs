@@ -407,6 +407,10 @@ Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permissi
     - **default**: false
     - **description**: Set to true to allow the grindstone to remove the name and lore from an item
 ####  ender_chest
+* ##### persist-hidden-rows
+    - Works alongside [`ender_chest.use-permissions-for-rows`](#use-permissions-for-rows)
+    - **default**: true
+    - **description**: Items remain stored in slots, even if those slots become inaccessible through permissions.
 * ##### six-rows
     - **default**: false
     - **description**: When enabled, ender chests should have six rows of inventory space
