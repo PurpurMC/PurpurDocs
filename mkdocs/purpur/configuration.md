@@ -1161,6 +1161,29 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
+#### breeze
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it won't eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 30.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### camel
 * ##### ridable-in-water
     - **default**: false
@@ -1190,6 +1213,35 @@ For a more clear explanation of the world settings section of the config, feel f
         * max
             - **default**: 0.09
             - **description**: Max movement speed attribute
+#### camel_husk
+* ##### ridable-in-water
+    - **default**: false
+    - **description**: Makes this mob mountable in water (it won't eject you)
+* ##### attributes
+    * ###### max_health
+        * min
+            - **default**: 32.0
+            - **description**: Min health attribute
+        * max
+            - **default**: 32.0
+            - **description**: Max health attribute
+    * ###### jump_strength
+        * min
+            - **default**: 0.42
+            - **description**: Min jump strength attribute
+        * max
+            - **default**: 0.42
+            - **description**: Max jump strength attribute
+    * ###### movement_speed
+        * min
+            - **default**: 0.09
+            - **description**: Min movement speed attribute
+        * max
+            - **default**: 0.09
+            - **description**: Max movement speed attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
 #### cat
 * ##### ridable
     - **default**: false
@@ -2283,6 +2335,35 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### attributes
     * ###### max_health
         - **default**: 20.0
+        - **description**: Max health attribute
+    * ###### scale
+        - **default**: 1.0
+        - **description**: Scale attribute
+* ##### always-drop-exp
+    - **default**: false
+    - **description**: Set to true if this mob should always drop experience
+#### parched
+* ##### ridable
+    - **default**: false
+    - **description**: Makes this mob mountable
+* ##### controllable
+    - **default**: true
+    - **description**: Makes this mob WASD controllable
+* ##### can-pick-up-loot
+    - **default**: default
+    - **description**:
+        `default` - respects the `mobGriefing` gamerule
+        `true` - permanently enables the ability for mobs that can pick up loot to pick up loot
+        `false` - permanently disables the ability for mobs that can pick up loot to pick up loot
+* ##### ridable-in-water
+    - **default**: true
+    - **description**: Makes this mob mountable in water (it won't eject you)
+* ##### takes-damage-from-water
+    - **default**: false
+    - **description**: Set to true for this mob to start taking damage from water
+* ##### attributes
+    * ###### max_health
+        - **default**: 16.0
         - **description**: Max health attribute
     * ###### scale
         - **default**: 1.0
