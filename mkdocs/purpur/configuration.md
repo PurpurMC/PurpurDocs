@@ -4211,6 +4211,9 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### snowball
     - **default**: 1.0
     - **description**: The projectile offset of a snowball
+* ##### wind-charge
+    - **default**: 1.0
+    - **description**: The projectile offset of a wind-charge
 #### projectiles-mob-griefing-override
 * **default**: default
 * **description**: Set to either true or false to override the `mobGriefing` gamerule for projectiles.
