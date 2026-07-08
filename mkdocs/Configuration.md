@@ -3213,26 +3213,20 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 #### lightning-transforms-blocks
 * ##### enabled
     - **default**: false
-    - **description**: Makes it so blocks transform when hit by lightning
-* ##### nearby-sand-into-glass
+    - **description**: Transform the block that is struck by lightning
+* ##### nearby-blocks
     * ###### enabled
         - **default**: true
-        - **description**: Turn the sand around the struck block into glass
+        - **description**: Transform the blocks that surround the lightning strike
     * ###### max-depth
         - **default**: 3
-        - **description**: The depth to check
+        - **description**: The max depth for how many blocks to transform
     * ###### max-iteration
         - **default**: 6
-        - **description**: The amount of times to try changing a block
-* ##### sand-into-glass
-    - **default**: true
-    - **description**: Turn the struck sand into glass
-* ##### water-into-stone
-    - **default**: true
-    - **description**: Turn the struck water into stone
-* ##### stone-into-obsidian
-    - **default**: true
-    - **description**: Turn the struck stone into obsidian
+        - **description**: The amount of times to attempt transforming a block
+* ##### block-map
+    - **default**: {"minecraft:water": "minecraft:stone","minecraft:sand": "minecraft:glass","minecraft:stone": "minecraft:obsidian"}
+    - **description**: A block map for transforming a block into another when hit by lightning
 #### halloween
 * ##### force
     - **default**: false
