@@ -448,6 +448,10 @@ Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permissi
 * ##### smooth-accumulation-step
     - **default**: 0
     - **description**: When gamerule `snowAccumulationHeight` is set greater than 1, this value sets the maximum difference in height between 2 adjacent snow layers. 0 is vanilla behavior. [Example Images](https://github.com/PurpurMC/Purpur/pull/1651#issuecomment-2771393460)
+#### leaves
+* ##### instant-decay
+    - **default**: false
+    - **description**: Set to true to make the leaves instantly decay after breaking a tree.
 #### lightning_rod
 * ##### range
     - **default**: 128
@@ -460,7 +464,6 @@ Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permissi
 * ##### reverse-bubble-column-flow
     - **default**: false
     - **description**: Set to true to make downward bubble columns generate instead of upward bubble columns when soul sand is placed/generated under water-source blocks.
-
 
 
 ### broadcasts
