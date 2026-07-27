@@ -173,6 +173,11 @@ Requires enabling [`totem-of-undying-works-in-inventory`](configuration#totem-of
 
 - Allows player's totem to work while in their inventory
 
+## purpur.spectator-can-teleport-to-players
+Default `true`.
+
+- Allows the user to teleport to players while in spectator mode
+
 ## purpur.mending_shift_click
 Requires setting [`shift-right-click-repairs-mending-points`](configuration#shift-right-click-repairs-mending-points) to a number greater than 0
 
