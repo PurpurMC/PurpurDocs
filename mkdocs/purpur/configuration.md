@@ -1004,6 +1004,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### breeding-delay-ticks
     - **default**: 6000
     - **description**: The amount of ticks to wait before being able to breed again
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### axolotl
 * ##### ridable
     - **default**: false
@@ -1027,6 +1034,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### bat
 * ##### ridable
     - **default**: false
@@ -1115,6 +1129,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### blaze
 * ##### ridable
     - **default**: false
@@ -1216,6 +1237,13 @@ For a more clear explanation of the world settings section of the config, feel f
         * max
             - **default**: 0.09
             - **description**: Max movement speed attribute
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### camel_husk
 * ##### ridable-in-water
     - **default**: false
@@ -1284,6 +1312,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### cave_spider
 * ##### ridable
     - **default**: false
@@ -1336,6 +1371,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### cod
 * ##### ridable
     - **default**: false
@@ -1430,6 +1472,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### creaking
 * ##### ridable
     - **default**: false
@@ -1565,6 +1614,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### drowned
 * ##### ridable
     - **default**: false
@@ -1808,6 +1864,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### frog
 * ##### ridable
     - **default**: false
@@ -1940,6 +2003,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### guardian
 * ##### ridable
     - **default**: false
@@ -2018,6 +2088,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### horse
 * ##### ridable-in-water
     - **default**: false
@@ -2053,6 +2130,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### husk
 * ##### ridable
     - **default**: false
@@ -2206,6 +2290,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### magma_cube
 * ##### ridable
     - **default**: false
@@ -2255,6 +2346,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### mule
 * ##### ridable-in-water
     - **default**: false
@@ -2290,6 +2388,14 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### nautilus
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### ocelot
 * ##### ridable
     - **default**: false
@@ -2319,6 +2425,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### panda
 * ##### ridable
     - **default**: false
@@ -2345,6 +2458,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### parched
 * ##### ridable
     - **default**: false
@@ -2509,6 +2629,13 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### piglin
 * ##### ridable
     - **default**: false
@@ -2684,6 +2811,13 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### ravager
 * ##### ridable
     - **default**: false
@@ -2783,6 +2917,13 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### shulker
 * ##### ridable
     - **default**: false
@@ -3147,6 +3288,13 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### tadpole
 * ##### ridable
     - **default**: false
@@ -3198,6 +3346,13 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### tropical_fish
 * ##### ridable
     - **default**: false
@@ -3359,6 +3514,13 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### vindicator
 * ##### ridable
     - **default**: false
@@ -3574,6 +3736,13 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### chance
+        - **default**: 0.0
+        - **description**: The chance for this mob to have another baby when bred
+    * ###### max-babies
+        - **default**: 1
+        - **description**: The maximum number of babies this mob can have when bred
 #### zoglin
 * ##### ridable
     - **default**: false
