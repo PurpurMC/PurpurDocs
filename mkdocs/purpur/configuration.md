@@ -4143,7 +4143,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: false
     - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
 * ##### burp-delay
-    - **default**: 10
+    - **default**: 0
     - **description**: Amount of ticks to delay sound; `burp-when-full` option must be enabled
 * ##### curse-of-binding
     * ###### remove-with-weakness
