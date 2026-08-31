@@ -2127,6 +2127,9 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### spawn-in-raids
+    - **default**: false
+    - **description**: Control if illusioners should spawn during raids
 #### iron_golem
 * ##### ridable
     - **default**: false
