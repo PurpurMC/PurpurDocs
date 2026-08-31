@@ -3914,6 +3914,22 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - **default**: false
     - **description**: Set to true for the infinity bow to work without arrows
 #### item
+* ##### bow
+    * ###### use-bundle-as-quiver
+        * ###### item
+            - **default**: false
+            - **description**: Allows you to use arrows that are stored in the Bundle Item, similar to a quiver
+        * ###### component
+            - **default**: false
+            - **description**: Allows you to use arrows that are stored in the bundle component, similar to a quiver
+* ##### crossbow
+    * ###### use-bundle-as-quiver
+        * ###### item
+            - **default**: false
+            - **description**: Allows you to use arrows that are stored in the Bundle Item, similar to a quiver
+        * ###### component
+            - **default**: false
+            - **description**: Allows you to use arrows that are stored in the bundle component, similar to a quiver
 * ##### end-crystal
     * ###### place-anywhere
         - **default**: false
