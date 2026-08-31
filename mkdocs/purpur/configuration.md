@@ -3517,12 +3517,20 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 #### item
 * ##### bow
     * ###### use-bundle-as-quiver
-        - **default**: false
-        - **description**: Allows you to use arrows that are stored in bundles, similar to a quiver
+        * ###### item
+            - **default**: false
+            - **description**: Allows you to use arrows that are stored in the Bundle Item, similar to a quiver
+        * ###### component
+            - **default**: false
+            - **description**: Allows you to use arrows that are stored in the bundle component, similar to a quiver
 * ##### crossbow
     * ###### use-bundle-as-quiver
-        - **default**: false
-        - **description**: Allows you to use arrows that are stored in bundles, similar to a quiver
+        * ###### item
+            - **default**: false
+            - **description**: Allows you to use arrows that are stored in the Bundle Item, similar to a quiver
+        * ###### component
+            - **default**: false
+            - **description**: Allows you to use arrows that are stored in the bundle component, similar to a quiver
 * ##### end-crystal
     * ###### place-anywhere
         - **default**: false
