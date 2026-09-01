@@ -1924,6 +1924,16 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### cooldown-in-ticks
         - **default**: 6000
         - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 1.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 2
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 5
+            - **description**: The maximum number of babies this mob can have when bred
 #### ghast
 * ##### ridable
     - **default**: false
@@ -3482,6 +3492,16 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### cooldown-in-ticks
         - **default**: 6000
         - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 * ##### attributes
     * ###### max_health
         - **default**: 30.0
