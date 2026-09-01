@@ -1001,9 +1001,20 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### axolotl
 * ##### ridable
     - **default**: false
@@ -1014,9 +1025,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 14.0
@@ -1027,6 +1035,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### bat
 * ##### ridable
     - **default**: false
@@ -1090,9 +1112,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### ridable-max-y
     - **default**: 320.0
     - **description**: Maximum height this mob can fly to while being ridden
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### can-work-at-night
     - **default**: false
     - **description**: Controls whether bees can work during the night
@@ -1115,6 +1134,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### blaze
 * ##### ridable
     - **default**: false
@@ -1191,9 +1224,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### ridable-in-water
     - **default**: false
     - **description**: Makes this mob mountable in water (it won't eject you)
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         * min
@@ -1216,6 +1246,20 @@ For a more clear explanation of the world settings section of the config, feel f
         * max
             - **default**: 0.09
             - **description**: Max movement speed attribute
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### camel_husk
 * ##### ridable-in-water
     - **default**: false
@@ -1271,9 +1315,6 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### village
         - **default**: 48
         - **description**: Do not spawn a cat if another cat is found within this range. Set to 0 to disable
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -1284,6 +1325,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### cave_spider
 * ##### ridable
     - **default**: false
@@ -1323,9 +1378,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### retaliate
     - **default**: false
     - **description**: If a chicken is hit, it will attack back
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 4.0
@@ -1336,6 +1388,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### cod
 * ##### ridable
     - **default**: false
@@ -1410,9 +1476,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### feed-mushrooms-for-mooshroom
     - **default**: 0
     - **description**: Number of mushrooms to feed a cow to make it transform into a mooshroom. Value of 0 disables feature
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### naturally-aggressive-to-players
     * ###### chance
         - **default**: 0.0
@@ -1430,6 +1493,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### creaking
 * ##### ridable
     - **default**: false
@@ -1537,9 +1614,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         * min
@@ -1565,6 +1639,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### drowned
 * ##### ridable
     - **default**: false
@@ -1789,9 +1877,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### tulips-change-type
     - **default**: false
     - **description**: Feeding a white/orange tulip changes type snow/regular
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### mob-griefing-override
     - **default**: default
     - **description**:
@@ -1808,6 +1893,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### frog
 * ##### ridable
     - **default**: false
@@ -1821,9 +1920,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### ridable-jump-height
     - **default**: 0.65
     - **description**: The height this mob can jump when riding it (in blocks)
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 1.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 2
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 5
+            - **description**: The maximum number of babies this mob can have when bred
 #### ghast
 * ##### ridable
     - **default**: false
@@ -1927,9 +2037,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -1940,6 +2047,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### guardian
 * ##### ridable
     - **default**: false
@@ -2005,9 +2126,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 40.0
@@ -2018,6 +2136,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### horse
 * ##### ridable-in-water
     - **default**: false
@@ -2025,9 +2157,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         * min
@@ -2053,6 +2182,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### husk
 * ##### ridable
     - **default**: false
@@ -2178,9 +2321,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### join-caravans
     - **default**: true
     - **description**: Set to false to disable the [llama caravan feature](https://minecraft.wiki/w/Llama#Caravans)
@@ -2209,6 +2349,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### magma_cube
 * ##### ridable
     - **default**: false
@@ -2245,9 +2399,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -2258,6 +2409,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### mule
 * ##### ridable-in-water
     - **default**: false
@@ -2265,9 +2430,10 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         * min
@@ -2293,6 +2459,18 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+#### nautilus
+* ##### breeding
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### ocelot
 * ##### ridable
     - **default**: false
@@ -2309,9 +2487,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### spawn-below-sea-level
     - **default**: false
     - **description**: Set to true for this mob to spawn below the sea level
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -2322,6 +2497,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### panda
 * ##### ridable
     - **default**: false
@@ -2335,9 +2524,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 20.0
@@ -2348,6 +2534,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### parched
 * ##### ridable
     - **default**: false
@@ -2499,9 +2699,6 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### give-saddle-back
     - **default**: false
     - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 10.0
@@ -2512,6 +2709,20 @@ For a more clear explanation of the world settings section of the config, feel f
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### piglin
 * ##### ridable
     - **default**: false
@@ -2625,9 +2836,10 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### breedable-item
     - **default**: ""
     - **description**: Item to tempt/feed polar bears and make them breed
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 30.0
@@ -2668,9 +2880,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### spawn-toast-chance
     - **default**: 0.0
     - **description**: Percent chance (0.0-1.0) to naturally spawn a rabbit named Toast
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### mob-griefing-override
     - **default**: default
     - **description**:
@@ -2687,6 +2896,20 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### ravager
 * ##### ridable
     - **default**: false
@@ -2767,9 +2990,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### mob-griefing-override
     - **default**: default
     - **description**:
@@ -2786,6 +3006,20 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### shulker
 * ##### ridable
     - **default**: false
@@ -2977,9 +3211,10 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### ridable-in-water
     - **default**: true
     - **description**: Makes this mob mountable in water (it won't eject you)
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
     - **default**: 14.0
@@ -3134,9 +3369,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### give-saddle-back
     - **default**: false
     - **description**: Sneak and right-click a strider with a saddle on it's back to remove it with this option enabled
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### takes-damage-from-water
     - **default**: true
     - **description**: Set to false for this mob to stop taking damage from water
@@ -3150,6 +3382,20 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### tadpole
 * ##### ridable
     - **default**: false
@@ -3173,9 +3419,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         * min
@@ -3201,6 +3444,20 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### tropical_fish
 * ##### ridable
     - **default**: false
@@ -3234,9 +3491,20 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### takes-damage-from-water
     - **default**: false
     - **description**: Set to true for this mob to start taking damage from water
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 * ##### attributes
     * ###### max_health
         - **default**: 30.0
@@ -3326,9 +3594,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### can-breed
     - **default**: true
     - **description**: Whether villagers can breed or not
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### clerics-farm-warts
     - **default**: false
     - **description**: Set to true for clerics to farm nether wart
@@ -3362,6 +3627,20 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### vindicator
 * ##### ridable
     - **default**: false
@@ -3564,9 +3843,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### default-collar-color
     - **default**: RED
     - **description**: Set the default collar color when a wolf is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
-* ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
 * ##### attributes
     * ###### max_health
         - **default**: 8.0
@@ -3577,6 +3853,20 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
+* ##### breeding
+    * ###### cooldown-in-ticks
+        - **default**: 6000
+        - **description**: The amount of ticks to wait before being able to breed again
+    * ###### offspring
+        * chance
+            - **default**: 0.0
+            - **description**: The chance for this mob to have another baby when bred
+        * min
+            - **default**: 1
+            - **description**: The minimum number of babies this mob can have when bred
+        * max
+            - **default**: 1
+            - **description**: The maximum number of babies this mob can have when bred
 #### zoglin
 * ##### ridable
     - **default**: false
