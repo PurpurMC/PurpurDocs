@@ -210,6 +210,16 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
     minecraft:obsidian: 1.5
 ```
 
+### block-fall-multipliers
+- **default**: {}
+- **description:** This allows the block fall damage modifiers (distance and damage) to be configured. Example:
+``` yaml
+  block-fall-multipliers:
+    minecraft:obsidian:
+      distance: 0.5
+      damage: 0.2
+```
+
 ### clamp-attributes
 - **default**: true
 - **description**: Controls if attributes should have their values clamped.
