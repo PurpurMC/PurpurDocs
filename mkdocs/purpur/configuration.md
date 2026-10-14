@@ -264,7 +264,7 @@ Set the `Purpur.IReallyDontWantStartupCommands` system property to `true` to dis
 
 ### generate-end-void-rings
 - **default**: false
-- **description**: Set to true to reintroduce the generation of End void rings patched by Paper which occur in vanilla Minecraft in a donut-shaped pattern; MC-159283
+- **description**: Set to true to reintroduce the generation of End void rings which used to occur in vanilla Minecraft in a donut-shaped pattern; MC-159283
 
 ### bee-count-payload
 - **default**: false
@@ -430,10 +430,6 @@ Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permissi
     - **default**: false
     - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have `six` rows unless otherwise specified using permissions.
 
-####  crying_obsidian
-* ##### valid-for-portal-frame
-    - **default**: false
-    - **description**: Set to true to make it so you can create portals out of crying obsidian
 #### twisting_vines
 * ##### max-growth-age
     - **default**: 25
@@ -691,15 +687,6 @@ For a more clear explanation of the world settings section of the config, feel f
     - **default**: false
     - **description**: Set to true to allow bulk processing of food/plant items by sneak right-clicking with the item in hand
 #### conduit
-* ##### valid-ring-blocks
-    - **default**:
-        ``` yaml
-        - minecraft:prismarine
-        - minecraft:prismarine_bricks
-        - minecraft:sea_lantern
-        - minecraft:dark_prismarine
-        ```
-    - **description**: Blocks that can be used to build a conduit
 * ##### effect-distance
     - **default**: 16
     - **description**: The effective radius of the conduit for every seven blocks in the frame
@@ -1575,9 +1562,6 @@ For a more clear explanation of the world settings section of the config, feel f
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
-* ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -2763,9 +2747,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
-* ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### ignores-armor-with-gold-trim
     - **default**: false
     - **description**: Set to true for piglins to ignore players having armor with gold trim
@@ -3133,9 +3114,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### scale
         - **default**: 1.0
         - **description**: Scale attribute
-* ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
@@ -3948,9 +3926,6 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### spawn_reinforcements
         - **default**: 0.1
         - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
-* ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### always-drop-exp
     - **default**: false
     - **description**: Set to true if this mob should always drop experience
