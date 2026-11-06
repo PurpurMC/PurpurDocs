@@ -4417,12 +4417,12 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### critical-damage-multiplier
     - **default**: 1.5
     - **description**: The percentage of damage a critical attack adds to the base damage
-* ##### burp-when-full
-    - **default**: false
-    - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
+* ##### burp-volume
+    - **default**: 0.5
+    - **description**: Volume that the burp sound plays after a player finishes eating
 * ##### burp-delay
     - **default**: 0
-    - **description**: Amount of ticks to delay sound; `burp-when-full` option must be enabled
+    - **description**: Amount of ticks to delay sound
 * ##### curse-of-binding
     * ###### remove-with-weakness
         - **default**: false
