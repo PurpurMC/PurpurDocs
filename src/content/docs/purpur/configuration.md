@@ -1,3 +1,8 @@
+---
+title: Configuration
+description: A reference page of all options in the purpur config.
+---
+
 This page details the various configuration settings exposed by Purpur in the purpur.yml file.
 
 If you want information on settings in paper.yml, spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
@@ -4547,7 +4552,7 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 - **description**: Set to false to make thunder continue even after a player sleeps
 #### tick-fluids
 - **default**: true
-- **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](images/freezefluids-chat-screenshot.png)
+- **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](@images/freezefluids-chat-screenshot.png)
 #### trident-loyalty-void-return-height
 - **default**: 0.0
 - **description**: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.

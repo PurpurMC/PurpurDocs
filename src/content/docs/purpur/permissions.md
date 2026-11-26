@@ -1,3 +1,8 @@
+---
+title: Permissions
+description: A reference page of all purpur permissions.
+---
+
 Purpur adds a few new permission nodes for some of its added features.
 
 By default, Purpur disables **all** of these permissions, no matter if a user has OP. Servers will need a permissions plugin such as [LuckPerms](https://luckperms.net/) to grant permissions to users.

@@ -1,4 +1,10 @@
-# Log4j security vulnerability
+---
+title: Log4j security vulnerability
+description: A guide on how to fix Log4Shell.
+sidebar:
+  hidden: true
+---
+
 Several researchers found a remote code execution (RCE) vulnerability within the logger library utilized in Minecraft and many other Java-based applications. This vulnerability allows anybody to execute commands and run code on your server with minimal effort, and grab your backend server’s public IP address.
 
 It exists for all vanilla Minecraft versions newer than 1.7.10, and affects every application that utilizes the library. Notably the vanilla client, all vanilla-based servers such as Paper and Purpur, Velocity, and Waterfall. If you run any other Java-based applications, such as Jenkins or UniFi, ensure they are up-to-date as well.
@@ -31,5 +37,5 @@ A basic explanation of how the exploit works can be found [here](https://gist.gi
 
 For more information, read [Mojang’s blog post about the vulnerability](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition). It contains fixes for other platforms, such as third-party clients. Paper’s [information post](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1] and [announcement](https://discord.com/channels/289587909051416579/492517675680006144/918581596825718815)[^2] may help as well.
 
-[^1]: ![Paper's Log4j information pin](images/paper-log4j-pin.png)
-[^2]: ![Paper's Log4j information pin](images/paper-log4j-announcement.png)
+[^1]: ![Paper's Log4j information pin](@images/paper-log4j-pin.png)
+[^2]: ![Paper's Log4j information pin](@images/paper-log4j-announcement.png)

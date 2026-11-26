@@ -1,3 +1,8 @@
+---
+title: Packs List
+description: A reference of all the Purpur Packs.
+---
+
 ## Smithing Recipes
 
 #### [Upgrade Diamond Armor to Netherite Without A Template](https://modrinth.com/datapack/purpurpacks-no-template-netherite-armor-upgrades)
