@@ -7,7 +7,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'PurpurMC Documentation',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/PurpurMC/PurpurDocs' }],
+			favicon: '/images/purpur-small.png',
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/PurpurMC/PurpurDocs' },
+				{ icon: 'discord', label: 'Discord', href: 'https://purpurmc.org/discord' }
+			],
 			sidebar: [
 				{
 					label: 'Purpur',

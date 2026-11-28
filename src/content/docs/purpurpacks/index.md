@@ -1,5 +1,5 @@
 ---
-title: Index
+title: PurpurPacks
 description: Index Page
 ---
 

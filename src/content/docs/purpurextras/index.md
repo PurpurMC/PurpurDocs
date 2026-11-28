@@ -1,5 +1,5 @@
 ---
-title: Index
+title: PurpurExtras
 description: Index Page
 ---
 
